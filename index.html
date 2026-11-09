@@ -32,87 +32,125 @@
         }
         #app {
             width: 100%;
-            max-width: 600px;
+            max-width: 650px;
             background: var(--card-bg);
             border-radius: 16px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             padding: 30px;
-            min-height: 400px;
+            min-height: 450px;
+            position: relative;
         }
-        h1 { margin-top: 0; }
+        h1, h2 { margin-top: 0; }
         
+        /* Menu Styles */
         .category-title {
-            margin-top: 30px;
-            font-size: 1.2em;
-            color: #333;
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            margin-top: 30px; font-size: 1.2em; color: #333; border-bottom: 2px solid var(--border);
+            padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;
         }
-        
         .menu-item {
-            border: 2px solid var(--border);
-            border-radius: 12px;
-            padding: 15px;
-            margin-bottom: 10px;
-            cursor: pointer;
-            transition: all 0.2s;
-            border-left: 6px solid var(--primary);
+            border: 2px solid var(--border); border-radius: 12px; padding: 15px; margin-bottom: 10px;
+            cursor: pointer; transition: all 0.2s; border-left: 6px solid var(--primary);
         }
         .menu-item:hover { border-color: var(--primary); background: #f0fcf0; }
         .menu-item h3 { margin: 0 0 5px 0; color: var(--text-main); }
         .menu-item p { margin: 0; font-size: 0.9em; color: var(--text-light); font-weight: bold; }
-        
-        .bookmark-menu-btn {
-            background: #fff9e6;
-            border: 2px solid var(--bookmark);
-            border-left: 6px solid var(--bookmark);
-        }
+        .bookmark-menu-btn { background: #fff9e6; border-color: var(--bookmark); border-left-color: var(--bookmark); }
         .bookmark-menu-btn:hover { background: #fff4cc; }
         .bookmark-menu-btn h3 { color: #b38c00; }
 
+        /* Quiz Header */
         .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid var(--border); padding-bottom: 10px; }
-        .progress { color: var(--text-light); font-weight: bold; }
         .home-btn { cursor: pointer; color: var(--text-light); text-decoration: underline; font-size: 0.9em; border: none; background: none; padding:0;}
+        .top-actions { display: flex; gap: 10px; align-items: center; }
         
-        .top-actions { display: flex; gap: 15px; align-items: center; }
-        
-        .bookmark-btn {
-            background: none; border: 2px solid var(--border); border-radius: 8px; padding: 5px 10px;
+        .bookmark-btn, .nav-toggle-btn {
+            background: none; border: 2px solid var(--border); border-radius: 8px; padding: 6px 12px;
             cursor: pointer; font-size: 0.9em; font-weight: bold; color: var(--text-light); transition: all 0.2s;
         }
         .bookmark-btn.active { background: #fff9e6; border-color: var(--bookmark); color: #b38c00; }
-        
+        .nav-toggle-btn:hover { background: var(--option-hover); }
+
+        /* Options */
         .option-btn {
             display: block; width: 100%; text-align: left; background: var(--option-bg);
             border: 2px solid var(--border); padding: 15px; border-radius: 12px; margin-bottom: 10px;
-            font-size: 1em; cursor: pointer; transition: all 0.2s; color: var(--text-main);
+            font-size: 1em; cursor: pointer; transition: all 0.2s; color: var(--text-main); line-height: 1.4;
         }
         .option-btn:hover:not(:disabled) { background: var(--option-hover); }
         .option-btn.selected { border-color: #84d8ff; background: #e1f5fe; }
         .option-btn.correct { background: var(--correct); border-color: var(--correct-border); color: #2ea000; font-weight: bold; }
         .option-btn.wrong { background: var(--wrong); border-color: var(--wrong-border); color: #c40000; }
         .option-btn:disabled { cursor: default; }
+
+        /* Bottom Controls */
+        .bottom-controls {
+            display: flex; justify-content: space-between; align-items: center; margin-top: 25px; gap: 10px;
+        }
+        .nav-arrow-btn {
+            background: white; border: 2px solid var(--border); padding: 12px 15px; border-radius: 12px;
+            font-weight: bold; cursor: pointer; color: var(--text-main); transition: 0.2s; flex: 1; text-align: center;
+        }
+        .nav-arrow-btn:hover:not(:disabled) { background: var(--option-hover); }
+        .nav-arrow-btn:disabled { opacity: 0.4; cursor: not-allowed; }
         
         .action-btn {
-            background: var(--primary); color: white; border: none; padding: 15px 20px;
-            border-radius: 12px; font-size: 1.1em; font-weight: bold; width: 100%;
-            cursor: pointer; margin-top: 20px; transition: background 0.2s;
+            background: var(--primary); color: white; border: none; padding: 12px 20px;
+            border-radius: 12px; font-size: 1.1em; font-weight: bold; flex: 2;
+            cursor: pointer; transition: background 0.2s;
         }
-        .action-btn:hover { background: var(--primary-hover); }
+        .action-btn:hover:not(:disabled) { background: var(--primary-hover); }
         .action-btn:disabled { background: #ccc; cursor: not-allowed; }
-        
+
         #feedback { margin-top: 20px; padding: 15px; border-radius: 12px; display: none; line-height: 1.5; }
         #feedback.success { background: var(--correct); color: #2ea000; border: 1px solid var(--correct-border); }
         #feedback.error { background: var(--wrong); color: #c40000; border: 1px solid var(--wrong-border); }
+
+        /* Navigator Modal */
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.6); z-index: 1000; align-items: center; justify-content: center;
+        }
+        .modal-content {
+            background: white; width: 90%; max-width: 500px; max-height: 80vh; 
+            border-radius: 16px; padding: 25px; overflow-y: auto; position: relative;
+        }
+        .close-modal {
+            position: absolute; top: 15px; right: 15px; background: none; border: none;
+            font-size: 1.5em; cursor: pointer; color: var(--text-light);
+        }
+        .grid-container {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(45px, 1fr)); gap: 10px; margin-top: 20px;
+        }
+        .grid-btn {
+            aspect-ratio: 1; border: 2px solid var(--border); border-radius: 8px; font-weight: bold;
+            background: white; cursor: pointer; position: relative; color: var(--text-main);
+        }
+        .grid-btn:hover { background: var(--option-hover); }
+        .grid-btn.current { box-shadow: 0 0 0 3px #84d8ff; border-color: #84d8ff; }
+        .grid-btn.correct { background: var(--correct); border-color: var(--correct-border); color: #2ea000; }
+        .grid-btn.wrong { background: var(--wrong); border-color: var(--wrong-border); color: #c40000; }
+        .grid-btn.skipped { background: #f0f0f0; color: #777; }
+        .grid-btn .star-icon { position: absolute; top: -5px; right: -5px; font-size: 0.8em; }
     </style>
 </head>
 <body>
 
 <div id="app">
     <h2 style="text-align:center; color:#ccc;">Scan du répertoire GitHub en cours...</h2>
+</div>
+
+<!-- Modal Navigateur -->
+<div id="navigator-modal" class="modal-overlay" onclick="closeNavigator(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="close-modal" onclick="closeNavigator(event)">×</button>
+        <h2 style="margin-top:0">Navigateur de questions</h2>
+        <div style="font-size: 0.9em; color: var(--text-light); margin-bottom: 15px;">
+            <span style="color:#2ea000; font-weight:bold">Vert</span>: Réussi | 
+            <span style="color:#c40000; font-weight:bold">Rouge</span>: Échoué | 
+            <span style="color:#777; font-weight:bold">Gris</span>: Passé (à faire)
+        </div>
+        <div id="nav-grid" class="grid-container"></div>
+    </div>
 </div>
 
 <script>
@@ -122,12 +160,16 @@
     
     let currentQuiz = null;
     let currentQuestionIndex = 0;
-    let score = 0;
-    let selectedOptionIndex = null;
+    
+    // Nouveaux états de session
+    let userAnswers = [];   // Stocke l'index de l'option cliquée
+    let questionLocked = []; // true si l'utilisateur a cliqué sur "Valider"
 
     const appDiv = document.getElementById('app');
+    const navModal = document.getElementById('navigator-modal');
+    const navGrid = document.getElementById('nav-grid');
 
-    // 1. AUTO-DISCOVERY VIA GITHUB API & MERGE LOGIC
+    // 1. AUTO-DISCOVERY
     async function loadQuizzes() {
         let jsonPaths = [];
         const host = window.location.hostname;
@@ -140,18 +182,12 @@
                     const repoRes = await fetch(`https://api.github.com/repos/${username}/${repo}`);
                     const repoData = await repoRes.json();
                     const branch = repoData.default_branch || 'main';
-                    
                     const treeRes = await fetch(`https://api.github.com/repos/${username}/${repo}/git/trees/${branch}?recursive=1`);
                     const treeData = await treeRes.json();
-                    
                     if (treeData.tree) {
-                        jsonPaths = treeData.tree
-                            .filter(f => f.path.endsWith('.json') && !f.path.includes('catalogue.json'))
-                            .map(f => f.path);
+                        jsonPaths = treeData.tree.filter(f => f.path.endsWith('.json') && !f.path.includes('catalogue.json')).map(f => f.path);
                     }
-                } catch (e) {
-                    console.warn("API GitHub limit atteinte.", e);
-                }
+                } catch (e) { console.warn("API GitHub limit atteinte.", e); }
             }
         }
 
@@ -160,7 +196,7 @@
                 const catRes = await fetch('catalogue.json');
                 if (catRes.ok) jsonPaths = await catRes.json();
             } catch(e) {
-                appDiv.innerHTML = '<h2>Aucun fichier trouvé</h2><p>Vérifiez que vos fichiers .json sont sur GitHub Pages.</p>';
+                appDiv.innerHTML = '<h2>Aucun fichier trouvé</h2><p>Vérifiez que vos fichiers .json sont sur votre dépôt.</p>';
                 return;
             }
         }
@@ -182,24 +218,17 @@
                     categories[category].push(quizId);
                 }
                 quizzes[quizId].questions.push(...data.questions);
-
-            } catch (e) {
-                console.warn("Impossible de lire:", path);
-            }
+            } catch (e) { console.warn("Impossible de lire:", path); }
         }
 
-        if (Object.keys(quizzes).length === 0) {
-            appDiv.innerHTML = '<h2>Aucun quiz trouvé</h2>';
-        } else {
-            renderMenu();
-        }
+        if (Object.keys(quizzes).length === 0) appDiv.innerHTML = '<h2>Aucun quiz trouvé</h2>';
+        else renderMenu();
     }
 
-    // 2. MENU PRINCIPAL
+    // 2. MENU
     function renderMenu() {
         let html = `<h1>Vos Cours</h1><p>Sélectionnez un module pour commencer :</p>`;
         
-        // Bouton spécial si des questions sont marquées
         let validBookmarks = bookmarks.filter(b => {
             const [qId] = b.split('|||');
             return quizzes[qId];
@@ -229,16 +258,19 @@
         appDiv.innerHTML = html;
     }
 
-    // 3. LOGIQUE DU QUIZ
+    function initQuizState(quizLength) {
+        currentQuestionIndex = 0;
+        userAnswers = new Array(quizLength).fill(null);
+        questionLocked = new Array(quizLength).fill(false);
+    }
+
     function startQuiz(id) {
         currentQuiz = quizzes[id];
         currentQuiz.isBookmarkQuiz = false;
-        currentQuestionIndex = 0;
-        score = 0;
+        initQuizState(currentQuiz.questions.length);
         renderQuestion();
     }
 
-    // Lancer le quiz personnalisé des favoris
     function startBookmarkQuiz() {
         let bQuestions = [];
         bookmarks.forEach(b => {
@@ -253,38 +285,44 @@
         if (bQuestions.length === 0) return renderMenu();
 
         currentQuiz = { title: "Questions Difficiles", isBookmarkQuiz: true, questions: bQuestions };
-        currentQuestionIndex = 0;
-        score = 0;
+        initQuizState(bQuestions.length);
         renderQuestion();
     }
 
+    // 3. LOGIQUE & NAVIGATION
+    function getOriginalIds() {
+        const q = currentQuiz.questions[currentQuestionIndex];
+        const qId = currentQuiz.isBookmarkQuiz ? q.originalQuizId : currentQuiz.id;
+        const qIndex = currentQuiz.isBookmarkQuiz ? q.originalIndex : currentQuestionIndex;
+        return { id: qId, index: qIndex, key: `${qId}|||${qIndex}` };
+    }
+
     function toggleBookmark() {
-        const qId = currentQuiz.isBookmarkQuiz ? currentQuiz.questions[currentQuestionIndex].originalQuizId : currentQuiz.id;
-        const qIndex = currentQuiz.isBookmarkQuiz ? currentQuiz.questions[currentQuestionIndex].originalIndex : currentQuestionIndex;
-        const key = `${qId}|||${qIndex}`;
+        const ids = getOriginalIds();
+        const bIndex = bookmarks.indexOf(ids.key);
         
-        const index = bookmarks.indexOf(key);
-        if (index > -1) {
-            bookmarks.splice(index, 1);
+        if (bIndex > -1) {
+            bookmarks.splice(bIndex, 1);
             document.getElementById('bookmark-btn').classList.remove('active');
             document.getElementById('bookmark-btn').innerText = '☆ Marquer';
         } else {
-            bookmarks.push(key);
+            bookmarks.push(ids.key);
             document.getElementById('bookmark-btn').classList.add('active');
             document.getElementById('bookmark-btn').innerText = '⭐️ Marquée';
         }
         localStorage.setItem('quiz_bookmarks', JSON.stringify(bookmarks));
+        buildNavigator(); // Met à jour l'étoile dans le modal
     }
 
     function renderQuestion() {
-        selectedOptionIndex = null;
         const q = currentQuiz.questions[currentQuestionIndex];
+        const ids = getOriginalIds();
+        const isBookmarked = bookmarks.includes(ids.key);
         
-        const qId = currentQuiz.isBookmarkQuiz ? q.originalQuizId : currentQuiz.id;
-        const qIndex = currentQuiz.isBookmarkQuiz ? q.originalIndex : currentQuestionIndex;
-        const key = `${qId}|||${qIndex}`;
-        const isBookmarked = bookmarks.includes(key);
-        
+        const answeredIndex = userAnswers[currentQuestionIndex];
+        const isLocked = questionLocked[currentQuestionIndex];
+        const isCorrect = isLocked && (answeredIndex === q.correct);
+
         let html = `
             <div class="header">
                 <button class="home-btn" onclick="renderMenu()">← Retour aux cours</button>
@@ -292,7 +330,7 @@
                     <button id="bookmark-btn" class="bookmark-btn ${isBookmarked ? 'active' : ''}" onclick="toggleBookmark()">
                         ${isBookmarked ? '⭐️ Marquée' : '☆ Marquer'}
                     </button>
-                    <div class="progress">Q ${currentQuestionIndex + 1} / ${currentQuiz.questions.length}</div>
+                    <button class="nav-toggle-btn" onclick="openNavigator()">🔢 Q ${currentQuestionIndex + 1}/${currentQuiz.questions.length}</button>
                 </div>
             </div>
             <h2>${q.question}</h2>
@@ -300,68 +338,147 @@
         `;
         
         q.options.forEach((opt, idx) => {
-            html += `<button class="option-btn" id="opt-${idx}" onclick="selectOption(${idx})">${opt}</button>`;
+            let classes = "option-btn";
+            if (isLocked) {
+                if (idx === q.correct) classes += " correct";
+                else if (idx === answeredIndex && !isCorrect) classes += " wrong";
+            } else {
+                if (idx === answeredIndex) classes += " selected";
+            }
+            
+            html += `<button class="${classes}" id="opt-${idx}" onclick="selectOption(${idx})" ${isLocked ? 'disabled' : ''}>${opt}</button>`;
         });
         
         html += `
             </div>
-            <div id="feedback"></div>
-            <button class="action-btn" id="submit-btn" disabled onclick="submitAnswer()">Valider</button>
+            <div id="feedback" class="${isCorrect ? 'success' : 'error'}" style="display: ${isLocked ? 'block' : 'none'}">
+                <strong>${isCorrect ? 'Excellent !' : (isLocked ? 'Incorrect.' : '')}</strong><br>${q.explanation || ''}
+            </div>
+            
+            <div class="bottom-controls">
+                <button class="nav-arrow-btn" onclick="prevQuestion()" ${currentQuestionIndex === 0 ? 'disabled' : ''}>← Précédent</button>
         `;
+
+        if (!isLocked) {
+            html += `<button class="action-btn" id="submit-btn" onclick="submitAnswer()" ${answeredIndex === null ? 'disabled' : ''}>Valider</button>`;
+        }
+        
+        const nextText = (currentQuestionIndex === currentQuiz.questions.length - 1) ? 'Terminer' : 'Suivant →';
+        html += `<button class="nav-arrow-btn" onclick="nextQuestion()">${nextText}</button></div>`;
+        
         appDiv.innerHTML = html;
+        buildNavigator(); // S'assure que la grille en arrière-plan est à jour
     }
 
     function selectOption(idx) {
-        selectedOptionIndex = idx;
+        if (questionLocked[currentQuestionIndex]) return;
+        userAnswers[currentQuestionIndex] = idx;
         document.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
         document.getElementById(`opt-${idx}`).classList.add('selected');
         document.getElementById('submit-btn').disabled = false;
     }
 
     function submitAnswer() {
-        const q = currentQuiz.questions[currentQuestionIndex];
-        const isCorrect = (selectedOptionIndex === q.correct);
-        
-        if (isCorrect) score++;
-        
-        document.querySelectorAll('.option-btn').forEach((btn, idx) => {
-            btn.disabled = true;
-            if (idx === q.correct) btn.classList.add('correct');
-            else if (idx === selectedOptionIndex && !isCorrect) btn.classList.add('wrong');
-        });
+        if (userAnswers[currentQuestionIndex] === null) return;
+        questionLocked[currentQuestionIndex] = true;
+        renderQuestion(); // Re-dessine l'écran avec les feedbacks
+    }
 
-        const feedback = document.getElementById('feedback');
-        feedback.style.display = 'block';
-        feedback.className = isCorrect ? 'success' : 'error';
-        feedback.innerHTML = `<strong>${isCorrect ? 'Excellent !' : 'Incorrect.'}</strong><br>${q.explanation}`;
-
-        const submitBtn = document.getElementById('submit-btn');
-        submitBtn.innerText = 'Suivant';
-        submitBtn.onclick = nextQuestion;
+    function prevQuestion() {
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            renderQuestion();
+        }
     }
 
     function nextQuestion() {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < currentQuiz.questions.length) {
+        if (currentQuestionIndex < currentQuiz.questions.length - 1) {
+            currentQuestionIndex++;
             renderQuestion();
         } else {
             renderEnd();
         }
     }
 
+    // 4. NAVIGATEUR MODAL
+    function openNavigator() {
+        navModal.style.display = 'flex';
+    }
+
+    function closeNavigator(e) {
+        if(e) e.stopPropagation();
+        navModal.style.display = 'none';
+    }
+
+    function jumpToQuestion(idx) {
+        currentQuestionIndex = idx;
+        closeNavigator();
+        renderQuestion();
+    }
+
+    function buildNavigator() {
+        let gridHtml = '';
+        currentQuiz.questions.forEach((q, idx) => {
+            const qId = currentQuiz.isBookmarkQuiz ? q.originalQuizId : currentQuiz.id;
+            const qIndexOrig = currentQuiz.isBookmarkQuiz ? q.originalIndex : idx;
+            const isBookmarked = bookmarks.includes(`${qId}|||${qIndexOrig}`);
+            
+            let btnClass = "grid-btn";
+            if (idx === currentQuestionIndex) btnClass += " current";
+            
+            if (questionLocked[idx]) {
+                if (userAnswers[idx] === q.correct) btnClass += " correct";
+                else btnClass += " wrong";
+            } else if (userAnswers[idx] !== null) {
+                // Option sélectionnée mais pas validée (Gris)
+                btnClass += " skipped";
+            } else {
+                // Totalement vierge
+                btnClass += " skipped";
+            }
+
+            let star = isBookmarked ? '<span class="star-icon">⭐</span>' : '';
+            gridHtml += `<button class="${btnClass}" onclick="jumpToQuestion(${idx})">${idx + 1}${star}</button>`;
+        });
+        navGrid.innerHTML = gridHtml;
+    }
+
+    // 5. FIN DU QUIZ
     function renderEnd() {
-        const percent = Math.round((score / currentQuiz.questions.length) * 100);
+        let score = 0;
+        let answeredCount = 0;
+        
+        currentQuiz.questions.forEach((q, idx) => {
+            if (questionLocked[idx]) {
+                answeredCount++;
+                if (userAnswers[idx] === q.correct) score++;
+            }
+        });
+        
+        const total = currentQuiz.questions.length;
+        const percent = total > 0 ? Math.round((score / total) * 100) : 0;
+        
         appDiv.innerHTML = `
-            <div style="text-align:center; padding: 40px 0;">
-                <h1>Terminé !</h1>
-                <h2 style="font-size: 3em; color: var(--primary); margin: 20px 0;">${score} / ${currentQuiz.questions.length}</h2>
-                <p>Score: ${percent}%</p>
-                <button class="action-btn" onclick="renderMenu()">Retour aux cours</button>
+            <div style="text-align:center; padding: 20px 0;">
+                <h1>Résumé du module</h1>
+                <h2 style="font-size: 3em; color: var(--primary); margin: 10px 0;">${score} / ${total}</h2>
+                <p style="font-size:1.2em; font-weight:bold; color:var(--text-light)">Score total : ${percent}%</p>
+                
+                <div style="background: #f0f0f0; border-radius: 12px; padding: 15px; margin: 20px 0; text-align:left;">
+                    <p style="margin:5px 0;">✅ Validées correctement : <strong>${score}</strong></p>
+                    <p style="margin:5px 0;">❌ Validées avec erreur : <strong>${answeredCount - score}</strong></p>
+                    <p style="margin:5px 0;">⏭️ Ignorées / Non-validées : <strong>${total - answeredCount}</strong></p>
+                </div>
+                
+                <div style="display:flex; gap:10px; flex-direction:column;">
+                    <button class="action-btn" style="background:#84d8ff; color:#005680;" onclick="openNavigator(); renderQuestion();">Ouvrir le navigateur (Corriger / Compléter)</button>
+                    <button class="action-btn" onclick="renderMenu()">Terminer et retourner aux cours</button>
+                </div>
             </div>
         `;
     }
 
-    // Lancement au chargement
+    // Lancement
     loadQuizzes();
 </script>
 </body>

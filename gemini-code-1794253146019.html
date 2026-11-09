@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Neurologie</title>
+    <style>
+        :root {
+            --bg-color: #f7f9fc;
+            --card-bg: #ffffff;
+            --primary: #58cc02;
+            --primary-hover: #46a302;
+            --text-main: #3c3c3c;
+            --text-light: #777;
+            --border: #e5e5e5;
+            --correct: #d7ffb8;
+            --correct-border: #58cc02;
+            --wrong: #ffdfe0;
+            --wrong-border: #ea2b2b;
+            --option-bg: #ffffff;
+            --option-hover: #f0f0f0;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #app {
+            width: 100%;
+            max-width: 600px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 30px;
+            min-height: 400px;
+        }
+        h1, h2 { margin-top: 0; }
+        .menu-item {
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .menu-item:hover {
+            border-color: var(--primary);
+            background: #f0fcf0;
+        }
+        .menu-item h3 { margin: 0 0 5px 0; color: var(--primary); }
+        .menu-item p { margin: 0; font-size: 0.9em; color: var(--text-light); }
+        
+        .option-btn {
+            display: block;
+            width: 100%;
+            text-align: left;
+            background: var(--option-bg);
+            border: 2px solid var(--border);
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--text-main);
+        }
+        .option-btn:hover:not(:disabled) { background: var(--option-hover); }
+        .option-btn.selected { border-color: #84d8ff; background: #e1f5fe; }
+        .option-btn.correct { background: var(--correct); border-color: var(--correct-border); color: #2ea000; font-weight: bold; }
+        .option-btn.wrong { background: var(--wrong); border-color: var(--wrong-border); color: #c40000; }
+        .option-btn:disabled { cursor: default; }
+        
+        .action-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-size: 1.1em;
+            font-weight: bold;
+            width: 100%;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.2s;
+        }
+        .action-btn:hover { background: var(--primary-hover); }
+        .action-btn:disabled { background: #ccc; cursor: not-allowed; }
+        
+        #feedback {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 12px;
+            display: none;
+            line-height: 1.5;
+        }
+        #feedback.success { background: var(--correct); color: #2ea000; border: 1px solid var(--correct-border); }
+        #feedback.error { background: var(--wrong); color: #c40000; border: 1px solid var(--wrong-border); }
+        
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid var(--border); padding-bottom: 10px; }
+        .progress { color: var(--text-light); font-weight: bold; }
+        .home-btn { cursor: pointer; color: var(--text-light); text-decoration: underline; font-size: 0.9em; border: none; background: none; }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <h2 style="text-align:center; color:#ccc;">Chargement des cours...</h2>
+</div>
+
+<script>
+    let quizzes = [];
+    let currentQuiz = null;
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let selectedOptionIndex = null;
+
+    const appDiv = document.getElementById('app');
+
+    // 1. AUTO-FETCH DES FICHIERS JSON
+    async function loadQuizzes() {
+        let i = 1;
+        let loading = true;
+        while (loading && i <= 20) {
+            try {
+                const response = await fetch(`quiz${i}.json`);
+                if (response.ok) {
+                    const data = await response.json();
+                    quizzes.push(data);
+                    i++;
+                } else {
+                    loading = false;
+                }
+            } catch (error) {
+                loading = false;
+            }
+        }
+        
+        if (quizzes.length === 0) {
+            appDiv.innerHTML = '<h2>Aucun cours trouvé</h2><p>Ajoutez un fichier <b>quiz1.json</b> sur votre GitHub.</p>';
+        } else {
+            renderMenu();
+        }
+    }
+
+    // 2. MENU PRINCIPAL
+    function renderMenu() {
+        let html = `<h1>Tes Quiz de Neurologie</h1><p>Sélectionne un cours pour commencer :</p>`;
+        quizzes.forEach((quiz, index) => {
+            html += `
+                <div class="menu-item" onclick="startQuiz(${index})">
+                    <h3>${quiz.title}</h3>
+                    <p>${quiz.description} (${quiz.questions.length} questions)</p>
+                </div>
+            `;
+        });
+        appDiv.innerHTML = html;
+    }
+
+    // 3. LOGIQUE DU QUIZ
+    function startQuiz(index) {
+        currentQuiz = quizzes[index];
+        currentQuestionIndex = 0;
+        score = 0;
+        renderQuestion();
+    }
+
+    function renderQuestion() {
+        selectedOptionIndex = null;
+        const q = currentQuiz.questions[currentQuestionIndex];
+        
+        let html = `
+            <div class="header">
+                <button class="home-btn" onclick="renderMenu()">← Retour au menu</button>
+                <div class="progress">Question ${currentQuestionIndex + 1} / ${currentQuiz.questions.length}</div>
+            </div>
+            <h2>${q.question}</h2>
+            <div id="options-container">
+        `;
+        
+        q.options.forEach((opt, idx) => {
+            html += `<button class="option-btn" id="opt-${idx}" onclick="selectOption(${idx})">${opt}</button>`;
+        });
+        
+        html += `
+            </div>
+            <div id="feedback"></div>
+            <button class="action-btn" id="submit-btn" disabled onclick="submitAnswer()">Valider</button>
+        `;
+        appDiv.innerHTML = html;
+    }
+
+    function selectOption(idx) {
+        selectedOptionIndex = idx;
+        document.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
+        document.getElementById(`opt-${idx}`).classList.add('selected');
+        document.getElementById('submit-btn').disabled = false;
+    }
+
+    function submitAnswer() {
+        const q = currentQuiz.questions[currentQuestionIndex];
+        const isCorrect = (selectedOptionIndex === q.correct);
+        
+        if (isCorrect) score++;
+        
+        document.querySelectorAll('.option-btn').forEach((btn, idx) => {
+            btn.disabled = true;
+            if (idx === q.correct) btn.classList.add('correct');
+            else if (idx === selectedOptionIndex && !isCorrect) btn.classList.add('wrong');
+        });
+
+        const feedback = document.getElementById('feedback');
+        feedback.style.display = 'block';
+        feedback.className = isCorrect ? 'success' : 'error';
+        feedback.innerHTML = `<strong>${isCorrect ? 'Excellent !' : 'Incorrect.'}</strong><br>${q.explanation}`;
+
+        const submitBtn = document.getElementById('submit-btn');
+        submitBtn.innerText = 'Suivant';
+        submitBtn.onclick = nextQuestion;
+    }
+
+    function nextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < currentQuiz.questions.length) {
+            renderQuestion();
+        } else {
+            renderEnd();
+        }
+    }
+
+    function renderEnd() {
+        const percent = Math.round((score / currentQuiz.questions.length) * 100);
+        appDiv.innerHTML = `
+            <div style="text-align:center; padding: 40px 0;">
+                <h1>Terminé !</h1>
+                <h2 style="font-size: 3em; color: var(--primary); margin: 20px 0;">${score} / ${currentQuiz.questions.length}</h2>
+                <p>Score: ${percent}%</p>
+                <button class="action-btn" onclick="renderMenu()">Retour au menu</button>
+            </div>
+        `;
+    }
+
+    // Lancement au chargement
+    loadQuizzes();
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+{
+  "id": "vestibulaire",
+  "title": "Système vestibulaire",
+  "description": "Anatomie, transduction, organes otolithiques, RVO, RVC et RVS.",
+  "questions": [
+    {
+      "question": "À quoi sert principalement le système vestibulaire ?",
+      "options": [
+        "À analyser consciemment les fréquences sonores et la prosodie vocale.",
+        "À détecter la position statique et les accélérations pour générer des réponses réflexes rapides en 10 ms.",
+        "À générer des mouvements volontaires planifiés par le cortex prémoteur.",
+        "À analyser l'empreinte spectrale des ondes de pression-décompression."
+      ],
+      "correct": 1,
+      "explanation": "Il détecte les changements de position (accélérations) et génère des réponses réflexes rapides (10 ms) oculomotrices et corporelles qui stabilisent le regard, l'équilibre et la posture[cite: 3]."
+    },
+    {
+      "question": "Quelle est la différence de fonction principale entre les canaux semi-circulaires et les organes otolithiques ?",
+      "options": [
+        "Les canaux gèrent la vision, les organes gèrent l'audition.",
+        "Les canaux détectent les mouvements linéaires, les organes détectent les rotations.",
+        "Les canaux détectent les mouvements de rotation dans les 3 plans, les organes détectent les déplacements linéaires et la gravité.",
+        "Il n'y a aucune différence, ils détectent tous la gravité de la même façon."
+      ],
+      "correct": 2,
+      "explanation": "Les trois canaux semi-circulaires détectent les mouvements de rotation, tandis que les utricules et saccules (organes otolithiques) détectent les déplacements linéaires horizontaux et verticaux (incluant l'accélération gravitationnelle)[cite: 3]."
+    },
+    {
+      "question": "Comment se comportent les canaux ioniques des cellules ciliées vestibulaires au repos (tête immobile) ?",
+      "options": [
+        "Ils sont complètement fermés, la cellule est hyperpolarisée.",
+        "Ils sont entrouverts à l'apex, créant une activité tonique élevée.",
+        "Ils sont ouverts au maximum pour saturer la libération de neurotransmetteurs.",
+        "Ils sont inhibés par la strie vasculaire."
+      ],
+      "correct": 1,
+      "explanation": "Au repos, les canaux ioniques sont entrouverts, ce qui maintient une activité tonique élevée (environ 90 spikes/sec)[cite: 3]. Cela permet au système de détecter les mouvements dans les deux directions (par dépolarisation ou hyperpolarisation)."
+    },
+    {
+      "question": "Que se passe-t-il au niveau de la cupule lors d'une rotation à vitesse constante de plus de 15 secondes ?",
+      "options": [
+        "Les cellules ciliées continuent de décharger à l'infini tant que la rotation dure.",
+        "L'endolymphe se stabilise à la vitesse de la tête et la cupule reprend sa forme, annulant la détection (adaptation).",
+        "Les otolithes se déplacent vers la cupule pour maintenir le signal.",
+        "La cupule se déchire irréversiblement sous la pression."
+      ],
+      "correct": 1,
+      "explanation": "C'est le phénomène d'adaptation[cite: 3]. À vitesse constante, l'inertie de l'endolymphe disparaît car elle tourne à la même vitesse que le canal ; la cupule reprend sa forme et le mouvement n'est plus détecté."
+    },
+    {
+      "question": "Dans l'utricule et le saccule, quelle structure détermine la séparation et l'inversion de la polarisation des cellules ciliées ?",
+      "options": [
+        "La striola",
+        "Le ganglion de Scarpa",
+        "Le kinocil géant",
+        "La membrane tectoriale"
+      ],
+      "correct": 0,
+      "explanation": "La striola sépare en deux la polarisation des cellules ciliées (l'orientation des kinocils change de part et d'autre de cette ligne)[cite: 3]."
+    },
+    {
+      "question": "Où se trouvent les corps cellulaires des cellules bipolaires qui forment le nerf vestibulaire (nerf VIII) ?",
+      "options": [
+        "Dans la corne antérieure de la moelle épinière.",
+        "Dans le ganglion spiralé de Corti.",
+        "Dans le ganglion vestibulaire de Scarpa.",
+        "Dans l'olive supérieure."
+      ],
+      "correct": 2,
+      "explanation": "La transduction se fait entre les cellules ciliées et les dendrites des cellules bipolaires dont le corps cellulaire est situé dans le ganglion de Scarpa[cite: 3]."
+    },
+    {
+      "question": "Lors du réflexe vestibulo-oculaire (RVO) horizontal, que provoque une rotation soudaine de la tête vers la droite ?",
+      "options": [
+        "Activation bilatérale des noyaux vestibulaires.",
+        "Activation du canal semi-circulaire droit, menant (via le FLM) à l'activation du nerf VI gauche et du nerf III droit.",
+        "Inhibition du canal droit et activation du canal gauche, les yeux tournent à droite.",
+        "Absence de mouvement des yeux si la personne n'essaie pas consciemment de lire."
+      ],
+      "correct": 1,
+      "explanation": "La rotation vers la droite active le canal droit, qui active le noyau vestibulaire droit. Via le Faisceau Longitudinal Médian (FLM), cela active le PPRF/VI gauche et le III droit, forçant les yeux à tourner de façon conjuguée vers la gauche pour rester sur la cible[cite: 3]."
+    },
+    {
+      "question": "Dans l'évaluation du RVO oculo-céphalique (réflexe calorique), que produit l'instillation d'eau FROIDE dans le canal auditif externe ?",
+      "options": [
+        "Une activation du système, entraînant une déviation lente des yeux vers le côté opposé.",
+        "Une inhibition du système, entraînant une déviation lente des yeux vers le même côté.",
+        "Une surdité neuro-sensorielle temporaire.",
+        "Un réflexe vestibulo-cervical provoquant l'extension du cou."
+      ],
+      "correct": 1,
+      "explanation": "Le froid inhibe l'activité du canal semi-circulaire horizontal, ce qui provoque une déviation lente des yeux vers l'oreille stimulée[cite: 3]. L'acronyme COWS (Cold-Opposite, Warm-Same) décrit la saccade rapide de refixation qui s'ensuit, et non la déviation lente."
+    },
+    {
+      "question": "Quel est l'objectif du réflexe vestibulo-cervical et quelle voie emprunte-t-il ?",
+      "options": [
+        "Éviter la chute / Voie vestibulo-spinale latérale",
+        "Se protéger d'une chute (ex: repositionner la tête) / Voie vestibulo-spinale médiane",
+        "Contrôler la motricité fine des mains / Voie rubro-spinale",
+        "Orienter la tête vers un bruit / Voie tecto-spinale"
+      ],
+      "correct": 1,
+      "explanation": "Ce réflexe vise à protéger la tête. Les canaux semi-circulaires envoient l'information au noyau vestibulaire médian, qui projette via la voie vestibulo-spinale médiane vers les motoneurones alpha pour contracter les extenseurs du cou bilatéralement[cite: 3]."
+    },
+    {
+      "question": "Quel stimulus déclenche principalement le réflexe vestibulo-spinal latéral, et quel est le résultat ?",
+      "options": [
+        "Un stimulus nociceptif cutané / Flexion du membre.",
+        "La déviation de l'équilibre détectée par les organes otolithiques / Extension des membres du côté de la chute.",
+        "Une rotation horizontale rapide / Mouvement des yeux.",
+        "L'étirement passif d'un muscle / Contraction du muscle agoniste via le MNI alpha."
+      ],
+      "correct": 1,
+      "explanation": "Activé surtout par les organes otolithiques lors d'un déséquilibre, il recrute le noyau vestibulaire latéral pour activer les muscles extenseurs ipsilatéraux (et inhiber les fléchisseurs), repoussant ainsi le sol pour éviter la chute[cite: 3]."
+    },
+    {
+      "question": "Quelle région du cervelet est principalement responsable de la rétroaction et de l'optimisation des réponses du réflexe vestibulo-oculaire (RVO) ?",
+      "options": [
+        "Le vermis (spino-cervelet)",
+        "Le noyau rouge",
+        "Le flocculus et paraflocculus (vestibulo-cervelet)",
+        "Les noyaux gris centraux"
+      ],
+      "correct": 2,
+      "explanation": "Le vestibulo-cervelet (flocculus et paraflocculus) intègre les afférences visuelles et vestibulaires pour ajuster la précision du RVO (ex: pour lire avec de nouvelles lunettes grossissantes). Le vermis, lui, s'occupe davantage du réflexe vestibulo-spinal[cite: 3]."
+    }
+  ]
+}

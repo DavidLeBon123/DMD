@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz de Neurologie</title>
+    <title>Quiz de Médecine Dentaire</title>
     <style>
         :root {
             --bg-color: #f7f9fc;
@@ -38,21 +38,34 @@
             padding: 30px;
             min-height: 400px;
         }
-        h1, h2 { margin-top: 0; }
+        h1 { margin-top: 0; }
+        
+        .category-title {
+            margin-top: 30px;
+            font-size: 1.2em;
+            color: #333;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
         .menu-item {
             border: 2px solid var(--border);
             border-radius: 12px;
             padding: 15px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             cursor: pointer;
             transition: all 0.2s;
+            border-left: 6px solid var(--primary);
         }
         .menu-item:hover {
             border-color: var(--primary);
             background: #f0fcf0;
         }
-        .menu-item h3 { margin: 0 0 5px 0; color: var(--primary); }
-        .menu-item p { margin: 0; font-size: 0.9em; color: var(--text-light); }
+        .menu-item h3 { margin: 0 0 5px 0; color: var(--text-main); }
+        .menu-item p { margin: 0; font-size: 0.9em; color: var(--text-light); font-weight: bold; }
         
         .option-btn {
             display: block;
@@ -108,11 +121,12 @@
 <body>
 
 <div id="app">
-    <h2 style="text-align:center; color:#ccc;">Chargement des cours...</h2>
+    <h2 style="text-align:center; color:#ccc;">Scan du répertoire GitHub en cours...</h2>
 </div>
 
 <script>
-    let quizzes = [];
+    let quizzes = {}; 
+    let categories = {}; 
     let currentQuiz = null;
     let currentQuestionIndex = 0;
     let score = 0;
@@ -120,49 +134,113 @@
 
     const appDiv = document.getElementById('app');
 
-    // 1. AUTO-FETCH DES FICHIERS JSON
+    // 1. AUTO-DISCOVERY VIA GITHUB API & MERGE LOGIC
     async function loadQuizzes() {
-        let i = 1;
-        let loading = true;
-        while (loading && i <= 20) {
-            try {
-                const response = await fetch(`quiz${i}.json`);
-                if (response.ok) {
-                    const data = await response.json();
-                    quizzes.push(data);
-                    i++;
-                } else {
-                    loading = false;
+        let jsonPaths = [];
+        const host = window.location.hostname;
+        
+        // Scan automatique si hébergé sur GitHub Pages
+        if (host.includes('github.io')) {
+            const username = host.split('.')[0];
+            const repo = window.location.pathname.split('/')[1] || '';
+            if (repo) {
+                try {
+                    const repoRes = await fetch(`https://api.github.com/repos/${username}/${repo}`);
+                    const repoData = await repoRes.json();
+                    const branch = repoData.default_branch || 'main';
+                    
+                    // Récupère l'arbre complet des fichiers du dépôt
+                    const treeRes = await fetch(`https://api.github.com/repos/${username}/${repo}/git/trees/${branch}?recursive=1`);
+                    const treeData = await treeRes.json();
+                    
+                    if (treeData.tree) {
+                        // Filtre uniquement les fichiers JSON
+                        jsonPaths = treeData.tree
+                            .filter(f => f.path.endsWith('.json') && !f.path.includes('catalogue.json'))
+                            .map(f => f.path);
+                    }
+                } catch (e) {
+                    console.warn("API GitHub limit atteinte ou erreur de connexion.", e);
                 }
-            } catch (error) {
-                loading = false;
             }
         }
-        
-        if (quizzes.length === 0) {
-            appDiv.innerHTML = '<h2>Aucun cours trouvé</h2><p>Ajoutez un fichier <b>quiz1.json</b> sur votre serveur.</p>';
+
+        // Fallback si l'API GitHub échoue (ou test en local)
+        if (jsonPaths.length === 0) {
+            try {
+                const catRes = await fetch('catalogue.json');
+                if (catRes.ok) jsonPaths = await catRes.json();
+            } catch(e) {
+                appDiv.innerHTML = '<h2>Aucun fichier trouvé</h2><p>Assurez-vous que les fichiers JSON sont sur GitHub Pages.</p>';
+                return;
+            }
+        }
+
+        // Récupération, Catégorisation et Fusion
+        for (const path of jsonPaths) {
+            try {
+                const res = await fetch(path);
+                if (!res.ok) continue;
+                const data = await res.json();
+                
+                // Le dossier devient la catégorie (ex: "SAB1040/quiz.json" -> "SAB1040")
+                const parts = path.split('/');
+                const category = parts.length > 1 ? parts[0].toUpperCase() : 'GÉNÉRAL';
+                
+                // Titre de base pour la fusion (retire les "- Partie 1", "- Partie 2")
+                const baseTitle = data.title.replace(/\s*-\s*Partie\s*\d+/i, '').trim();
+                const quizId = category + '_' + baseTitle; // Identifiant unique
+
+                // Si c'est la première partie rencontrée, on crée l'entrée
+                if (!quizzes[quizId]) {
+                    quizzes[quizId] = {
+                        title: baseTitle,
+                        category: category,
+                        questions: []
+                    };
+                    if (!categories[category]) categories[category] = [];
+                    categories[category].push(quizId);
+                }
+                
+                // Fusion (Merge) : on ajoute les questions à la suite
+                quizzes[quizId].questions.push(...data.questions);
+
+            } catch (e) {
+                console.warn("Impossible de lire le fichier:", path);
+            }
+        }
+
+        if (Object.keys(quizzes).length === 0) {
+            appDiv.innerHTML = '<h2>Aucun quiz trouvé</h2><p>Ajoutez des fichiers .json à votre dépôt.</p>';
         } else {
             renderMenu();
         }
     }
 
-    // 2. MENU PRINCIPAL
+    // 2. MENU DE NAVIGATION
     function renderMenu() {
-        let html = `<h1>Vos Quiz de Médecine Dentaire</h1><p>Sélectionnez un cours pour commencer :</p>`;
-        quizzes.forEach((quiz, index) => {
-            html += `
-                <div class="menu-item" onclick="startQuiz(${index})">
-                    <h3>${quiz.title}</h3>
-                    <p>${quiz.description} (${quiz.questions.length} questions)</p>
-                </div>
-            `;
-        });
+        let html = `<h1>Vos Cours</h1><p>Sélectionnez un module pour commencer :</p>`;
+        
+        // Trie et affiche par dossier (Catégorie)
+        for (const [cat, quizIds] of Object.entries(categories).sort()) {
+            html += `<h2 class="category-title">📂 ${cat}</h2>`;
+            
+            quizIds.forEach(id => {
+                const quiz = quizzes[id];
+                html += `
+                    <div class="menu-item" onclick="startQuiz('${id}')">
+                        <h3>${quiz.title}</h3>
+                        <p>${quiz.questions.length} questions (Module Complet)</p>
+                    </div>
+                `;
+            });
+        }
         appDiv.innerHTML = html;
     }
 
     // 3. LOGIQUE DU QUIZ
-    function startQuiz(index) {
-        currentQuiz = quizzes[index];
+    function startQuiz(id) {
+        currentQuiz = quizzes[id];
         currentQuestionIndex = 0;
         score = 0;
         renderQuestion();
@@ -174,8 +252,8 @@
         
         let html = `
             <div class="header">
-                <button class="home-btn" onclick="renderMenu()">← Retour au menu</button>
-                <div class="progress">Question ${currentQuestionIndex + 1} / ${currentQuiz.questions.length}</div>
+                <button class="home-btn" onclick="renderMenu()">← Retour aux cours</button>
+                <div class="progress">Q ${currentQuestionIndex + 1} / ${currentQuiz.questions.length}</div>
             </div>
             <h2>${q.question}</h2>
             <div id="options-container">
@@ -238,7 +316,7 @@
                 <h1>Terminé !</h1>
                 <h2 style="font-size: 3em; color: var(--primary); margin: 20px 0;">${score} / ${currentQuiz.questions.length}</h2>
                 <p>Score: ${percent}%</p>
-                <button class="action-btn" onclick="renderMenu()">Retour au menu</button>
+                <button class="action-btn" onclick="renderMenu()">Retour aux cours</button>
             </div>
         `;
     }

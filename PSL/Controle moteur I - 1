@@ -1,0 +1,189 @@
+{
+  "title": "Contrôle moteur - Partie 1",
+  "description": "Motoneurone inférieur, unités motrices et réflexes spinaux.",
+  "questions": [
+    {
+      "question": "Quelle est la caractéristique fondamentale d'une « unité motrice » ?",
+      "options": [
+        "C'est l'ensemble de tous les motoneurones qui innervent un même muscle.",
+        "C'est un seul motoneurone inférieur (MNI) et toutes les fibres musculaires qu'il innerve.",
+        "C'est le regroupement des fibres intrafusales d'un fuseau neuromusculaire.",
+        "C'est un réseau d'interneurones inhibiteurs spinaux."
+      ],
+      "correct": 1,
+      "explanation": "Une unité motrice est définie comme un seul motoneurone inférieur et l'ensemble des fibres du muscle squelettique qu'il innerve. Son activation contracte toutes ces fibres en même temps[cite: 5]."
+    },
+    {
+      "question": "Quel type d'unité motrice serait principalement utilisé et recruté en premier pour maintenir la posture debout (orthostation) pendant des heures ?",
+      "options": [
+        "Unité motrice FF (Fast and Fatigable)",
+        "Unité motrice FR (Fast and Fatigue-resistant)",
+        "Unité motrice S (Slow)",
+        "Les interneurones inhibiteurs"
+      ],
+      "correct": 2,
+      "explanation": "Les unités motrices S (Slow) sont de petites unités composées de fibres rouges (riches en mitochondries/myoglobine), très peu fatigables, idéales pour un effort d'endurance soutenu comme la posture[cite: 5]. Selon le principe de taille, elles sont recrutées en premier[cite: 5]."
+    },
+    {
+      "question": "Comment le système nerveux déploie-t-il une force musculaire constante sans saccade lors de mouvements habituels (basse fréquence à 8 Hz) ?",
+      "options": [
+        "Par la contraction tétanique de toutes les unités motrices.",
+        "Grâce aux décharges asynchrones (en décalé) de plusieurs unités motrices S.",
+        "En recrutant immédiatement les grosses unités motrices FF.",
+        "Par l'inhibition du réflexe myotatique."
+      ],
+      "correct": 1,
+      "explanation": "À basse fréquence (8 Hz), l'asynchronisme entre les différentes unités motrices assure une contraction constante et fluide du muscle[cite: 5]."
+    },
+    {
+      "question": "À quoi correspond le myotome C6 ?",
+      "options": [
+        "L'abduction de l'épaule.",
+        "La flexion du coude.",
+        "L'extension du coude et du poignet.",
+        "La flexion digitale."
+      ],
+      "correct": 1,
+      "explanation": "Le myotome C6 est principalement associé au mouvement de flexion du coude[cite: 5]. (C5 = abduction épaule, C7 = extension coude/poignet)[cite: 5]."
+    },
+    {
+      "question": "Dans le réflexe myotatique (ostéotendineux), quel est le stimulus déclencheur et quelle est la réponse musculaire ?",
+      "options": [
+        "Stimulus: Tension du tendon / Réponse: Relâchement du muscle.",
+        "Stimulus: Douleur cutanée / Réponse: Flexion du muscle.",
+        "Stimulus: Étirement soudain du muscle / Réponse: Contraction du muscle étiré.",
+        "Stimulus: Contraction volontaire / Réponse: Extension controlatérale."
+      ],
+      "correct": 2,
+      "explanation": "Le réflexe myotatique est déclenché par l'étirement du muscle (détecté par le fuseau neuromusculaire) et provoque sa contraction monosynaptique pour garder l'articulation immobile[cite: 5]."
+    },
+    {
+      "question": "Quelle afférence sensitive transmet le signal lors de l'étirement soudain de la partie centrale du fuseau neuromusculaire ?",
+      "options": [
+        "Afférence Ib",
+        "Afférence Ia",
+        "Motoneurone gamma",
+        "Interneurone de type II"
+      ],
+      "correct": 1,
+      "explanation": "L'étirement est détecté par les terminaisons annulo-spiralées de la partie non-contractile du fuseau, qui envoient le signal par l'afférence sensitive de type Ia vers la moelle[cite: 5]."
+    },
+    {
+      "question": "Quel est le rôle physiologique du motoneurone inférieur gamma (MNI γ) dans le réflexe myotatique ?",
+      "options": [
+        "Il contracte directement les fibres musculaires striées pour générer de la force.",
+        "Il contracte les parties polaires des fibres intrafusales pour maintenir la tension sur la partie centrale (détectrice) lors du raccourcissement du muscle.",
+        "Il inhibe le muscle antagoniste.",
+        "Il transmet la douleur nociceptive."
+      ],
+      "correct": 1,
+      "explanation": "Pour optimiser la fonction du fuseau neuromusculaire lors du raccourcissement actif du muscle, le MNI γ contracte les pôles des fibres intrafusales, gardant ainsi la partie centrale tendue et prête à détecter un nouvel étirement[cite: 5]."
+    },
+    {
+      "question": "Dans le réflexe myotatique inversé, quelle structure détecte la tension et protège le muscle ?",
+      "options": [
+        "Le motoneurone gamma.",
+        "Le fuseau neuromusculaire.",
+        "L'organe tendineux de Golgi (OTG).",
+        "Le ganglion de Scarpa."
+      ],
+      "correct": 2,
+      "explanation": "L'organe tendineux de Golgi (OTG), situé dans le tendon, détecte la tension générée par la contraction active du muscle pour le protéger d'une déchirure[cite: 5]."
+    },
+    {
+      "question": "Que provoque l'activation de l'organe tendineux de Golgi (OTG) via son afférence Ib ?",
+      "options": [
+        "L'excitation monosynaptique du muscle agoniste.",
+        "L'inhibition du muscle agoniste (via un interneurone GABAergique) et l'activation de l'antagoniste.",
+        "La contraction simultanée de l'agoniste et de l'antagoniste.",
+        "L'extension croisée du membre controlatéral."
+      ],
+      "correct": 1,
+      "explanation": "La tension dans le tendon active l'afférence Ib, qui stimule un interneurone inhibiteur relâchant l'agoniste, et un interneurone activateur contractant l'antagoniste, stabilisant ainsi l'articulation[cite: 5]."
+    },
+    {
+      "question": "Quel est l'objectif du réflexe de flexion et d'extension croisée (déclenché par un stimulus nociceptif sur un pied) ?",
+      "options": [
+        "Augmenter la vitesse de course.",
+        "Maintenir la posture debout statique.",
+        "Retirer le membre douloureux (flexion) tout en repoussant le sol avec l'autre jambe (extension) pour éviter la chute.",
+        "Initier la phase de transfert de la marche."
+      ],
+      "correct": 2,
+      "explanation": "Le stimulus nociceptif (ex: marcher sur un clou) active des interneurones qui provoquent la flexion de la jambe blessée pour la protéger, et l'extension de la jambe opposée pour supporter le poids du corps[cite: 5]."
+    },
+    {
+      "question": "Qu'est-ce qu'un « générateur central de rythme » (CPG) dans la moelle épinière ?",
+      "options": [
+        "Un noyau du tronc cérébral qui contrôle la respiration.",
+        "Un réseau d'interneurones spinaux générant des dépolarisations périodiques pour alterner la contraction des extenseurs et fléchisseurs lors de la locomotion.",
+        "Le pacemaker naturel du cœur.",
+        "Le centre responsable du réflexe myotatique."
+      ],
+      "correct": 1,
+      "explanation": "Chaque patte possède un réseau d'interneurones spinaux excitateurs et inhibiteurs qui coordonnent automatiquement l'alternance d'appui (extension) et de transfert (flexion) nécessaire à la marche[cite: 5]."
+    },
+    {
+      "question": "Où se situent les corps cellulaires des motoneurones inférieurs (MNI) destinés aux muscles de la main (motricité distale fine) dans la corne ventrale de la moelle ?",
+      "options": [
+        "Dans la partie médiane de la corne ventrale.",
+        "Dans la partie latérale de la corne ventrale.",
+        "Dans la corne dorsale.",
+        "Dans le ganglion rachidien."
+      ],
+      "correct": 1,
+      "explanation": "La somatotopie de la moelle veut que les MNI destinés aux muscles axiaux et proximaux soient situés en région médiane, tandis que ceux destinés aux muscles distaux (comme la main) sont en région latérale[cite: 5]."
+    },
+    {
+      "question": "Concernant les interneurones spinaux, quelle est la caractéristique de ceux situés dans la partie MÉDIANE de la corne intermédiaire ?",
+      "options": [
+        "Ils projettent unilatéralement sur 1 à 4 segments pour la motricité fine des mains.",
+        "Ils projettent bilatéralement et souvent à plus grande distance pour coordonner la posture et l'équilibre des muscles axiaux.",
+        "Ils innervent uniquement le muscle cardiaque.",
+        "Ils se trouvent uniquement dans le mésencéphale."
+      ],
+      "correct": 1,
+      "explanation": "Les interneurones de la partie médiane projettent bilatéralement et sur de longues distances pour cibler les MNI médians (muscles axiaux), essentiels pour coordonner les grands mouvements de posture, d'équilibre et de locomotion[cite: 5]."
+    },
+    {
+      "question": "Quelles vertèbres correspondent au renflement lombaire (intumescence lombaire) destiné à l'innervation des membres inférieurs ?",
+      "options": [
+        "T12 à S5",
+        "C5 à T1",
+        "L1 à L5 uniquement",
+        "T10 à L1 (segments médullaires de L1 à S3)"
+      ],
+      "correct": 3,
+      "explanation": "L'intumescence lombaire, qui donne naissance au plexus lombosacré, se situe approximativement entre les niveaux vertébraux T10 et L1[cite: 5]. (Note : La moelle épinière se termine anatomiquement en cône médullaire vers L1-L2)[cite: 5]."
+    },
+    {
+      "question": "Vrai ou Faux : L'activation d'un motoneurone inférieur répartit la contraction dans le muscle de façon ciblée dans une seule petite zone du muscle.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correct": 1,
+      "explanation": "Faux. Les fibres d'une unité motrice sont réparties aléatoirement dans l'ensemble du muscle. L'activation d'un seul MNI répartit donc sa force de contraction uniformément dans tout le muscle, et non dans un seul coin[cite: 5]."
+    },
+    {
+      "question": "Quel myotome est principalement testé lors de l'évaluation clinique de l'extension du genou ?",
+      "options": [
+        "L2",
+        "L3",
+        "L4",
+        "S1"
+      ],
+      "correct": 1,
+      "explanation": "Le myotome L3 est associé à l'extension du genou[cite: 5]. (L2 = flexion hanche, L4 = dorsiflexion cheville)[cite: 5]."
+    },
+    {
+      "question": "Vrai ou faux : La marche réflexe coordonnée (alternance des pattes) est possible chez un quadrupède dont la moelle est sectionnée (myélotomisée).",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correct": 0,
+      "explanation": "C'est vrai. Les générateurs centraux de rythme spinaux et leurs interneurones de coordination (longue distance) suffisent à générer le patron de marche de façon autonome dans la moelle, même sans commande du cerveau[cite: 5]. (Chez le bipède humain, l'équilibre supraspinal rend la marche autonome impossible après myélotomie)[cite: 5]."
+    }
+  ]
+}

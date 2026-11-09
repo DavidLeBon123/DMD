@@ -42,10 +42,6 @@
         }
         h1, h2 { margin-top: 0; }
         
-        .category-title {
-            margin-top: 30px; font-size: 1.2em; color: #333; border-bottom: 2px solid var(--border);
-            padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;
-        }
         .menu-item {
             border: 2px solid var(--border); border-radius: 12px; padding: 15px; margin-bottom: 10px;
             cursor: pointer; transition: all 0.2s; border-left: 6px solid var(--primary);
@@ -132,7 +128,7 @@
 <body>
 
 <div id="app">
-    <h2 style="text-align:center; color:#ccc;">Chargement de l'application...</h2>
+    <h2 style="text-align:center; color:#ccc;">Chargement des quiz...</h2>
 </div>
 
 <!-- Modal Navigateur -->
@@ -151,19 +147,18 @@
 
 <script>
     /* =======================================================================
-       1. RÉPERTOIRE CENTRAL DE TES FICHIERS
-       Ajoute le chemin exact de tes fichiers JSON ici. 
-       C'est ce qui garantit qu'ils seront toujours trouvés !
+       LISTE EXACTE DES FICHIERS
+       Ajoute le nom exact de tes fichiers JSON ici. 
+       Assure-toi que les fichiers sont placés à côté de index.html sur GitHub.
     ======================================================================== */
     const FILES_TO_LOAD = [
-        "Controle moteur I - 1.json",
-        "Système vestibulaire - Partie 1.json",
-        "Système vestibulaire - Partie 2.json",
-        "PSL/Controle moteur I - 1.json"  // <-- Met ici le chemin exact de ton fichier
+        "quiz1.json",
+        "quiz2.json",
+        "quiz3.json",
+        "controle_moteur_1.json"  // <-- J'ai mis un nom simple, sans dossier.
     ];
 
     let quizzes = {}; 
-    let categories = {}; 
     let bookmarks = JSON.parse(localStorage.getItem('quiz_bookmarks') || '[]');
     let userProgress = JSON.parse(localStorage.getItem('quiz_progress') || '{}');
     
@@ -178,7 +173,7 @@
     const navModal = document.getElementById('navigator-modal');
     const navGrid = document.getElementById('nav-grid');
 
-    // 2. CHARGEMENT MANUEL (Extrêmement stable)
+    // CHARGEMENT MANUEL (Sans merge)
     async function loadQuizzes() {
         for (const path of FILES_TO_LOAD) {
             try {
@@ -186,28 +181,28 @@
                 if (!res.ok) continue;
                 const data = await res.json();
                 
-                // Déduction de la catégorie (ex: "PSL")
-                const parts = path.split('/');
-                const category = parts.length > 1 ? parts[0].toUpperCase() : 'GÉNÉRAL';
-                const baseTitle = data.title.replace(/\s*-\s*Partie\s*\d+/i, '').trim();
-                const quizId = category + '_' + baseTitle; 
-
-                if (!quizzes[quizId]) {
-                    quizzes[quizId] = { id: quizId, title: baseTitle, category: category, questions: [] };
-                    if (!categories[category]) categories[category] = [];
-                    categories[category].push(quizId);
-                }
-                quizzes[quizId].questions.push(...data.questions);
+                // Utilise le chemin du fichier comme identifiant unique
+                const quizId = path; 
+                
+                quizzes[quizId] = { 
+                    id: quizId, 
+                    title: data.title, 
+                    description: data.description || "",
+                    questions: data.questions 
+                };
             } catch (e) { console.warn("Fichier non trouvé ou erreur syntaxe:", path); }
         }
 
-        if (Object.keys(quizzes).length === 0) appDiv.innerHTML = '<h2>Aucun fichier trouvé. Vérifiez les chemins dans FILES_TO_LOAD.</h2>';
-        else renderMenu();
+        if (Object.keys(quizzes).length === 0) {
+            appDiv.innerHTML = '<h2>Aucun fichier trouvé.</h2><p>Vérifiez les noms dans FILES_TO_LOAD et assurez-vous que les fichiers sont sur GitHub.</p>';
+        } else {
+            renderMenu();
+        }
     }
 
-    // 3. MENU PRINCIPAL
+    // MENU PRINCIPAL
     function renderMenu() {
-        let html = `<h1>Vos Cours</h1><p>Sélectionnez un module pour commencer :</p>`;
+        let html = `<h1>Vos Quiz</h1><p>Sélectionnez un quiz pour commencer :</p>`;
         
         let validBookmarks = bookmarks.filter(b => {
             const [qId] = b.split('|||');
@@ -223,32 +218,31 @@
             `;
         }
         
-        for (const [cat, quizIds] of Object.entries(categories).sort()) {
-            html += `<h2 class="category-title">📂 ${cat}</h2>`;
-            quizIds.forEach(id => {
-                const quiz = quizzes[id];
-                // Affiche la progression si elle existe
-                let progressText = "";
-                if (userProgress[id]) {
-                    const ans = userProgress[id].locked.filter(l => l).length;
-                    const tot = quiz.questions.length;
-                    progressText = ` - En cours (${ans}/${tot} traitées)`;
-                }
+        // Affiche chaque quiz indépendamment
+        for (const quizId in quizzes) {
+            const quiz = quizzes[quizId];
+            let progressText = "";
+            
+            if (userProgress[quizId]) {
+                const ans = userProgress[quizId].locked.filter(l => l).length;
+                const tot = quiz.questions.length;
+                progressText = ` - En cours (${ans}/${tot})`;
+            }
 
-                html += `
-                    <div class="menu-item" onclick="startQuiz('${id}')">
-                        <h3>${quiz.title}</h3>
-                        <p>${quiz.questions.length} questions ${progressText}</p>
-                    </div>
-                `;
-            });
+            html += `
+                <div class="menu-item" onclick="startQuiz('${quizId}')">
+                    <h3>${quiz.title}</h3>
+                    <p>${quiz.questions.length} questions ${progressText}</p>
+                </div>
+            `;
         }
+        
         appDiv.innerHTML = html;
     }
 
-    // 4. GESTION DE LA PROGRESSION LOCALE (SAUVEGARDE)
+    // SAUVEGARDE ET CHARGEMENT DE PROGRESSION
     function saveProgress() {
-        if (currentQuiz.isBookmarkQuiz) return; // On ne sauvegarde pas la progression du mode révision
+        if (currentQuiz.isBookmarkQuiz) return; 
         
         userProgress[currentQuizId] = {
             currentIndex: currentQuestionIndex,
@@ -302,7 +296,7 @@
         renderQuestion();
     }
 
-    // 5. MARQUAGE & NAVIGATION
+    // MARQUAGE & NAVIGATION
     function getOriginalIds() {
         const q = currentQuiz.questions[currentQuestionIndex];
         const qId = currentQuiz.isBookmarkQuiz ? q.originalQuizId : currentQuiz.id;
@@ -328,7 +322,7 @@
     }
 
     function renderQuestion() {
-        saveProgress(); // Sauvegarde à chaque changement d'écran
+        saveProgress(); 
 
         const q = currentQuiz.questions[currentQuestionIndex];
         const ids = getOriginalIds();
@@ -340,7 +334,7 @@
 
         let html = `
             <div class="header">
-                <button class="home-btn" onclick="renderMenu()">← Retour aux cours</button>
+                <button class="home-btn" onclick="renderMenu()">← Retour aux quiz</button>
                 <div class="top-actions">
                     <button id="bookmark-btn" class="bookmark-btn ${isBookmarked ? 'active' : ''}" onclick="toggleBookmark()">
                         ${isBookmarked ? '⭐️ Marquée' : '☆ Marquer'}
@@ -464,12 +458,11 @@
         const total = currentQuiz.questions.length;
         const percent = total > 0 ? Math.round((score / total) * 100) : 0;
         
-        // Bouton pour effacer la progression si on veut recommencer
-        let resetBtn = currentQuiz.isBookmarkQuiz ? "" : `<button class="home-btn" style="margin-top:15px;" onclick="resetProgress()">🔄 Recommencer ce module à zéro</button>`;
+        let resetBtn = currentQuiz.isBookmarkQuiz ? "" : `<button class="home-btn" style="margin-top:15px;" onclick="resetProgress()">🔄 Recommencer ce quiz à zéro</button>`;
 
         appDiv.innerHTML = `
             <div style="text-align:center; padding: 20px 0;">
-                <h1>Résumé du module</h1>
+                <h1>Résumé du quiz</h1>
                 <h2 style="font-size: 3em; color: var(--primary); margin: 10px 0;">${score} / ${total}</h2>
                 <p style="font-size:1.2em; font-weight:bold; color:var(--text-light)">Score total : ${percent}%</p>
                 
@@ -481,7 +474,7 @@
                 
                 <div style="display:flex; gap:10px; flex-direction:column;">
                     <button class="action-btn" style="background:#84d8ff; color:#005680;" onclick="openNavigator(); renderQuestion();">Ouvrir le navigateur (Corriger / Compléter)</button>
-                    <button class="action-btn" onclick="renderMenu()">Retourner aux cours</button>
+                    <button class="action-btn" onclick="renderMenu()">Retourner aux quiz</button>
                     ${resetBtn}
                 </div>
             </div>
@@ -489,7 +482,7 @@
     }
 
     function resetProgress() {
-        if (confirm("Êtes-vous sûr de vouloir effacer votre progression pour ce cours ? Toutes vos réponses (vert/rouge) seront réinitialisées.")) {
+        if (confirm("Êtes-vous sûr de vouloir effacer votre progression pour ce quiz ? Toutes vos réponses (vert/rouge) seront réinitialisées.")) {
             delete userProgress[currentQuizId];
             localStorage.setItem('quiz_progress', JSON.stringify(userProgress));
             renderMenu();

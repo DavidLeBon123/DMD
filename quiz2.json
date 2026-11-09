@@ -1,0 +1,542 @@
+{
+  "id": "vestibulaire_partie2",
+  "title": "Système Vestibulaire - Partie 2",
+  "description": "Voies centrales, réflexes (RVO, RVC, RVS), cervelet et corrélations cliniques (49 questions).",
+  "questions": [
+    {
+      "question": "Où se terminent les axones des cellules bipolaires du ganglion de Scarpa ?",
+      "options": [
+        "Dans le cortex moteur primaire.",
+        "Sur le noyau vestibulaire dans le tronc cérébral (et certains directement au cervelet).",
+        "Directement dans le thalamus.",
+        "Dans l'olive supérieure."
+      ],
+      "correct": 1,
+      "explanation": "Les axones des neurones de premier ordre font principalement synapse sur les noyaux vestibulaires situés à la jonction bulbo-protubérantielle (ainsi que des projections directes au cervelet)[cite: 2]."
+    },
+    {
+      "question": "Vers quel noyau du thalamus le noyau vestibulaire projette-il ses efférences ?",
+      "options": [
+        "Le corps genouillé médian.",
+        "Le corps genouillé latéral.",
+        "Le noyau postérieur ventral.",
+        "Le noyau antérieur."
+      ],
+      "correct": 2,
+      "explanation": "Les noyaux vestibulaires (supérieur et latéral) projettent vers le noyau postérieur ventral du thalamus, qui est le relai sensitif avant le cortex[cite: 2]."
+    },
+    {
+      "question": "Où est situé le cortex cérébral vestibulaire primaire (CVPI) ?",
+      "options": [
+        "Dans le lobe occipital (aire 17).",
+        "Dans la région pariéto-insulaire (aires de Brodmann 2 et 3).",
+        "Dans le lobe frontal (aire 4).",
+        "Dans le gyrus de Heschl."
+      ],
+      "correct": 1,
+      "explanation": "Le cortex vestibulaire est situé dans la région pariéto-insulaire (aires 2 et 3). Son rôle est la perception consciente des afférences vestibulaires (mouvement et orientation)[cite: 2]."
+    },
+    {
+      "question": "Quel est le rôle du cortex associatif vis-à-vis des afférences vestibulaires ?",
+      "options": [
+        "Il bloque les signaux vestibulaires pendant le sommeil.",
+        "Il génère les réflexes spinaux rapides.",
+        "Il intègre les afférences visuelles, proprioceptives et vestibulaires pour moduler la perception spatiale.",
+        "Il sécrète l'endolymphe."
+      ],
+      "correct": 2,
+      "explanation": "Le cortex associatif combine les différentes sources d'information (vision, proprioception, vestibulaire) pour nous donner une perception unifiée de notre position et de nos mouvements[cite: 2]."
+    },
+    {
+      "question": "Pourquoi a-t-on l'impression de reculer lorsque le train voisin se met en marche, alors que nous sommes immobiles ?",
+      "options": [
+        "Car l'utricule envoie un faux signal d'accélération.",
+        "Car la vision suggère un déplacement que le cortex associatif interprète comme un mouvement, malgré le silence vestibulaire.",
+        "Car la gravité s'inverse temporairement.",
+        "Car le cervelet désinhibe le réflexe vestibulo-spinal."
+      ],
+      "correct": 1,
+      "explanation": "C'est une illusion d'intégration multisensorielle. Le cortex associatif donne le pas à la vision qui suggère un mouvement, même s'il n'y a aucune accélération détectée par le labyrinthe[cite: 2]."
+    },
+    {
+      "question": "Quel est l'objectif principal du réflexe vestibulo-oculaire (RVO) ?",
+      "options": [
+        "Protéger les yeux des corps étrangers.",
+        "Garder les yeux sur la cible lors des déplacements du corps et de la tête.",
+        "Fermer les paupières lors d'une rotation.",
+        "Ajuster le diamètre pupillaire selon la vitesse."
+      ],
+      "correct": 1,
+      "explanation": "Le RVO compense les mouvements de la tête en générant un mouvement oculaire conjugué en sens inverse pour stabiliser le regard sur la cible[cite: 2]."
+    },
+    {
+      "question": "Lors d'une rotation rapide de la tête vers la DROITE, quel nerf crânien est activé pour tirer l'œil GAUCHE vers la gauche ?",
+      "options": [
+        "Le nerf III (Oculomoteur)",
+        "Le nerf IV (Trochléaire)",
+        "Le nerf VI (Abducens)",
+        "Le nerf VIII (Vestibulaire)"
+      ],
+      "correct": 2,
+      "explanation": "Le noyau VI (Abducens) gauche est activé pour contracter le muscle droit externe gauche, tirant l'œil gauche vers l'extérieur (gauche)[cite: 2]."
+    },
+    {
+      "question": "Dans cette même rotation à DROITE (RVO horizontal), quelle structure permet de synchroniser l'œil droit avec l'œil gauche ?",
+      "options": [
+        "Le chiasma optique.",
+        "Le faisceau longitudinal médian (FLM).",
+        "Le corps calleux.",
+        "Le lemnisque médian."
+      ],
+      "correct": 1,
+      "explanation": "Le noyau VI gauche envoie un signal via le FLM qui traverse la ligne médiane pour activer le noyau III droit. Cela contracte le droit interne droit, assurant que les deux yeux tournent ensemble vers la gauche[cite: 2]."
+    },
+    {
+      "question": "Dans le réflexe calorique, que provoque l'instillation d'eau FROIDE dans le conduit auditif externe ?",
+      "options": [
+        "Une inhibition du canal semicirculaire, entraînant une déviation LENTE des yeux vers le MÊME côté (côté stimulé).",
+        "Une activation du canal, entraînant une déviation RAPIDE vers le côté opposé.",
+        "Une mydriase bilatérale.",
+        "Une surdité temporaire."
+      ],
+      "correct": 0,
+      "explanation": "Le froid mime une inhibition. Les yeux dévient lentement vers l'oreille stimulée (le même côté)[cite: 2]. (Note: COWS décrit la saccade rapide de correction, pas la déviation lente d'origine vestibulaire)."
+    },
+    {
+      "question": "Dans le réflexe calorique, que provoque l'instillation d'eau CHAUDE ?",
+      "options": [
+        "Inhibition, déviation lente vers le même côté.",
+        "Activation, déviation lente des yeux vers le côté OPPOSÉ.",
+        "Inhibition totale du RVO.",
+        "Nystagmus vertical pur."
+      ],
+      "correct": 1,
+      "explanation": "La chaleur mime une activation (comme si la tête tournait de ce côté). Les yeux vont donc dévier lentement vers le côté opposé pour compenser[cite: 2]."
+    },
+    {
+      "question": "CAS CLINIQUE : Un patient subit un RVO calorique (ou mouvement de tête à droite). Ses deux yeux restent complètement immobiles dans les orbites, mais son regard conjugué volontaire est normal. Où est la lésion ?",
+      "options": [
+        "Lésion bilatérale du FLM.",
+        "Lésion vestibulaire périphérique bilatérale.",
+        "Lésion supranucléaire (FEF).",
+        "Lésion du nerf III."
+      ],
+      "correct": 1,
+      "explanation": "Puisque le RVO ne déclenche aucun mouvement, mais que la commande volontaire (FEF -> PPRF) fonctionne, le problème se situe au niveau de la détection (ex: toxicité médicamenteuse détruisant les deux labyrinthes vestibulaire)[cite: 2]."
+    },
+    {
+      "question": "CAS CLINIQUE : Un patient a une lésion du PPRF droit. Que remarque-t-on à l'examen moteur oculaire ?",
+      "options": [
+        "Il ne peut faire AUCUN mouvement conjugué des deux yeux vers la DROITE (ni volontaire, ni réflexe).",
+        "L'œil droit ne peut pas regarder à gauche.",
+        "Les yeux dérivent constamment vers le haut.",
+        "Une diplopie uniquement lors de la convergence."
+      ],
+      "correct": 0,
+      "explanation": "Le PPRF est le centre du regard horizontal. Une lésion du PPRF droit empêche toute commande (volontaire ou du RVO) de tourner les deux yeux vers la droite. Le mouvement vers la gauche reste normal[cite: 2]."
+    },
+    {
+      "question": "CAS CLINIQUE : Un patient se plaint d'une vision double (diplopie) lorsqu'il regarde vers la DROITE. Son œil gauche bouge normalement vers la droite, mais son œil droit reste au centre. Quelle est la lésion ?",
+      "options": [
+        "Lésion du nerf III gauche.",
+        "Lésion bilatérale du FLM.",
+        "Lésion du nerf VI droit (paralysie du droit externe droit).",
+        "Lésion vestibulaire gauche."
+      ],
+      "correct": 2,
+      "explanation": "L'œil droit ne parvient pas à faire l'abduction (regarder vers l'extérieur). C'est une lésion classique du nerf crânien VI (Abducens) droit innervant le muscle droit externe[cite: 2]."
+    },
+    {
+      "question": "CAS CLINIQUE : Un patient présente une lésion bilatérale du FLM (Ophtalmoplégie internucléaire - OIN). Que se passe-t-il lorsqu'on lui demande de regarder vers la GAUCHE ?",
+      "options": [
+        "L'œil gauche ne peut pas aller à gauche, l'œil droit va à gauche.",
+        "L'œil gauche va normalement à gauche (abduction), mais l'œil droit ne parvient pas à passer la ligne médiane (pas d'adduction).",
+        "Les deux yeux restent bloqués au centre.",
+        "Il ferme les yeux à cause de la douleur."
+      ],
+      "correct": 1,
+      "explanation": "Dans une OIN, la connexion entre le VI (qui tire l'œil abducteur) et le III controlatéral est coupée. Le VI gauche fait son travail (l'œil gauche sort), mais le message ne se rend pas au III droit, donc l'œil droit ne suit pas à l'intérieur, causant une diplopie[cite: 2]."
+    },
+    {
+      "question": "CAS CLINIQUE (Suite OIN) : Comment est la convergence chez ce patient avec une lésion bilatérale du FLM ?",
+      "options": [
+        "Abolie.",
+        "Normale.",
+        "Asymétrique.",
+        "Douloureuse."
+      ],
+      "correct": 1,
+      "explanation": "La convergence est normale, car l'innervation pour la convergence descend directement sur le noyau du III (pour contracter les deux droits internes) sans passer par le FLM[cite: 2]."
+    },
+    {
+      "question": "CAS CLINIQUE : Un patient a une lésion complète du nerf III droit. Quels déficits oculomoteurs horizontaux observera-t-on ?",
+      "options": [
+        "Diplopie au regard vers la gauche (l'œil droit ne peut pas faire l'adduction) et convergence altérée.",
+        "Diplopie au regard vers la droite seulement.",
+        "Aucun déficit horizontal, seulement vertical.",
+        "Ophtalmoplégie complète bilatérale."
+      ],
+      "correct": 0,
+      "explanation": "Le nerf III droit innerve le muscle droit interne droit. S'il est lésé, l'œil droit ne peut pas regarder vers le nez (regard à gauche) et ne peut pas converger[cite: 2]."
+    },
+    {
+      "question": "CAS CLINIQUE : Un AVC touche le cortex frontal droit (Champs oculomoteurs frontaux - FEF). Comment seront affectés le regard volontaire et le RVO ?",
+      "options": [
+        "RVO normal, mais regard volontaire vers la GAUCHE altéré.",
+        "RVO altéré, regard volontaire normal.",
+        "Les deux sont totalement abolis.",
+        "Regard vers la droite est impossible."
+      ],
+      "correct": 0,
+      "explanation": "Une lésion supranucléaire (FEF) affecte la commande corticale (regard volontaire altéré vers le côté opposé, ici la gauche). Les circuits réflexes du tronc cérébral (RVO) restent intacts[cite: 2]."
+    },
+    {
+      "question": "Quel est l'objectif principal du réflexe vestibulo-cervical (RVC) ?",
+      "options": [
+        "Stabiliser les yeux.",
+        "Se protéger de la chute en repositionnant rapidement la tête (extension du cou).",
+        "Éviter les obstacles en marchant.",
+        "Orienter la tête vers un bruit."
+      ],
+      "correct": 1,
+      "explanation": "Le RVC vise à stabiliser et protéger la tête. Lors d'une chute (rotation rapide de la tête vers le bas), il provoque l'extension du cou pour éviter l'impact[cite: 2]."
+    },
+    {
+      "question": "Quel noyau vestibulaire et quelle voie sont impliqués dans le réflexe vestibulo-cervical ?",
+      "options": [
+        "Noyau latéral / Voie vestibulo-spinale latérale.",
+        "Noyau médian / Voie vestibulo-spinale médiane (dans le FLM).",
+        "Noyau supérieur / Lemnisque latéral.",
+        "Ganglion de Scarpa / Cordon postérieur."
+      ],
+      "correct": 1,
+      "explanation": "Les canaux semi-circulaires informent le noyau vestibulaire médian, qui projette via la voie vestibulo-spinale médiane (cheminant dans le FLM) vers la moelle cervicale[cite: 2]."
+    },
+    {
+      "question": "Outre l'extension du cou, quels autres muscles sont recrutés par le réflexe vestibulo-cervical ?",
+      "options": [
+        "Les fléchisseurs des jambes.",
+        "Les extenseurs du segment proximal des membres supérieurs.",
+        "Les muscles de la mastication.",
+        "Les sphincters."
+      ],
+      "correct": 1,
+      "explanation": "Le RVC provoque l'extension du cou et l'extension du segment proximal des membres supérieurs bilatéralement pour se protéger[cite: 2]."
+    },
+    {
+      "question": "Quel est l'objectif principal du réflexe vestibulo-spinal (RVS) ?",
+      "options": [
+        "Fermer les yeux avant un impact.",
+        "Ajuster la lecture en mouvement.",
+        "Éviter la chute (repositionnement rapide du corps en étendant les membres).",
+        "Générer la marche rythmique."
+      ],
+      "correct": 2,
+      "explanation": "Le RVS sert à stabiliser le corps. Lors d'une perte d'équilibre, il provoque l'extension des membres ipsilatéraux (du côté de la chute) pour repousser le sol[cite: 2]."
+    },
+    {
+      "question": "Quel organe périphérique est le principal déclencheur du réflexe vestibulo-spinal ?",
+      "options": [
+        "La cochlée.",
+        "Les canaux semi-circulaires.",
+        "Les organes otolithiques.",
+        "La rétine."
+      ],
+      "correct": 2,
+      "explanation": "Le RVS réagit surtout à la déviation d'un équilibre vertical stable (gravité), qui est détectée principalement par les organes otolithiques[cite: 2]."
+    },
+    {
+      "question": "Quelle est la voie efférente du réflexe vestibulo-spinal pour éviter la chute ?",
+      "options": [
+        "Noyau vestibulaire latéral → Voie vestibulo-spinale latérale.",
+        "Noyau rouge → Voie rubro-spinale.",
+        "Noyau vestibulaire médian → FLM.",
+        "Colliculus supérieur → Voie tecto-spinale."
+      ],
+      "correct": 0,
+      "explanation": "L'information passe par le noyau vestibulaire latéral, puis descend via la voie vestibulo-spinale latérale jusqu'aux motoneurones de la moelle[cite: 2]."
+    },
+    {
+      "question": "Dans le réflexe vestibulo-spinal, que fait la moelle épinière au niveau de la jambe ipsilatérale à la chute ?",
+      "options": [
+        "Activation mono-synaptique des extenseurs et inhibition di-synaptique des fléchisseurs.",
+        "Activation des fléchisseurs pour lever la jambe.",
+        "Inhibition totale de tous les muscles.",
+        "Fasciculations aléatoires."
+      ],
+      "correct": 0,
+      "explanation": "Pour rattraper la chute, le système contracte rapidement les muscles extenseurs (antigravitaires) et inhibe simultanément les muscles antagonistes (fléchisseurs)[cite: 2]."
+    },
+    {
+      "question": "Est-il possible d'inhiber volontairement un réflexe vestibulaire ?",
+      "options": [
+        "Non, ce sont des réflexes absolus du tronc cérébral.",
+        "Oui, les signaux de planification corticaux peuvent les inhiber (ex: se laisser tomber volontairement, ou fixer les yeux fixes dans l'orbite en tournant la tête).",
+        "Seulement chez l'enfant en développement.",
+        "Oui, mais uniquement par anesthésie."
+      ],
+      "correct": 1,
+      "explanation": "Il y a une prédominance corticale sur les réflexes du tronc : on peut décider de bloquer le RVO ou les réflexes spinaux par la volonté[cite: 2]."
+    },
+    {
+      "question": "Qu'est-ce que la réponse de décérébration ?",
+      "options": [
+        "Une flexion anormale des bras.",
+        "Une paralysie flasque totale.",
+        "Une réponse vestibulo-spinale pathologiquement libérée (désinhibée) par une lésion du mésencéphale, causant une extension des 4 membres à la douleur.",
+        "Un nystagmus continu."
+      ],
+      "correct": 2,
+      "explanation": "Si le tronc cérébral (mésencéphale) est endommagé, les centres corticaux inhibiteurs sont coupés. Le noyau vestibulaire latéral (intact dans le bulbe) libère une réponse vestibulo-spinale massive incontrôlée : l'extension rigide[cite: 2]."
+    },
+    {
+      "question": "Quelles sont les principales afférences au cervelet vestibulaire (vestibulo-cervelet) ?",
+      "options": [
+        "Le système auditif et olfactif.",
+        "Le nerf VIII et la vision (lobes occipitaux/colliculi).",
+        "La proprioception des membres inférieurs uniquement.",
+        "Le cortex moteur primaire."
+      ],
+      "correct": 1,
+      "explanation": "Le vestibulo-cervelet intègre les informations d'équilibre (VIII) et la vision pour ajuster les réponses oculaires et posturales[cite: 2]."
+    },
+    {
+      "question": "Le cervelet médian (vermis) reçoit principalement quel type d'afférences pour ajuster le réflexe vestibulo-spinal ?",
+      "options": [
+        "Visuelles.",
+        "Proprioceptives (voies spino- et cunéo-cérébelleuses).",
+        "Auditives.",
+        "Intestinales."
+      ],
+      "correct": 1,
+      "explanation": "Le spino-cervelet (vermis) se fie grandement à la proprioception pour savoir où se trouve le corps dans l'espace, et ainsi ajuster finement le tonus et le réflexe vestibulo-spinal[cite: 2]."
+    },
+    {
+      "question": "Quel est le but global des connexions entre le système vestibulaire et le cervelet ?",
+      "options": [
+        "Provoquer le sommeil profond.",
+        "Mémoriser des mots.",
+        "Faire une rétroaction inconsciente sur le noyau vestibulaire pour optimiser et corriger les réflexes moteurs en direct.",
+        "Générer la sensation consciente de nausée."
+      ],
+      "correct": 2,
+      "explanation": "Le cervelet agit comme un centre d'ajustement. Il calibre les réflexes en fonction des erreurs passées, de la croissance ou de changements visuels (ex: nouvelles lunettes)[cite: 2]."
+    },
+    {
+      "question": "Quel lobe du cervelet correspond au vestibulo-cervelet ?",
+      "options": [
+        "Le lobe antérieur.",
+        "Les hémisphères latéraux.",
+        "Le lobe flocculo-nodulaire (flocculus et nodulus).",
+        "Le vermis supérieur."
+      ],
+      "correct": 2,
+      "explanation": "Sur les schémas anatomiques, la portion responsable des ajustements visuo-vestibulaires (comme le RVO) se situe dans le lobe flocculo-nodulaire[cite: 2]."
+    },
+    {
+      "question": "Que provoque une atteinte isolée du cervelet (vestibulo-cervelet) sur le RVO ?",
+      "options": [
+        "Une absence totale du RVO.",
+        "Une imprécision ou un désajustement du RVO (défaut de correction).",
+        "Une inversion du RVO (les yeux bougent du même côté que la tête).",
+        "Un blocage du regard volontaire."
+      ],
+      "correct": 1,
+      "explanation": "Le RVO est généré par le tronc cérébral. Si le cervelet est atteint, le réflexe est toujours là, mais il devient maladroit, mal calibré et ne s'adapte plus (incoordination, imprécision)[cite: 2]."
+    },
+    {
+      "question": "Dans le réflexe réticulo-spinal, l'information descend dans quel cordon de la moelle épinière ?",
+      "options": [
+        "Le cordon postérieur.",
+        "Le cordon latéral.",
+        "Le cordon antérieur.",
+        "Le canal épendymaire."
+      ],
+      "correct": 2,
+      "explanation": "La voie réticulo-spinale (tout comme la voie vestibulo-spinale) voyage dans les cordons antérieurs pour cibler les motoneurones de la partie médiane (muscles axiaux)[cite: 2]."
+    },
+    {
+      "question": "Quelle est la principale différence fonctionnelle entre le réflexe vestibulo-spinal et le réflexe réticulo-spinal quant à l'équilibre ?",
+      "options": [
+        "Il n'y en a pas, ce sont des synonymes.",
+        "Le vestibulo-spinal réagit À la chute pour la corriger, le réticulo-spinal ANTICIPE pour PRÉVENIR la chute lors d'un mouvement volontaire.",
+        "Le réticulo-spinal ne contrôle que les yeux.",
+        "Le vestibulo-spinal inhibe la motricité."
+      ],
+      "correct": 1,
+      "explanation": "Le réflexe vestibulo-spinal est réactif (déclenché par le déséquilibre). La formation réticulaire reçoit des copies du cortex moteur pour stabiliser le corps de façon anticipée (feed-forward) avant même de faire un geste[cite: 2]."
+    },
+    {
+      "question": "Quelle région du cortex cérébral (Brodmann) est principalement associée à la sensation consciente de mouvement vestibulaire ?",
+      "options": [
+        "L'aire 4 (moteur primaire).",
+        "L'aire 17 (cortex visuel).",
+        "Les aires 2 et 3 (région pariéto-insulaire).",
+        "L'aire 44 (Broca)."
+      ],
+      "correct": 2,
+      "explanation": "Le cortex vestibulaire est disséminé, mais principalement localisé dans la région pariéto-insulaire (aires 2 et 3) du cortex somatosensoriel[cite: 2]."
+    },
+    {
+      "question": "Lors d'un mouvement axial ou d'une position constante prolongée, que se passe-t-il au niveau des cellules ciliées vestibulaires (canaux ou macules) ?",
+      "options": [
+        "L'activité augmente de façon exponentielle.",
+        "Les cellules meurent.",
+        "Il y a un phénomène d'adaptation (le signal cesse).",
+        "La périlymphe envahit la cellule."
+      ],
+      "correct": 2,
+      "explanation": "C'est la règle d'or du système vestibulaire : il détecte les CHANGEMENTS (accélérations). Face à une rotation ou un déplacement linéaire à vitesse constante, il s'adapte et arrête de décharger[cite: 2]."
+    },
+    {
+      "question": "Quelle est la seule « accélération » qui ne subit JAMAIS d'adaptation dans le système vestibulaire ?",
+      "options": [
+        "La rotation de la Terre.",
+        "La gravité ($9,8 m/s²$).",
+        "Le mouvement d'un ascenseur.",
+        "Les battements cardiaques."
+      ],
+      "correct": 1,
+      "explanation": "La gravité est une force d'accélération constante qui tire en permanence sur les otolithes. Le cerveau a toujours besoin de savoir où est le bas ; ce signal tonique ne s'adapte donc jamais[cite: 2]."
+    },
+    {
+      "question": "Vrai ou Faux : Les réflexes vestibulaires utilisent les mêmes types de récepteurs (cellules ciliées) que l'audition, mais détectent des stimuli complètement différents.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correct": 0,
+      "explanation": "C'est vrai. Dans les deux systèmes, ce sont des cellules ciliées mécanoréceptrices avec des liens apicaux et des canaux K+. Cependant, la cochlée détecte les ondes de pression (sons) et le vestibule détecte les mouvements de l'endolymphe/otolithes (accélérations)[cite: 2]."
+    },
+    {
+      "question": "Dans quel liquide l'inertie est-elle le mécanisme clé pour activer les canaux semi-circulaires ?",
+      "options": [
+        "Périlymphe.",
+        "LCR.",
+        "Sérum.",
+        "Endolymphe."
+      ],
+      "correct": 3,
+      "explanation": "Les canaux semi-circulaires sont remplis d'endolymphe. Lors d'une rotation, c'est la résistance au mouvement (l'inertie) de ce fluide qui vient pousser sur la cupule[cite: 2]."
+    },
+    {
+      "question": "Quel nerf assure la branche afférente (sensitive) de la boucle du RVO ?",
+      "options": [
+        "Nerf optique (II).",
+        "Nerf trijumeau (V).",
+        "Nerf vestibulaire (VIII).",
+        "Nerf facial (VII)."
+      ],
+      "correct": 2,
+      "explanation": "Le nerf vestibulaire (VIII) apporte l'information sensorielle de rotation de la tête jusqu'aux noyaux vestibulaires du tronc cérébral[cite: 2]."
+    },
+    {
+      "question": "Le noyau de quel nerf crânien sert de « centre de relais croisé » pour garantir la conjugaison des yeux dans le plan horizontal lors du RVO ?",
+      "options": [
+        "Noyau du IV.",
+        "Noyau du VI (Abducens).",
+        "Noyau du III.",
+        "Noyau du VIII."
+      ],
+      "correct": 1,
+      "explanation": "Le noyau du nerf VI commande son muscle (droit externe) et contient aussi des interneurones qui décussent et montent par le FLM pour activer le noyau du III controlatéral (droit interne)[cite: 2]."
+    },
+    {
+      "question": "Quel test clinique utilise un mouvement sec et rapide de la tête par l'examinateur pour évaluer le RVO angulaire en clinique ?",
+      "options": [
+        "Le réflexe calorique.",
+        "Le Head Impulse Test (HIT).",
+        "L'électromyogramme.",
+        "Le test de Rinne."
+      ],
+      "correct": 1,
+      "explanation": "Le Head Impulse Test (HIT) évalue le RVO en rotation. On demande au patient de fixer le nez du médecin pendant que ce dernier tourne brusquement la tête du patient. Si les yeux quittent la cible, le test est anormal[cite: 2]."
+    },
+    {
+      "question": "Vrai ou faux : Le système vestibulaire détecte la position de nos articulations dans l'espace.",
+      "options": [
+        "Vrai, via les fuseaux neuromusculaires.",
+        "Faux, c'est le rôle de la proprioception."
+      ],
+      "correct": 1,
+      "explanation": "Le système vestibulaire détecte uniquement la position et les mouvements de la TÊTE dans l'espace. C'est le cortex (et le cervelet) qui combine cette info avec la proprioception du corps pour l'équilibre global[cite: 2]."
+    },
+    {
+      "question": "Par quelle voie ascendante circulent les signaux du noyau vestibulaire vers le thalamus et les centres oculomoteurs supérieurs ?",
+      "options": [
+        "Les cordons postérieurs.",
+        "Le faisceau longitudinal médian (FLM) (voie ascendante).",
+        "Le système antérolatéral.",
+        "La voie pyramidale."
+      ],
+      "correct": 1,
+      "explanation": "Le FLM est l'autoroute principale du tronc cérébral pour coordonner les noyaux oculomoteurs et relayer les signaux vestibulaires vers le haut[cite: 2]."
+    },
+    {
+      "question": "Quels sont les deux signes cardinaux rapportés par un patient atteint d'une pathologie vestibulaire ?",
+      "options": [
+        "Paralysie et anesthésie.",
+        "Surdité et acouphènes.",
+        "Instabilité de la vision (oscillopsie) et déséquilibre.",
+        "Cécité et ataxie sensorielle."
+      ],
+      "correct": 2,
+      "explanation": "Puisque le système vestibulaire s'occupe de stabiliser le regard et le corps, sa défaillance entraîne une instabilité visuelle lors des mouvements et des pertes d'équilibre[cite: 2]."
+    },
+    {
+      "question": "Lors du test calorique avec l'eau froide dans l'oreille droite, quel est le mouvement de la phase RAPIDE (la saccade) ?",
+      "options": [
+        "Vers la droite.",
+        "Vers la gauche.",
+        "Vers le haut.",
+        "Vers le bas."
+      ],
+      "correct": 1,
+      "explanation": "L'eau froide mime une inhibition à droite. La déviation vestibulaire lente se fait vers la droite, et le cortex corrige par une saccade RAPIDE vers le côté opposé (GAUCHE). C'est le 'O' de COWS (Cold-Opposite)[cite: 2]."
+    },
+    {
+      "question": "Dans le RVO horizontal classique, combien y a-t-il de synapses principales entre la cellule ciliée du canal horizontal et la contraction du muscle oculaire (voie directe ipsi-contra) ?",
+      "options": [
+        "1",
+        "3",
+        "10",
+        "Aucune, c'est purement électrique."
+      ],
+      "correct": 1,
+      "explanation": "C'est un arc réflexe à 3 synapses : 1) Cellule ciliée vers ganglion de Scarpa/Noyau VIII. 2) Noyau VIII vers Noyau VI. 3) Noyau VI vers muscle droit externe (ou via FLM au noyau III)[cite: 2]."
+    },
+    {
+      "question": "Pour vérifier un patient comateux, on tourne brusquement sa tête de gauche à droite. Ses yeux restent braqués fixement vers le plafond comme des yeux de poupée (ils bougent dans les orbites à l'opposé du mouvement de tête). Que cela indique-t-il ?",
+      "options": [
+        "Un mort cérébrale.",
+        "Le tronc cérébral (et le RVO) est intact.",
+        "Une lésion du mésencéphale.",
+        "Une lésion des nerfs optiques."
+      ],
+      "correct": 1,
+      "explanation": "C'est le réflexe oculo-céphalique intact. Chez un patient comateux, le cortex ne supprime plus le RVO. Si le tronc cérébral (VIII-FLM-III/VI) est intact, les yeux vont naturellement rouler pour maintenir leur position initiale dans l'espace[cite: 2]."
+    },
+    {
+      "question": "Quelle est l'influence d'une lésion supranucléaire (au-dessus des noyaux du tronc cérébral) sur le RVO ?",
+      "options": [
+        "Elle détruit le RVO.",
+        "Elle ne l'abolit pas, le RVO (arc réflexe local du tronc cérébral) reste fonctionnel.",
+        "Elle provoque une surdité croisée.",
+        "Elle hyperpolarise les cellules ciliées."
+      ],
+      "correct": 1,
+      "explanation": "Le RVO est un arc réflexe géré localement dans le tronc cérébral. Une lésion supranucléaire (comme un AVC cortical) touchera les mouvements oculaires volontaires, mais épargnera les réflexes comme le RVO[cite: 2]."
+    },
+    {
+      "question": "Si l'on incline la tête vers l'épaule, quel type d'activité nerveuse est transmise par les voies otolithiques au cerveau ?",
+      "options": [
+        "Un signal phasique de 15 secondes.",
+        "Un signal purement visuel.",
+        "Un signal tonique continu induit par le poids constant des otolithes tirés par la gravité.",
+        "Un blocage synaptique."
+      ],
+      "correct": 2,
+      "explanation": "L'inclinaison de la tête par rapport à la verticale est évaluée via la gravité, qui agit continuellement sur les organes otolithiques, générant un signal constant sans adaptation[cite: 2]."
+    }
+  ]
+}

@@ -140,7 +140,7 @@
         }
         
         if (quizzes.length === 0) {
-            appDiv.innerHTML = '<h2>Aucun cours trouvé</h2><p>Ajoutez un fichier <b>quiz1.json</b> sur votre GitHub.</p>';
+            appDiv.innerHTML = '<h2>Aucun cours trouvé</h2><p>Ajoutez un fichier <b>quiz1.json</b> sur votre serveur.</p>';
         } else {
             renderMenu();
         }
@@ -148,7 +148,7 @@
 
     // 2. MENU PRINCIPAL
     function renderMenu() {
-        let html = `<h1>Tes Quiz de Neurologie</h1><p>Sélectionne un cours pour commencer :</p>`;
+        let html = `<h1>Vos Quiz de Médecine Dentaire</h1><p>Sélectionnez un cours pour commencer :</p>`;
         quizzes.forEach((quiz, index) => {
             html += `
                 <div class="menu-item" onclick="startQuiz(${index})">

@@ -1,128 +1,562 @@
 {
-  "id": "vestibulaire",
-  "title": "Système vestibulaire",
-  "description": "Anatomie, transduction, organes otolithiques, RVO, RVC et RVS.",
+  "id": "vestibulaire_partie1",
+  "title": "Système Vestibulaire - Partie 1",
+  "description": "Anatomie, transduction cellulaire et canaux semi-circulaires (plus de 50 questions).",
   "questions": [
     {
-      "question": "À quoi sert principalement le système vestibulaire ?",
+      "question": "Quelles sont les deux principales détections effectuées par le système vestibulaire ?",
       "options": [
-        "À analyser consciemment les fréquences sonores et la prosodie vocale.",
-        "À détecter la position statique et les accélérations pour générer des réponses réflexes rapides en 10 ms.",
-        "À générer des mouvements volontaires planifiés par le cortex prémoteur.",
-        "À analyser l'empreinte spectrale des ondes de pression-décompression."
+        "Les fréquences sonores et la prosodie.",
+        "La position statique de la tête (gravité) et les changements de position (accélérations).",
+        "Les mouvements volontaires et les réflexes spinaux.",
+        "L'orientation visuelle et l'écholocation."
       ],
       "correct": 1,
-      "explanation": "Il détecte les changements de position (accélérations) et génère des réponses réflexes rapides (10 ms) oculomotrices et corporelles qui stabilisent le regard, l'équilibre et la posture[cite: 3]."
+      "explanation": "Le système vestibulaire détecte la position statique (gravité = 9,8 m/s²) et les accélérations linéaires ou rotatoires de la tête[cite: 3, 5]."
     },
     {
-      "question": "Quelle est la différence de fonction principale entre les canaux semi-circulaires et les organes otolithiques ?",
+      "question": "Quel est le temps de réponse typique des réflexes générés par le système vestibulaire ?",
       "options": [
-        "Les canaux gèrent la vision, les organes gèrent l'audition.",
-        "Les canaux détectent les mouvements linéaires, les organes détectent les rotations.",
-        "Les canaux détectent les mouvements de rotation dans les 3 plans, les organes détectent les déplacements linéaires et la gravité.",
-        "Il n'y a aucune différence, ils détectent tous la gravité de la même façon."
+        "1 seconde",
+        "100 millisecondes",
+        "10 millisecondes",
+        "Immédiat, sans délai synaptique"
       ],
       "correct": 2,
-      "explanation": "Les trois canaux semi-circulaires détectent les mouvements de rotation, tandis que les utricules et saccules (organes otolithiques) détectent les déplacements linéaires horizontaux et verticaux (incluant l'accélération gravitationnelle)[cite: 3]."
+      "explanation": "Le système génère des réponses réflexes rapides en environ 10 ms pour stabiliser le regard, l'équilibre et la posture[cite: 3, 5]."
     },
     {
-      "question": "Comment se comportent les canaux ioniques des cellules ciliées vestibulaires au repos (tête immobile) ?",
+      "question": "Quels sont les deux principaux symptômes d'une atteinte du système vestibulaire ?",
       "options": [
-        "Ils sont complètement fermés, la cellule est hyperpolarisée.",
-        "Ils sont entrouverts à l'apex, créant une activité tonique élevée.",
-        "Ils sont ouverts au maximum pour saturer la libération de neurotransmetteurs.",
-        "Ils sont inhibés par la strie vasculaire."
+        "Surdité et acouphènes",
+        "Instabilité de la vision et déséquilibre",
+        "Paralysie flasque et aréflexie",
+        "Mutisme akinétique et apraxie"
       ],
       "correct": 1,
-      "explanation": "Au repos, les canaux ioniques sont entrouverts, ce qui maintient une activité tonique élevée (environ 90 spikes/sec)[cite: 3]. Cela permet au système de détecter les mouvements dans les deux directions (par dépolarisation ou hyperpolarisation)."
+      "explanation": "Puisque le système stabilise le regard et le corps, son atteinte provoque une instabilité visuelle et un déséquilibre[cite: 3, 5]."
     },
     {
-      "question": "Que se passe-t-il au niveau de la cupule lors d'une rotation à vitesse constante de plus de 15 secondes ?",
+      "question": "Combien y a-t-il de canaux semi-circulaires par oreille ?",
       "options": [
-        "Les cellules ciliées continuent de décharger à l'infini tant que la rotation dure.",
-        "L'endolymphe se stabilise à la vitesse de la tête et la cupule reprend sa forme, annulant la détection (adaptation).",
-        "Les otolithes se déplacent vers la cupule pour maintenir le signal.",
-        "La cupule se déchire irréversiblement sous la pression."
+        "Deux",
+        "Trois",
+        "Quatre",
+        "Un seul avec trois subdivisions"
       ],
       "correct": 1,
-      "explanation": "C'est le phénomène d'adaptation[cite: 3]. À vitesse constante, l'inertie de l'endolymphe disparaît car elle tourne à la même vitesse que le canal ; la cupule reprend sa forme et le mouvement n'est plus détecté."
+      "explanation": "Il y a trois canaux semi-circulaires (antérieur, postérieur, horizontal) par oreille pour détecter les mouvements de rotation dans les 3 plans[cite: 3, 5]."
     },
     {
-      "question": "Dans l'utricule et le saccule, quelle structure détermine la séparation et l'inversion de la polarisation des cellules ciliées ?",
+      "question": "Où sont situées précisément les cellules ciliées dans les canaux semi-circulaires ?",
       "options": [
-        "La striola",
-        "Le ganglion de Scarpa",
-        "Le kinocil géant",
-        "La membrane tectoriale"
+        "Dans le ganglion de Scarpa",
+        "Dans l'ampoule à leur extrémité",
+        "Dans la macule",
+        "Le long de la membrane tectoriale"
+      ],
+      "correct": 1,
+      "explanation": "Les cellules ciliées des canaux semi-circulaires se trouvent dans une structure renflée appelée l'ampoule, à leur extrémité[cite: 3, 5]."
+    },
+    {
+      "question": "Que détectent spécifiquement les canaux semi-circulaires ?",
+      "options": [
+        "Les déplacements linéaires.",
+        "La gravité terrestre.",
+        "Les mouvements de rotation dans les 3 plans.",
+        "Les vibrations sonores."
+      ],
+      "correct": 2,
+      "explanation": "Les canaux semi-circulaires sont spécialisés dans la détection des accélérations rotatoires (mouvements de rotation) dans les 3 plans de l'espace[cite: 3, 5]."
+    },
+    {
+      "question": "Quels organes forment les « organes otolithiques » ?",
+      "options": [
+        "Les canaux antérieur et postérieur",
+        "L'utricule et le saccule",
+        "Le ganglion spiralé et le nerf vestibulaire",
+        "Le flocculus et le vermis"
+      ],
+      "correct": 1,
+      "explanation": "Les organes otolithiques sont l'utricule et le saccule[cite: 3, 5]."
+    },
+    {
+      "question": "Que détectent spécifiquement les organes otolithiques ?",
+      "options": [
+        "Les sons complexes",
+        "Les rotations rapides de la tête",
+        "Les déplacements linéaires et la gravité",
+        "La distorsion acoustique"
+      ],
+      "correct": 2,
+      "explanation": "Contrairement aux canaux semi-circulaires, l'utricule et le saccule détectent les déplacements linéaires et l'accélération gravitationnelle[cite: 3, 5]."
+    },
+    {
+      "question": "Vrai ou Faux : Le système vestibulaire détecte la vitesse constante d'un mouvement.",
+      "options": [
+        "Vrai, il est sensible à la vitesse absolue.",
+        "Faux, c'est l'accélération qui est détectée, pas la vitesse constante."
+      ],
+      "correct": 1,
+      "explanation": "Il y a un phénomène d'adaptation : ces structures détectent l'accélération, mais s'adaptent (arrêtent de signaler le mouvement) lors d'un déplacement à vitesse constante[cite: 3, 5]."
+    },
+    {
+      "question": "À quoi correspond la gravité en termes d'accélération détectée par le labyrinthe ?",
+      "options": [
+        "Une accélération intermittente de 5 m/s²",
+        "Une accélération permanente de 9,8 m/s²",
+        "Une vitesse constante de 10 km/h",
+        "La gravité n'est pas détectée par le labyrinthe."
+      ],
+      "correct": 1,
+      "explanation": "La gravité agit comme une accélération permanente à 9,8 m/s², fournissant un signal constant de la position verticale par rapport à la Terre[cite: 3, 5]."
+    },
+    {
+      "question": "Comment se nomme le cil le plus grand d'une cellule ciliée vestibulaire ?",
+      "options": [
+        "Le stéréocil",
+        "Le kinocil (kinocilium)",
+        "Le lien apical",
+        "Le cil de Corti"
+      ],
+      "correct": 1,
+      "explanation": "Le kinocilium est le cil unique le plus long de la cellule ciliée. L'orientation des plus petits (stéréocils) vers le kinocilium détermine la dépolarisation[cite: 3, 5]."
+    },
+    {
+      "question": "Dans quel liquide baignent les cils (partie apicale) des cellules ciliées vestibulaires ?",
+      "options": [
+        "La périlymphe",
+        "Le liquide cérébro-spinal",
+        "L'endolymphe",
+        "Le sang"
+      ],
+      "correct": 2,
+      "explanation": "Les cils baignent dans l'endolymphe (riche en potassium), tandis que la base de la cellule baigne dans la périlymphe[cite: 3, 5]."
+    },
+    {
+      "question": "Dans quel liquide baigne la base des cellules ciliées vestibulaires ?",
+      "options": [
+        "L'endolymphe",
+        "La périlymphe",
+        "La lymphe classique",
+        "Le liquide synovial"
+      ],
+      "correct": 1,
+      "explanation": "La base des cellules ciliées vestibulaires est entourée de périlymphe[cite: 3, 5]."
+    },
+    {
+      "question": "Quel ion entre massivement dans la cellule ciliée lorsque les canaux apicaux s'ouvrent ?",
+      "options": [
+        "Sodium (Na+)",
+        "Calcium (Ca2+)",
+        "Chlorure (Cl-)",
+        "Potassium (K+)"
+      ],
+      "correct": 3,
+      "explanation": "L'ouverture des canaux apicaux permet l'entrée de potassium (K+) provenant de l'endolymphe, ce qui dépolarise la cellule[cite: 3, 5]."
+    },
+    {
+      "question": "Quel est l'état des canaux ioniques des cellules ciliées vestibulaires au repos (sans mouvement) ?",
+      "options": [
+        "Totalement fermés",
+        "Entrouverts",
+        "Totalement ouverts",
+        "Détruits"
+      ],
+      "correct": 1,
+      "explanation": "Les canaux sont entrouverts, ce qui confère à la cellule une activité tonique élevée même au repos (environ 90 potentiels d'action/sec)[cite: 3, 5]."
+    },
+    {
+      "question": "Quel est le taux de décharge approximatif du nerf vestibulaire au repos ?",
+      "options": [
+        "0 spike/sec",
+        "20 spikes/sec",
+        "90 spikes/sec",
+        "160 spikes/sec"
+      ],
+      "correct": 2,
+      "explanation": "Le nerf décharge à environ 90 spikes/sec au repos, ce qui permet de moduler le signal à la hausse (excitation) ou à la baisse (inhibition)[cite: 3, 5]."
+    },
+    {
+      "question": "Que se passe-t-il lorsque les stéréocils s'inclinent VERS le kinocil ?",
+      "options": [
+        "Ouverture des canaux K+, dépolarisation, excitation (jusqu'à 160 spikes/sec).",
+        "Fermeture des canaux K+, hyperpolarisation, inhibition (environ 20 spikes/sec).",
+        "Arrêt total de la libération de neurotransmetteurs.",
+        "Détachement des liens apicaux."
       ],
       "correct": 0,
-      "explanation": "La striola sépare en deux la polarisation des cellules ciliées (l'orientation des kinocils change de part et d'autre de cette ligne)[cite: 3]."
+      "explanation": "L'inclinaison vers le kinocil étire les liens apicaux, ouvre les canaux K+, dépolarise la cellule et augmente le taux de décharge (excitation)[cite: 3, 5]."
     },
     {
-      "question": "Où se trouvent les corps cellulaires des cellules bipolaires qui forment le nerf vestibulaire (nerf VIII) ?",
+      "question": "Que se passe-t-il lorsque les stéréocils s'éloignent du kinocil ?",
       "options": [
-        "Dans la corne antérieure de la moelle épinière.",
-        "Dans le ganglion spiralé de Corti.",
-        "Dans le ganglion vestibulaire de Scarpa.",
-        "Dans l'olive supérieure."
+        "Excitation maximale (160 spikes/sec).",
+        "Fermeture des canaux K+, hyperpolarisation, et baisse de l'activité (environ 20 spikes/sec).",
+        "Entrée de sodium (Na+).",
+        "Aucune modification de l'activité de base."
+      ],
+      "correct": 1,
+      "explanation": "L'inclinaison à l'opposé du kinocil relâche les liens apicaux, ferme les canaux K+ qui étaient entrouverts, et hyperpolarise la cellule (inhibition)[cite: 3, 5]."
+    },
+    {
+      "question": "Quels neurotransmetteurs excitateurs sont libérés à la base des cellules ciliées vestibulaires ?",
+      "options": [
+        "GABA et Glycine",
+        "Acétylcholine et Dopamine",
+        "Aspartate / Glutamate",
+        "Sérotonine"
       ],
       "correct": 2,
-      "explanation": "La transduction se fait entre les cellules ciliées et les dendrites des cellules bipolaires dont le corps cellulaire est situé dans le ganglion de Scarpa[cite: 3]."
+      "explanation": "La dépolarisation induit l'exocytose d'Aspartate/Glutamate à la base de la cellule ciliée pour stimuler la dendrite afférente[cite: 3, 5]."
     },
     {
-      "question": "Lors du réflexe vestibulo-oculaire (RVO) horizontal, que provoque une rotation soudaine de la tête vers la droite ?",
+      "question": "Quel ion, entrant à la base de la cellule ciliée suite à la dépolarisation, provoque l'exocytose des neurotransmetteurs ?",
       "options": [
-        "Activation bilatérale des noyaux vestibulaires.",
-        "Activation du canal semi-circulaire droit, menant (via le FLM) à l'activation du nerf VI gauche et du nerf III droit.",
-        "Inhibition du canal droit et activation du canal gauche, les yeux tournent à droite.",
-        "Absence de mouvement des yeux si la personne n'essaie pas consciemment de lire."
+        "Potassium (K+)",
+        "Calcium (Ca2+)",
+        "Sodium (Na+)",
+        "Chlorure (Cl-)"
       ],
       "correct": 1,
-      "explanation": "La rotation vers la droite active le canal droit, qui active le noyau vestibulaire droit. Via le Faisceau Longitudinal Médian (FLM), cela active le PPRF/VI gauche et le III droit, forçant les yeux à tourner de façon conjuguée vers la gauche pour rester sur la cible[cite: 3]."
+      "explanation": "Comme dans la plupart des synapses, c'est l'entrée de Calcium (Ca2+) par des canaux voltage-dépendants qui déclenche la libération des vésicules[cite: 3, 5]."
     },
     {
-      "question": "Dans l'évaluation du RVO oculo-céphalique (réflexe calorique), que produit l'instillation d'eau FROIDE dans le canal auditif externe ?",
+      "question": "Dans l'ampoule d'un canal semi-circulaire, qu'est-ce que la cupule ?",
       "options": [
-        "Une activation du système, entraînant une déviation lente des yeux vers le côté opposé.",
-        "Une inhibition du système, entraînant une déviation lente des yeux vers le même côté.",
-        "Une surdité neuro-sensorielle temporaire.",
-        "Un réflexe vestibulo-cervical provoquant l'extension du cou."
+        "Un os dense.",
+        "Une masse gélatineuse qui ferme l'ampoule et englobe les cils.",
+        "Un petit cristal de carbonate de calcium.",
+        "La membrane de soutien de la base des cellules."
       ],
       "correct": 1,
-      "explanation": "Le froid inhibe l'activité du canal semi-circulaire horizontal, ce qui provoque une déviation lente des yeux vers l'oreille stimulée[cite: 3]. L'acronyme COWS (Cold-Opposite, Warm-Same) décrit la saccade rapide de refixation qui s'ensuit, et non la déviation lente."
+      "explanation": "La cupule est une masse gélatineuse étanche dans l'ampoule; elle est poussée par les mouvements de l'endolymphe, ce qui plie les cils qu'elle contient[cite: 3, 5]."
     },
     {
-      "question": "Quel est l'objectif du réflexe vestibulo-cervical et quelle voie emprunte-t-il ?",
+      "question": "Dans une même ampoule (d'un canal semi-circulaire), comment sont orientés les cils des différentes cellules ciliées ?",
       "options": [
-        "Éviter la chute / Voie vestibulo-spinale latérale",
-        "Se protéger d'une chute (ex: repositionner la tête) / Voie vestibulo-spinale médiane",
-        "Contrôler la motricité fine des mains / Voie rubro-spinale",
-        "Orienter la tête vers un bruit / Voie tecto-spinale"
-      ],
-      "correct": 1,
-      "explanation": "Ce réflexe vise à protéger la tête. Les canaux semi-circulaires envoient l'information au noyau vestibulaire médian, qui projette via la voie vestibulo-spinale médiane vers les motoneurones alpha pour contracter les extenseurs du cou bilatéralement[cite: 3]."
-    },
-    {
-      "question": "Quel stimulus déclenche principalement le réflexe vestibulo-spinal latéral, et quel est le résultat ?",
-      "options": [
-        "Un stimulus nociceptif cutané / Flexion du membre.",
-        "La déviation de l'équilibre détectée par les organes otolithiques / Extension des membres du côté de la chute.",
-        "Une rotation horizontale rapide / Mouvement des yeux.",
-        "L'étirement passif d'un muscle / Contraction du muscle agoniste via le MNI alpha."
-      ],
-      "correct": 1,
-      "explanation": "Activé surtout par les organes otolithiques lors d'un déséquilibre, il recrute le noyau vestibulaire latéral pour activer les muscles extenseurs ipsilatéraux (et inhiber les fléchisseurs), repoussant ainsi le sol pour éviter la chute[cite: 3]."
-    },
-    {
-      "question": "Quelle région du cervelet est principalement responsable de la rétroaction et de l'optimisation des réponses du réflexe vestibulo-oculaire (RVO) ?",
-      "options": [
-        "Le vermis (spino-cervelet)",
-        "Le noyau rouge",
-        "Le flocculus et paraflocculus (vestibulo-cervelet)",
-        "Les noyaux gris centraux"
+        "Dans des directions aléatoires.",
+        "La moitié vers la droite, la moitié vers la gauche.",
+        "Ils croissent en grandeur tous dans le même sens.",
+        "En cercle autour du centre."
       ],
       "correct": 2,
-      "explanation": "Le vestibulo-cervelet (flocculus et paraflocculus) intègre les afférences visuelles et vestibulaires pour ajuster la précision du RVO (ex: pour lire avec de nouvelles lunettes grossissantes). Le vermis, lui, s'occupe davantage du réflexe vestibulo-spinal[cite: 3]."
+      "explanation": "Dans chaque cupule d'un canal semi-circulaire, toutes les cellules ciliées ont leurs cils orientés dans la même direction. Ainsi, elles sont toutes excitées ou inhibées en même temps[cite: 3, 5]."
+    },
+    {
+      "question": "Comment fonctionnent les canaux semi-circulaires entre l'oreille droite et l'oreille gauche ?",
+      "options": [
+        "Ils sont indépendants et ne détectent pas les mêmes mouvements.",
+        "Ils sont organisés en paires, et l'activation d'un canal entraîne l'inhibition de son homologue controlatéral.",
+        "L'activation d'un canal entraîne toujours l'activation de son homologue.",
+        "Le canal droit gère la vision, le gauche gère l'équilibre."
+      ],
+      "correct": 1,
+      "explanation": "Ils fonctionnent par paires antagonistes (mode « push-pull »). Les cils des deux oreilles sont orientés en sens opposés. Une rotation excite le canal d'un côté et inhibe son homologue de l'autre[cite: 3, 5]."
+    },
+    {
+      "question": "Lors d'une rotation de la tête vers la droite, que fait l'endolymphe dans le canal horizontal par rapport au canal lui-même ?",
+      "options": [
+        "Elle tourne plus vite que le canal vers la droite.",
+        "Par inertie, elle « reste sur place » (mouvement relatif en sens inverse, vers la gauche), poussant la cupule.",
+        "Elle se fige et devient solide.",
+        "Elle s'écoule dans l'utricule."
+      ],
+      "correct": 1,
+      "explanation": "L'inertie fait que l'endolymphe résiste au mouvement. Par rapport aux parois du canal qui tournent, l'endolymphe applique une force en sens opposé sur la cupule[cite: 3, 5]."
+    },
+    {
+      "question": "Lors d'une rotation de la tête vers la gauche, quel est l'effet sur le canal horizontal GAUCHE ?",
+      "options": [
+        "Excitation",
+        "Inhibition",
+        "Aucun effet",
+        "Destruction des cils"
+      ],
+      "correct": 0,
+      "explanation": "La rotation de la tête vers un côté excite toujours le canal horizontal de ce même côté (ici, vers la gauche = excitation du canal gauche, et inhibition du droit)[cite: 3, 5]."
+    },
+    {
+      "question": "Quel est l'effet d'un mouvement purement linéaire (ex: avancer tout droit) sur les canaux semi-circulaires ?",
+      "options": [
+        "Activation maximale des trois canaux.",
+        "Inhibition du canal postérieur.",
+        "Aucun effet (forces équivalentes de chaque côté de la cupule).",
+        "Activation du canal horizontal seulement."
+      ],
+      "correct": 2,
+      "explanation": "Un mouvement linéaire applique une force égale des deux côtés de la cupule, qui ne se plie pas. Les canaux semi-circulaires ne détectent pas les mouvements linéaires[cite: 3, 5]."
+    },
+    {
+      "question": "Dans le contexte d'une rotation continue à vitesse constante, au bout de combien de temps la cupule reprend-elle sa forme (fin de la détection) ?",
+      "options": [
+        "Moins de 1 seconde",
+        "Environ 15 secondes",
+        "1 minute",
+        "Elle ne reprend jamais sa forme tant que ça tourne"
+      ],
+      "correct": 1,
+      "explanation": "L'endolymphe finit par tourner à la même vitesse que le canal. L'inertie disparaît, la cupule reprend sa forme en environ 15 secondes (phénomène d'adaptation)[cite: 3, 5]."
+    },
+    {
+      "question": "Comment se comporte la décharge du nerf lors d'une décélération (arrêt brutal d'une rotation constante) ?",
+      "options": [
+        "Elle augmente massivement.",
+        "Le taux de décharge chute sous le niveau de base (inhibition) avant de revenir progressivement à la normale.",
+        "Elle reste bloquée à 160 spikes/sec.",
+        "Aucun changement, l'arrêt n'est pas détecté."
+      ],
+      "correct": 1,
+      "explanation": "Lors de l'arrêt, l'endolymphe continue de tourner par inertie dans l'autre sens par rapport au canal, ce qui plie la cupule dans le sens inhibiteur. La décharge chute sous le niveau de repos (20 spikes/s) avant de se normaliser[cite: 3, 5]."
+    },
+    {
+      "question": "Que contient la membrane gélatineuse des organes otolithiques pour l'alourdir ?",
+      "options": [
+        "Des protéines de myéline",
+        "Des otolithes (cristaux)",
+        "Du fer",
+        "Des vésicules de glutamate"
+      ],
+      "correct": 1,
+      "explanation": "La membrane contient des otolithes (« pierres d'oreille »), qui lui donnent de la masse (inertie) et la rendent sensible à la gravité et aux déplacements linéaires[cite: 3, 5]."
+    },
+    {
+      "question": "Comment est orienté l'utricule lorsque la tête est en position primaire (droite) ?",
+      "options": [
+        "Verticalement",
+        "Horizontalement",
+        "À un angle de 45 degrés",
+        "Il n'a pas d'orientation fixe"
+      ],
+      "correct": 1,
+      "explanation": "L'utricule est principalement disposé dans le plan horizontal lorsque la tête est droite[cite: 3, 5]."
+    },
+    {
+      "question": "Comment est orienté le saccule lorsque la tête est en position primaire (droite) ?",
+      "options": [
+        "Horizontalement",
+        "Verticalement",
+        "Obliquement vers l'arrière",
+        "Parallèlement à l'utricule"
+      ],
+      "correct": 1,
+      "explanation": "Le saccule est disposé perpendiculairement à l'utricule, soit dans le plan vertical[cite: 3, 5]."
+    },
+    {
+      "question": "Quel organe otolithique détectera de façon optimale une accélération lors d'un déplacement en voiture (vers l'avant) ?",
+      "options": [
+        "Le saccule",
+        "L'utricule",
+        "Le canal postérieur",
+        "L'ampoule"
+      ],
+      "correct": 1,
+      "explanation": "L'utricule étant dans le plan horizontal, il est le principal organe pour détecter les déplacements linéaires horizontaux (avant, arrière, gauche, droite)[cite: 3, 5]."
+    },
+    {
+      "question": "Quel organe otolithique détectera de façon optimale une montée rapide en ascenseur ?",
+      "options": [
+        "L'utricule",
+        "Le canal supérieur",
+        "Le saccule",
+        "Le ganglion de Scarpa"
+      ],
+      "correct": 2,
+      "explanation": "Le saccule, étant dans le plan vertical, détecte les accélérations linéaires de haut en bas[cite: 3, 5]."
+    },
+    {
+      "question": "Qu'est-ce que la striola dans les organes otolithiques ?",
+      "options": [
+        "Un canal rempli d'air.",
+        "Le nerf qui relie l'utricule au saccule.",
+        "Une ligne qui sépare l'organe en deux zones où la polarisation des cellules ciliées est opposée.",
+        "Une maladie du labyrinthe."
+      ],
+      "correct": 2,
+      "explanation": "La striola est un repère anatomique. De part et d'autre de cette ligne, l'orientation des kinocils s'inverse, ce qui permet de détecter des mouvements opposés avec une seule macule[cite: 3, 5]."
+    },
+    {
+      "question": "Dans l'utricule, vers où pointe le kinocilium par rapport à la striola ?",
+      "options": [
+        "Il s'éloigne de la striola.",
+        "Il est dirigé VERS la striola.",
+        "Il est toujours orienté vers l'avant.",
+        "Il est absent près de la striola."
+      ],
+      "correct": 1,
+      "explanation": "Dans les organes otolithiques, l'organisation fait que les kinocils font face à la striola[cite: 3, 5]."
+    },
+    {
+      "question": "Lors d'un déplacement de la tête soudain vers la GAUCHE, que font les otolithes de l'utricule ?",
+      "options": [
+        "Ils se déplacent vers la gauche (plus vite que la tête).",
+        "Par inertie, ils se déplacent vers la DROITE.",
+        "Ils montent.",
+        "Ils ne bougent pas en mouvement latéral."
+      ],
+      "correct": 1,
+      "explanation": "Par inertie, la lourde membrane otolithique « reste en arrière ». Si la base de la cellule va vers la gauche, les cils sont pliés vers la droite[cite: 3, 5]."
+    },
+    {
+      "question": "Lors de ce déplacement soudain vers la gauche (otolithes vers la droite), que se passe-t-il pour les cellules ciliées situées à GAUCHE de la striola ?",
+      "options": [
+        "Leurs cils se rapprochent du kinocil, ce qui ouvre les canaux K+ (Activation).",
+        "Leurs cils s'éloignent du kinocil, ce qui ferme les canaux K+ (Inhibition).",
+        "Elles meurent.",
+        "Aucun changement."
+      ],
+      "correct": 0,
+      "explanation": "Pour les cellules situées à gauche de la striola (dont le kinocil pointe vers la droite, vers la striola), un mouvement des cils vers la droite va les dépolariser (activation)[cite: 3, 5]."
+    },
+    {
+      "question": "Pour les cellules ciliées situées à DROITE de la striola lors de ce même déplacement (otolithes vers la droite), quel est le résultat ?",
+      "options": [
+        "Activation",
+        "Inhibition",
+        "Elles déchargent à 160 spikes/sec",
+        "Elles se retournent"
+      ],
+      "correct": 1,
+      "explanation": "Pour ces cellules (dont le kinocil pointe vers la gauche, vers la striola), le mouvement des cils vers la droite les éloigne du kinocil, ce qui ferme les canaux K+ (inhibition)[cite: 3, 5]."
+    },
+    {
+      "question": "Vrai ou Faux : Les cellules ciliées de l'utricule ne peuvent détecter que les mouvements gauche/droite.",
+      "options": [
+        "Vrai, c'est leur seule fonction.",
+        "Faux, elles sont réparties en arc de cercle pour détecter les accélérations dans toutes les directions du plan horizontal."
+      ],
+      "correct": 1,
+      "explanation": "La macule de l'utricule est courbée, avec des cellules orientées dans divers axes (latéral, antérieur, postérieur, médian) permettant de détecter tout vecteur dans le plan horizontal[cite: 3, 5]."
+    },
+    {
+      "question": "Lorsqu'on s'incline (tête penchée vers l'épaule droite) et qu'on reste dans cette position, quel type de signal le nerf vestibulaire envoie-t-il ?",
+      "options": [
+        "Un signal transitoire qui s'arrête après 15 secondes.",
+        "Aucun signal, l'inclinaison n'est pas détectée.",
+        "Un signal tonique (décharges continues) tant que la position est maintenue.",
+        "Une inhibition totale bilatérale."
+      ],
+      "correct": 2,
+      "explanation": "L'inclinaison de la tête modifie la composante gravitationnelle sur les otolithes. Puisque la gravité est constante, il n'y a pas d'adaptation : le signal (tonique) perdure tant que la tête reste inclinée[cite: 3, 5]."
+    },
+    {
+      "question": "Lors d'un mouvement d'ascenseur vers le HAUT, dans quelle direction les otolithes du saccule se déplacent-ils par inertie ?",
+      "options": [
+        "Vers le haut",
+        "Vers le bas",
+        "Vers l'avant",
+        "Vers l'arrière"
+      ],
+      "correct": 1,
+      "explanation": "Lorsqu'on monte subitement, le plancher de la macule monte, et par inertie, les lourds otolithes sont poussés vers le bas par rapport aux cellules[cite: 3, 5]."
+    },
+    {
+      "question": "Où sont situés les corps cellulaires des neurones de premier ordre du nerf vestibulaire ?",
+      "options": [
+        "Ganglion spiralé de Corti",
+        "Noyau cochléaire",
+        "Ganglion vestibulaire de Scarpa",
+        "Olive supérieure"
+      ],
+      "correct": 2,
+      "explanation": "La transduction se fait entre les cellules ciliées et les cellules bipolaires dont les corps cellulaires forment le ganglion de Scarpa[cite: 3, 5]."
+    },
+    {
+      "question": "L'axone des cellules du ganglion de Scarpa fait sa première synapse à quel endroit ?",
+      "options": [
+        "Dans le cervelet uniquement.",
+        "Directement dans le thalamus.",
+        "Sur le noyau vestibulaire dans le tronc cérébral (bulbe/protubérance).",
+        "Dans le ganglion spiralé."
+      ],
+      "correct": 2,
+      "explanation": "Le nerf vestibulaire se dirige vers les noyaux vestibulaires situés dans le tronc cérébral (certaines fibres vont aussi directement au cervelet)[cite: 3, 5]."
+    },
+    {
+      "question": "Vrai ou Faux : Les signaux d'accélération (inertie) subissent une adaptation, mais la détection de la gravité ne subit pas d'adaptation.",
+      "options": [
+        "Vrai",
+        "Faux"
+      ],
+      "correct": 0,
+      "explanation": "C'est exact. Les mouvements à vitesse constante finissent par annuler les forces d'inertie (adaptation de la cupule ou des otolithes), mais la gravité est une accélération (9,8 m/s²) qui ne cesse jamais, donc le signal de position verticale est constant[cite: 3, 5]."
+    },
+    {
+      "question": "Si l'on a la tête complètement à l'envers (vers le bas), que se passe-t-il avec le signal otolithique ?",
+      "options": [
+        "Il s'arrête complètement.",
+        "Le signal s'inverse car la gravité tire les otolithes dans la direction opposée à la normale.",
+        "Il détruit la membrane gélatineuse.",
+        "L'utricule prend le relais du saccule de manière identique."
+      ],
+      "correct": 1,
+      "explanation": "Le poids de la gravité tire sur les otolithes dans le sens opposé, inversant la déformation des cils et donc le patron de décharge des cellules, indiquant au cerveau la position renversée[cite: 3, 5]."
+    },
+    {
+      "question": "Quel est le nom de la liaison (en pointillé sur les schémas) qui attache mécaniquement le sommet des stéréocils entre eux ?",
+      "options": [
+        "Jonction serrée",
+        "Lien apical (Tip links)",
+        "Strie vasculaire",
+        "Canal calcique"
+      ],
+      "correct": 1,
+      "explanation": "Les « Tip links » (liens apicaux) relient le sommet d'un stéréocil plus court au flanc du stéréocil adjacent plus long. C'est la tension sur ce lien qui ouvre le canal potassique (transduction mécanique)[cite: 3, 5]."
+    },
+    {
+      "question": "De quel type de neurone est composé le nerf vestibulaire (VIII) au niveau du ganglion de Scarpa ?",
+      "options": [
+        "Neurone multipolaire",
+        "Neurone unipolaire",
+        "Neurone bipolaire",
+        "Motoneurone alpha"
+      ],
+      "correct": 2,
+      "explanation": "Les neurones afférents primaires de l'ouïe et de l'équilibre sont des cellules bipolaires (ganglion de Corti et ganglion de Scarpa)[cite: 3, 5]."
+    },
+    {
+      "question": "Combien y a-t-il d'ampoules contenant des crêtes ampullaires par oreille ?",
+      "options": [
+        "Une",
+        "Deux",
+        "Trois",
+        "Six"
+      ],
+      "correct": 2,
+      "explanation": "Puisqu'il y a trois canaux semi-circulaires par oreille, il y a trois ampoules, contenant chacune une cupule et des cellules ciliées[cite: 3, 5]."
+    },
+    {
+      "question": "Parmi les analogies suivantes, laquelle illustre le mieux le phénomène d'adaptation des organes otolithiques ?",
+      "options": [
+        "Un voyageur assis dans un train sent l'accélération au départ, mais ne sent plus le mouvement lorsque le train roule à vitesse de croisière constante sur une ligne droite.",
+        "Sentir le soleil sur sa peau.",
+        "Un balancier d'horloge qui ne s'arrête jamais.",
+        "Sursauter à un bruit fort."
+      ],
+      "correct": 0,
+      "explanation": "L'adaptation otolithique fait qu'on ressent les accélérations et décélérations, mais pas la vitesse constante (le signal cesse une fois la vitesse stabilisée)[cite: 3, 5]."
+    },
+    {
+      "question": "Dans le canal horizontal, où est située l'ampoule par rapport à la cavité principale du vestibule (utricule) ?",
+      "options": [
+        "À son extrémité antérieure.",
+        "À son extrémité postérieure.",
+        "En plein milieu du canal.",
+        "Elle n'est pas connectée à l'utricule."
+      ],
+      "correct": 0,
+      "explanation": "Sur le schéma de l'anatomie vestibulaire, l'ampoule du canal horizontal est située à l'avant (du côté de l'utricule et des autres ampoules)[cite: 3, 5]. L'inertie repousse l'endolymphe vers l'ampoule lors d'une rotation du même côté."
+    },
+    {
+      "question": "Quel rôle jouent les cellules de soutien entourant les cellules ciliées ?",
+      "options": [
+        "Elles contractent le canal.",
+        "Elles transmettent le potentiel d'action au cerveau.",
+        "Elles forment des jonctions serrées pour séparer l'endolymphe (au sommet) de la périlymphe (à la base).",
+        "Elles sécrètent la gravité."
+      ],
+      "correct": 2,
+      "explanation": "Les cellules de soutien maintiennent une barrière étanche (jonctions serrées) essentielle pour séparer les milieux ioniques très différents (endolymphe riche en K+ et périlymphe)[cite: 3, 5]."
     }
   ]
 }

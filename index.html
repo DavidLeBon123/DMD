@@ -19,6 +19,7 @@
             --wrong-border: #ea2b2b;
             --option-bg: #ffffff;
             --option-hover: #f0f0f0;
+            --bookmark: #ffc800;
         }
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -60,26 +61,34 @@
             transition: all 0.2s;
             border-left: 6px solid var(--primary);
         }
-        .menu-item:hover {
-            border-color: var(--primary);
-            background: #f0fcf0;
-        }
+        .menu-item:hover { border-color: var(--primary); background: #f0fcf0; }
         .menu-item h3 { margin: 0 0 5px 0; color: var(--text-main); }
         .menu-item p { margin: 0; font-size: 0.9em; color: var(--text-light); font-weight: bold; }
         
+        .bookmark-menu-btn {
+            background: #fff9e6;
+            border: 2px solid var(--bookmark);
+            border-left: 6px solid var(--bookmark);
+        }
+        .bookmark-menu-btn:hover { background: #fff4cc; }
+        .bookmark-menu-btn h3 { color: #b38c00; }
+
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid var(--border); padding-bottom: 10px; }
+        .progress { color: var(--text-light); font-weight: bold; }
+        .home-btn { cursor: pointer; color: var(--text-light); text-decoration: underline; font-size: 0.9em; border: none; background: none; padding:0;}
+        
+        .top-actions { display: flex; gap: 15px; align-items: center; }
+        
+        .bookmark-btn {
+            background: none; border: 2px solid var(--border); border-radius: 8px; padding: 5px 10px;
+            cursor: pointer; font-size: 0.9em; font-weight: bold; color: var(--text-light); transition: all 0.2s;
+        }
+        .bookmark-btn.active { background: #fff9e6; border-color: var(--bookmark); color: #b38c00; }
+        
         .option-btn {
-            display: block;
-            width: 100%;
-            text-align: left;
-            background: var(--option-bg);
-            border: 2px solid var(--border);
-            padding: 15px;
-            border-radius: 12px;
-            margin-bottom: 10px;
-            font-size: 1em;
-            cursor: pointer;
-            transition: all 0.2s;
-            color: var(--text-main);
+            display: block; width: 100%; text-align: left; background: var(--option-bg);
+            border: 2px solid var(--border); padding: 15px; border-radius: 12px; margin-bottom: 10px;
+            font-size: 1em; cursor: pointer; transition: all 0.2s; color: var(--text-main);
         }
         .option-btn:hover:not(:disabled) { background: var(--option-hover); }
         .option-btn.selected { border-color: #84d8ff; background: #e1f5fe; }
@@ -88,34 +97,16 @@
         .option-btn:disabled { cursor: default; }
         
         .action-btn {
-            background: var(--primary);
-            color: white;
-            border: none;
-            padding: 15px 20px;
-            border-radius: 12px;
-            font-size: 1.1em;
-            font-weight: bold;
-            width: 100%;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: background 0.2s;
+            background: var(--primary); color: white; border: none; padding: 15px 20px;
+            border-radius: 12px; font-size: 1.1em; font-weight: bold; width: 100%;
+            cursor: pointer; margin-top: 20px; transition: background 0.2s;
         }
         .action-btn:hover { background: var(--primary-hover); }
         .action-btn:disabled { background: #ccc; cursor: not-allowed; }
         
-        #feedback {
-            margin-top: 20px;
-            padding: 15px;
-            border-radius: 12px;
-            display: none;
-            line-height: 1.5;
-        }
+        #feedback { margin-top: 20px; padding: 15px; border-radius: 12px; display: none; line-height: 1.5; }
         #feedback.success { background: var(--correct); color: #2ea000; border: 1px solid var(--correct-border); }
         #feedback.error { background: var(--wrong); color: #c40000; border: 1px solid var(--wrong-border); }
-        
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 2px solid var(--border); padding-bottom: 10px; }
-        .progress { color: var(--text-light); font-weight: bold; }
-        .home-btn { cursor: pointer; color: var(--text-light); text-decoration: underline; font-size: 0.9em; border: none; background: none; }
     </style>
 </head>
 <body>
@@ -127,6 +118,8 @@
 <script>
     let quizzes = {}; 
     let categories = {}; 
+    let bookmarks = JSON.parse(localStorage.getItem('quiz_bookmarks') || '[]');
+    
     let currentQuiz = null;
     let currentQuestionIndex = 0;
     let score = 0;
@@ -139,7 +132,6 @@
         let jsonPaths = [];
         const host = window.location.hostname;
         
-        // Scan automatique si hébergé sur GitHub Pages
         if (host.includes('github.io')) {
             const username = host.split('.')[0];
             const repo = window.location.pathname.split('/')[1] || '';
@@ -149,88 +141,87 @@
                     const repoData = await repoRes.json();
                     const branch = repoData.default_branch || 'main';
                     
-                    // Récupère l'arbre complet des fichiers du dépôt
                     const treeRes = await fetch(`https://api.github.com/repos/${username}/${repo}/git/trees/${branch}?recursive=1`);
                     const treeData = await treeRes.json();
                     
                     if (treeData.tree) {
-                        // Filtre uniquement les fichiers JSON
                         jsonPaths = treeData.tree
                             .filter(f => f.path.endsWith('.json') && !f.path.includes('catalogue.json'))
                             .map(f => f.path);
                     }
                 } catch (e) {
-                    console.warn("API GitHub limit atteinte ou erreur de connexion.", e);
+                    console.warn("API GitHub limit atteinte.", e);
                 }
             }
         }
 
-        // Fallback si l'API GitHub échoue (ou test en local)
         if (jsonPaths.length === 0) {
             try {
                 const catRes = await fetch('catalogue.json');
                 if (catRes.ok) jsonPaths = await catRes.json();
             } catch(e) {
-                appDiv.innerHTML = '<h2>Aucun fichier trouvé</h2><p>Assurez-vous que les fichiers JSON sont sur GitHub Pages.</p>';
+                appDiv.innerHTML = '<h2>Aucun fichier trouvé</h2><p>Vérifiez que vos fichiers .json sont sur GitHub Pages.</p>';
                 return;
             }
         }
 
-        // Récupération, Catégorisation et Fusion
         for (const path of jsonPaths) {
             try {
                 const res = await fetch(path);
                 if (!res.ok) continue;
                 const data = await res.json();
                 
-                // Le dossier devient la catégorie (ex: "SAB1040/quiz.json" -> "SAB1040")
                 const parts = path.split('/');
                 const category = parts.length > 1 ? parts[0].toUpperCase() : 'GÉNÉRAL';
-                
-                // Titre de base pour la fusion (retire les "- Partie 1", "- Partie 2")
                 const baseTitle = data.title.replace(/\s*-\s*Partie\s*\d+/i, '').trim();
-                const quizId = category + '_' + baseTitle; // Identifiant unique
+                const quizId = category + '_' + baseTitle; 
 
-                // Si c'est la première partie rencontrée, on crée l'entrée
                 if (!quizzes[quizId]) {
-                    quizzes[quizId] = {
-                        title: baseTitle,
-                        category: category,
-                        questions: []
-                    };
+                    quizzes[quizId] = { id: quizId, title: baseTitle, category: category, questions: [] };
                     if (!categories[category]) categories[category] = [];
                     categories[category].push(quizId);
                 }
-                
-                // Fusion (Merge) : on ajoute les questions à la suite
                 quizzes[quizId].questions.push(...data.questions);
 
             } catch (e) {
-                console.warn("Impossible de lire le fichier:", path);
+                console.warn("Impossible de lire:", path);
             }
         }
 
         if (Object.keys(quizzes).length === 0) {
-            appDiv.innerHTML = '<h2>Aucun quiz trouvé</h2><p>Ajoutez des fichiers .json à votre dépôt.</p>';
+            appDiv.innerHTML = '<h2>Aucun quiz trouvé</h2>';
         } else {
             renderMenu();
         }
     }
 
-    // 2. MENU DE NAVIGATION
+    // 2. MENU PRINCIPAL
     function renderMenu() {
         let html = `<h1>Vos Cours</h1><p>Sélectionnez un module pour commencer :</p>`;
         
-        // Trie et affiche par dossier (Catégorie)
+        // Bouton spécial si des questions sont marquées
+        let validBookmarks = bookmarks.filter(b => {
+            const [qId] = b.split('|||');
+            return quizzes[qId];
+        });
+        
+        if (validBookmarks.length > 0) {
+            html += `
+                <div class="menu-item bookmark-menu-btn" onclick="startBookmarkQuiz()">
+                    <h3>⭐️ Réviser mes questions difficiles</h3>
+                    <p>${validBookmarks.length} questions marquées</p>
+                </div>
+            `;
+        }
+        
         for (const [cat, quizIds] of Object.entries(categories).sort()) {
             html += `<h2 class="category-title">📂 ${cat}</h2>`;
-            
             quizIds.forEach(id => {
                 const quiz = quizzes[id];
                 html += `
                     <div class="menu-item" onclick="startQuiz('${id}')">
                         <h3>${quiz.title}</h3>
-                        <p>${quiz.questions.length} questions (Module Complet)</p>
+                        <p>${quiz.questions.length} questions</p>
                     </div>
                 `;
             });
@@ -241,19 +232,68 @@
     // 3. LOGIQUE DU QUIZ
     function startQuiz(id) {
         currentQuiz = quizzes[id];
+        currentQuiz.isBookmarkQuiz = false;
         currentQuestionIndex = 0;
         score = 0;
         renderQuestion();
+    }
+
+    // Lancer le quiz personnalisé des favoris
+    function startBookmarkQuiz() {
+        let bQuestions = [];
+        bookmarks.forEach(b => {
+            const [qId, qIndexStr] = b.split('|||');
+            const qIndex = parseInt(qIndexStr);
+            if (quizzes[qId] && quizzes[qId].questions[qIndex]) {
+                let q = quizzes[qId].questions[qIndex];
+                bQuestions.push({ ...q, originalQuizId: qId, originalIndex: qIndex });
+            }
+        });
+        
+        if (bQuestions.length === 0) return renderMenu();
+
+        currentQuiz = { title: "Questions Difficiles", isBookmarkQuiz: true, questions: bQuestions };
+        currentQuestionIndex = 0;
+        score = 0;
+        renderQuestion();
+    }
+
+    function toggleBookmark() {
+        const qId = currentQuiz.isBookmarkQuiz ? currentQuiz.questions[currentQuestionIndex].originalQuizId : currentQuiz.id;
+        const qIndex = currentQuiz.isBookmarkQuiz ? currentQuiz.questions[currentQuestionIndex].originalIndex : currentQuestionIndex;
+        const key = `${qId}|||${qIndex}`;
+        
+        const index = bookmarks.indexOf(key);
+        if (index > -1) {
+            bookmarks.splice(index, 1);
+            document.getElementById('bookmark-btn').classList.remove('active');
+            document.getElementById('bookmark-btn').innerText = '☆ Marquer';
+        } else {
+            bookmarks.push(key);
+            document.getElementById('bookmark-btn').classList.add('active');
+            document.getElementById('bookmark-btn').innerText = '⭐️ Marquée';
+        }
+        localStorage.setItem('quiz_bookmarks', JSON.stringify(bookmarks));
     }
 
     function renderQuestion() {
         selectedOptionIndex = null;
         const q = currentQuiz.questions[currentQuestionIndex];
         
+        const qId = currentQuiz.isBookmarkQuiz ? q.originalQuizId : currentQuiz.id;
+        const qIndex = currentQuiz.isBookmarkQuiz ? q.originalIndex : currentQuestionIndex;
+        const key = `${qId}|||${qIndex}`;
+        const isBookmarked = bookmarks.includes(key);
+        
         let html = `
             <div class="header">
                 <button class="home-btn" onclick="renderMenu()">← Retour aux cours</button>
-                <div class="progress">Q ${currentQuestionIndex + 1} / ${currentQuiz.questions.length}</div>
+                <div class="top-actions">
+                    <button id="bookmark-btn" class="bookmark-btn ${isBookmarked ? 'active' : ''}" onclick="toggleBookmark()">
+                        ${isBookmarked ? '⭐️ Marquée' : '☆ Marquer'}
+                    </button>
+                    <div class="progress">Q ${currentQuestionIndex + 1} / ${currentQuiz.questions.length}</div>
+                </div>
             </div>
             <h2>${q.question}</h2>
             <div id="options-container">

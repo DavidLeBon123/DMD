@@ -1,189 +1,985 @@
 {
   "title": "Contrôle moteur - Partie 1",
-  "description": "Motoneurone inférieur, unités motrices et réflexes spinaux.",
+  "description": "MNI, unités motrices, muscles squelettiques et réflexes spinaux (Niveau Expert).",
   "questions": [
     {
-      "question": "Quelle est la caractéristique fondamentale d'une « unité motrice » ?",
+      "question": "En ce qui concerne l'organisation hiérarchique de la motricité, quelle affirmation décrit le plus précisément la relation entre les différents niveaux de réponse motrice ?",
       "options": [
-        "C'est l'ensemble de tous les motoneurones qui innervent un même muscle.",
-        "C'est un seul motoneurone inférieur (MNI) et toutes les fibres musculaires qu'il innerve.",
-        "C'est le regroupement des fibres intrafusales d'un fuseau neuromusculaire.",
-        "C'est un réseau d'interneurones inhibiteurs spinaux."
-      ],
-      "correct": 1,
-      "explanation": "Une unité motrice est définie comme un seul motoneurone inférieur et l'ensemble des fibres du muscle squelettique qu'il innerve. Son activation contracte toutes ces fibres en même temps[cite: 5]."
-    },
-    {
-      "question": "Quel type d'unité motrice serait principalement utilisé et recruté en premier pour maintenir la posture debout (orthostation) pendant des heures ?",
-      "options": [
-        "Unité motrice FF (Fast and Fatigable)",
-        "Unité motrice FR (Fast and Fatigue-resistant)",
-        "Unité motrice S (Slow)",
-        "Les interneurones inhibiteurs"
+        "Les mouvements volontaires, initiés par le cortex, supplantent toujours les réflexes spinaux, tandis que les réflexes supraspinaux opèrent de manière indépendante sans influence corticale.",
+        "Les réflexes spinaux sont des réponses motrices rapides dont les afférences sont analysées consciemment par le tronc cérébral, échappant ainsi à la hiérarchie motrice.",
+        "Les mouvements volontaires (cerveau) dominent les réflexes supraspinaux (tronc cérébral), qui eux-mêmes dominent les réflexes spinaux (moelle épinière), bien que ces derniers soient analysés inconsciemment.",
+        "La motricité autonomique, en complément de la motricité squelettique, est soumise à la même hiérarchie stricte, plaçant le cervelet au-dessus du tronc cérébral pour les réflexes viscéraux."
       ],
       "correct": 2,
-      "explanation": "Les unités motrices S (Slow) sont de petites unités composées de fibres rouges (riches en mitochondries/myoglobine), très peu fatigables, idéales pour un effort d'endurance soutenu comme la posture[cite: 5]. Selon le principe de taille, elles sont recrutées en premier[cite: 5]."
+      "explanation": "La hiérarchie motrice stipule que les mouvements volontaires (cerveau, conscient) dominent les réflexes supraspinaux (tronc cérébral), qui dominent les réflexes spinaux (moelle épinière, inconscient)[cite: 2]."
     },
     {
-      "question": "Comment le système nerveux déploie-t-il une force musculaire constante sans saccade lors de mouvements habituels (basse fréquence à 8 Hz) ?",
+      "question": "Quelle définition décrit avec le plus de justesse le concept anatomo-physiologique d'une « unité motrice » dans le muscle squelettique ?",
       "options": [
-        "Par la contraction tétanique de toutes les unités motrices.",
-        "Grâce aux décharges asynchrones (en décalé) de plusieurs unités motrices S.",
-        "En recrutant immédiatement les grosses unités motrices FF.",
-        "Par l'inhibition du réflexe myotatique."
-      ],
-      "correct": 1,
-      "explanation": "À basse fréquence (8 Hz), l'asynchronisme entre les différentes unités motrices assure une contraction constante et fluide du muscle[cite: 5]."
-    },
-    {
-      "question": "À quoi correspond le myotome C6 ?",
-      "options": [
-        "L'abduction de l'épaule.",
-        "La flexion du coude.",
-        "L'extension du coude et du poignet.",
-        "La flexion digitale."
-      ],
-      "correct": 1,
-      "explanation": "Le myotome C6 est principalement associé au mouvement de flexion du coude[cite: 5]. (C5 = abduction épaule, C7 = extension coude/poignet)[cite: 5]."
-    },
-    {
-      "question": "Dans le réflexe myotatique (ostéotendineux), quel est le stimulus déclencheur et quelle est la réponse musculaire ?",
-      "options": [
-        "Stimulus: Tension du tendon / Réponse: Relâchement du muscle.",
-        "Stimulus: Douleur cutanée / Réponse: Flexion du muscle.",
-        "Stimulus: Étirement soudain du muscle / Réponse: Contraction du muscle étiré.",
-        "Stimulus: Contraction volontaire / Réponse: Extension controlatérale."
-      ],
-      "correct": 2,
-      "explanation": "Le réflexe myotatique est déclenché par l'étirement du muscle (détecté par le fuseau neuromusculaire) et provoque sa contraction monosynaptique pour garder l'articulation immobile[cite: 5]."
-    },
-    {
-      "question": "Quelle afférence sensitive transmet le signal lors de l'étirement soudain de la partie centrale du fuseau neuromusculaire ?",
-      "options": [
-        "Afférence Ib",
-        "Afférence Ia",
-        "Motoneurone gamma",
-        "Interneurone de type II"
-      ],
-      "correct": 1,
-      "explanation": "L'étirement est détecté par les terminaisons annulo-spiralées de la partie non-contractile du fuseau, qui envoient le signal par l'afférence sensitive de type Ia vers la moelle[cite: 5]."
-    },
-    {
-      "question": "Quel est le rôle physiologique du motoneurone inférieur gamma (MNI γ) dans le réflexe myotatique ?",
-      "options": [
-        "Il contracte directement les fibres musculaires striées pour générer de la force.",
-        "Il contracte les parties polaires des fibres intrafusales pour maintenir la tension sur la partie centrale (détectrice) lors du raccourcissement du muscle.",
-        "Il inhibe le muscle antagoniste.",
-        "Il transmet la douleur nociceptive."
-      ],
-      "correct": 1,
-      "explanation": "Pour optimiser la fonction du fuseau neuromusculaire lors du raccourcissement actif du muscle, le MNI γ contracte les pôles des fibres intrafusales, gardant ainsi la partie centrale tendue et prête à détecter un nouvel étirement[cite: 5]."
-    },
-    {
-      "question": "Dans le réflexe myotatique inversé, quelle structure détecte la tension et protège le muscle ?",
-      "options": [
-        "Le motoneurone gamma.",
-        "Le fuseau neuromusculaire.",
-        "L'organe tendineux de Golgi (OTG).",
-        "Le ganglion de Scarpa."
-      ],
-      "correct": 2,
-      "explanation": "L'organe tendineux de Golgi (OTG), situé dans le tendon, détecte la tension générée par la contraction active du muscle pour le protéger d'une déchirure[cite: 5]."
-    },
-    {
-      "question": "Que provoque l'activation de l'organe tendineux de Golgi (OTG) via son afférence Ib ?",
-      "options": [
-        "L'excitation monosynaptique du muscle agoniste.",
-        "L'inhibition du muscle agoniste (via un interneurone GABAergique) et l'activation de l'antagoniste.",
-        "La contraction simultanée de l'agoniste et de l'antagoniste.",
-        "L'extension croisée du membre controlatéral."
-      ],
-      "correct": 1,
-      "explanation": "La tension dans le tendon active l'afférence Ib, qui stimule un interneurone inhibiteur relâchant l'agoniste, et un interneurone activateur contractant l'antagoniste, stabilisant ainsi l'articulation[cite: 5]."
-    },
-    {
-      "question": "Quel est l'objectif du réflexe de flexion et d'extension croisée (déclenché par un stimulus nociceptif sur un pied) ?",
-      "options": [
-        "Augmenter la vitesse de course.",
-        "Maintenir la posture debout statique.",
-        "Retirer le membre douloureux (flexion) tout en repoussant le sol avec l'autre jambe (extension) pour éviter la chute.",
-        "Initier la phase de transfert de la marche."
-      ],
-      "correct": 2,
-      "explanation": "Le stimulus nociceptif (ex: marcher sur un clou) active des interneurones qui provoquent la flexion de la jambe blessée pour la protéger, et l'extension de la jambe opposée pour supporter le poids du corps[cite: 5]."
-    },
-    {
-      "question": "Qu'est-ce qu'un « générateur central de rythme » (CPG) dans la moelle épinière ?",
-      "options": [
-        "Un noyau du tronc cérébral qui contrôle la respiration.",
-        "Un réseau d'interneurones spinaux générant des dépolarisations périodiques pour alterner la contraction des extenseurs et fléchisseurs lors de la locomotion.",
-        "Le pacemaker naturel du cœur.",
-        "Le centre responsable du réflexe myotatique."
-      ],
-      "correct": 1,
-      "explanation": "Chaque patte possède un réseau d'interneurones spinaux excitateurs et inhibiteurs qui coordonnent automatiquement l'alternance d'appui (extension) et de transfert (flexion) nécessaire à la marche[cite: 5]."
-    },
-    {
-      "question": "Où se situent les corps cellulaires des motoneurones inférieurs (MNI) destinés aux muscles de la main (motricité distale fine) dans la corne ventrale de la moelle ?",
-      "options": [
-        "Dans la partie médiane de la corne ventrale.",
-        "Dans la partie latérale de la corne ventrale.",
-        "Dans la corne dorsale.",
-        "Dans le ganglion rachidien."
-      ],
-      "correct": 1,
-      "explanation": "La somatotopie de la moelle veut que les MNI destinés aux muscles axiaux et proximaux soient situés en région médiane, tandis que ceux destinés aux muscles distaux (comme la main) sont en région latérale[cite: 5]."
-    },
-    {
-      "question": "Concernant les interneurones spinaux, quelle est la caractéristique de ceux situés dans la partie MÉDIANE de la corne intermédiaire ?",
-      "options": [
-        "Ils projettent unilatéralement sur 1 à 4 segments pour la motricité fine des mains.",
-        "Ils projettent bilatéralement et souvent à plus grande distance pour coordonner la posture et l'équilibre des muscles axiaux.",
-        "Ils innervent uniquement le muscle cardiaque.",
-        "Ils se trouvent uniquement dans le mésencéphale."
-      ],
-      "correct": 1,
-      "explanation": "Les interneurones de la partie médiane projettent bilatéralement et sur de longues distances pour cibler les MNI médians (muscles axiaux), essentiels pour coordonner les grands mouvements de posture, d'équilibre et de locomotion[cite: 5]."
-    },
-    {
-      "question": "Quelles vertèbres correspondent au renflement lombaire (intumescence lombaire) destiné à l'innervation des membres inférieurs ?",
-      "options": [
-        "T12 à S5",
-        "C5 à T1",
-        "L1 à L5 uniquement",
-        "T10 à L1 (segments médullaires de L1 à S3)"
-      ],
-      "correct": 3,
-      "explanation": "L'intumescence lombaire, qui donne naissance au plexus lombosacré, se situe approximativement entre les niveaux vertébraux T10 et L1[cite: 5]. (Note : La moelle épinière se termine anatomiquement en cône médullaire vers L1-L2)[cite: 5]."
-    },
-    {
-      "question": "Vrai ou Faux : L'activation d'un motoneurone inférieur répartit la contraction dans le muscle de façon ciblée dans une seule petite zone du muscle.",
-      "options": [
-        "Vrai",
-        "Faux"
-      ],
-      "correct": 1,
-      "explanation": "Faux. Les fibres d'une unité motrice sont réparties aléatoirement dans l'ensemble du muscle. L'activation d'un seul MNI répartit donc sa force de contraction uniformément dans tout le muscle, et non dans un seul coin[cite: 5]."
-    },
-    {
-      "question": "Quel myotome est principalement testé lors de l'évaluation clinique de l'extension du genou ?",
-      "options": [
-        "L2",
-        "L3",
-        "L4",
-        "S1"
-      ],
-      "correct": 1,
-      "explanation": "Le myotome L3 est associé à l'extension du genou[cite: 5]. (L2 = flexion hanche, L4 = dorsiflexion cheville)[cite: 5]."
-    },
-    {
-      "question": "Vrai ou faux : La marche réflexe coordonnée (alternance des pattes) est possible chez un quadrupède dont la moelle est sectionnée (myélotomisée).",
-      "options": [
-        "Vrai",
-        "Faux"
+        "L'ensemble constitué par un seul motoneurone inférieur, situé dans la corne antérieure de la moelle ou un noyau crânien, et la totalité des fibres musculaires squelettiques qu'il innerve directement.",
+        "Le regroupement fonctionnel de plusieurs motoneurones inférieurs innervant un même faisceau de fibres musculaires, assurant ainsi une contraction répartie uniformément dans le muscle.",
+        "La connexion spécifique entre un motoneurone inférieur et une seule fibre musculaire rouge ou pâle, garantissant une réponse phasique ou tonique selon le neurotransmetteur relâché.",
+        "L'arc réflexe complet comprenant l'afférence proprioceptive du fuseau neuromusculaire, l'interneurone spinal et le motoneurone inférieur innervant le muscle agoniste."
       ],
       "correct": 0,
-      "explanation": "C'est vrai. Les générateurs centraux de rythme spinaux et leurs interneurones de coordination (longue distance) suffisent à générer le patron de marche de façon autonome dans la moelle, même sans commande du cerveau[cite: 5]. (Chez le bipède humain, l'équilibre supraspinal rend la marche autonome impossible après myélotomie)[cite: 5]."
+      "explanation": "Une unité motrice est définie strictement comme un seul motoneurone inférieur (dont le corps est dans la corne antérieure ou un noyau moteur crânien) et l'ensemble des fibres du muscle squelettique qu'il innerve[cite: 2]."
+    },
+    {
+      "question": "Concernant la répartition des fibres musculaires au sein d'une unité motrice et les conséquences d'une lésion, quelle proposition est exacte ?",
+      "options": [
+        "Les fibres d'une unité motrice sont regroupées en faisceaux compacts ; ainsi, l'activation d'un motoneurone inférieur concentre la contraction dans une région précise, et sa lésion provoque une atrophie localisée.",
+        "Les fibres d'une unité motrice sont réparties aléatoirement dans le muscle ; par conséquent, l'activation d'un motoneurone inférieur répartit la contraction dans tout le muscle, et sa lésion répartit son impact de façon diffuse.",
+        "Bien que les fibres soient réparties aléatoirement, la lésion d'un seul motoneurone inférieur est immédiatement compensée par le recrutement d'unités motrices FF, évitant tout impact fonctionnel sur le muscle.",
+        "L'activation d'un motoneurone inférieur déclenche une contraction séquentielle (d'abord les fibres rouges, puis les pâles) réparties de la profondeur vers la surface du muscle squelettique."
+      ],
+      "correct": 1,
+      "explanation": "Les fibres d'une unité motrice sont réparties aléatoirement. Ainsi, l'activation d'un MNI répartit la contraction, et son dommage (ou sa perte) répartit son impact de façon diffuse dans tout le muscle, sans causer d'atrophie focale immédiate[cite: 2]."
+    },
+    {
+      "question": "Lors du maintien prolongé de la posture orthostatique, quel mécanisme physiologique permet au système neuromusculaire de générer une contraction musculaire constante et fluide sans épuisement prématuré ?",
+      "options": [
+        "Le recrutement simultané et la contraction tétanique à haute fréquence (25 Hz) de l'ensemble des unités motrices S et FR, maximisant l'utilisation du réseau capillaire et des mitochondries.",
+        "Les décharges asynchrones (en alternance) de plusieurs petites unités motrices S (Slow), dont les motoneurones transmettent des potentiels d'action à basse fréquence (environ 8 Hz).",
+        "L'activation tonique continue des unités motrices FF (Fast and Fatigable), qui, grâce à leur grand diamètre, peuvent maintenir une force constante malgré une basse fréquence de décharge.",
+        "La désinhibition des interneurones spinaux médians, permettant une décharge rythmique et synchrone des motoneurones inférieurs ciblant les fibres musculaires pâles."
+      ],
+      "correct": 1,
+      "explanation": "La contraction lente, soutenue et fluide (comme pour l'orthostation) est assurée par des décharges asynchrones, à basse fréquence (8 Hz), de plusieurs unités motrices S, très résistantes à la fatigue[cite: 2]."
+    },
+    {
+      "question": "Selon le principe de taille régissant le recrutement des unités motrices, quelle séquence décrit adéquatement le déploiement de la force musculaire lors d'un passage de la position debout à un sprint soudain (galop) ?",
+      "options": [
+        "Recrutement initial des unités FF (pour l'initiation explosive), suivi des unités FR pour la stabilisation, et finalement des unités S pour maintenir la posture une fois le mouvement complété.",
+        "Recrutement sélectif et exclusif des unités FR et FF, car les unités motrices S sont physiologiquement incapables de décharger à des fréquences supérieures à 8 Hz lors d'efforts intenses.",
+        "Recrutement progressif : d'abord les petites unités S (posture), s'ajoutent ensuite les unités intermédiaires FR (marche/course), puis finalement les plus grandes unités FF (galop/saut) pour la force maximale.",
+        "Recrutement simultané de tous les types d'unités (S, FR, FF) dont la force relative est ensuite modulée par la voie corticospinale ventrale en fonction de la demande périphérique."
+      ],
+      "correct": 2,
+      "explanation": "Le principe de taille veut que l'on recrute d'abord les petites unités S (bas seuil d'excitabilité), auxquelles s'ajoutent les unités FR pour plus d'effort, puis les grandes unités FF (haut seuil) pour une force maximale[cite: 2]."
+    },
+    {
+      "question": "Concernant la différence histologique et fonctionnelle entre les fibres musculaires rouges et pâles, laquelle de ces propositions est physiologiquement exacte ?",
+      "options": [
+        "Les fibres pâles possèdent un riche réseau capillaire et de nombreuses mitochondries, ce qui leur confère une grande vitesse de contraction (puissance) indispensable aux efforts intenses et brefs.",
+        "Les fibres rouges, riches en myoglobine et en mitochondries, ont un plus grand diamètre que les fibres pâles, ce qui leur permet de générer une force musculaire supérieure lors de l'orthostation.",
+        "Les fibres rouges sont dédiées aux efforts d'endurance (énergie continue) grâce à leur métabolisme, tandis que les fibres pâles, de plus grand diamètre, génèrent une contraction puissante, rapide, mais très fatigable.",
+        "La composition d'un muscle squelettique est génétiquement figée à la naissance et comprend exclusivement des fibres rouges (posture) ou exclusivement des fibres pâles (sprint), sans mélange possible."
+      ],
+      "correct": 2,
+      "explanation": "Les fibres rouges (unités S) sont riches en mitochondries/myoglobine pour l'endurance. Les fibres pâles (unités FF) ont un grand diamètre, contractent vite et fort, mais se fatiguent rapidement[cite: 2]."
+    },
+    {
+      "question": "En clinique neurologique, l'évaluation de la motricité segmentaire repose sur les myotomes. Quelle association entre une racine rachidienne (niveau médullaire) et son mouvement principal est rigoureusement exacte ?",
+      "options": [
+        "La racine C5 est principalement associée à la flexion du coude, tandis que la racine C6 est principalement associée à l'abduction de l'épaule.",
+        "La racine L3 est principalement responsable de l'extension du genou, tandis que la racine L4 est principalement responsable de la dorsiflexion de la cheville.",
+        "La racine C7 est principalement responsable de la flexion digitale, tandis que la racine C8 régit l'extension du coude et du poignet.",
+        "La racine L5 commande la flexion de la hanche, tandis que la racine S1 est principalement responsable de l'extension du gros orteil."
+      ],
+      "correct": 1,
+      "explanation": "Les myotomes cliniques classiques sont : L3 (extension genou), L4 (dorsiflexion cheville)[cite: 2]. (Pour corriger les autres : C5=abduction épaule, C6=flexion coude, C7=extension coude/poignet, L2=flexion hanche, L5=extension gros orteil, S1=flexion plantaire)[cite: 2]."
+    },
+    {
+      "question": "Lors de l'examen neurologique, le réflexe myotatique (ostéotendineux) est testé par la percussion d'un tendon. Quelle est la séquence exacte des événements neurophysiologiques composant la boucle primaire de ce réflexe ?",
+      "options": [
+        "Étirement du muscle et de ses fibres intrafusales -> activation des afférences Ia de la partie centrale non-contractile -> synapse avec un interneurone activateur -> contraction via le motoneurone gamma.",
+        "Étirement du muscle -> activation des terminaisons en bouquet de fleurs de la partie polaire -> transmission par l'afférence II -> monosynapse sur le MNI alpha -> relaxation de l'agoniste.",
+        "Étirement soudain du muscle et des fibres intrafusales -> détection par les terminaisons annulo-spiralées (partie centrale) -> transmission par l'afférence Ia -> monosynapse sur le MNI alpha -> contraction phasique du muscle agoniste.",
+        "Étirement passif du muscle -> activation des récepteurs de Golgi dans le tendon -> transmission par l'afférence Ib -> monosynapse sur le MNI alpha -> contraction musculaire compensatoire."
+      ],
+      "correct": 2,
+      "explanation": "Le réflexe myotatique débute par l'étirement des fibres intrafusales centrales (terminaisons annulo-spiralées). Le signal voyage via les fibres Ia et fait une monosynapse directe sur le MNI alpha de l'agoniste, provoquant sa contraction phasique[cite: 2]."
+    },
+    {
+      "question": "Dans le cadre de ce même réflexe myotatique, comment le système nerveux prévient-il la contraction simultanée du muscle antagoniste, qui entraverait le mouvement correcteur ?",
+      "options": [
+        "L'afférence Ia collatérale fait synapse directement sur le motoneurone inférieur alpha du muscle antagoniste, libérant du GABA pour l'inhiber monosynaptiquement.",
+        "L'afférence Ia fait une deuxième synapse dans la moelle sur un interneurone inhibiteur, qui à son tour inhibe le motoneurone inférieur alpha du muscle antagoniste.",
+        "Le motoneurone inférieur gamma de l'agoniste envoie une collatérale inhibitrice au motoneurone inférieur alpha de l'antagoniste via la commissure antérieure.",
+        "L'organe tendineux de Golgi de l'antagoniste est activé par le raccourcissement du muscle, déclenchant une boucle réflexe d'inhibition di-synaptique."
+      ],
+      "correct": 1,
+      "explanation": "Pour éviter la contraction de l'antagoniste, une branche de la fibre sensitive Ia fait synapse sur un interneurone inhibiteur spinal, qui va hyperpolariser le MNI alpha du muscle antagoniste (inhibition réciproque)[cite: 2]."
+    },
+    {
+      "question": "Quel est le rôle physiologique fondamental de la coactivation des motoneurones inférieurs gamma (MNI γ) lors de la contraction active d'un muscle squelettique ?",
+      "options": [
+        "Ils innervent la plaque motrice des fibres musculaires rouges extrafusales pour fournir la composante tonique (d'endurance) de la contraction volontaire.",
+        "Ils contractent la partie centrale des fibres intrafusales, ce qui stimule les afférences Ia et amplifie la force de contraction du muscle agoniste de façon réflexe.",
+        "Ils contractent les parties polaires des fibres intrafusales, maintenant ainsi la tension sur la partie centrale non-contractile lors du raccourcissement du muscle, ce qui optimise la détection d'un nouvel étirement.",
+        "Ils modulent l'inhibition présynaptique sur les fibres Ib provenant de l'organe tendineux de Golgi, évitant ainsi le relâchement inopportun du muscle sous haute tension."
+      ],
+      "correct": 2,
+      "explanation": "Lorsque le muscle se raccourcit, le fuseau neuromusculaire se détendrait et perdrait sa capacité de détection. Le MNI gamma contracte les pôles du fuseau pour retendre sa partie centrale, le gardant « en ligne » et sensible (optimisation du fuseau)[cite: 2]."
+    },
+    {
+      "question": "Le réflexe myotatique inversé (ou réflexe de l'organe tendineux de Golgi) sert principalement à protéger le muscle contre les tensions excessives. Quelle cascade neurophysiologique caractérise ce réflexe lors d'une forte contraction active ?",
+      "options": [
+        "Tension détectée par l'OTG -> activation de la fibre Ia -> synapse sur un interneurone activateur -> contraction réflexe maximale de l'agoniste pour surmonter la résistance.",
+        "Étirement passif du muscle -> activation de la fibre Ib de l'OTG -> inhibition monosynaptique du motoneurone gamma -> relâchement des fibres intrafusales.",
+        "Tension détectée par le collagène ondulé de l'OTG -> activation de l'afférence Ib -> stimulation d'un interneurone inhibiteur (GABAergique) de l'agoniste et d'un interneurone activateur de l'antagoniste.",
+        "Tension détectée par les terminaisons annulo-spiralées de l'OTG -> activation de la fibre II -> inhibition di-synaptique de l'agoniste via la formation réticulaire pontique."
+      ],
+      "correct": 2,
+      "explanation": "L'OTG détecte la tension (surtout lors de la contraction active) via sa fibre Ib. Celle-ci active un interneurone inhibiteur relâchant l'agoniste, et un interneurone activateur contractant l'antagoniste, protégeant le muscle et stabilisant l'articulation[cite: 2]."
+    },
+    {
+      "question": "Lorsqu'un individu marche accidentellement sur un objet tranchant (stimulus nociceptif), il retire immédiatement son pied tout en gardant l'équilibre. Quel circuit spinal multisegmentaire décrit fidèlement ce réflexe de flexion et d'extension croisée ?",
+      "options": [
+        "Afférences proprioceptives Ia -> interneurones commissuraux -> activation des motoneurones extenseurs homolatéraux et inhibition des fléchisseurs controlatéraux.",
+        "Afférences cutanées nociceptives -> interneurones spinaux multiples -> flexion du membre ipsilatéral (retrait) et activation des muscles extenseurs du membre controlatéral (support du poids).",
+        "Afférences nociceptives -> relais au noyau rouge mésencéphalique -> voie rubro-spinale -> flexion bilatérale simultanée des membres inférieurs (réponse d'évitement).",
+        "Afférences cutanées -> générateurs centraux de rythme (CPG) -> alternance immédiate et répétitive de flexions/extensions des deux membres (déclenchement de la course réflexe)."
+      ],
+      "correct": 1,
+      "explanation": "Le stimulus nociceptif cutané active des interneurones spinaux (souvent sur plusieurs segments) qui provoquent la flexion de la jambe menacée pour la retirer, tout en provoquant l'extension de la jambe opposée (extension croisée) pour supporter le corps[cite: 2]."
+    },
+    {
+      "question": "Chez les quadrupèdes, le patron de marche de base implique l'alternance d'appui (extension) et de transfert (flexion) pour chaque membre. Quelle affirmation décrit précisément le fonctionnement de ces générateurs centraux de rythme (CPG) spinaux ?",
+      "options": [
+        "Le rythme est imposé de manière descendante et continue par la formation réticulaire bulbaire ; en cas de myélotomie (section de la moelle), toute locomotion réflexe devient impossible.",
+        "L'alternance entre l'extension et la flexion est coordonnée de façon purement mécanique par les afférences Ib de l'organe tendineux de Golgi de chaque patte, sans nécessité d'interneurones rythmiques.",
+        "Chaque membre possède un réseau d'interneurones spinaux aux propriétés membranaires permettant une dépolarisation périodique, assurant l'alternance flexion/extension même sans commande corticale (myélotomie).",
+        "Le générateur central de rythme unique, localisé dans l'intumescence lombaire, gère simultanément les quatre membres en synchronisant exclusivement les motoneurones alpha médians axiaux."
+      ],
+      "correct": 2,
+      "explanation": "Dans la moelle, il existe des réseaux d'interneurones excitateurs générant leur propre rythme périodique (CPG). Ces circuits coordonnent l'alternance extenseurs/fléchisseurs de façon autonome pour chaque patte, rendant la marche réflexe possible chez un quadrupède myélotomisé (sans cerveau)[cite: 2]."
+    },
+    {
+      "question": "Concernant la somatotopie de la corne ventrale de la moelle épinière et l'organisation des interneurones associés, quelle association est structurellement et fonctionnellement exacte ?",
+      "options": [
+        "Les MNI latéraux innervent les muscles axiaux (posture) et sont coordonnés par des interneurones latéraux projetant bilatéralement sur de longues distances.",
+        "Les MNI médians innervent les muscles distaux (mains) et reçoivent des afférences d'interneurones médians à projection très segmentée et unilatérale.",
+        "Les MNI destinés aux muscles distaux des membres sont situés latéralement ; ils sont modulés par des interneurones latéraux qui projettent unilatéralement sur un petit nombre de segments (motricité fine).",
+        "Les MNI de la zone intermédiaire innervent exclusivement les fibres intrafusales (MNI gamma) et ne possèdent pas de somatotopie médio-latérale distincte."
+      ],
+      "correct": 2,
+      "explanation": "La somatotopie de la moelle place les MNI axiaux au centre (médian) et les MNI des membres (distaux) en latéral. Les interneurones latéraux projettent unilatéralement et sur de courtes distances (1-4 segments) pour gérer cette motricité distale et fine (mains)[cite: 2]."
+    },
+    {
+      "question": "Les interneurones situés dans la partie médiane de la corne intermédiaire médullaire présentent des caractéristiques de projection spécifiques. Quelle est leur fonction principale en lien avec ces caractéristiques anatomiques ?",
+      "options": [
+        "Ils projettent de façon unilatérale et sur une courte distance pour affiner les mouvements isolés des doigts sous le contrôle exclusif de la voie corticospinale latérale.",
+        "Ils se projettent souvent bilatéralement et sur de longues distances (plusieurs segments) afin de coordonner les grands mouvements réflexes de la posture, de l'équilibre et de la locomotion impliquant les MNI axiaux.",
+        "Ils inhibent de façon récurrente les motoneurones gamma de l'intumescence cervicale pour supprimer le clonus musculaire lors des mouvements volontaires lents.",
+        "Ils forment les voies spinothalamiques ascendantes, relayant l'information proprioceptive des fuseaux neuromusculaires directement vers le cortex pariétal."
+      ],
+      "correct": 1,
+      "explanation": "Les interneurones médians projettent loin (haut/bas) et souvent des deux côtés (bilatéralement). Cela leur permet de coordonner les MNI médians (muscles axiaux) sur de vastes étendues, ce qui est indispensable pour l'équilibre, la posture et la locomotion[cite: 2]."
+    },
+    {
+      "question": "Parmi les réflexes supraspinaux modulés par le tronc cérébral, le réflexe vestibulo-spinal latéral est essentiel au maintien de l'équilibre. Quelle est l'origine du stimulus, la voie efférente et la réponse de ce réflexe ?",
+      "options": [
+        "Stimulus: rotation rapide de la tête ; Voie efférente: faisceau longitudinal médian (FLM) ; Réponse: extension bilatérale du cou et des bras.",
+        "Stimulus: déviation de l'équilibre vertical détectée par les otolithes ; Voie efférente: voie vestibulospinale latérale ; Réponse: extension des muscles antigravitaires du membre ipsilatéral à la chute.",
+        "Stimulus: planification d'un mouvement volontaire ; Voie efférente: voie réticulo-spinale ; Réponse: contraction anticipatoire des muscles stabilisateurs du tronc (réflexe feed-forward).",
+        "Stimulus: stimulus auditif soudain détecté par le colliculus inférieur ; Voie efférente: voie tectospinale ; Réponse: orientation conjuguée de la tête et des yeux vers le son."
+      ],
+      "correct": 1,
+      "explanation": "Le réflexe vestibulospinal latéral est déclenché par les otolithes (déviation de la verticale). Le signal descend via la voie vestibulospinale latérale dans le cordon antérieur, et provoque l'extension des muscles antigravitaires du côté de la chute pour repousser le sol[cite: 2]."
+    },
+    {
+      "question": "En quoi le réflexe réticulo-spinal se distingue-t-il fonctionnellement du réflexe vestibulo-spinal dans la gestion de l'équilibre corporel ?",
+      "options": [
+        "Le réflexe vestibulo-spinal gère exclusivement la stabilisation du regard (RVO), tandis que le réflexe réticulo-spinal gère la musculature des membres.",
+        "Le réflexe vestibulo-spinal réagit a posteriori à une perte d'équilibre (chute en cours), alors que le réflexe réticulo-spinal agit en anticipation (prévention) avant l'exécution d'un mouvement volontaire déstabilisant.",
+        "Le réflexe réticulo-spinal cible uniquement les motoneurones distaux pour la motricité fine, alors que le vestibulo-spinal cible la musculature axiale bilatérale.",
+        "Il n'y a pas de distinction fonctionnelle ; les deux voies cheminent dans les cordons postérieurs et génèrent une réponse identique de décérébration en cas de lésion corticale."
+      ],
+      "correct": 1,
+      "explanation": "La distinction clé pour l'examen : le réflexe vestibulo-spinal réagit à la chute (rétroactif). Le réflexe réticulo-spinal (alimenté par des centres corticaux) contracte les stabilisateurs en anticipation (prévenir la chute) avant même qu'on lève un membre[cite: 2]."
+    },
+    {
+      "question": "La réponse (ou rigidité) de décérébration est une manifestation clinique majeure consécutive à une lésion du système nerveux central. Quelle est la physiopathologie précise de cette réponse et son implication posturale ?",
+      "options": [
+        "Elle résulte d'une lésion du cervelet flocculo-nodulaire entraînant une ataxie axiale sévère et une hyperflexion compensatoire des membres inférieurs.",
+        "Elle est causée par une lésion au-dessus du mésencéphale (décortication) provoquant une perte d'inhibition de la voie rubro-spinale, menant à une flexion des membres supérieurs et des mains.",
+        "Elle fait suite à une lésion du mésencéphale ou de la protubérance haute, désinhibant le noyau vestibulaire latéral ; ceci libère une réponse vestibulo-spinale massive caractérisée par l'extension rigide des quatre membres.",
+        "Elle est due à une destruction directe des noyaux vestibulaires dans le bulbe rachidien, ce qui annule le tonus extenseur et conduit à une paralysie flasque diffuse."
+      ],
+      "correct": 2,
+      "explanation": "La réponse en décérébration (extension des 4 membres à la douleur) survient lors d'une lésion mésencéphalique. Les centres corticaux inhibiteurs sont coupés, ce qui « libère » l'activité du noyau vestibulaire latéral sous-jacent (qui reste intact), provoquant un puissant réflexe vestibulospinal d'extension[cite: 2]."
+    },
+    {
+      "question": "La voie rubro-spinale (issue du noyau rouge) a subi d'importantes modifications évolutives. Quel est son rôle supposé chez le primate non-humain comparé à sa fonction chez l'humain et dans quel contexte pathologique est-elle impliquée ?",
+      "options": [
+        "Chez l'humain, elle supplante la voie corticospinale pour la motricité fine des doigts ; elle est responsable de l'apraxie lors de sa destruction isolée.",
+        "Chez le primate non-humain, elle contribue fortement à la motricité fine distale, mais son rôle est mineur chez l'humain sain ; cependant, lors d'une lésion sus-mésencéphalique (décortication), sa désinhibition provoque la flexion anormale des membres supérieurs.",
+        "Elle projette massivement sur la musculature axiale chez tous les primates pour l'équilibre ; sa libération par une lésion bulbaire génère le nystagmus rubral.",
+        "Elle relaie l'information proprioceptive cérébelleuse vers le thalamus ; son interruption abolit la rétroaction inconsciente sur les noyaux vestibulaires, causant le vertige paroxystique."
+      ],
+      "correct": 1,
+      "explanation": "La voie rubro-spinale projette vers la partie latérale de la moelle pour la motricité distale (bras/mains). Très importante chez le singe, son rôle est réduit chez l'homme, mais elle est responsable de la posture en flexion des bras (décortication) lors d'une lésion haut située (sus-mésencéphalique) qui la désinhibe[cite: 2]."
+    },
+    {
+      "question": "La voie tecto-spinale (ou colliculospinale) trouve son origine dans le colliculus supérieur du mésencéphale. Quelle est la fonction principale de cette voie descendante ?",
+      "options": [
+        "La synchronisation des générateurs centraux de rythme (CPG) lombaires pour adapter la vitesse de la locomotion aux stimuli visuels.",
+        "L'inhibition présynaptique des afférences nociceptives dans la corne dorsale de la moelle cervicale, modulant le réflexe de retrait.",
+        "L'orientation réflexe involontaire de la tête, du cou et des yeux vers l'origine spatiale d'un stimulus visuel soudain ou saillant.",
+        "La compensation du réflexe vestibulo-oculaire (RVO) lors de rotations continues de la tête supérieures à 15 secondes, via le noyau interstitiel de Cajal."
+      ],
+      "correct": 2,
+      "explanation": "Le colliculus supérieur (visuel) et inférieur (auditif) via la voie tecto-spinale gèrent l'orientation réflexe rapide de la tête et des yeux vers un stimulus pertinent (lumière ou son soudain)[cite: 2]."
+    },
+    {
+      "question": "L'intumescence (renflement) cervicale de la moelle épinière est anatomiquement élargie pour accommoder les neurones innervant les membres supérieurs. Quels sont les segments médullaires (et niveaux vertébraux) correspondant à ce renflement ?",
+      "options": [
+        "De la vertèbre C1 à C4, correspondant au plexus cervical strict.",
+        "Approximativement des segments médullaires C5 à T1, donnant naissance au plexus brachial.",
+        "De la vertèbre T2 à T10, compensant la présence du cœur et des poumons dans le médiastin.",
+        "De la vertèbre C7 au cône médullaire terminal (L1-L2), abritant la totalité des motoneurones de la voie rubro-spinale."
+      ],
+      "correct": 1,
+      "explanation": "Le renflement cervical, qui contient l'immense quantité de motoneurones nécessaires pour les bras et les mains (plexus brachial), s'étend des segments médullaires C5 à T1[cite: 2]."
+    },
+    {
+      "question": "Concernant la boucle de transduction synaptique de base d'un motoneurone alpha, quel neurotransmetteur est libéré à la jonction neuromusculaire, et de quel type de réponse s'agit-il sur la fibre musculaire squelettique ?",
+      "options": [
+        "L'aspartate, déclenchant un potentiel postsynaptique inhibiteur (PPSI) qui hyperpolarise le sarcolemme avant la contraction.",
+        "Le glutamate, agissant sur un récepteur métabotrope pour moduler lentement le tonus du calcium intracellulaire.",
+        "L'acétylcholine, agissant sur des récepteurs nicotiniques ionotropes, déclenchant un potentiel de plaque excitateur rapide menant à la contraction.",
+        "La glycine, agissant comme un modulateur allostérique sur les canaux potassiques de la plaque motrice, facilitant la repolarisation."
+      ],
+      "correct": 2,
+      "explanation": "Le motoneurone inférieur libère de l'acétylcholine à la plaque motrice (synapse neuromusculaire) sur des récepteurs nicotiniques ionotropes, provoquant une excitation directe et rapide (contraction) des fibres musculaires striées[cite: 1, 2]."
+    },
+    {
+      "question": "Lequel des déficits suivants est strictement associé à une lésion bilatérale du motoneurone inférieur (syndrome du MNI), contrastant radicalement avec une atteinte du motoneurone supérieur (MNS) ?",
+      "options": [
+        "Une libération des réflexes médullaires sous le niveau de la lésion, entraînant une spasticité et des réflexes myotatiques vifs.",
+        "Une apraxie idéo-motrice caractérisée par un défaut de planification du geste malgré une force musculaire conservée.",
+        "Une paralysie flasque diffuse, accompagnée d'aréflexie myotatique, d'une amyotrophie sévère et de fasciculations musculaires.",
+        "Une incoordination motrice et une dysmétrie (imprécision du mouvement) sans perte véritable de la force de contraction maximale."
+      ],
+      "correct": 2,
+      "explanation": "L'atteinte du MNI (le câble final vers le muscle est coupé) cause une paralysie flasque, une perte totale des réflexes (aréflexie), une fonte musculaire rapide (amyotrophie sévère) et des fasciculations (signes de dénervation). Le MNS cause de la spasticité et de l'hyperréflexie[cite: 2]."
+    },
+    {
+      "question": "Dans le contexte de l'audition et de l'anatomie locale de la cochlée, pourquoi une cellule ciliée auditive peut-elle se dépolariser très rapidement grâce à l'entrée de potassium (K+) à son pôle apical, contrairement à un neurone cortical standard ?",
+      "options": [
+        "Parce que les canaux de transduction (hc-MET) laissent passer le sodium au lieu du potassium, inversant le gradient électrochimique habituel.",
+        "Parce que l'endolymphe du canal cochléaire, entretenue par la strie vasculaire, est exceptionnellement riche en K+ et présente un potentiel de +125 mV, créant une force électromotrice massive vers l'intérieur de la cellule.",
+        "Parce que le potassium est activement pompé hors de la cellule par les liens apicaux (tip links) mécaniques, générant un courant capacitif inverse.",
+        "Parce que la base de la cellule ciliée baigne dans un liquide riche en chlore (Cl-), ce qui repousse le potassium apical vers la membrane présynaptique."
+      ],
+      "correct": 1,
+      "explanation": "Dans la cochlée (comme dans le système vestibulaire), l'endolymphe baignant les cils est extrêmement riche en K+ et maintenue à un potentiel très positif. Lorsque les canaux apicaux s'ouvrent, le K+ entre massivement de façon passive pour dépolariser la cellule[cite: 4]."
+    },
+    {
+      "question": "Quel énoncé explique correctement le phénomène de 'déphasage' (différence de phase) d'un son complexe et son utilité neurophysiologique chez l'humain ?",
+      "options": [
+        "Il s'agit de la distorsion harmonique créée par le pavillon de l'oreille, permettant à la cochlée d'amplifier les fréquences au-delà de 20 000 Hz.",
+        "C'est la capacité de l'oreille moyenne (tympan et osselets) à déphaser l'onde pour éviter le dommage acoustique lors d'une exposition soudaine à plus de 100 dB.",
+        "C'est le délai temporel d'arrivée d'une même onde sonore entre l'oreille droite et l'oreille gauche, analysé par l'olive supérieure pour la localisation spatiale (stéréoacousie) des sons.",
+        "Il s'agit de la décomposition d'un son complexe en ondes simples le long de la membrane basilaire, où chaque phase active spécifiquement la strie vasculaire."
+      ],
+      "correct": 2,
+      "explanation": "Le déphasage (différence de temps d'arrivée et de phase de l'onde entre les deux oreilles) est analysé par les noyaux olivaires supérieurs dans le tronc cérébral pour localiser d'où vient un son dans le plan horizontal (stéréoacousie)[cite: 4]."
+    },
+    {
+      "question": "Dans le mécanisme du générateur central de rythme (CPG) responsable de la locomotion, quel groupe de neurotransmetteurs est crucial pour assurer l'inhibition stricte de la musculature antagoniste lors de la phase de flexion (transfert) de la patte ?",
+      "options": [
+        "L'acétylcholine (ACh) agissant sur les récepteurs muscariniques des interneurones polysynaptiques de la corne dorsale.",
+        "Le glutamate (Glu) et l'aspartate (Asp), libérés par les interneurones excitateurs rythmiques.",
+        "L'acide gamma-aminobutyrique (GABA) et la glycine (Gly), libérés par les interneurones inhibiteurs (Int i) spinaux sur les motoneurones de l'extension.",
+        "La sérotonine (5-HT) et la dopamine (DA), modulant le circuit directement depuis la substance noire pars compacta."
+      ],
+      "correct": 2,
+      "explanation": "Pour qu'un CPG fonctionne, il doit coordonner l'excitation (souvent via Glutamate) des fléchisseurs avec l'inhibition simultanée des extenseurs. Cette inhibition (PPSI) dans la moelle épinière est médiée par des interneurones inhibiteurs relâchant du GABA ou de la glycine[cite: 1, 2]."
+    },
+    {
+      "question": "Lors d'une évaluation neurologique pour radiculopathie, on note une abolition du réflexe ostéotendineux bicipital (flexion du coude) et une faiblesse de ce même mouvement. Quel myotome et segment médullaire sont le plus probablement atteints ?",
+      "options": [
+        "Le myotome C5, situé dans la moelle cervicale haute.",
+        "Le myotome C6, localisé au sein du renflement cervical.",
+        "Le myotome C7, gérant habituellement l'extension.",
+        "Le myotome T1, responsable de la motricité intrinsèque de la main."
+      ],
+      "correct": 1,
+      "explanation": "Le myotome C6 est cliniquement associé au mouvement de flexion du coude et au réflexe bicipital. Il se trouve au cœur de l'intumescence (renflement) cervicale[cite: 2]."
+    },
+    {
+      "question": "Quelle est la principale utilité du phénomène de 'co-contraction' régulé par les motoneurones alpha des muscles agonistes et antagonistes autour d'une articulation lors d'un effort incertain ou imprévisible ?",
+      "options": [
+        "Il permet de relâcher totalement l'articulation pour maximiser la vitesse d'étirement du fuseau neuromusculaire et induire un réflexe myotatique maximal.",
+        "Il rigidifie et stabilise l'articulation en contractant simultanément les agonistes et antagonistes, ce qui augmente la précision et réduit les risques de blessure lors d'une perturbation.",
+        "Il induit une fatigue rapide des unités motrices FF, forçant le système nerveux à recruter les unités S plus appropriées pour la motricité fine.",
+        "Il inhibe rétroactivement la libération de glutamate à la plaque motrice via les afférences Ib de l'organe tendineux de Golgi."
+      ],
+      "correct": 1,
+      "explanation": "La co-contraction (contraction simultanée de l'agoniste et de l'antagoniste) fige et stabilise l'articulation. Le gain des réflexes y est ajusté (intensifié) pour protéger la structure et répondre promptement à des forces imprévisibles (ex: marcher sur la glace)[cite: 2]."
+    },
+    {
+      "question": "Que postule l'hypothèse des « vecteurs de populations de neurones » concernant la façon dont le cortex moteur primaire encode la direction d'un mouvement volontaire ?",
+      "options": [
+        "Un seul neurone moteur supérieur (MNS) spécifique (par ex. le 'neurone de l'abduction pure') s'active de façon maximale pour imposer la direction, tandis que les autres sont inhibés.",
+        "Le mouvement final est la somme vectorielle de l'activité de plusieurs motoneurones supérieurs (MNS), où chaque MNS « vote » pour sa direction préférée proportionnellement à sa fréquence de décharge.",
+        "La direction du mouvement est encodée exclusivement par le cortex prémoteur latéral, le cortex moteur primaire ne faisant que recruter séquentiellement les unités motrices S, FR, puis FF.",
+        "Le cervelet génère le vecteur mathématique de la trajectoire et l'envoie au cortex moteur primaire via les fibres moussues du relais thalamique."
+      ],
+      "correct": 1,
+      "explanation": "L'hypothèse des vecteurs de population suggère que le mouvement final n'est pas codé par un seul neurone, mais par la sommation vectorielle des décharges d'une vaste population de MNS, chacun ayant une direction préférentielle et contribuant selon l'intensité de sa décharge[cite: 2]."
+    },
+    {
+      "question": "Quel déficit moteur classique est observé de manière prédominante chez un patient présentant une lésion ischémique stricte de la voie corticospinale latérale droite dans le bulbe rachidien (au-dessus de la décussation pyramidale) ?",
+      "options": [
+        "Une paralysie flasque bilatérale des muscles axiaux du tronc avec aréflexie massive (choc spinal).",
+        "Une paralysie de la musculature distale (mains, pieds) des membres du côté gauche du corps (controlatéral), accompagnée d'hyperréflexie spastique.",
+        "Une apraxie de la marche sévère caractérisée par un défaut de planification, mais avec une force musculaire distale préservée aux quatre membres.",
+        "Une incoordination sévère et une asynergie des mouvements (ataxie) des membres du côté droit du corps, typique de l'atteinte cérébelleuse."
+      ],
+      "correct": 1,
+      "explanation": "La voie corticospinale latérale (qui décuse à la jonction bulbo-médullaire) contrôle la motricité distale (fine) du côté opposé (controlatéral). Une lésion droite (avant le croisement) causera une faiblesse distale gauche (de type motoneurone supérieur, donc spastique)[cite: 2]."
+    },
+    {
+      "question": "Concernant la voie corticospinale ventrale (antérieure), laquelle de ces propriétés justifie que la motricité proximale et axiale récupère généralement mieux que la motricité distale après un AVC unilatéral de la capsule interne ?",
+      "options": [
+        "La voie corticospinale ventrale ne décuse pas dans le bulbe et projette bilatéralement (de chaque côté) dans la moelle spinale sur les MNI axiaux ; ainsi, l'hémisphère sain peut compenser la perte.",
+        "Les axones de la voie corticospinale ventrale (qui représentent 90% des fibres) voyagent hors de la capsule interne (via le fornix) et sont donc épargnés lors d'un AVC capsulaire.",
+        "La voie corticospinale ventrale contient exclusivement des afférences nociceptives qui stimulent le réflexe de flexion croisée, contournant le besoin de commande volontaire.",
+        "Elle fait synapse de façon monosynaptique sur le motoneurone gamma exclusivement, ce qui rétablit artificiellement le tonus des muscles fléchisseurs proximaux sans contrôle cortical."
+      ],
+      "correct": 0,
+      "explanation": "Contrairement à la voie latérale, la voie corticospinale ventrale (10% des fibres) descend ipsilatéralement et, rendue dans la moelle, projette de façon bilatérale sur les MNI axiaux/proximaux. Un AVC unilatéral épargne l'autre hémisphère, qui continue d'innerver les muscles proximaux des deux côtés, permettant une meilleure récupération[cite: 2]."
+    },
+    {
+      "question": "Quelle description correspond le mieux au concept de « champ musculaire du neurone moteur cortical » ?",
+      "options": [
+        "Il s'agit du territoire sensitif cutané (dermatome) qui, lorsqu'il est stimulé, déclenche de façon réflexe l'activation d'un neurone moteur cortical primaire.",
+        "C'est la capacité d'un seul motoneurone inférieur de la moelle à se ramifier pour innerver plusieurs milliers de fibres musculaires distinctes d'un même myotome.",
+        "Il représente le fait que la stimulation électrique d'un seul motoneurone supérieur (MNS) dans le cortex provoque l'activation de multiples motoneurones inférieurs (MNI) dans la moelle, contractant ainsi plusieurs muscles synergiques pour un mouvement.",
+        "Il désigne l'organisation tonotopique stricte du cortex moteur cingulaire où chaque neurone est associé à une seule fibre intrafusale du muscle squelettique."
+      ],
+      "correct": 2,
+      "explanation": "Le champ musculaire d'un neurone cortical illustre qu'un seul MNS ne contracte pas une seule fibre, mais diverge pour activer un ensemble de motoneurones inférieurs (MNI) spinaux innervant divers muscles, facilitant ainsi la coordination de mouvements fonctionnels (comme porter la main à la bouche)[cite: 2]."
+    },
+    {
+      "question": "Le cortex prémoteur latéral joue un rôle majeur dans la préparation motrice. Quelle est la particularité des décharges de ses neurones (activité conditionnelle) avant l'exécution d'un mouvement volontaire en réponse à un indice visuel (comme l'allumage d'une lumière verte) ?",
+      "options": [
+        "Les neurones déchargent exclusivement et brusquement 10 millisecondes *après* l'exécution du geste, agissant comme un signal d'erreur de correction vers le cervelet.",
+        "Les décharges débutent longtemps avant l'exécution motrice (pendant la phase de planification) en réponse à l'indice extrinsèque, et la fréquence augmente à l'approche du déclenchement du geste.",
+        "Ils présentent une activité tonique inhibitrice permanente qui ne s'arrête que lors de l'activation des noyaux gris centraux, libérant ainsi le réflexe myotatique.",
+        "Ils déchargent de manière strictement synchrone avec le cortex auditif primaire (aire de Heschl) pour convertir les stimuli sonores en activité autonome viscérale."
+      ],
+      "correct": 1,
+      "explanation": "Le cortex prémoteur latéral réagit fortement aux indices externes (espace extra-personnel). Ses neurones anticipent le mouvement : ils commencent à décharger bien avant l'action elle-même, participant activement à la planification et à l'intention motrice[cite: 2]."
+    },
+    {
+      "question": "Qu'est-ce qu'un « neurone miroir » au sein du cortex prémoteur, et quelle est sa fonction neurophysiologique présumée ?",
+      "options": [
+        "Un neurone de la voie rubro-spinale qui décuse deux fois, provoquant un mouvement ipsilatéral 'en miroir' par rapport à l'hémisphère d'origine.",
+        "Un interneurone inhibiteur de la moelle épinière qui, lors du réflexe d'extension croisée, reproduit fidèlement la tension de la jambe blessée dans la jambe saine.",
+        "Un neurone prémoteur qui décharge intensément lorsqu'un individu exécute un geste, ET qui décharge de façon similaire lorsqu'il observe un autre individu exécuter ce même geste, participant potentiellement à l'apprentissage par imitation.",
+        "Un neurone du cortex visuel primaire (aire 17) qui convertit les images inversées de la rétine en signaux somatosensoriels conscients dans le gyrus postcentral."
+      ],
+      "correct": 2,
+      "explanation": "Les neurones miroirs, situés dans le cortex prémoteur, s'activent autant lors de l'action motrice de l'individu que lors de la simple observation de cette action faite par autrui. Ils joueraient un rôle clé dans l'empathie, la compréhension des intentions et l'apprentissage par imitation[cite: 2]."
+    },
+    {
+      "question": "Concernant la division fonctionnelle du cortex prémoteur face médiane, quelle pathologie comportementale gravissime résulte classiquement d'une lésion bilatérale de l'Aire Motrice Supplémentaire (AMS) ?",
+      "options": [
+        "Le syndrome sous-lésionnel spastique, caractérisé par une hyperréflexie myotatique incontrôlable de tout le corps.",
+        "Le mutisme akinétique, caractérisé par une incapacité totale à initier des gestes auto-déclenchés (volontaires) et à parler, malgré une absence de paralysie structurale des MNI.",
+        "L'ataxie cérébelleuse bilatérale avec titubation de la tête et impossibilité de corriger la posture assise (maladie du vermis).",
+        "La dissociation automatico-volontaire de type faciale, où le patient ne peut plus sourire à une blague mais peut contracter ses lèvres sur commande."
+      ],
+      "correct": 1,
+      "explanation": "L'Aire Motrice Supplémentaire (AMS) est essentielle pour l'initiation des mouvements intentionnels générés de l'intérieur (auto-déclenchés). Sa destruction bilatérale supprime la volonté d'agir et de parler : c'est le mutisme akinétique[cite: 2]."
+    },
+    {
+      "question": "En considérant la voie cortico-nucléaire (ou cortico-bulbaire), pourquoi une lésion unilatérale du cortex moteur primaire droit (un AVC massif de l'hémisphère droit) NE provoque-t-elle PAS de difficulté clinique évidente à avaler (déglutition) ni de paralysie complète de la mâchoire supérieure ?",
+      "options": [
+        "Parce que les noyaux moteurs crâniens responsables des fonctions vitales (comme le noyau ambigu pour la déglutition ou le noyau moteur du V) reçoivent des projections cortico-nucléaires bilatérales (des deux hémisphères) ; le côté sain compense l'atteinte.",
+        "Parce que ces fonctions sont exclusivement gérées par des réflexes spinaux locaux dans la moelle cervicale haute, totalement indépendants du cortex cérébral.",
+        "Parce que le faisceau longitudinal médian (FLM) transmet l'intention motrice croisée depuis le cervelet vers les noyaux vestibulaires qui commandent directement la mastication.",
+        "Parce qu'une lésion du cortex moteur primaire droit entraîne paradoxalement une paralysie de la moitié droite du visage uniquement, laissant les structures de la déglutition (gauche) intactes."
+      ],
+      "correct": 0,
+      "explanation": "Pour protéger la survie, les noyaux crâniens contrôlant la mastication (V), la déglutition (IX, X, XII) et le clignement des yeux (partie supérieure du VII) reçoivent une commande bilatérale. L'hémisphère intact (gauche) continue de stimuler les noyaux des deux côtés du tronc cérébral, préservant la fonction[cite: 2]."
+    },
+    {
+      "question": "Dans le cadre de l'évaluation du nerf facial (VII), on observe chez un patient une paralysie (asymétrie) de la partie INFÉRIEURE droite de son visage lorsqu'on lui demande de montrer les dents, mais il parvient à froncer les sourcils et fermer les yeux des deux côtés. Quelle localisation lésionnelle est la plus probable ?",
+      "options": [
+        "Une atteinte du nerf périphérique facial droit (paralysie de Bell), coupant le MNI pour toute la moitié droite du visage.",
+        "Une lésion du cortex moteur primaire (MNS) GAUCHE : la commande pour le haut du visage (fermement des yeux) est sauvée par l'innervation bilatérale venant de l'hémisphère droit, mais le bas du visage droit ne reçoit plus son innervation unilatérale gauche.",
+        "Une destruction bilatérale de l'aire de Broca (aires 44 et 45), empêchant la coordination de la musculature oropharyngée pour l'articulation de la parole et le sourire.",
+        "Une lésion isolée du cervelet médian (vermis), induisant une imprécision dans le contrôle des muscles zygomatiques sans perte réelle de force."
+      ],
+      "correct": 1,
+      "explanation": "C'est la classique paralysie faciale « centrale ». Le noyau du VII supérieur (yeux/front) est innervé par les deux hémisphères (donc sauvé si un hémisphère flanche). Le noyau du VII inférieur (bouche) n'est innervé que par l'hémisphère controlatéral. Une lésion centrale gauche paralyse le bas du visage droit, mais épargne le haut du visage[cite: 2]."
+    },
+    {
+      "question": "La dissociation automatico-volontaire (comme sourire à une blague spontanément, mais être incapable de sourire sur commande) illustre la séparation des voies motrices. Quelle structure anatomique, souvent contournée par l'AVC sylvien superficiel, transmet l'expression motrice involontaire des émotions au visage ?",
+      "options": [
+        "L'aire motrice cingulaire, dont les voies profondes peuvent atteindre les noyaux crâniens (VII) même lorsque le cortex moteur primaire ou la capsule interne sont lésés.",
+        "La voie vestibulo-spinale médiane (FLM), qui relaie les accélérations émotionnelles directement au noyau de l'hypoglosse (XII) et du trijumeau (V).",
+        "L'organe tendineux de Golgi des muscles de la mimique, qui déclenche un réflexe d'étirement en boucle courte via la substance grise périaqueducale.",
+        "L'aire motrice supplémentaire (AMS) de la face latérale, qui décharge de manière conditionnelle uniquement si le patient est exposé à un stimulus auditif drôle."
+      ],
+      "correct": 0,
+      "explanation": "L'expression motrice des émotions (rire spontané) passe par des circuits distincts et plus profonds, comme l'aire motrice cingulaire et des voies extrapyramidales. Une lésion détruisant le cortex moteur primaire (qui gère le mouvement sur commande, « montre-moi tes dents ») peut laisser ces voies émotionnelles intactes, créant cette dissociation[cite: 2]."
+    },
+    {
+      "question": "Si l'on stimule expérimentalement par des microélectrodes une très petite région de la couche V du cortex moteur primaire chez le singe, quel type d'activité motrice est classiquement observé à la périphérie ?",
+      "options": [
+        "La contraction isolée et prolongée d'une seule unité motrice S (fibres rouges) dans un doigt, démontrant le contrôle un-pour-un du cerveau sur la moelle.",
+        "Une violente réponse de décérébration bilatérale (extension massive des extenseurs) par activation de la formation réticulaire.",
+        "Un mouvement coordonné et significatif pour l'espèce (comme porter la main à la bouche ou faire un geste de défense) résultant de l'activation synergique de plusieurs MNI dans la moelle.",
+        "Un réflexe d'extension croisée où le bras stimulé fléchit alors que le bras opposé s'étend brusquement pour maintenir l'équilibre."
+      ],
+      "correct": 2,
+      "explanation": "Les microstimulations corticales révèlent que le cortex moteur ne commande pas des muscles isolés de façon pointilleuse, mais stimule un réseau de motoneurones pour générer un mouvement fluide, synergique et pertinent sur le plan comportemental (ex: posture de défense ou atteinte d'un objet)[cite: 2]."
+    },
+    {
+      "question": "Le fuseau neuromusculaire contient à la fois des fibres sensitives Ia et II. Quelle distinction fonctionnelle majeure existe-t-il entre la décharge phasique et la décharge tonique issues de ce récepteur lors du réflexe myotatique ?",
+      "options": [
+        "La décharge phasique est générée par les fibres intrafusales polaires pour signaler l'inhibition de l'antagoniste, tandis que la tonique signale le recrutement des unités motrices FF.",
+        "La décharge phasique (transmise surtout par les fibres Ia) signale le changement soudain de longueur (la vitesse d'étirement) pour corriger brusquement le mouvement, alors que l'activité tonique (entretenue par les MNI gamma et transmise par les fibres II) maintient un signal constant sur la longueur du muscle pour gérer la posture continue.",
+        "La décharge phasique active uniquement l'organe tendineux de Golgi (OTG) via la voie rubrospinale, alors que la tonique est un phénomène purement cérébelleux d'adaptation.",
+        "Il n'y a pas de distinction fonctionnelle ; les deux types de décharges provoquent la mort cellulaire programmée des fibres musculaires pâles en cas d'étirement excessif."
+      ],
+      "correct": 1,
+      "explanation": "Les fibres Ia (au centre) répondent vivement au changement dynamique (étirement rapide = réponse phasique) pour éviter la déchirure. L'activité tonique (fibres II et tension maintenue par le gamma) informe continuellement la moelle de la longueur absolue du muscle, essentiel pour conserver un angle d'articulation ou une posture[cite: 2]."
+    },
+    {
+      "question": "Dans le diagnostic d'une atteinte motrice, la présence de fasciculations (petits tressautements musculaires visibles sous la peau) couplée à une amyotrophie (fonte) musculaire sévère est le signe pathognomonique de quelle atteinte anatomique ?",
+      "options": [
+        "Une lésion supranucléaire bilatérale touchant exclusivement l'Aire Motrice Supplémentaire (AMS) et le cortex moteur cingulaire.",
+        "Une destruction des voies cérébelleuses afférentes (fibres moussues et grimpantes) causant une dénervation proprioceptive de la plaque motrice.",
+        "Une dégénérescence ou lésion du motoneurone inférieur (MNI) dans la corne ventrale de la moelle ou de son axone périphérique.",
+        "Une transection incomplète des cordons antérieurs bloquant les réflexes vestibulo-spinaux et réticulo-spinaux descendants."
+      ],
+      "correct": 2,
+      "explanation": "Les signes de dénervation stricte du muscle périphérique (amyotrophie sévère car le muscle perd ses facteurs trophiques, et fasciculations car les fibres musculaires orphelines déchargent spontanément) sont la signature d'une lésion du motoneurone inférieur (MNI)[cite: 2]."
+    },
+    {
+      "question": "Concernant la somatotopie du cortex moteur primaire (l'homonculus moteur), quelle caractéristique explique que la région corticale dédiée à la main et aux muscles de l'expression faciale soit disproportionnellement vaste comparativement à celle dédiée au tronc ?",
+      "options": [
+        "L'homonculus reflète la taille physique (le volume) des muscles ciblés : les muscles axiaux étant plus massifs, ils nécessitent paradoxalement moins de neurones de contrôle que les petits muscles délicats.",
+        "La représentation corticale est directement proportionnelle à la densité des récepteurs nociceptifs (douleur) présents dans l'épiderme sus-jacent aux articulations.",
+        "La disproportion reflète l'importance fonctionnelle et le besoin de précision du contrôle moteur : la motricité fine des doigts et l'articulation de la parole exigent un recrutement beaucoup plus vaste de motoneurones supérieurs (MNS) corticaux.",
+        "La surface corticale allouée à la face et aux mains a été arbitrairement déterminée par les anastomoses vasculaires de l'artère cérébrale moyenne, sans lien avec la neurophysiologie motrice."
+      ],
+      "correct": 2,
+      "explanation": "L'homonculus moteur est déformé : les mains, les lèvres et la langue occupent un espace immense par rapport à la cuisse ou au tronc. Cette représentation disproportionnée reflète l'énorme besoin d'unités motrices, de contrôle fin et de précision requis pour la manipulation d'outils et le langage humain[cite: 2]."
+    },
+    {
+      "question": "Quel est le rôle présumé du réflexe réticulo-spinal dans une séquence de mouvement complexe (par exemple, un sprinter au départ de sa course) selon la notion de contrôle feed-forward ?",
+      "options": [
+        "Il déclenche l'orientation réflexe visuelle (voie tectospinale) vers le pistolet du juge, retardant l'activation des muscles distaux pour empêcher les faux-départs.",
+        "Recevant des copies du plan moteur (du cortex), il ordonne la contraction anticipée des muscles stabilisateurs du tronc (axiaux) pour prévenir la perte d'équilibre avant même que la force propulsive des jambes ne soit générée.",
+        "Il supprime totalement le réflexe myotatique des quadriceps pour faciliter l'étirement maximal du muscle agoniste avant l'explosion de puissance.",
+        "Il agit exclusivement comme un générateur central de rythme lent (8 Hz), empêchant les unités motrices FF de se fatiguer dans les trois premières secondes."
+      ],
+      "correct": 1,
+      "explanation": "Le réflexe réticulo-spinal agit en anticipation (feed-forward). Avant que le cortex ne lance la commande de courir (qui déstabilisera le corps), il avise la formation réticulaire de préparer le terrain en contractant d'abord les muscles posturaux du tronc et des autres membres pour ancrer le mouvement[cite: 2]."
+    },
+    {
+      "question": "Lors d'une évaluation des réflexes tendineux chez un patient en bonne santé, on constate que le réflexe rotulien (étirement du quadriceps) est nettement amplifié si on lui demande de serrer fortement les dents et de tirer sur ses mains croisées (Manœuvre de Jendrassik). Quelle est l'explication neurophysiologique la plus crédible (concept de gain) ?",
+      "options": [
+        "La manœuvre étire mécaniquement le faisceau longitudinal médian (FLM), ce qui excite passivement les générateurs de rythmes lombaires.",
+        "L'effort musculaire et la concentration à distance augmentent l'excitabilité générale (le gain) des motoneurones gamma de la moelle lombaire via des voies motrices descendantes, rendant le fuseau neuromusculaire hypersensible à la moindre percussion.",
+        "L'action de serrer les mains relâche l'organe tendineux de Golgi des jambes (réflexe Ib inverse), abolissant ainsi l'inhibition normale sur les motoneurones alpha extenseurs.",
+        "La manœuvre induit une brève période d'hypoxie cérébrale bloquant les efférences inhibitrices du noyau rouge, provoquant une réponse de décortication mineure aux jambes."
+      ],
+      "correct": 1,
+      "explanation": "Le « gain » des réflexes peut être modulé par le système nerveux central. Un effort accru (ou un stress/difficulté) envoie des signaux facilitateurs descendants qui excitent les MNI gamma spinaux, tendant les fuseaux et amplifiant vigoureusement la réponse au marteau à réflexes[cite: 2]."
+    },
+    {
+      "question": "Parmi les énoncés suivants comparant la plasticité et l'adaptation des fibres musculaires squelettiques, lequel décrit fidèlement la réponse physiologique à un entraînement physique intense et prolongé (endurance vs puissance) ?",
+      "options": [
+        "Un entraînement d'endurance (marathon) stimulera la conversion irréversible des motoneurones inférieurs latéraux en motoneurones médians au sein du renflement lombaire.",
+        "L'entraînement en puissance (haltérophilie) provoque une hypertrophie massive des fibres pâles (unités FF) et une augmentation de leurs protéines contractiles, tandis que l'endurance optimise le réseau capillaire et mitochondrial des fibres rouges (unités S).",
+        "Peu importe le type d'entraînement, le nombre total d'unités motrices est doublé dans la première semaine grâce à la division mitotique des motoneurones alpha de la corne ventrale.",
+        "L'entraînement d'endurance désensibilise l'organe tendineux de Golgi de façon permanente, ce qui élimine toute inhibition lors des étirements extrêmes et explique la souplesse des athlètes."
+      ],
+      "correct": 1,
+      "explanation": "L'entraînement n'augmente pas le nombre de motoneurones. L'haltérophilie (efforts intenses brefs) hypertrophie les fibres pâles des grandes unités motrices FF (qui s'élargissent par l'ajout d'actine/myosine). Les sports d'endurance augmentent l'efficacité (mitochondries, vascularisation) des fibres rouges, mais peu leur diamètre[cite: 2]."
+    },
+    {
+      "question": "L'inhibition réciproque est fondamentale dans la fluidité de la motricité volontaire. Lors de la commande corticale de flexion volontaire du coude (recrutement des MNI du biceps par la voie corticospinale), comment la moelle épinière s'assure-t-elle que le triceps (muscle extenseur) ne résiste pas au mouvement ?",
+      "options": [
+        "La commande corticospinale descendante active non seulement le MNI du biceps, mais projette également simultanément sur un interneurone inhibiteur de type Ia qui hyperpolarise le MNI du triceps.",
+        "Le cortex moteur ordonne au ganglion de Scarpa de sécréter de la glycine dans la fente synaptique du triceps, assurant un PPSI bilatéral via le FLM.",
+        "Le mouvement volontaire du biceps étire massivement le triceps, ce qui, paradoxalement, bloque l'ouverture des canaux calcium de la plaque motrice du triceps par épuisement des vésicules.",
+        "Le cervelet détecte l'intention de plier le bras et, par voie rétrograde, ordonne au noyau vestibulaire latéral d'annuler le tonus postural des extenseurs cervicaux et brachiaux supérieurs."
+      ],
+      "correct": 0,
+      "explanation": "Les voies descendantes (comme la corticospinale) ne se contentent pas d'allumer le muscle désiré ; elles profitent des réseaux locaux de la moelle. Elles activent les mêmes interneurones inhibiteurs (ceux impliqués dans l'inhibition réciproque des réflexes myotatiques) pour éteindre le muscle antagoniste et permettre un mouvement sans résistance[cite: 2]."
+    },
+    {
+      "question": "Dans le contexte de la coordination supra-spinale, quelle affirmation résume adéquatement le rôle respectif du cervelet et des noyaux gris centraux (NGC) dans l'exécution d'un mouvement volontaire normal ?",
+      "options": [
+        "Le cervelet déclenche l'initiation et gère la fin abrupte du mouvement, alors que les NGC sont responsables d'apprendre les séquences motrices et de corriger les erreurs de trajectoire en temps réel.",
+        "Les deux structures envoient leurs axones moteurs directement aux motoneurones inférieurs (voie cérébello-spinale et pallido-spinale) sans transiter par le cortex ni par le thalamus.",
+        "Les NGC facilitent l'initiation et la conclusion adéquate du mouvement voulu, tandis que le cervelet compare l'intention corticale avec l'exécution périphérique pour corriger les maladresses et imprécisions (incoordination) durant le geste.",
+        "Les NGC (via l'aire tegmentale ventrale) produisent l'acétylcholine essentielle à la jonction neuromusculaire, et le cervelet métabolise le glutamate excédentaire généré par la voie rubro-spinale pour éviter la neurotoxicité."
+      ],
+      "correct": 2,
+      "explanation": "La division des tâches est classique : les Noyaux Gris Centraux (NGC) aident à initier l'action voulue et à la freiner/terminer (leur atteinte cause le Parkinson ou des chorées). Le cervelet agit comme un gyroscope de correction en vol : il ajuste la précision, l'équilibre et l'apprentissage moteur (leur atteinte cause une ataxie, de l'incoordination et de la dysmétrie)[cite: 2]."
+    },
+    {
+      "question": "Un patient subit une transection complète de la moelle épinière au niveau thoracique T8 à la suite d'un traumatisme sévère. Une fois la phase de choc spinal (flaccidité initiale) résorbée, quelle constellation de signes neurologiques caractérisera ses membres inférieurs (syndrome sous-lésionnel) ?",
+      "options": [
+        "Une paralysie flasque persistante avec amyotrophie sévère des mollets, aréflexie bilatérale rotulienne et achilléenne, confirmant la destruction descendante des motoneurones inférieurs lombaires.",
+        "Une paralysie spastique (rigidité) des jambes, avec des réflexes myotatiques vifs (hyperréflexie) et potentiellement un clonus, en raison de la perte des modulations inhibitrices supraspinales descendantes sur les arcs réflexes médullaires intacts.",
+        "Une récupération motrice volontaire complète grâce à la repousse de la voie corticospinale ventrale ipsilatérale, mais une perte permanente de la sensibilité thermo-algésique des pieds.",
+        "Une réponse de décérébration massive et permanente, caractérisée par une extension douloureuse des membres inférieurs, stimulée par la libération du noyau rouge mésencéphalique."
+      ],
+      "correct": 1,
+      "explanation": "Une lésion médullaire haute coupe le câble de commande descendante (MNS). Sous la lésion, les arcs réflexes spinaux (réflexes myotatiques et MNI) sont toujours vivants, mais ils ont perdu la commande inhibitrice du cerveau. Résultat : le syndrome pyramidal avec paralysie spastique, réflexes vifs (exagérés), hypertonie et clonus[cite: 2]."
+    },
+    {
+      "question": "Concernant la dynamique du réflexe ostéotendineux (myotatique), quel phénomène physiologique limite spécifiquement ce réflexe dans le temps pour générer une réponse musculaire brève (phasique) plutôt qu'une crampe tétanique prolongée suite au coup de marteau ?",
+      "options": [
+        "La libération d'acide lactique par les fibres musculaires blanches, qui bloque temporairement la pompe Na/K ATPase de la plaque motrice.",
+        "L'activation subséquente de l'organe tendineux de Golgi (OTG) qui détecte la brusque tension générée par la contraction réflexe et inhibe immédiatement le motoneurone alpha de l'agoniste.",
+        "Le relâchement rapide des liens apicaux (tip links) du fuseau neuromusculaire qui, sous l'effet de l'endolymphe périspinale, ferme les canaux potassiques en 10 millisecondes.",
+        "L'interruption de l'étirement initial : une fois le muscle contracté et raccourci par le réflexe, la partie centrale des fibres intrafusales perd sa tension, stoppant net la décharge des afférences Ia."
+      ],
+      "correct": 3,
+      "explanation": "Bien que l'OTG joue un rôle, la fin abrupte du réflexe myotatique est avant tout mécanique : le coup de marteau étire soudainement le fuseau, provoquant une rafale de potentiels d'action sur la fibre Ia. La réponse réflexe immédiate est la contraction (raccourcissement) du muscle. En se raccourcissant, la tension sur le centre du fuseau disparaît (il se « détend ») et la fibre Ia arrête immédiatement de décharger. C'est une boucle d'autocorrection très courte (phasique)[cite: 2]."
+    },
+    {
+      "question": "Pourquoi la composition histologique d'un muscle comme le soléaire (situé profondément dans le mollet et crucial pour le maintien de l'orthostation) diffère-t-elle radicalement de celle du muscle orbiculaire de l'œil (impliqué dans les clignements rapides) ?",
+      "options": [
+        "Parce que le soléaire, régi par la voie tecto-spinale, est composé exclusivement de fibres pâles (FF) pour générer de fortes impulsions de saut, alors que l'œil dépend d'unités S (lentes) pour ne pas fatiguer la rétine.",
+        "Parce que le type de fibres dépend du neurotransmetteur : le soléaire reçoit de la noradrénaline sympathique, favorisant la myoglobine, tandis que l'œil reçoit du GABA, stimulant les fibres pâles.",
+        "Parce que le soléaire est massivement sollicité en endurance pour la posture et est donc composé en grande majorité de fibres rouges (unités motrices S) riches en mitochondries, tandis que les mouvements oculaires exigent des contractions ultrarapides et brèves (unités FF).",
+        "Parce que la loi du recrutement de taille stipule que les muscles des membres inférieurs ne peuvent jamais recruter d'unités motrices S ou FR, réservant ces petites unités aux muscles des nerfs crâniens."
+      ],
+      "correct": 2,
+      "explanation": "La composition d'un muscle reflète sa fonction. Un muscle postural endurant (soléaire, spinaux du dos) contient une majorité de fibres rouges (unités S). Un muscle exécutant des mouvements extrêmement rapides, brefs et peu soutenus (oculomoteurs) favorise les fibres capables de contractions très rapides[cite: 2]."
+    },
+    {
+      "question": "En neurophysiologie, on évoque souvent l'importance de l'activité 'tonique' des fuseaux neuromusculaires (transmise notamment par les fibres sensitives II). Quel comportement moteur complexe chez l'humain serait le plus gravement altéré si cette afférence tonique était sélectivement détruite, tout en gardant l'afférence phasique (fibres Ia) intacte ?",
+      "options": [
+        "La capacité d'esquiver rapidement un ballon lancé au visage, car la voie tecto-spinale dépend exclusivement des fibres de type II pour activer les muscles cervicaux.",
+        "La capacité d'exécuter un réflexe myotatique vif suite à un coup de marteau sur la rotule, qui serait totalement aboli sans le support tonique.",
+        "La capacité à maintenir les bras immobiles, levés à un angle précis de 90 degrés sans aide visuelle, car le système nerveux perdrait l'information constante sur la longueur absolue (étirement statique) du muscle.",
+        "La capacité de relâcher un objet lourd lorsque la tension menace de déchirer le tendon des fléchisseurs de l'avant-bras."
+      ],
+      "correct": 2,
+      "explanation": "Les fibres II (terminaisons en bouquet de fleurs) informent en continu la moelle sur la longueur absolue et statique du muscle. C'est le signal « tonique ». Sans lui, on perd la proprioception statique du muscle (ex: tenir une pose). L'esquive rapide (Ia) ou le relâchement (Ib de l'OTG) seraient préservés[cite: 2]."
+    },
+    {
+      "question": "La voie cortico-spinale latérale présente une anatomie unique par rapport aux autres voies motrices (comme la vestibulo-spinale). Laquelle de ces affirmations décrit une implication majeure de cette trajectoire neuroanatomique pour la récupération après un AVC ischémique sylvien touchant le cortex moteur ?",
+      "options": [
+        "Puisque les fibres motrices croisent (décussent) à 100% au niveau du chiasma optique, la motricité des bras et des jambes est définitivement abolie sans aucune possibilité de neuroplasticité collatérale.",
+        "La majeure partie des axones dédiés à la motricité fine distale croise dans les pyramides bulbaires pour voyager du côté opposé de la moelle, créant une innervation strictement unilatérale. Cela rend la récupération de la dextérité des doigts particulièrement ardue post-AVC, car l'autre hémisphère ne peut compenser directement.",
+        "La voie latérale descend de façon totalement ipsilatérale et ne fait relais que dans la formation réticulaire, ce qui provoque une ataxie sensorielle bilatérale en cas d'AVC moteur plutôt qu'une faiblesse.",
+        "Cette voie fait synapse directement sur les fibres intrafusales (MNI gamma) sans toucher aux muscles extrafusaux, ce qui explique pourquoi l'AVC provoque une spasticité mais aucune perte réelle de force dans les mains."
+      ],
+      "correct": 1,
+      "explanation": "La voie corticospinale latérale commande la motricité fine distale (mains). Elle croise dans le bulbe et innerve la moelle controlatéralement. Puisqu'elle est la seule à s'occuper aussi finement de la main et qu'elle n'a pas (ou très peu) de soutien bilatéral de l'autre hémisphère, un AVC unilatéral entraîne un handicap persistant de la dextérité manuelle controlatérale[cite: 2]."
+    },
+    {
+      "question": "Lors d'une expérience de laboratoire en neurosciences, un chercheur stimule artificiellement et massivement les fibres sensitives nociceptives (douleur) C et A-delta cutanées du pied droit d'un animal dont la moelle est isolée du cerveau (transection cervicale). Quelle réponse motrice des membres inférieurs observera-t-il, et via quel circuit médullaire précis ?",
+      "options": [
+        "Il observera une rigidité de décérébration (extension bilatérale des jambes) due à l'activation des noyaux vestibulaires médians restés connectés par le FLM.",
+        "Il observera la flexion (retrait) de la patte droite stimulée et l'extension simultanée de la patte gauche, orchestrée par un vaste réseau d'interneurones spinaux inhibiteurs et activateurs diffusant sur plusieurs segments (réflexe de flexion et d'extension croisée).",
+        "Il observera uniquement la contraction phasique des extenseurs du pied droit, induite par une monosynapse directe de la fibre de la douleur sur le MNI alpha.",
+        "Aucune réponse ne sera observée, car les réflexes d'évitement cutanés exigent obligatoirement une interprétation consciente (et donc thalamo-corticale) de la nociception pour s'activer."
+      ],
+      "correct": 1,
+      "explanation": "Même sans cerveau, la moelle est câblée pour la survie. Le stimulus de la douleur activera le puissant réflexe de retrait et d'extension croisée : de multiples interneurones vont fléchir la jambe stimulée (pour la protéger) et étendre fermement la jambe opposée (pour supporter le poids du corps)[cite: 2]."
+    },
+    {
+      "question": "Le motoneurone inférieur (MNI) est souvent décrit comme la « voie finale commune ». Pourquoi ce concept de physiologie motrice de Sherrington (Nobel 1932) est-il toujours central dans notre compréhension de la paralysie ?",
+      "options": [
+        "Parce que le MNI est le seul neurone du système nerveux central capable de libérer simultanément du glutamate et de l'acétylcholine pour fusionner les voies sympathiques et parasympathiques au niveau du muscle.",
+        "Parce que toutes les commandes motrices (mouvements volontaires issus du cortex, modulations cérébelleuses, ou myriade de réflexes spinaux) doivent ultimement converger sur ce seul et unique neurone pour pouvoir contracter la fibre musculaire squelettique.",
+        "Parce que l'axone du MNI constitue le seul faisceau myélinisé de la moelle épinière, regroupant en un câble commun (faisceau longitudinal médian) la totalité des intentions motrices avant de traverser le ganglion rachidien.",
+        "Parce qu'il synthétise la forme finale du neurotransmetteur GABA qui, libéré au niveau de l'organe tendineux de Golgi, prévient l'épuisement prématuré de la jonction neuromusculaire en inhibant la plaque motrice."
+      ],
+      "correct": 1,
+      "explanation": "Le motoneurone inférieur alpha est la « voie finale commune » car, peu importe si la commande vient du cortex (volontaire), d'un réflexe (myotatique, retrait) ou du tronc cérébral (posture), le seul moyen qu'a le système nerveux pour contracter un muscle squelettique est de faire décharger cet unique neurone[cite: 2]. Si on le coupe (paralysie flasque), aucune commande (volontaire ou réflexe) ne peut plus atteindre le muscle[cite: 2]."
+    },
+    {
+      "question": "Quelle est la principale caractéristique neurophysiologique qui permet au muscle strié squelettique de maintenir une force intermédiaire et constante sans paraître trembler (secousses ou saccades individuelles des unités motrices) ?",
+      "options": [
+        "L'inhibition récurrente di-synaptique des motoneurones alpha par les cellules de Renshaw, qui efface la fréquence des pics de potentiels d'action pour créer un courant continu de glutamate vers la plaque motrice.",
+        "Le recrutement massif de l'entièreté des unités motrices FF (Fast and Fatigable) qui déchargent toutes à la même fréquence maximale (tétanos), saturant la réponse du muscle.",
+        "La décharge asynchrone des motoneurones de la corne ventrale. Pendant qu'une unité motrice se contracte, une autre est en train de relâcher, lissant ainsi mécaniquement la force totale générée par le muscle à basse fréquence (8 Hz).",
+        "L'activation continue et simultanée des fibres musculaires rouges par les afférences Ib de l'organe tendineux de Golgi, qui remplacent le motoneurone inférieur pour la génération du tonus."
+      ],
+      "correct": 2,
+      "explanation": "À des fréquences normales (environ 8 Hz), les unités motrices déchargent de manière désynchronisée (asynchrone). Les petites impulsions de contraction se chevauchent dans le temps. C'est ce lissage mécanique qui permet d'obtenir une tension musculaire fluide et continue plutôt qu'une série de tressautements (saccades)[cite: 2]."
+    },
+    {
+      "question": "Si l'on devait concevoir un exosquelette robotique reproduisant la fonction de l'organe tendineux de Golgi (OTG), quel paramètre physique ce capteur devrait-il surveiller en priorité sur la structure musculaire artificielle, et quelle serait sa réponse de sécurité principale ?",
+      "options": [
+        "Il devrait surveiller l'angle absolu et la vitesse de rotation de l'articulation lors d'un déplacement passif, pour déclencher immédiatement une contraction d'urgence (réflexe phasique) évitant la dislocation.",
+        "Il devrait mesurer l'accumulation locale d'acide lactique et de chaleur générée par les unités FF, déclenchant l'arrêt total du mouvement par apoptose programmée pour protéger le processeur.",
+        "Il devrait mesurer la tension mécanique (la force de traction) accumulée dans la liaison tendon-muscle lors d'une contraction active; si la tension atteint un seuil critique, il ordonnerait le relâchement immédiat du muscle agoniste et l'activation de l'antagoniste pour prévenir la rupture.",
+        "Il devrait enregistrer la durée d'une posture fixe (supérieure à 15 secondes) afin de déclencher le phénomène d'adaptation en fermant ses canaux potassium, annulant ainsi complètement la réponse motrice de posture."
+      ],
+      "correct": 2,
+      "explanation": "L'OTG est un capteur de tension, très sensible lors d'une contraction active, situé dans le tendon. Son rôle de sécurité est d'empêcher le muscle de se déchirer lui-même : si la tension est trop forte, l'OTG (via les fibres Ib et un interneurone inhibiteur) ordonne au muscle agoniste de se relâcher brusquement et stimule l'antagoniste pour bloquer l'articulation[cite: 2]."
+    },
+    {
+      "question": "Lequel des déficits fonctionnels suivants correspondrait au diagnostic clinique d'une lésion isolée et complète de la voie cortico-spinale ventrale (qui ne représente que 10% de la voie descendante totale) sans atteinte de la voie latérale ?",
+      "options": [
+        "Une hémiplégie dense controlatérale, incluant la perte totale de la dextérité fine des mains et de la motricité des pieds, car cette voie est le principal relai du cortex moteur primaire vers les myotomes distaux.",
+        "Une hyper-réflexie myotatique bilatérale massive avec un signe de Babinski (extension de l'orteil) bilatéral sévère, en raison de la perte exclusive des neurones pyramidaux inhibiteurs de la moelle sacrée.",
+        "Une perte complète de la motricité réflexe de retrait et d'extension croisée lors de la marche, confinant le patient à un mutisme akinétique par déconnexion du colliculus supérieur.",
+        "Une difficulté modérée à coordonner les grands mouvements posturaux bilatéraux impliquant les muscles axiaux et la racine (proximal) des membres, bien que la motricité fine des mains reste globalement préservée et que la récupération soit favorisée par l'innervation bilatérale de la moelle."
+      ],
+      "correct": 3,
+      "explanation": "La voie corticospinale ventrale (antérieure) se spécialise dans les muscles axiaux (tronc) et proximaux des membres, avec une projection bilatérale. Une lésion isolée entraînerait une maladresse posturale proximale (le contrôle du tronc, des épaules), mais la motricité fine de la main (réservée à la voie latérale intacte) serait sauvée. L'innervation bilatérale favorise souvent une bonne compensation[cite: 2]."
+    },
+    {
+      "question": "Concernant la division fonctionnelle du cervelet, quelle atteinte classique (et symptôme) observerait-on en cas de lésion sélective de sa portion médiane (le vermis, ou spino-cervelet) sans dommage aux hémisphères latéraux ou au flocculus ?",
+      "options": [
+        "Un vertige rotationnel intense accompagné d'un nystagmus spontané et de nausées (syndrome vestibulaire périphérique complet), car le vermis assure seul l'intégration du RVO calorique.",
+        "Une apraxie globale empêchant la planification de la motricité fine, couplée à un déficit permanent de l'aire motrice supplémentaire (mutisme akinétique).",
+        "Une ataxie de la marche et de la posture axiale avec une difficulté majeure à maintenir l'équilibre postural (titubation), en raison de la perte de l'intégration proprioceptive spinocérébelleuse destinée aux corrections vestibulospinales.",
+        "Une paralysie spastique unilatérale des membres supérieurs accompagnée de fasciculations musculaires diffuses et d'une hypertonie en tuyau de plomb."
+      ],
+      "correct": 2,
+      "explanation": "Le vermis (spino-cervelet médian) intègre la proprioception du corps (voies spinocérébelleuses) et régule la posture, l'équilibre et la démarche via le système vestibulospinal et réticulospinal. Sa lésion cause l'ataxie axiale (marche ébrieuse, instabilité du tronc) sans affecter significativement la coordination fine des doigts (gérée par les hémisphères) ou le RVO pur (géré par le vestibulo-cervelet)[cite: 2]."
+    },
+    {
+      "question": "Dans le modèle d'intégration sensorimotrice corticale, quel circuit anatomique relie l'intention motrice abstraite (motivation) générée dans le cortex préfrontal à l'exécution finale d'un mouvement complexe ?",
+      "options": [
+        "Le cortex préfrontal stimule les noyaux cochléaires bulbaires qui, en réponse, modulent directement les motoneurones de la corne antérieure via les cordons postérieurs (voie lemniscale).",
+        "Le cortex préfrontal active l'aire de Broca qui traduit l'intention en signal électrique et le transmet via le nerf auditif jusqu'au corps genouillé médian du thalamus.",
+        "Le cortex préfrontal (intention) projette sur le cortex prémoteur (planification) qui élabore les séquences de l'action ; ce dernier active ensuite le cortex moteur primaire (exécution) qui, modulé en boucle par les noyaux gris centraux et le cervelet, envoie la commande descendante aux motoneurones inférieurs.",
+        "Le cortex préfrontal dépolarise en masse les neurones miroirs pariétaux qui diffusent l'intention via la voie tecto-spinale jusqu'au ganglion de Scarpa, déclenchant un réflexe végétatif incontrôlable de flexion généralisée."
+      ],
+      "correct": 2,
+      "explanation": "La hiérarchie corticale de l'action passe de l'abstrait au concret : l'intention ou la motivation naît dans le préfrontal, le mouvement est planifié et organisé dans le prémoteur (latéral ou AMS), puis la commande d'exécution finale est générée par le moteur primaire (avec l'assistance indispensable des NGC et du cervelet)[cite: 2]."
+    },
+    {
+      "question": "Quelle est la principale caractéristique structurelle de la « matière grise » de la moelle épinière au niveau des intumescences cervicale et lombaire comparé aux segments thoraciques ?",
+      "options": [
+        "La matière grise y est pratiquement absente, car ces régions servent principalement de relais ascendant massif pour le faisceau spino-thalamique et la voie lemniscale.",
+        "Les cornes antérieures (ventrales) de la matière grise y sont considérablement élargies en volume pour héberger l'énorme population de motoneurones inférieurs nécessaires à l'innervation complexe de la musculature des membres.",
+        "La corne latérale y est hypertrophiée pour contenir les corps cellulaires des neurones préganglionnaires sympathiques responsables de l'innervation viscérale des membres.",
+        "La matière grise y est inversée anatomiquement avec la matière blanche : elle se retrouve en périphérie de la moelle pour raccourcir le délai de transmission synaptique des réflexes myotatiques croisés."
+      ],
+      "correct": 1,
+      "explanation": "Les renflements (intumescences) cervical et lombaire sont dus à l'élargissement massif de la corne ventrale (grise), qui doit contenir les milliers de motoneurones inférieurs indispensables pour contrôler la musculature complexe et volumineuse des bras et des jambes[cite: 2]."
+    },
+    {
+      "question": "Quel impact majeur la dégénérescence pathologique et exclusive des motoneurones supérieurs (MNS) de la voie cortico-bulbaire (cortico-nucléaire) bilatérale aurait-elle sur les fonctions vitales du patient (Syndrome pseudo-bulbaire) ?",
+      "options": [
+        "Elle provoquerait une paralysie respiratoire immédiate par dénervation diaphragmatique (C3-C5), nécessitant une intubation permanente.",
+        "Elle entraînerait des difficultés extrêmes d'articulation (dysarthrie), de phonation et surtout de déglutition (dysphagie), puisque la commande volontaire bilatérale n'atteint plus les noyaux crâniens du V, IX, X et XII.",
+        "Elle causerait une asynergie majeure de la marche et une ataxie oculaire invalidante (nystagmus multidirectionnel) due à la déconnexion thalamo-vestibulaire.",
+        "Elle induirait un mutisme akinétique par destruction des neurones miroirs, bien que la déglutition involontaire réflexe et la force de la langue soient parfaitement normales à l'examen."
+      ],
+      "correct": 1,
+      "explanation": "La voie cortico-nucléaire commande volontairement les noyaux du tronc cérébral (face, mâchoire, pharynx, larynx). Une lésion bilatérale (syndrome pseudo-bulbaire) détruit la commande vers la bouche et la gorge : le patient aura une spasticité sévère l'empêchant d'articuler, de mâcher et d'avaler correctement, avec un haut risque d'étouffement[cite: 2]."
+    },
+    {
+      "question": "Comment le réflexe myotatique contribue-t-il spécifiquement au maintien de la posture corporelle lorsque vous êtes debout immobile dans un autobus en mouvement (accélérations modérées) ?",
+      "options": [
+        "Il active les fibres sensitives Ib de l'organe tendineux de Golgi qui hyperpolarisent les motoneurones gamma de l'intumescence lombaire, annulant ainsi les forces de gravité sur le bassin.",
+        "De petites variations (balancements) étirent subtilement les muscles posturaux du mollet et du dos ; cet étirement est détecté par la partie centrale des fibres intrafusales, ce qui déclenche des contractions compensatoires (monosynaptiques) des motoneurones alpha agonistes pour vous redresser.",
+        "Il déclenche l'activation des canaux potassium des cellules ciliées vestibulaires, relayant un signal de flexion croisée via le colliculus inférieur pour protéger la tête en cas de collision.",
+        "Il bloque complètement les voies réticulo-spinales descendantes pour empêcher toute réponse de décérébration inappropriée, forçant les muscles pâles à se tétaniser jusqu'à l'arrêt du véhicule."
+      ],
+      "correct": 1,
+      "explanation": "Dans le maintien de la posture, le réflexe myotatique joue le rôle de stabilisateur automatique en boucle courte. Chaque petit balancement étire un muscle postural (le soléaire par exemple). Le fuseau (fibres Ia et II) détecte cet étirement et provoque une contraction réflexe immédiate du muscle pour ramener l'articulation (et le corps) à sa position initiale[cite: 2]."
+    },
+    {
+      "question": "Laquelle des observations suivantes est caractéristique d'une atteinte (lésion) confinée strictement au cervelet (syndrome cérébelleux), permettant de la distinguer cliniquement d'une atteinte du motoneurone supérieur ou inférieur ?",
+      "options": [
+        "La présence de fasciculations musculaires intenses, une amyotrophie rapide des muscles axiaux et une absence totale de réflexes myotatiques aux quatre membres.",
+        "Une hypertonie spastique en lame de canif, un signe de Babinski bilatéral et un clonus inépuisable lors de la dorsiflexion forcée du pied.",
+        "Une perte flagrante de force motrice (paralysie sévère) accompagnée d'une anesthésie proprioceptive complète épargnant la perception de la douleur et de la température.",
+        "L'absence de paralysie réelle (la force musculaire est adéquate), mais une imprécision majeure (dysmétrie), un tremblement d'action et une mauvaise coordination (asynergie) lors de l'exécution du mouvement."
+      ],
+      "correct": 3,
+      "explanation": "Le cervelet n'initie pas le mouvement et ne fournit pas la force ; il le calibre. Sa lésion ne cause pas de paralysie, de perte sensorielle, d'hyperréflexie spastique ou d'amyotrophie. Elle cause de l'incoordination (ataxie), de l'imprécision (les mouvements dépassent leur cible ou s'y reprennent à plusieurs fois), et des tremblements lors de l'action[cite: 2]."
+    },
+    {
+      "question": "Concernant les caractéristiques des afférences sensitives des structures impliquées dans les réflexes spinaux, quelle fibre possède le plus grand diamètre (et donc la vitesse de conduction la plus rapide) de l'organisme humain, indispensable à son rôle fonctionnel ?",
+      "options": [
+        "Les fibres C amyéliniques responsables de la transmission de la douleur sourde, car elles doivent déclencher de massives réponses de décérébration mésencéphaliques.",
+        "Les axones des motoneurones gamma (MNI γ) qui contractent les pôles des fibres intrafusales à plus de 120 m/s pour assurer une tension optimale.",
+        "Les fibres afférentes de type Ia issues des terminaisons annulo-spiralées du fuseau neuromusculaire, car elles doivent transmettre le signal d'étirement en une fraction de milliseconde pour permettre une correction réflexe de la posture avant le déséquilibre.",
+        "Les fibres sensitives de type III de l'organe tendineux de Golgi, qui assurent le maintien du recrutement exclusif des unités motrices FF lors des sauts verticaux."
+      ],
+      "correct": 2,
+      "explanation": "Les fibres Ia (du fuseau) sont parmi les fibres myélinisées les plus grosses et les plus rapides de l'organisme (jusqu'à 120 m/s). Cette vitesse extrême est vitale : le réflexe myotatique (qui empêche une chute soudaine, ou corrige un faux pas) doit agir avant même que le cerveau ne soit conscient du problème[cite: 2]."
+    },
+    {
+      "question": "L'aire motrice de Broca (aires 44 et 45 de Brodmann), située classiquement dans le gyrus frontal inférieur de l'hémisphère dominant, représente une spécialisation de quel domaine plus large du cortex moteur ?",
+      "options": [
+        "Le cortex moteur cingulaire, spécialisé dans l'expression des comportements émotionnels de survie (cris de peur).",
+        "L'aire motrice supplémentaire (AMS) de la face médiane, responsable exclusive des mouvements auto-déclenchés de la marche.",
+        "Le cortex moteur primaire (aire 4), précisément au niveau de la représentation homonculaire du segment jambier pour gérer la rythmique de la parole en marchant.",
+        "Le cortex prémoteur latéral, spécialisé dans la planification d'un réseau musculaire extrêmement complexe et conditionnel (la bouche, la langue et le pharynx) permettant d'articuler le langage."
+      ],
+      "correct": 3,
+      "explanation": "L'aire de Broca est une sous-section très spécialisée du cortex prémoteur (planification). Elle a évolué pour planifier la symphonie mécanique ultra-complexe de la musculature buccale, pharyngée et respiratoire nécessaire pour produire des mots, juste avant d'envoyer ces plans au cortex moteur primaire pour exécution[cite: 2]."
+    },
+    {
+      "question": "En neuro-anatomie, à quel niveau du système nerveux central le motoneurone supérieur (MNS) de la voie corticospinale latérale croise-t-il la ligne médiane (décussation) pour innerver la moitié opposée du corps ?",
+      "options": [
+        "Il décuse immédiatement en sortant du cortex moteur primaire (couche V), voyageant dans la couronne rayonnante controlatérale avant de rejoindre la capsule interne.",
+        "Il croise dans la partie inférieure (caudale) du bulbe rachidien (les pyramides bulbaires) avant de descendre dans le cordon latéral de la moelle épinière.",
+        "Il descend ipsilatéralement sur toute la longueur de la moelle et croise finalement la ligne médiane dans la commissure antérieure grise, à l'étage segmentaire exact de sa cible (MNI alpha).",
+        "Il décuse dans le mésencéphale, plus précisément en traversant le noyau rouge, pour s'intégrer à la voie rubrospinale croisée."
+      ],
+      "correct": 1,
+      "explanation": "La décussation de la voie corticospinale latérale (qui régit la motricité fine des membres opposés) se produit à la jonction entre le bas du bulbe rachidien (les pyramides) et le haut de la moelle épinière cervicale[cite: 2]. (Note: c'est la voie corticospinale ventrale qui ne croise qu'à l'étage segmentaire cible)[cite: 2]."
+    },
+    {
+      "question": "Lors d'une évaluation par électromyographie (EMG) pour suspicion de maladie des motoneurones, on enregistre une décharge spontanée, asynchrone et isolée de plusieurs motoneurones inférieurs (MNI) non sollicités, bien que le patient soit complètement détendu. À quel signe clinique observable à l'œil nu correspond cette anomalie électrique ?",
+      "options": [
+        "Un clonus inépuisable du tendon d'Achille.",
+        "Des fasciculations (petits tressautements musculaires visibles sous la peau sans mouvement articulaire).",
+        "Un signe de Babinski (extension lente et tonique de l'hallux).",
+        "Une rigidité de décérébration en extension continue des extenseurs paravertébraux."
+      ],
+      "correct": 1,
+      "explanation": "Les fasciculations sont l'expression clinique visible de la décharge anormale et spontanée d'unités motrices isolées (un seul MNI déchargeant tout son groupe de fibres au repos). C'est un signe classique de souffrance ou de mort imminente du motoneurone inférieur (MNI)[cite: 2]."
+    },
+    {
+      "question": "Quel est le sort anatomique des fibres sensitives de type II issues des organes récepteurs intramusculaires ?",
+      "options": [
+        "Elles projettent exclusivement sur le cervelet flocculo-nodulaire pour moduler le RVO (réflexe vestibulo-oculaire) lors de la poursuite oculaire lente.",
+        "Elles innervent la partie polaire contractile des fibres intrafusales, remplaçant fonctionnellement les motoneurones gamma dans les myotomes sacrés.",
+        "Issus des terminaisons en bouquet (partie adjacente au centre) des fibres intrafusales, elles transmettent l'information tonique d'étirement vers la moelle pour moduler les réflexes posturaux continus.",
+        "Elles naissent dans le collagène de l'organe tendineux de Golgi et déclenchent la contraction paradoxale des antagonistes lors du réflexe myotatique phasique."
+      ],
+      "correct": 2,
+      "explanation": "Les fibres II, issues des extrémités de la zone non-contractile du fuseau (terminaisons en bouquet), sont responsables du signal « tonique ». Elles informent le système nerveux de la longueur musculaire absolue en tout temps (statique), contrairement aux fibres Ia qui signalent le changement dynamique[cite: 2]."
+    },
+    {
+      "question": "Dans le mécanisme du recrutement spatial de la force musculaire (Principe de Taille de Henneman), pourquoi le système nerveux sélectionne-t-il biologiquement et systématiquement les petites unités motrices S (Slow) en premier, avant de recruter les unités FR ou FF, lors d'une tâche demandant de l'effort progressif ?",
+      "options": [
+        "Parce que les unités motrices S (fibres rouges) sont dotées de récepteurs ionotropes au glutamate qui s'ouvrent à des voltages très négatifs (-90 mV), les rendant instantanément réactives à la dopamine striatale.",
+        "Parce que le corps cellulaire (soma) de leurs motoneurones inférieurs est de plus petite taille, ce qui confère à ces neurones une résistance électrique d'entrée plus élevée ; un même signal synaptique descendant générera donc chez eux un plus grand potentiel excitateur, leur permettant d'atteindre le seuil de décharge (potentiel d'action) avant les gros neurones.",
+        "Parce que les unités S ne consomment aucune molécule d'ATP lors de leur contraction glissante, ce qui en fait l'unique option viable d'un point de vue énergétique pour l'intumescence cervicale.",
+        "Parce qu'elles sont les seules unités directement innervées par les fibres afférentes Ib (OTG), qui déclenchent un PPSI préalable pour nettoyer la fente synaptique de l'excès de choline."
+      ],
+      "correct": 1,
+      "explanation": "Le principe de taille (Henneman) repose sur la biophysique des neurones : un petit motoneurone a une grande résistance d'entrée. Un même courant synaptique (commande du cerveau) causera une plus forte dépolarisation (V=IR) dans un petit neurone que dans un grand. Les petits motoneurones S (posture) sont donc les plus faciles à exciter et s'allument en premier[cite: 2]."
+    },
+    {
+      "question": "Quelles informations multisensorielles convergentes sont indispensables au spino-cervelet (vermis) pour qu'il puisse corriger efficacement les imperfections du réflexe vestibulo-spinal lors du maintien de l'équilibre debout sur une surface instable ?",
+      "options": [
+        "Des signaux exclusifs des aires motrices 44 et 45 de Broca couplés à l'audition tonotopique du noyau de Heschl, permettant une écholocation fine des obstacles.",
+        "Uniquement les afférences du colliculus supérieur (tectum) pour l'orientation visuelle réflexe, combinées aux signaux olfactifs relayés par le noyau rouge mésencéphalique.",
+        "Les données d'accélération de la tête issues du noyau vestibulaire (nerf VIII), combinées de manière cruciale à la proprioception inconsciente du corps et des jambes transmise par les voies spino-cérébelleuses et cunéo-cérébelleuses ascendante.",
+        "Les signaux des générateurs centraux de rythme (CPG) spinaux isolés, sans aucune intégration crânienne, le cervelet ne servant qu'à stocker le glycogène pour les motoneurones FF."
+      ],
+      "correct": 2,
+      "explanation": "Pour stabiliser le corps sur un bateau (par exemple), le spino-cervelet (vermis) doit savoir 1) où est la tête (vestibule, nerf VIII) et 2) où sont les jambes et articulations dans l'espace (proprioception via voies spinocérébelleuses). Il intègre les deux pour calibrer le tonus postural (réflexe vestibulo-spinal) à la milliseconde près[cite: 2]."
+    },
+    {
+      "question": "Dans le cas d'une maladie neurodégénérative touchant spécifiquement et sélectivement l'intégrité des jonctions serrées (tight junctions) entourant les cellules de soutien du neuroépithélium vestibulaire, quelle conséquence électrophysiologique directe pourrait abolir la transduction des cellules ciliées ?",
+      "options": [
+        "Une libération massive et pathologique de vésicules de GABA à la base des cellules ciliées de type I, hyperpolarisant en continu la dendrite du nerf vestibulaire.",
+        "La destruction mécanique de la cupule dans l'ampoule des canaux semi-circulaires, remplacée par des otolithes ectopiques issus du saccule enflammé.",
+        "Le mélange de l'endolymphe apicale (très riche en potassium) et de la périlymphe basale, ce qui annulerait le gradient électrochimique unique de +125 mV nécessaire à la dépolarisation par entrée de potassium lors de la flexion des cils.",
+        "L'inversion du flux sanguin dans la strie vasculaire de l'utricule, induisant une ataxie cérébelleuse bilatérale par embolisation des cellules bipolaires du ganglion de Scarpa."
+      ],
+      "correct": 2,
+      "explanation": "Les jonctions serrées des cellules de soutien maintiennent une séparation étanche entre deux milieux très différents : l'endolymphe (hautement concentrée en K+, potentiel très positif) à l'apex, et la périlymphe à la base. Si la barrière fuit, le gradient électrique disparaît et le potassium ne peut plus entrer passivement dans la cellule ciliée pour la dépolariser ; la transduction s'arrête[cite: 3, 4]."
+    },
+    {
+      "question": "Quel est le comportement électrophysiologique naturel de la membrane de la cellule ciliée vestibulaire lorsque l'individu est strictement immobile (aucun mouvement rotatoire ni accélération linéaire en cours) ?",
+      "options": [
+        "Une hyperpolarisation maximale (-90 mV) due à la fermeture totale des canaux potassium apicaux, entraînant un silence électrique absolu (0 potentiel d'action) sur la dendrite afférente.",
+        "Une décharge tonique asynchrone modérée (environ 90 potentiels d'action par seconde sur le nerf) due au fait qu'une fraction des canaux potassium mécanosensibles apicaux demeurent entrouverts au repos.",
+        "Une oscillation rythmique lente contrôlée par les générateurs centraux de rythme de la moelle épinière, provoquant des libérations pulsatiles d'acétylcholine à la base de la cellule.",
+        "Une dépolarisation maximale continue induisant un taux de décharge saturé (160 potentiels/sec) qui ne peut être diminué qu'en l'absence totale de gravité terrestre (apesanteur)."
+      ],
+      "correct": 1,
+      "explanation": "Le secret du système vestibulaire (et auditif) est son activité de base élevée. Au repos, les canaux apicaux sont entrouverts, laissant entrer un peu de K+ et générant un tonus de base (90 spikes/sec sur le nerf). Cela permet au système de moduler le signal à la hausse (160, excitation) ou à la baisse (20, inhibition) pour encoder la direction du mouvement[cite: 3]."
+    },
+    {
+      "question": "Lequel des énoncés suivants démontre une intégration physiologique correcte du réflexe d'accommodation posturale lié à l'organe de Golgi (OTG) lors du soulèvement d'une charge inopinément lourde (haltère de 50 kg) ?",
+      "options": [
+        "Les motoneurones MNI alpha des biceps sont initialement inhibés par l'anticipation corticale, tandis que les MNI gamma contractent exclusivement les fibres FF pour générer un mouvement lent et saccadé.",
+        "Le muscle génère une contraction (MNS vers MNI alpha). L'haltère oppose une résistance qui crée une forte tension dans le tendon. Si cette tension (détectée par l'OTG via fibres Ib) excède un seuil de sécurité, un interneurone inhibera le biceps (relâchement réflexe pour éviter la déchirure tendineuse).",
+        "L'haltère étire brusquement le tendon, ce qui déchire les terminaisons annulo-spiralées Ia, déclenchant l'activation immédiate de la voie tectospinale pour signaler la douleur au thalamus pariétal.",
+        "Le poids modifie la gravité perçue par le saccule ipsilatéral, qui envoie un signal via le FLM pour activer les muscles axiaux opposés dans une réponse typique d'extension croisée."
+      ],
+      "correct": 1,
+      "explanation": "L'OTG (dans le tendon) est monté en série avec les fibres musculaires. Il mesure la force de traction (tension). Si on force excessivement sur un poids et que la tension menace l'intégrité du système, l'OTG s'active fortement, inhibe les motoneurones du muscle agoniste (via un interneurone), forçant le relâchement du muscle pour se protéger (réflexe myotatique inverse)[cite: 2]."
+    },
+    {
+      "question": "Concernant la boucle neuronale impliquée dans l'exécution de la motricité fine des doigts (comme jouer du piano ou taper à l'ordinateur), quel est le trajet neuro-anatomique critique et spécifique assurant le recrutement terminal des muscles distaux ?",
+      "options": [
+        "Origine au cortex prémoteur latéral -> Capsule interne -> Croisement segmentaire lombaire -> Synapse sur les interneurones médians de la corne grise -> Innervation des unités S bilatérales.",
+        "Origine au cortex moteur primaire (couche V) -> Décussation dans les pyramides bulbaires -> Voie corticospinale latérale -> Synapse (directe ou via interneurones latéraux) sur les motoneurones alpha latéraux de la corne ventrale cervicale.",
+        "Origine à l'aire de Broca -> Tractus cortico-bulbaire unilatéral -> Relais dans le noyau rouge -> Voie rubro-spinale -> Synapse sur les motoneurones axiaux du cordon postérieur.",
+        "Origine dans le cervelet médian (vermis) -> Thalamus controlatéral -> Voie cortico-spinale ventrale -> Activation des motoneurones gamma de l'intumescence lombo-sacrée exclusivement."
+      ],
+      "correct": 1,
+      "explanation": "La motricité fine distale (doigts/mains) est l'apanage de la voie corticospinale latérale. Elle part du cortex moteur primaire (MNS), descend, croise dans le bulbe (pyramides), et se termine dans la moelle cervicale (intumescence) en ciblant les interneurones latéraux et MNI latéraux (qui innervent les muscles distaux du bras)[cite: 2]."
+    },
+    {
+      "question": "Dans le mécanisme du recrutement spatial de la force musculaire (Principe de Taille de Henneman), pourquoi le système nerveux sélectionne-t-il biologiquement et systématiquement les petites unités motrices S (Slow) en premier, avant de recruter les unités FR ou FF, lors d'une tâche demandant de l'effort progressif ?",
+      "options": [
+        "Parce que les unités motrices S (fibres rouges) sont dotées de récepteurs ionotropes au glutamate qui s'ouvrent à des voltages très négatifs (-90 mV), les rendant instantanément réactives à la dopamine striatale.",
+        "Parce que le corps cellulaire (soma) de leurs motoneurones inférieurs est de plus petite taille, ce qui confère à ces neurones une résistance électrique d'entrée plus élevée ; un même signal synaptique descendant générera donc chez eux un plus grand potentiel excitateur, leur permettant d'atteindre le seuil de décharge (potentiel d'action) avant les gros neurones.",
+        "Parce que les unités S ne consomment aucune molécule d'ATP lors de leur contraction glissante, ce qui en fait l'unique option viable d'un point de vue énergétique pour l'intumescence cervicale.",
+        "Parce qu'elles sont les seules unités directement innervées par les fibres afférentes Ib (OTG), qui déclenchent un PPSI préalable pour nettoyer la fente synaptique de l'excès de choline."
+      ],
+      "correct": 1,
+      "explanation": "Le principe de taille (Henneman) repose sur la biophysique des neurones : un petit motoneurone a une grande résistance d'entrée. Un même courant synaptique (commande du cerveau) causera une plus forte dépolarisation (V=IR) dans un petit neurone que dans un grand. Les petits motoneurones S (posture) sont donc les plus faciles à exciter et s'allument en premier[cite: 2]."
+    },
+    {
+      "question": "Comment le réflexe d'extension croisée interagit-il de manière adaptative avec les générateurs centraux de rythme (CPG) spinaux lors de la locomotion humaine binaire (bipède) perturbée par un événement nociceptif mineur ?",
+      "options": [
+        "Il désactive définitivement les CPG du membre stimulé, forçant l'humain à utiliser la voie vestibulo-spinale latérale pour sautiller sur une seule jambe, tandis que la jambe douloureuse devient rigide (décérébration).",
+        "Le réflexe d'extension croisée (flexion de la jambe douloureuse et extension de la jambe d'appui) est une boucle de protection dont les interneurones supplantent ou modulent brièvement l'activité rythmique cyclique générée par les CPG, permettant le retrait d'urgence sans effondrement de la posture, avant que le rythme locomoteur ne reprenne.",
+        "Il accélère la décharge des interneurones inhibiteurs GABAergiques de l'intumescence cervicale, provoquant un balancement réflexe paradoxal des bras sans effet sur les CPG lombaires.",
+        "Il recrute massivement l'organe tendineux de Golgi des muscles extenseurs croisés, inversant le rythme des CPG pour induire une locomotion à reculons (marche inversée) commandée par le noyau rouge."
+      ],
+      "correct": 1,
+      "explanation": "Les réflexes de protection (comme retirer le pied d'un débris douloureux) utilisent de nombreux interneurones dans la moelle qui modulent et outrepassent momentanément le rythme des CPG locaux. La jambe plie (retrait) et l'autre s'étend pour soutenir le corps, protégeant l'individu, puis le cerveau et les CPG réadaptent la suite de la locomotion[cite: 2]."
+    },
+    {
+      "question": "En neurophysiologie, on évoque souvent l'importance de l'activité 'tonique' des fuseaux neuromusculaires (transmise notamment par les fibres sensitives II). Quel comportement moteur complexe chez l'humain serait le plus gravement altéré si cette afférence tonique était sélectivement détruite, tout en gardant l'afférence phasique (fibres Ia) intacte ?",
+      "options": [
+        "La capacité d'esquiver rapidement un ballon lancé au visage, car la voie tecto-spinale dépend exclusivement des fibres de type II pour activer les muscles cervicaux.",
+        "La capacité d'exécuter un réflexe myotatique vif suite à un coup de marteau sur la rotule, qui serait totalement aboli sans le support tonique.",
+        "La capacité à maintenir les bras immobiles, levés à un angle précis de 90 degrés sans aide visuelle, car le système nerveux perdrait l'information constante sur la longueur absolue (étirement statique) du muscle.",
+        "La capacité de relâcher un objet lourd lorsque la tension menace de déchirer le tendon des fléchisseurs de l'avant-bras."
+      ],
+      "correct": 2,
+      "explanation": "Les fibres II (terminaisons en bouquet de fleurs) informent en continu la moelle sur la longueur absolue et statique du muscle. C'est le signal « tonique ». Sans lui, on perd la proprioception statique du muscle (ex: tenir une pose). L'esquive rapide (Ia) ou le relâchement (Ib de l'OTG) seraient préservés[cite: 2]."
+    },
+    {
+      "question": "Parmi les syndromes lésionnels suivants affectant les structures motrices corticales, lequel illustre une atteinte prédominante de la planification motrice plutôt que de l'exécution motrice pure ?",
+      "options": [
+        "Une hémiplégie flasque avec fasciculations et amyotrophie sévère de la musculature distale, typique de l'AVC ischémique du cortex moteur primaire (couche V).",
+        "Une ataxie sévère des membres avec tremblement intentionnel (dysmétrie), indiquant un dysfonctionnement de la voie rubro-spinale et des noyaux gris centraux associés.",
+        "Une apraxie (par exemple l'apraxie idéo-motrice), où le patient possède une force et des réflexes normaux, comprend l'instruction, mais est incapable d'organiser ou de séquencer correctement le geste demandé (ex: mimer l'utilisation d'une brosse à dents), suggérant une dysfonction du cortex prémoteur ou pariétal.",
+        "Le syndrome pseudo-bulbaire, caractérisé par une hyperréflexie myotatique bilatérale de la mâchoire et du pharynx, lié à la désinhibition de l'Aire Motrice Supplémentaire (AMS)."
+      ],
+      "correct": 2,
+      "explanation": "L'apraxie est le syndrome classique d'une lésion affectant la planification du geste (le cortex prémoteur ou le cortex associatif), pas son exécution mécanique. Le patient a la force et les outils, mais a perdu le « plan » pour assembler les étapes d'un mouvement complexe[cite: 2]."
+    },
+    {
+      "question": "Quel énoncé décrit le mieux l'impact du recrutement séquentiel des motoneurones inférieurs selon le principe de taille (petits neurones vs gros neurones) sur la tension générée par un muscle strié squelettique ?",
+      "options": [
+        "Il entraîne une contraction saccadée et irrégulière, car l'activation successive de différentes unités motrices provoque des interférences destructives au niveau de la plaque motrice.",
+        "Il permet de générer une augmentation de force douce et extrêmement graduelle (lissage), essentielle pour les mouvements de précision et la posture continue, tout en gardant les grosses unités motrices puissantes en réserve pour les urgences mécaniques.",
+        "Il provoque une sommation temporelle massive de potentiels inhibiteurs post-synaptiques (PPSI) via le neurotransmetteur GABA, relaxant ainsi le tonus de base des antagonistes pour faciliter l'effort.",
+        "Il inhibe rétroactivement le cortex moteur primaire via des afférences ascendantes des fibres Ia, limitant ainsi volontairement l'effort pour prévenir les déchirures tendineuses."
+      ],
+      "correct": 1,
+      "explanation": "En recrutant d'abord les petites unités (S, peu de force, grande endurance) puis progressivement les plus grosses (FR puis FF, force massive, peu d'endurance), le système nerveux parvient à moduler la force de façon incroyablement fluide, graduelle et adaptée à la tâche, au lieu de déclencher une contraction violente 'tout ou rien' au moindre effort[cite: 2]."
+    },
+    {
+      "question": "Quelle est la principale caractéristique fonctionnelle de l'activité des neurones miroirs, découverts dans le cortex prémoteur, qui soutient leur rôle théorique dans la cognition sociale et l'apprentissage moteur ?",
+      "options": [
+        "Ces neurones projettent exclusivement sur le système vestibulaire latéral pour simuler une chute (déséquilibre) lorsqu'un danger est observé de loin.",
+        "Ces neurones déchargent de manière identique lorsqu'un individu exécute une action motrice spécifique (ex: saisir un fruit) ET lorsqu'il observe passivement un autre individu réaliser la même action, fournissant un substrat neuronal à l'imitation et la compréhension de l'intention.",
+        "Ces neurones s'activent uniquement lors de la phase de sommeil paradoxal (REM), inhibant le thalamus pour empêcher l'exécution physique des mouvements rêvés (paralysie du sommeil).",
+        "Ils sont situés dans le cortex moteur cingulaire et se chargent de supprimer le réflexe myotatique inversé lors des efforts d'imitation volontaire de grimaces faciales."
+      ],
+      "correct": 1,
+      "explanation": "Les neurones miroirs (dans le cortex prémoteur) codent non seulement le mouvement que l'on fait, mais 'résonnent' aussi quand on voit quelqu'un d'autre le faire. Cela serait la base neuronale de la compréhension de l'action, de l'imitation, et de l'empathie motrice[cite: 2]."
+    },
+    {
+      "question": "La plasticité dépendante de l'activité au niveau de la jonction neuromusculaire est fondamentale pour la performance. Comment les motoneurones inférieurs (MNI) s'adaptent-ils lors d'une période de sédentarité extrême (immobilisation prolongée par un plâtre par exemple) ?",
+      "options": [
+        "Ils meurent par apoptose cellulaire, ce qui conduit à une dégénérescence Wallérienne ascendante irrémédiable de la voie corticospinale ventrale et à une paralysie flasque définitive.",
+        "Ils déclenchent un remodelage compensatoire massif, recrutant des interneurones médullaires additionnels pour sécréter de l'acétylcholine de manière autonome, provoquant des spasmes spastiques constants.",
+        "Ils réduisent drastiquement le transport de facteurs trophiques vers le muscle et subissent une diminution de l'arborisation de leurs terminaisons synaptiques, entraînant une amyotrophie de non-usage et une faiblesse musculaire réversible après rééducation.",
+        "Ils subissent une conversion phénotypique, se transformant en motoneurones gamma pour maintenir une tension de base constante sur le tendon d'Achille sans nécessiter de contraction volontaire."
+      ],
+      "correct": 2,
+      "explanation": "Lorsqu'un muscle n'est pas utilisé (immobilisation), les motoneurones réduisent leur décharge et leur activité trophique. Le muscle, sous-stimulé, fond considérablement (amyotrophie de non-usage), ce qui est un état réversible contrairement à l'amyotrophie sévère et souvent permanente causée par la destruction physique du nerf périphérique[cite: 2]."
+    },
+    {
+      "question": "Dans le diagnostic topographique d'un syndrome de la moelle épinière, quel ensemble de signes suggérerait fortement une atteinte focale de la corne antérieure (matière grise) au niveau de l'intumescence (renflement) lombaire, tout en épargnant les cordons blancs descendants ?",
+      "options": [
+        "Une hémiplégie spastique droite avec signe de Babinski positif et hyperréflexie myotatique diffuse s'étendant du bras droit à la jambe droite.",
+        "Une ataxie de la marche et un tremblement intentionnel des membres inférieurs (dysmétrie), mais avec une force maximale et des réflexes ostéotendineux strictement normaux aux jambes.",
+        "Une paralysie flasque bilatérale confinée aux membres inférieurs, accompagnée d'une atrophie sévère des muscles de la cuisse et des mollets, d'une aréflexie rotulienne et de fasciculations, sans aucun déficit moteur des bras ni de spasticité.",
+        "Un déficit exclusif de l'orientation réflexe de la tête et des yeux vers des stimuli visuels soudains, dû à l'interruption de la voie colliculospinale cheminant dans le cordon ventral lombaire."
+      ],
+      "correct": 2,
+      "explanation": "La destruction de la corne antérieure lombaire touche spécifiquement les corps cellulaires des motoneurones inférieurs (MNI) des jambes. Cela donne un pur syndrome MNI aux jambes : paralysie flasque, aréflexie, atrophie et fasciculations. Les bras (contrôlés par la moelle cervicale intacte) et les signes de MNS (car la voie corticospinale blanche qui traverse ce niveau n'est pas touchée si c'est focale à la grise) sont épargnés[cite: 2]."
+    },
+    {
+      "question": "Quel est le mécanisme exact par lequel l'entraînement en 'sprint' ou en force athlétique modifie l'expression phénotypique de l'unité motrice FF (Fast and Fatigable) par rapport à l'unité S (Slow) ?",
+      "options": [
+        "Il stimule la neurogenèse de nouveaux motoneurones de grand diamètre dans la corne ventrale et favorise le bourgeonnement massif de l'axone pour recruter les fibres musculaires lentes voisines.",
+        "Il induit une synthèse accrue de protéines contractiles (actine/myosine) dans les fibres pâles, entraînant une hypertrophie volumétrique majeure de la fibre, augmentant ainsi drastiquement la puissance générée sans améliorer fondamentalement la densité mitochondriale.",
+        "Il altère la machinerie synaptique du MNI, forçant ce dernier à libérer simultanément du glutamate et de l'acétylcholine pour fusionner l'excitation squelettique et végétative dans un délai record de 10 millisecondes.",
+        "Il entraîne l'apoptose (mort) ciblée des petites unités motrices S, libérant l'espace anatomique nécessaire à l'expansion vasculaire exigée par les immenses unités motrices FF."
+      ],
+      "correct": 1,
+      "explanation": "L'entraînement de puissance ne crée pas de nouveaux neurones. Il sollicite les fibres pâles (FF) qui répondent au stress mécanique en s'épaississant par ajout massif de protéines contractiles (hypertrophie musculaire), augmentant leur force (mais pas leur endurance métabolique, qui resterait faible)[cite: 2]."
+    },
+    {
+      "question": "En analysant le phénomène d'adaptation dans le système sensorimoteur, pourquoi l'organe de Golgi (OTG) est-il physiologiquement incapable de fournir à la moelle des informations précises sur la position angulaire statique d'une articulation immobile (contrairement aux fibres II du fuseau neuromusculaire) ?",
+      "options": [
+        "Parce que les fibres sensitives Ib de l'OTG subissent une fatigue synaptique complète en moins de 15 secondes d'étirement, annulant le potentiel d'action.",
+        "Parce que l'OTG est encapsulé en parallèle avec les fibres musculaires contractiles; il est donc détendu et incapable de détecter la moindre tension lors d'une contraction isométrique prolongée.",
+        "Parce que l'OTG est une structure viscoélastique montée en série qui est très sensible à la tension active (la force de traction générée par le muscle), mais peu sensible à la longueur absolue ou à un étirement passif faible, le rendant inutile pour la proprioception statique fine.",
+        "Parce que l'OTG est spécifiquement innervé par des motoneurones gamma qui relâchent activement le collagène ondulé à la minute où le muscle agoniste devient inactif, effaçant ainsi toute tension résiduelle de posture."
+      ],
+      "correct": 2,
+      "explanation": "L'OTG (en série) mesure la tension (la force). Il est relativement aveugle à la longueur (l'étirement passif d'un muscle relâché ne tire pas assez sur le tendon dur). C'est le fuseau neuromusculaire (fibres II, en parallèle) qui, lui, est l'outil parfait pour mesurer précisément la longueur du muscle à tout instant (l'angle de l'articulation)[cite: 2]."
+    },
+    {
+      "question": "L'aire motrice de Broca et le champ oculomoteur frontal (FEF) partagent une caractéristique organisationnelle fondamentale qui les différencie du cortex moteur primaire classique. Laquelle ?",
+      "options": [
+        "Ils sont situés sur la face médiane du cerveau et se spécialisent exclusivement dans les mouvements auto-déclenchés (internes) sans tenir compte de l'environnement extérieur.",
+        "Ils génèrent des mouvements articulaires simples et individuels (flexion isolée d'un doigt, ou d'une lèvre) via des monosynapses sur les MNI respectifs de la moelle épinière ou du tronc cérébral.",
+        "Ils représentent des subdivisions hyper-spécialisées du cortex prémoteur latéral, dédiées non pas à la simple exécution, mais à la planification sophistiquée de séquences motrices hautement spécifiques (la parole articulée et les saccades visuelles exploratoires).",
+        "Ils reçoivent leurs afférences motrices exclusivement du spino-cervelet (vermis) pour orchestrer la coordination inconsciente des réflexes posturaux du cou et des bras."
+      ],
+      "correct": 2,
+      "explanation": "L'aire de Broca (langage) et le FEF (Frontal Eye Field, pour le regard volontaire) font partie anatomiquement et fonctionnellement du cortex prémoteur latéral. Ils ne commandent pas le muscle directement ; ils *planifient* des actions très complexes (former un mot, scanner un paysage) et coordonnent l'ordre de ces séquences complexes avant exécution[cite: 2]."
+    },
+    {
+      "question": "Dans le diagnostic des pathologies supraspinales, quel ensemble clinique suggère une lésion au niveau des noyaux gris centraux (NGC) plutôt qu'une atteinte du cervelet ou du cortex moteur primaire ?",
+      "options": [
+        "Un mutisme akinétique complet accompagné d'une paralysie bilatérale du nerf facial (partie inférieure) et d'un clonus inépuisable des tendons d'Achille (spasticité bilatérale massive).",
+        "Un déficit majeur d'initiation motrice (akinésie) et une rigidité (résistance continue au mouvement passif) ou des mouvements involontaires excessifs (chorée), mais sans réelle perte de force motrice volontaire (pas de paralysie flasque).",
+        "Une ataxie de la marche avec écartement du polygone de sustentation, accompagnée de dysmétrie (doigt-nez imprécis) et d'un tremblement d'intention sévère à l'approche de la cible.",
+        "Une libération des réflexes vestibulospinaux conduisant à une posture en décérébration (extension des 4 membres) en réponse systématique et stéréotypée aux stimuli nociceptifs cutanés."
+      ],
+      "correct": 1,
+      "explanation": "Les Noyaux Gris Centraux (NGC) régulent le déclenchement et l'arrêt du mouvement. Leur atteinte classique (comme le Parkinson ou la maladie de Huntington) cause des problèmes pour initier l'action (akinésie/bradykinésie), de la rigidité ou des mouvements superflus (chorée), mais la force (cortex) et la précision (cervelet) en tant que telles restent intactes sur le plan structural[cite: 2]."
+    },
+    {
+      "question": "La décussation des axones de la voie corticospinale (ou pyramidale) comporte une variation anatomique essentielle (10% des fibres) qui influence le pronostic clinique. Quel est le trajet et la cible fonctionnelle de cette voie non-décussée (ventrale) ?",
+      "options": [
+        "Elle descend dans le cordon postérieur ipsilatéral pour inhiber de façon récurrente les cellules de Renshaw, garantissant l'activité réflexe de protection au niveau du bras et de la main (myotomes distaux).",
+        "Elle descend du même côté (ipsilatéral) dans le cordon antérieur, croise la ligne médiane au niveau segmentaire, et cible bilatéralement les interneurones et MNI médians pour stabiliser la motricité axiale et proximale des deux côtés du corps.",
+        "Elle s'arrête brutalement dans le pont de Varole, où elle synapse avec les neurones du système vestibulaire latéral pour moduler à l'avance les afférences maculaires de l'utricule et du saccule.",
+        "Elle croise la ligne médiane dans la substance blanche de l'hémisphère cérébral opposé (via le corps calleux), innervant de façon controlatérale les noyaux moteurs crâniens pour coordonner le langage et la déglutition."
+      ],
+      "correct": 1,
+      "explanation": "La voie corticospinale ventrale (antérieure) comprend 10% des axones qui ne croisent pas dans le bulbe. Elle descend du même côté de la lésion et fait synapse *des deux côtés* (bilatéralement) au niveau de la moelle sur les MNI axiaux. Ce double câblage sauve souvent les fonctions posturales du tronc/épaules (proximaux) après un AVC[cite: 2]."
+    },
+    {
+      "question": "Lequel des énoncés suivants explique correctement le concept de 'co-activation alpha-gamma' (co-contraction de l'agoniste et de l'antagoniste exclus) lors de l'exécution volontaire d'un mouvement, comme le levé lent du bras (flexion du coude) commandé par le cortex moteur ?",
+      "options": [
+        "Le cortex stimule le motoneurone inférieur (MNI) alpha pour contracter le muscle (raccourcissement). Simultanément, le cortex stimule le MNI gamma pour contracter les extrémités des fibres intrafusales, ce qui garde le fuseau tendu et sensible aux imprévus malgré le muscle raccourci.",
+        "Le motoneurone supérieur active de façon alternée le MNI alpha de l'agoniste et le MNI gamma de l'antagoniste, provoquant une oscillation de 8 Hz responsable de la fluidité et du maintien du tonus basal.",
+        "L'activation du motoneurone alpha du biceps déclenche, via une afférence Ia inhibitrice récurrente, la suppression instantanée du motoneurone gamma de ce même muscle pour empêcher un clonus hyperréflexique lors de la flexion.",
+        "Le ganglion de Scarpa envoie un signal bilatéral via la voie vestibulo-spinale, ordonnant au motoneurone gamma de relâcher les fibres musculaires rouges tout en contractant de force les fibres intrafusales pâles pour anticiper la chute."
+      ],
+      "correct": 0,
+      "explanation": "Pour un mouvement volontaire, le cortex envoie un ordre conjoint : « muscle contracte-toi (via MNI alpha) et fuseau, tends-toi aux extrémités (via MNI gamma) pour ne pas devenir mou quand le muscle se raccourcit ». C'est la coactivation alpha-gamma qui maintient le capteur de longueur optimalement tendu durant l'action[cite: 2]."
+    },
+    {
+      "question": "Dans le syndrome pseudobulbaire, l'une des présentations classiques est le « rire et pleurer spasmodique », soit des crises émotionnelles excessives, incontrôlables et déconnectées de l'état psychologique réel du patient. Sur le plan de la neuro-anatomie motrice, comment explique-t-on cette manifestation après de multiples micro-infarctus cérébraux corticaux bilatéraux ?",
+      "options": [
+        "La lésion corticale bilatérale abolit totalement l'activité de l'aire motrice cingulaire (liée à l'émotion), forçant le cervelet à prendre en charge la motricité de la face via une boucle aberrante passant par l'olive inférieure bulbaire.",
+        "Ces lésions bilatérales détruisent le contrôle inhibiteur cortical volontaire sur les centres moteurs émotionnels du tronc cérébral et de l'hypothalamus ; la motricité réflexe (automatique) de l'expression émotionnelle (pleurs/rire) est alors « libérée » de façon inappropriée et incontrôlable, mimant un syndrome sous-lésionnel (réflexes vifs) de la face.",
+        "Les multiples petits AVC détruisent sélectivement les interneurones inhibiteurs de la moelle cervicale haute innervant le système vagal (nerf X), provoquant une hyperactivité cardiorespiratoire qui mime les spasmes des pleurs.",
+        "Les lésions induisent une ataxie sensorielle spécifique des muscles pharyngés, empêchant le patient de produire la phonation volontaire, le forçant à substituer ses paroles par des vocalisations émotionnelles involontaires commandées par la voie rubro-spinale."
+      ],
+      "correct": 1,
+      "explanation": "Le rire et pleurer spasmodique (pseudobulbaire) est l'équivalent de la spasticité (réflexes libérés et exagérés) pour la moelle épinière, mais appliqué au tronc cérébral. Les lésions des motoneurones supérieurs coupent l'inhibition corticale descendante. Les noyaux du tronc cérébral (et les boucles émotionnelles profondes) sont laissés à eux-mêmes et déclenchent des réflexes faciaux émotionnels incontrôlés et explosifs[cite: 2]."
     }
   ]
 }

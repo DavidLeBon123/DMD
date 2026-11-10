@@ -1,0 +1,281 @@
+{
+  "title": "Audition et Cochlée - Partie 2",
+  "description": "Voies centrales, stéréoacousie, thalamus et cortex auditif (Niveau Expert).",
+  "questions": [
+    {
+      "question": "Quel est le sort anatomique des fibres sensitives efférentes du ganglion spiralé lorsqu'elles pénètrent dans le tronc cérébral au niveau du noyau cochléaire ?",
+      "options": [
+        "Elles décussent instantanément via le corps trapézoïde pour innerver le complexe olivaire supérieur controlatéral, assurant une audition strictement croisée.",
+        "Chaque fibre se sépare en deux branches principales : une ascendante vers le Noyau Ventral Antérieur (NVa) et une descendante vers le Noyau Ventral Postérieur (NVp) et le Noyau Dorsal (ND), tout en préservant l'organisation tonotopique.",
+        "Elles perdent leur myéline et forment un plexus diffus dans la formation réticulaire, convertissant le signal fréquentiel pur en un niveau d'éveil global.",
+        "Elles font synapse exclusivement sur le noyau cochléaire dorsal, qui relaie l'information directement au cervelet pour stabiliser la posture au bruit."
+      ],
+      "correct": 1,
+      "explanation": "À l'entrée dans le bulbe (noyau cochléaire), l'axone du ganglion spiralé se divise en « Y » pour distribuer son information (fréquence pure/tonotopie préservée) aux trois subdivisions du noyau cochléaire (NVa, NVp, ND), où différentes cellules analyseront des aspects distincts du son[cite: 1]."
+    },
+    {
+      "question": "En neuro-anatomie clinique, pourquoi une lésion destructrice unilatérale située au-dessus (en aval) des noyaux cochléaires (par exemple, un AVC massif du thalamus droit) NE PROVOQUE-T-ELLE PAS une surdité complète de l'oreille gauche ?",
+      "options": [
+        "Parce qu'après le relais dans les noyaux cochléaires bulbaires, les voies auditives (vers l'olive supérieure, le lemnisque, etc.) deviennent globalement bilatérales ; le cortex gauche intact reçoit donc toujours les informations provenant des deux oreilles.",
+        "Parce que le colliculus inférieur droit compense instantanément la perte thalamique en projetant directement sur l'aire de Broca via la voie tecto-spinale.",
+        "Parce que l'oreille gauche envoie ses signaux exclusivement à l'hémisphère gauche (ipsilatéral), qui n'est pas touché par la lésion droite.",
+        "Parce que la conduction osseuse du crâne permet au son d'être capté directement par le liquide cérébrospinal, stimulant le cortex auditif indépendamment des voies thalamiques."
+      ],
+      "correct": 0,
+      "explanation": "C'est une règle clinique majeure : la surdité totale unilatérale (d'une oreille) est TOUJOURS périphérique (oreille externe, moyenne, interne ou nerf VIII avant son noyau). Dès le premier relais dans le tronc, les fibres croisent et montent des deux côtés. Si on détruit un côté du cerveau, l'autre côté reçoit quand même le son des deux oreilles[cite: 1]."
+    },
+    {
+      "question": "Le complexe de l'Olive Supérieure (dans la protubérance) est le centre de la localisation horizontale du son (stéréoacousie binaurale). Comment l'Olive Supérieure Médiane (OSM) parvient-elle à localiser un son de BASSE fréquence (ex : 500 Hz) ?",
+      "options": [
+        "Elle mesure l'ombre acoustique : le crâne bloque les basses fréquences, créant une différence d'intensité massive entre l'oreille proche et l'oreille opposée.",
+        "Elle se fie à l'empreinte spectrale verticale générée par le pavillon cartilagineux, sans nécessiter d'afférence de l'oreille controlatérale.",
+        "Elle fonctionne comme un détecteur de coïncidence grâce à des lignes à retard : elle compare le délai d'arrivée (déphasage temporel) de l'onde entre les deux oreilles. Le neurone de l'OSM qui reçoit les deux potentiels d'action exactement en même temps détermine l'angle d'origine.",
+        "Elle évalue la vitesse d'adaptation du réflexe stapédien (nerf VII) pour calculer la distance absolue de la source sonore."
+      ],
+      "correct": 2,
+      "explanation": "Les ondes graves contournent la tête sans perdre d'intensité (pas d'ombre). Le cerveau utilise donc la fraction de temps supplémentaire que l'onde met pour atteindre l'oreille opposée (délai interaural). L'OSM a des câbles de longueurs différentes (lignes à retard) : le signal voyage, et la position du neurone où les deux signaux (D et G) se rencontrent simultanément donne l'angle exact du son[cite: 1]."
+    },
+    {
+      "question": "Contrairement à l'OSM, l'Olive Supérieure Latérale (OSL) est spécialisée dans la localisation des sons de HAUTE fréquence (> 3000 Hz). Quel phénomène physique lui permet d'accomplir cette localisation horizontale ?",
+      "options": [
+        "Le verrouillage de phase (phase-locking) de la cellule ciliée interne, qui devient paradoxalement optimal et ultra-précis au-delà de 3000 Hz.",
+        "L'ombre acoustique (différence d'intensité interaurale) : les ondes courtes (hautes fréquences) rebondissent sur la tête, rendant le son physiquement plus fort dans l'oreille située du côté de la source.",
+        "La diffraction de la strie vasculaire qui ralentit la propagation de la périlymphe dans la rampe tympanique apicale.",
+        "L'hyperpolarisation du noyau médian du corps trapézoïde, qui convertit la fréquence en un signal tonique nociceptif."
+      ],
+      "correct": 1,
+      "explanation": "Les hautes fréquences ont de petites longueurs d'ondes. La tête agit comme un mur physique qui bloque le son (ombre acoustique). Le son est donc plus fort du côté de la source. L'OSL compare cette intensité (excitation d'un côté vs inhibition de l'autre) pour déduire d'où vient l'aigu[cite: 1]."
+    },
+    {
+      "question": "En neurophysiologie auditive, quel est le mécanisme limitant l'utilisation du délai temporel (déphasage interaural) par l'Olive Supérieure Médiane (OSM) pour les sons aigus dépassant 3000 Hz ?",
+      "options": [
+        "L'hypertrophie des cellules ciliées externes dans la base de la cochlée, qui obstrue physiquement l'entrée des canaux K+.",
+        "La perte du phénomène de « verrouillage de phase » : les cellules ciliées ne peuvent pas dépolariser-repolariser assez vite pour suivre chaque cycle de l'onde au-delà de 3000 Hz, rendant le chronométrage du déphasage impossible.",
+        "L'épuisement de l'endolymphe hyperpolarisée à +125 mV, causé par l'ouverture permanente des canaux sodiques de la strie vasculaire.",
+        "Le fait que les hautes fréquences provoquent la contraction tétanique du muscle tenseur du tympan, abolissant toute transmission liquidienne."
+      ],
+      "correct": 1,
+      "explanation": "Le verrouillage de phase (la cellule décharge exactement au sommet de chaque onde) a une limite physique. Au-delà de 3000 Hz, l'onde va trop vite : la cellule n'a pas le temps de recharger et tire de façon aléatoire. Sans ce calage temporel strict, l'OSM ne peut plus comparer les délais d'arrivée[cite: 1]."
+    },
+    {
+      "question": "La localisation d'un son dans le plan VERTICAL (élévation, au-dessus ou en dessous de la tête) repose sur un mécanisme fondamentalement différent de la stéréoacousie horizontale. Quel est ce mécanisme monaural ?",
+      "options": [
+        "La comparaison du délai interaural relayée par le colliculus inférieur, car le son vertical frappe toujours le vertex du crâne avant le conduit auditif.",
+        "L'analyse corticale de l'« empreinte spectrale » : les replis complexes du pavillon et la résonance du conduit auditif amplifient ou amortissent différemment certaines fréquences selon l'angle d'arrivée vertical du son.",
+        "L'activation croisée de l'utricule et du saccule, qui traduit la pression de l'onde sonore verticale en un réflexe vestibulo-spinal correcteur.",
+        "L'inhibition réciproque des cellules ciliées internes de la membrane basilaire apicale par l'olive supérieure latérale."
+      ],
+      "correct": 1,
+      "explanation": "Pour savoir si un son vient d'en haut ou d'en bas, on ne peut pas comparer les deux oreilles. Le cerveau se fie au pavillon : ses cartilages tordent et filtrent le son d'une façon unique selon la hauteur de provenance (l'empreinte spectrale). Si on change de pavillon (ou si on met une prothèse), on perd cette capacité jusqu'à réapprentissage[cite: 1]."
+    },
+    {
+      "question": "Les noyaux du lemnisque latéral, situés à la jonction ponto-mésencéphalique, reçoivent des efférences des noyaux cochléaires et envoient leurs axones vers le colliculus inférieur. Quelle est leur spécialité analytique présumée dans la perception auditive ?",
+      "options": [
+        "L'intégration binaurale exclusive de la fréquence fondamentale des sons pour compenser le déphasage.",
+        "L'identification précise du début et de la durée (fin) d'un stimulus sonore, une donnée temporelle essentielle pour décoder des sons complexes comme la parole (ex: différencier des syllabes).",
+        "Le déclenchement du réflexe stapédien pour bloquer les sons excédant 120 dB avant qu'ils n'atteignent le cortex moteur.",
+        "La traduction de l'harmonie musicale en activité limbique en stimulant directement l'aire de Wernicke."
+      ],
+      "correct": 1,
+      "explanation": "Les noyaux du lemnisque latéral (alimentés par des fibres monaurales croisées) analysent finement les paramètres temporels du son (début, durée, fin). C'est crucial pour le langage humain, où une milliseconde de silence peut changer le sens d'un mot (ex: « bar » vs « barre »)[cite: 1]."
+    },
+    {
+      "question": "Le colliculus inférieur, situé dans le mésencéphale, est un centre de convergence majeur pour l'audition. Quelle est l'une de ses fonctions physiologiques primordiales outre le relais de l'information vers le thalamus ?",
+      "options": [
+        "Initier, via des voies descendantes telles que la voie tectospinale, une réponse réflexe motrice involontaire pour orienter rapidement la tête et les yeux vers un stimulus sonore soudain.",
+        "Générer le potentiel endocochléaire de l'endolymphe en pompant activement du potassium dans l'aqueduc de Sylvius.",
+        "Décomposer l'intensité des ondes de distorsion acoustique pour empêcher la formation d'acouphènes centraux.",
+        "Analyser la grammaire et la sémantique de la parole en collaboration avec les noyaux gris centraux (akinésie verbale)."
+      ],
+      "correct": 0,
+      "explanation": "Tout comme le colliculus supérieur (tectum) gère l'orientation visuelle, le colliculus inférieur intègre les informations sonores (intensité, localisation, fréquence) pour déclencher un réflexe moteur de survie : orienter la tête et les yeux vers ce bruit menaçant (voie tectospinale)[cite: 1]."
+    },
+    {
+      "question": "Le corps genouillé médian (CGM) du thalamus est la dernière gare de triage avant le cortex auditif. Quelle caractéristique électrophysiologique de certaines de ses cellules démontre son implication dans l'analyse de stimuli très sophistiqués ?",
+      "options": [
+        "Elles perdent toute forme de tonotopie pour se spécialiser uniquement dans le contrôle du rythme cardiaque via la formation réticulaire.",
+        "Elles s'activent de façon stéréotypée et maximale à l'audition d'un bruit blanc de 100 dB, signalant l'activation du système parasympathique.",
+        "Elles détectent des combinaisons complexes de fréquences et de délais temporels (ex: l'émission d'un son couplée à l'écho de ce son avec un délai de quelques millisecondes, utile pour l'écholocation ou le traitement des syllabes).",
+        "Elles induisent la contraction du muscle tenseur du tympan par rétroaction collatérale sur le noyau vestibulaire médian."
+      ],
+      "correct": 2,
+      "explanation": "Le CGM thalamique n'est pas un simple câble. Il contient des cellules qui font de l'analyse combinatoire complexe (Fréquence + Temps). Chez la chauve-souris (écholocation), une cellule ne s'allume que si elle entend le son A, suivi du son B exactement 2 millisecondes plus tard. Ce même principe s'applique chez l'humain pour décoder la suite complexe des sons de la parole[cite: 1]."
+    },
+    {
+      "question": "Au niveau du lobe temporal, l'information auditive brute arrive d'abord au cortex auditif primaire (gyrus de Heschl, aires 41/42). Quelle affirmation décrit le mieux la façon dont l'information y est cartographiée ?",
+      "options": [
+        "La carte est aléatoire, les cellules répondant de façon globale à l'intensité (dB) pour induire un réveil végétatif.",
+        "L'organisation tonotopique stricte (de la cochlée) y est préservée : les neurones sont classés d'avant en arrière (ou médial-latéral), répondant aux basses fréquences à une extrémité et aux hautes fréquences à l'autre.",
+        "Le cortex primaire est exclusivement dédié au traitement du langage parlé (signification des mots), ignorant les bruits de l'environnement ou la musique.",
+        "La tonotopie y est inversée pour que les fréquences graves (issues de l'apex) stimulent directement l'aire de Wernicke sans passer par la scissure de Sylvius."
+      ],
+      "correct": 1,
+      "explanation": "La carte tonotopique (dessinée par la membrane basilaire) est maintenue tout le long du trajet (noyau, lemnisque, colliculus, thalamus) et arrive intacte dans le cortex primaire de Heschl. Ce cortex « entend consciemment » le son pur (sa hauteur, son intensité), mais ne le comprend pas encore[cite: 1]."
+    },
+    {
+      "question": "L'aire de Wernicke (cortex auditif associatif secondaire, incluant le planum temporal et l'aire 22) se différencie du cortex primaire par le niveau d'abstraction de son traitement. Comment ses neurones parviennent-ils à identifier le timbre d'une voix humaine ?",
+      "options": [
+        "En bloquant l'influx des colliculi inférieurs pour concentrer toute l'énergie métabolique sur l'analyse de l'amplitude absolue de la fréquence 200 Hz.",
+        "En possédant des neurones complexes qui s'activent uniquement s'ils reçoivent simultanément la fréquence fondamentale d'un son (ex: 100 Hz) ET ses harmoniques spécifiques multiples (200, 300, 400 Hz).",
+        "En activant un relais synaptique direct vers le ganglion spiralé de Corti pour moduler l'amplificateur cochléaire des cellules ciliées externes.",
+        "En induisant le phénomène d'attention auditive sélective (« cocktail party ») qui supprime la perception des voyelles au profit exclusif des consonnes."
+      ],
+      "correct": 1,
+      "explanation": "L'aire de Wernicke analyse le son au-delà de sa fréquence isolée. Sa tonotopie est floue, car ses neurones intègrent. Un neurone « timbre » s'allumera si, et seulement si, il reçoit le cocktail complet (l'accord) d'une fréquence et de toutes ses harmoniques, donnant la signature sonore unique d'une voix ou d'un instrument[cite: 1]."
+    },
+    {
+      "question": "L'attention auditive sélective (l'effet « cocktail party ») permet à un auditeur de se focaliser sur une seule conversation dans une salle bruyante. Sur le plan neurophysiologique cortical, quel mécanisme permet cette prouesse ?",
+      "options": [
+        "Le cervelet inhibe de façon rétroactive les noyaux cochléaires bulbaires pour les sons jugés dangereux ou non pertinents par la strie vasculaire.",
+        "Le cortex auditif exerce une modulation descendante active : il amplifie le traitement de la voix d'intérêt et inhibe de façon relative le traitement cortical des voix ou bruits concurrents.",
+        "La membrane basilaire de la cochlée se fige mécaniquement pour ne vibrer qu'à la fréquence exacte de la personne ciblée, grâce à la paralysie du muscle de l'étrier.",
+        "Le corps genouillé médian du thalamus sécrète du GABA de façon tonique sur l'olive supérieure, bloquant la localisation stéréoacousique pour diminuer la distraction."
+      ],
+      "correct": 1,
+      "explanation": "Le cerveau filtre le bruit non pas dans la cochlée, mais en haut de la chaîne. Le cortex concentre son attention (amplification corticale) sur les paramètres de la voix intéressante (sa fréquence, sa position dans l'espace) et inhibe/ignore consciemment l'analyse des autres stimuli concurrents[cite: 1]."
+    },
+    {
+      "question": "Une épreuve clinique d'audiométrie classique utilise le test de Weber et le test de Rinne. Chez un patient souffrant d'une surdité neurosensorielle (centrale) partielle à l'oreille DROITE, quels seront les résultats typiques de ces tests ?",
+      "options": [
+        "Rinne Droite: Os > Air ; Weber: le son latéralise (est entendu plus fort) à droite.",
+        "Rinne Droite: Air > Os (normal) ; Weber: le son latéralise (est entendu plus fort) dans la bonne oreille (GAUCHE).",
+        "Rinne Droite: Os > Air ; Weber: le son est entendu également des deux côtés au sommet du crâne.",
+        "Rinne Gauche: Os > Air ; Weber: le son latéralise à droite à cause de l'hyperacousie compensatoire."
+      ],
+      "correct": 1,
+      "explanation": "Dans la surdité neurosensorielle (lésion du nerf/cochlée droite), le mécanisme de l'oreille moyenne marche bien (donc le Rinne reste normal, Air > Os). Cependant, lors du Weber (transmission par l'os au crâne), l'oreille malade (droite) capte moins bien, donc le patient entend le son vibrer beaucoup plus fort du côté sain (la gauche)[cite: 1]."
+    },
+    {
+      "question": "La transduction mécano-électrique dans la cellule ciliée interne implique des canaux potassiques (hc-MET) sensibles à l'étirement. Où sont exactement situés ces canaux, et par quel milieu ionique sont-ils baignés ?",
+      "options": [
+        "Ils sont situés à la base synaptique de la cellule et baignent dans la périlymphe, riche en calcium et pauvre en sodium.",
+        "Ils sont situés dans la strie vasculaire et baignent dans le liquide cérébro-spinal, pompant le potassium contre son gradient de concentration.",
+        "Ils sont situés au sommet des stéréocils, attachés aux liens apicaux (tip links), et baignent dans l'endolymphe du canal cochléaire, un liquide exceptionnellement riche en Potassium (K+) à +125 mV.",
+        "Ils sont enfouis dans la membrane basilaire rigide et s'ouvrent au contact direct de la rampe tympanique remplie de sodium."
+      ],
+      "correct": 2,
+      "explanation": "Les canaux de transduction sont les petits clapets au bout des cils. Les ressorts (tip links) tirent dessus. Ils baignent dans l'endolymphe (scala media), une soupe très riche en K+ chargée à bloc (+125 mV) par la strie vasculaire, fournissant l'énergie pour que le K+ s'engouffre dans la cellule dès l'ouverture de la porte[cite: 1]."
+    },
+    {
+      "question": "En considérant l'éventail complet des fréquences audibles humaines (20 Hz à 20 000 Hz), quel pourcentage de ce spectre l'Olive Supérieure Latérale (OSL) est-elle réellement capable de localiser dans l'espace grâce à l'ombre acoustique de la tête ?",
+      "options": [
+        "Uniquement les fréquences inférieures à 500 Hz, car la tête bloque complètement les grandes longueurs d'onde, créant une différence d'intensité massive.",
+        "La totalité du spectre (20 Hz à 20 000 Hz), car l'OSL collabore avec le noyau du lemnisque latéral pour pallier la perte du verrouillage de phase.",
+        "Les fréquences situées au-dessus de 2000-3000 Hz, car seules ces ondes courtes (aigus) ne peuvent pas contourner le crâne, générant ainsi l'ombre acoustique (différence d'intensité) indispensable à son fonctionnement.",
+        "Elle ne localise aucune fréquence, car ce rôle est exclusivement dévolu au colliculus supérieur via le noyau vestibulaire médian."
+      ],
+      "correct": 2,
+      "explanation": "L'OSL a besoin que le son soit plus fort d'un côté de la tête (ombre acoustique). Les sons graves (basses fréquences, grandes vagues) contournent la tête sans perdre d'énergie. Seuls les sons aigus (hautes fréquences >2000-3000 Hz, petites vagues) s'écrasent contre le crâne, permettant à l'OSL d'utiliser la différence de volume pour localiser[cite: 1]."
+    },
+    {
+      "question": "Quelle pathologie clinique classique de l'audition et de l'équilibre est directement causée par un œdème (hydrops) lié à une mauvaise régulation du volume ou de la pression de l'endolymphe dans le labyrinthe membraneux ?",
+      "options": [
+        "La maladie de Parkinson, par destruction de la substance noire.",
+        "Le syndrome pseudo-bulbaire, causant une paralysie spastique de l'étrier.",
+        "La maladie de Ménière, provoquant des crises de vertige invalidantes, une perte d'audition (surdité de perception, souvent des graves) et des acouphènes.",
+        "Le neurinome de l'acoustique (Schwannome vestibulaire), une tumeur bénigne de la myéline centrale de l'aire de Wernicke."
+      ],
+      "correct": 2,
+      "explanation": "La maladie de Ménière est la maladie de la pression des liquides de l'oreille interne (hydrops endolymphatique). Cette surpression perturbe la base (vertiges rotatoires) et l'apex flasque de la cochlée (surdité des sons graves et sifflements/acouphènes)[cite: 1]."
+    },
+    {
+      "question": "Le « verrouillage de phase » (phase-locking) est un phénomène neurophysiologique fascinant où la cellule ciliée interne (et son neurone afférent) décharge de manière synchrone à une phase spécifique de chaque cycle de l'onde sonore (ex: toujours au sommet de la crête). À quoi sert principalement ce mécanisme ?",
+      "options": [
+        "Il permet au cervelet de vérifier que le mouvement de la tête est cohérent avec le son perçu, prévenant la dysmétrie vocale.",
+        "Il code fidèlement les fréquences élevées (>15 000 Hz) pour que l'aire de Wernicke perçoive la dissonance harmonique de la musique complexe.",
+        "Il reproduit le rythme exact de l'onde sonore (le temps) pour les basses et moyennes fréquences (jusqu'à max 3000 Hz), fournissant à l'Olive Supérieure Médiane l'horloge précise indispensable pour calculer le délai interaural.",
+        "Il stimule de façon réflexe le noyau de l'hypoglosse (XII) pour synchroniser la déglutition avec la fin d'une phrase."
+      ],
+      "correct": 2,
+      "explanation": "Pour chronométrer un délai entre deux oreilles (OSM), le cerveau a besoin d'une horloge parfaite. La cellule ciliée fait métronome (verrouillage de phase) : elle tire une balle à chaque fois que la vague est au plus haut, transmettant le rythme parfait de la fréquence (Hz) au tronc cérébral. Elle ne peut cependant pas tirer plus vite que 3000 coups/seconde, ce qui limite son usage aux basses/moyennes fréquences[cite: 1]."
+    },
+    {
+      "question": "Par quel processus anatomique les noyaux cochléaires (dans le bulbe rachidien) distribuent-ils l'information sonore vers les structures supérieures du système nerveux central ?",
+      "options": [
+        "Ils projettent 100% de leurs axones de manière croisée (décussation) directement vers le cortex auditif pariéto-insulaire, court-circuitant le thalamus.",
+        "Ils envoient des axones unilatéraux exclusivement vers le cervelet flocculo-nodulaire pour moduler le réflexe vestibulo-cervical.",
+        "Les projections en aval du noyau cochléaire sont globalement bilatérales. Elles croisent la ligne médiane via le corps trapézoïde pour monter dans le lemnisque latéral controlatéral, tout en envoyant des projections ipsilatérales, assurant une représentation binaurale à chaque étape.",
+        "Ils décussent dans les pyramides bulbaires, se mêlant à la voie corticospinale latérale pour inhiber les MNI lors du sommeil paradoxal."
+      ],
+      "correct": 2,
+      "explanation": "Le noyau cochléaire est la ligne de partage des eaux. Avant lui, l'information est d'un seul côté (oreille). Après lui, ça croise dans tous les sens (surtout via le corps trapézoïde vers l'olive) pour que l'hémisphère droit entende les deux oreilles, et que l'hémisphère gauche entende les deux oreilles. C'est ce qui rend impossible une surdité d'une seule oreille causée par un AVC du cerveau[cite: 1]."
+    },
+    {
+      "question": "En explorant les mécanismes de distorsion acoustique, qu'est-ce qui explique qu'un sujet exposé simultanément à deux sons purs de haute intensité (ex: $f_1=1000$ Hz et $f_2=1200$ Hz) puisse entendre distinctement un troisième son (ex: 800 Hz ou 1400 Hz) qui n'existe pas dans la pièce ?",
+      "options": [
+        "L'aire de Broca compense le traumatisme acoustique en générant une illusion sémantique (acouphène verbal) via la mémoire associative.",
+        "La fatigue du muscle stapédien (nerf VII) produit un écho mécanique dans le conduit auditif externe qui déphase les ondes de 20 dB.",
+        "La non-linéarité mécanique de la membrane basilaire et l'amplification des cellules ciliées externes créent des ondes de turbulence. Ces ondes se combinent (intermodulations, équation $f_c=x f_1 \\pm y f_2$) et viennent physiquement stimuler une troisième région de la cochlée.",
+        "Le potassium de la strie vasculaire cristallise sous la forte pression acoustique, irritant le ganglion spiralé qui décharge de façon tétanique à la fréquence de la gravité terrestre."
+      ],
+      "correct": 2,
+      "explanation": "La distorsion acoustique cochléaire n'est pas une hallucination cérébrale, c'est un effet mécanique. La cochlée, surtout poussée par l'amplificateur actif des cellules externes, réagit de façon non linéaire aux forts volumes. Deux grosses vagues proches créent un tourbillon (somme ou soustraction de leurs fréquences) qui voyage sur la membrane et la fait vibrer ailleurs. Le nerf ressent ce « fantôme » comme un vrai son[cite: 1]."
+    },
+    {
+      "question": "Quelle particularité du système nerveux autonome (SNA) explique pourquoi l'administration d'un médicament anticholinergique (bloquant l'acétylcholine sur les récepteurs muscariniques de l'organe cible) dilate la pupille et accélère le cœur sans pour autant bloquer la contraction des muscles du bras ?",
+      "options": [
+        "Parce que le SNA dépend exclusivement de la dopamine libérée par le locus coeruleus, que l'anticholinergique potentialise au niveau des muscles striés.",
+        "Parce que la voie efférente sympathique et parasympathique se termine par un récepteur métabotrope muscarinique (ou adrénergique) sur les organes viscéraux, alors que la jonction neuromusculaire des muscles squelettiques (somatique) utilise des récepteurs ionotropes nicotiniques insensibles à ce médicament spécifique.",
+        "Parce que le SNA ne contrôle que la moitié droite du corps, laissant la moelle épinière gauche coordonner l'ensemble des mouvements squelettiques volontaires.",
+        "Parce que la contraction des muscles squelettiques est générée de façon autonome par l'organe tendineux de Golgi (OTG), indépendamment du neurotransmetteur acétylcholine."
+      ],
+      "correct": 1,
+      "explanation": "Bien que le système moteur volontaire (muscle) et le système parasympathique (viscères) utilisent tous les deux l'Acétylcholine au bout du fil, ils n'ont pas la même serrure. Le muscle squelettique a un récepteur nicotinique (ionotrope/rapide). Les viscères ont un récepteur muscarinique (métabotrope/lent). Un bloqueur muscarinique ciblera donc les viscères sans paralyser le squelette[cite: 1, 4]."
+    },
+    {
+      "question": "Un patient subit une lésion unilatérale du cortex prémoteur latéral GAUCHE (sans dommage à l'aire de Broca ni au cortex moteur primaire adjacent). Laquelle des manifestations cliniques suivantes serait la conséquence typique d'un déficit de planification motrice dans l'espace extra-personnel ?",
+      "options": [
+        "Une hémiplégie spastique droite avec hyperréflexie et signe de Babinski sévère, accompagnée de fasciculations massives.",
+        "Le patient n'est pas paralysé, mais est incapable d'initier un mouvement vers un objet visuel cible avec son bras droit, ou d'organiser une séquence complexe de gestes avec la main droite (apraxie) en réponse à une commande externe.",
+        "Une impossibilité totale de déglutir (dysphagie bilatérale) et une paralysie faciale périphérique gauche complète (de Bell).",
+        "Une ataxie de la marche avec tremblement d'intention du doigt droit, sans perte de force."
+      ],
+      "correct": 1,
+      "explanation": "Le cortex prémoteur latéral s'occupe de la planification et de la préparation du mouvement (surtout en réponse à des signaux externes, ex: attraper un objet vu). Sa lésion cause de l'apraxie (difficulté à ordonner la séquence des gestes pour atteindre un but) sans causer de vraie paralysie (le cortex moteur, la moelle et les nerfs sont intacts)[cite: 1]."
+    },
+    {
+      "question": "Concernant le fonctionnement synaptique d'un motoneurone alpha (MNI), quelle est la chronologie exacte des événements neurochimiques aboutissant à la contraction du muscle strié squelettique ?",
+      "options": [
+        "Dépolarisation axonale -> ouverture des canaux K+ présynaptiques -> libération de glutamate -> liaison au récepteur métabotrope musculaire -> libération lente de calcium sarcoplasmique.",
+        "Potentiel d'action axonal -> ouverture des canaux calciques voltage-dépendants (CCVD) au niveau du bouton terminal -> exocytose d'acétylcholine -> liaison aux récepteurs nicotiniques ionotropes -> dépolarisation rapide (PPSE) de la plaque motrice.",
+        "Dépolarisation dendritique -> exocytose de GABA dans la fente synaptique -> hyperpolarisation du sarcolemme (PPSI) -> activation secondaire de l'organe tendineux de Golgi (OTG).",
+        "Activation de la cellule de Renshaw -> sécrétion de glycine -> inhibition récurrente du motoneurone gamma -> relâchement de la tension sur le fuseau neuromusculaire."
+      ],
+      "correct": 1,
+      "explanation": "La séquence de la jonction neuromusculaire somatique est stricte : l'électricité (PA) ouvre les CCVD du neurone, le calcium entre et fait exploser les vésicules d'acétylcholine (ACh). L'ACh traverse la fente, se colle sur les récepteurs nicotiniques (canaux ioniques rapides) du muscle, le sodium s'engouffre et le muscle se dépolarise et contracte (PPSE géant ou potentiel de plaque)[cite: 1, 4]."
+    },
+    {
+      "question": "La tonotopie, établie dès la membrane basilaire de la cochlée, est une carte spatiale des fréquences sonores. Où se retrouve cette organisation tonotopique dans les relais supérieurs du système nerveux central ?",
+      "options": [
+        "Elle est complètement abolie dès l'entrée dans le noyau cochléaire, afin de privilégier l'analyse de l'intensité (dB) pour les réflexes de survie mésencéphaliques.",
+        "Elle est strictement confinée à l'Olive Supérieure Médiane (OSM) pour faciliter le calcul du déphasage interaural des basses fréquences.",
+        "Elle est fidèlement préservée tout au long des voies ascendantes (noyau cochléaire, lemnisque latéral, colliculus inférieur, thalamus) jusqu'au cortex auditif primaire (gyrus de Heschl), qui maintient une carte des fréquences graves aux aiguës.",
+        "Elle réapparaît uniquement dans l'aire de Wernicke, où la tonotopie de la main et de la face fusionne avec les vibrations osseuses du massif facial."
+      ],
+      "correct": 2,
+      "explanation": "Comme l'homonculus de la motricité ou la somatotopie de la rétine, la carte des fréquences (tonotopie) de la cochlée monte comme un câble organisé et reste triée par fréquence tout le long du tronc cérébral et du thalamus, pour s'imprimer intacte sur le cortex auditif primaire de Heschl[cite: 1]."
+    },
+    {
+      "question": "En neurophysiologie, qu'est-ce qui distingue l'hyperréflexie (spasticité) du syndrome sous-lésionnel d'un réflexe myotatique physiologique d'intensité normale ?",
+      "options": [
+        "Dans l'hyperréflexie, le fuseau neuromusculaire inverse sa fonction et s'active lors de la contraction active du muscle agoniste plutôt que lors de son étirement passif.",
+        "Le réflexe myotatique normal (phasique) est modéré par des signaux inhibiteurs descendants constants du cerveau (motoneurones supérieurs). L'hyperréflexie survient quand la moelle spinale, isolée par une lésion de ces voies supérieures, « libère » l'arc réflexe local qui devient incontrôlable (arc réflexe désinhibé).",
+        "L'hyperréflexie est causée par la destruction des interneurones GABAergiques (cellules de Renshaw) de l'intumescence cervicale, empêchant l'inhibition du motoneurone gamma de l'agoniste.",
+        "L'hyperréflexie indique une guérison spontanée de la paralysie flasque par prolifération anarchique des afférences de l'organe tendineux de Golgi (OTG)."
+      ],
+      "correct": 1,
+      "explanation": "Le MNS (cerveau) passe son temps à refréner et calmer la fougue des MNI (moelle épinière). Si l'on coupe le MNS (syndrome pyramidal, transection de la moelle), l'arc réflexe du MNI et du fuseau se retrouve sans patron. Il s'emballe au moindre stimulus d'étirement, causant de gros tressautements (hyperréflexie) et des raideurs (spasticité)[cite: 1]."
+    },
+    {
+      "question": "La plasticité corticale dépendante de l'expérience peut modifier l'homonculus moteur. Lors d'un apprentissage intensif prolongé d'une nouvelle tâche motrice fine (par ex. un exercice complexe de virtuosité au piano), que se passe-t-il au niveau du cortex moteur primaire ?",
+      "options": [
+        "L'apprentissage induit l'apoptose (mort) des neurones responsables des doigts inutilisés pour fournir de l'énergie métabolique au thalamus.",
+        "La représentation corticale (le territoire) dédiée aux muscles spécifiques des doigts concernés s'élargit et se remodèle activement, augmentant la résolution et le contrôle sur ces petites unités motrices.",
+        "La décussation de la voie corticospinale ventrale est reroutée vers le cervelet pour automatiser le geste sans jamais impliquer la conscience pariétale.",
+        "Les champs oculomoteurs frontaux (FEF) fusionnent avec l'aire de Broca, liant mécaniquement la lecture de la partition musicale à la contraction de la mâchoire."
+      ],
+      "correct": 1,
+      "explanation": "Le cortex s'entraîne comme un muscle. Si une activité est pratiquée à outrance (ex: le doigté d'un violoniste), le territoire de ce doigt sur l'homonculus moteur va physiquement s'agrandir, recrutant des neurones adjacents pour augmenter le contrôle fin de ce mouvement complexe (neuroplasticité et réorganisation)[cite: 1]."
+    }
+  ]
+}

@@ -42,6 +42,10 @@
         }
         h1, h2 { margin-top: 0; }
         
+        .category-title {
+            margin-top: 30px; font-size: 1.2em; color: #333; border-bottom: 2px solid var(--border);
+            padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;
+        }
         .menu-item {
             border: 2px solid var(--border); border-radius: 12px; padding: 15px; margin-bottom: 10px;
             cursor: pointer; transition: all 0.2s; border-left: 6px solid var(--primary);
@@ -147,18 +151,18 @@
 
 <script>
     /* =======================================================================
-       LISTE EXACTE DES FICHIERS
-       Ajoute le nom exact de tes fichiers JSON ici. 
-       Assure-toi que les fichiers sont placés à côté de index.html sur GitHub.
+       ÉCRIS ICI LE CHEMIN EXACT DE TES FICHIERS SUR GITHUB
+       Si le fichier est dans un dossier, ajoute "NomDuDossier/" devant.
     ======================================================================== */
     const FILES_TO_LOAD = [
         "quiz1.json",
         "quiz2.json",
         "quiz3.json",
-        "controle_moteur_1.json"  // <-- J'ai mis un nom simple, sans dossier.
+        "PSL/controle_moteur_1.json"  // <-- Fichier dans le dossier PSL
     ];
 
     let quizzes = {}; 
+    let categories = {}; 
     let bookmarks = JSON.parse(localStorage.getItem('quiz_bookmarks') || '[]');
     let userProgress = JSON.parse(localStorage.getItem('quiz_progress') || '{}');
     
@@ -173,7 +177,7 @@
     const navModal = document.getElementById('navigator-modal');
     const navGrid = document.getElementById('nav-grid');
 
-    // CHARGEMENT MANUEL (Sans merge)
+    // CHARGEMENT MANUEL (Avec détection des dossiers)
     async function loadQuizzes() {
         for (const path of FILES_TO_LOAD) {
             try {
@@ -181,16 +185,26 @@
                 if (!res.ok) continue;
                 const data = await res.json();
                 
-                // Utilise le chemin du fichier comme identifiant unique
+                // Déduit la catégorie (le dossier) à partir du chemin
+                const parts = path.split('/');
+                const category = parts.length > 1 ? parts[0].toUpperCase() : 'GÉNÉRAL';
+                
+                // Utilise le chemin entier comme identifiant unique
                 const quizId = path; 
                 
                 quizzes[quizId] = { 
                     id: quizId, 
                     title: data.title, 
                     description: data.description || "",
-                    questions: data.questions 
+                    questions: data.questions,
+                    category: category 
                 };
-            } catch (e) { console.warn("Fichier non trouvé ou erreur syntaxe:", path); }
+                
+                // Range le quiz dans sa catégorie
+                if (!categories[category]) categories[category] = [];
+                categories[category].push(quizId);
+                
+            } catch (e) { console.warn("Fichier non trouvé ou erreur de syntaxe:", path); }
         }
 
         if (Object.keys(quizzes).length === 0) {
@@ -218,23 +232,27 @@
             `;
         }
         
-        // Affiche chaque quiz indépendamment
-        for (const quizId in quizzes) {
-            const quiz = quizzes[quizId];
-            let progressText = "";
+        // Affichage par catégorie (dossier)
+        for (const [cat, quizIds] of Object.entries(categories).sort()) {
+            html += `<h2 class="category-title">📂 ${cat}</h2>`;
             
-            if (userProgress[quizId]) {
-                const ans = userProgress[quizId].locked.filter(l => l).length;
-                const tot = quiz.questions.length;
-                progressText = ` - En cours (${ans}/${tot})`;
-            }
+            quizIds.forEach(id => {
+                const quiz = quizzes[id];
+                let progressText = "";
+                
+                if (userProgress[id]) {
+                    const ans = userProgress[id].locked.filter(l => l).length;
+                    const tot = quiz.questions.length;
+                    progressText = ` - En cours (${ans}/${tot})`;
+                }
 
-            html += `
-                <div class="menu-item" onclick="startQuiz('${quizId}')">
-                    <h3>${quiz.title}</h3>
-                    <p>${quiz.questions.length} questions ${progressText}</p>
-                </div>
-            `;
+                html += `
+                    <div class="menu-item" onclick="startQuiz('${id}')">
+                        <h3>${quiz.title}</h3>
+                        <p>${quiz.questions.length} questions ${progressText}</p>
+                    </div>
+                `;
+            });
         }
         
         appDiv.innerHTML = html;

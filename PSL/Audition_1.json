@@ -1,0 +1,556 @@
+{
+  "title": "Audition et Cochlée - Partie 1",
+  "description": "Mécanique auriculaire, transduction cochléaire et voies auditives centrales (Niveau Expert).",
+  "questions": [
+    {
+      "question": "En physique acoustique, comment définit-on précisément l'intensité d'un son (mesurée en décibels) par rapport à ses caractéristiques ondulatoires ?",
+      "options": [
+        "Elle correspond à la fréquence de l'onde, soit le nombre de cycles de compression par seconde (Hz), ce qui détermine la hauteur tonale.",
+        "Elle est strictement liée à la longueur d'onde, qui diminue proportionnellement lorsque le son passe de l'air à un milieu liquidien comme la périlymphe.",
+        "Elle correspond à l'amplitude de l'onde, soit la mesure de la variation de pression acoustique (W/m²), exprimée de façon logarithmique par rapport au seuil d'audibilité.",
+        "Elle est définie par le déphasage temporel entre deux ondes harmoniques, caractéristique analysée exclusivement par l'aire de Wernicke."
+      ],
+      "correct": 2,
+      "explanation": "L'intensité (le volume) d'un son correspond à son amplitude (la force/variation de pression de l'onde). L'oreille convertit cette amplitude en décibels (dB) via un ratio logarithmique (ndB = 10 log10(Ix/I0)). La fréquence (Hz) donne la hauteur (grave/aigu), pas l'intensité[cite: 1, 3]."
+    },
+    {
+      "question": "L'oreille externe (pavillon et conduit auditif externe) ne sert pas uniquement d'entonnoir passif. Quelle est sa principale contribution active à l'acoustique humaine ?",
+      "options": [
+        "Elle atténue activement les fréquences comprises entre 2000 et 3000 Hz pour protéger le tympan des sons aigus de la parole humaine.",
+        "Elle amplifie sélectivement certaines fréquences (particulièrement autour de 2000-3000 Hz, avec un gain d'environ 100 fois ou 20 dB), ce qui optimise la perception des langages humains mais augmente le risque de dommage acoustique à ces fréquences.",
+        "Elle convertit les sons complexes en une onde sinusoïdale pure (fréquence fondamentale) avant que l'onde ne frappe le tympan, éliminant ainsi les distorsions harmoniques.",
+        "Elle agit comme un adaptateur d'impédance liquidien qui augmente la vitesse de propagation de l'onde avant son entrée dans l'oreille moyenne."
+      ],
+      "correct": 1,
+      "explanation": "L'oreille externe a des propriétés de résonance élastique qui amplifient spécifiquement les sons entre 2000 et 3000 Hz. C'est parfait pour la parole humaine (qui se situe dans cette plage), mais c'est aussi pourquoi on est très vulnérable aux dommages causés par les bruits forts (machines, cris) à ces fréquences précises[cite: 1, 3]."
+    },
+    {
+      "question": "En plus de l'amplification, la conformation complexe des cartilages du pavillon de l'oreille est essentielle pour une fonction auditive très spécifique. Laquelle ?",
+      "options": [
+        "L'amortissement des sons de basse fréquence (<500 Hz) pour éviter la sur-stimulation de l'apex cochléaire.",
+        "La localisation de l'origine spatiale d'un son dans le plan horizontal (stéréoacousie binaurale), en comparant l'ombre acoustique des deux pavillons.",
+        "La localisation d'un son dans le plan vertical (en hauteur) par une seule oreille (stéréoacousie monaurale) grâce à l'analyse de l'empreinte spectrale (diffraction/amortissement variables) générée par le pavillon.",
+        "La prévention de l'éblouissement acoustique en contractant le muscle du marteau avant une détonation."
+      ],
+      "correct": 2,
+      "explanation": "Les replis du pavillon déforment le son d'une façon unique selon qu'il vienne d'en haut, d'en bas ou de l'avant. Cette déformation crée une « empreinte spectrale ». Le cerveau analyse cette empreinte pour deviner la hauteur d'un son, même avec une seule oreille (localisation verticale/monaurale)[cite: 1, 3]."
+    },
+    {
+      "question": "Dans l'oreille moyenne, comment le système parvient-il à amplifier la pression acoustique d'environ 200 fois pour vaincre l'impédance du milieu liquidien de l'oreille interne ?",
+      "options": [
+        "Par un système de leviers (les 3 osselets) et surtout par la concentration de la force recueillie sur la vaste surface du tympan vers la très petite surface de la fenêtre ovale (étrier).",
+        "Par la contraction soutenue du muscle de l'étrier (nerf VII) qui tire la fenêtre ovale vers l'extérieur pour générer un vide aspirateur dans la rampe tympanique.",
+        "Par la résonance du gaz contenu dans la caisse du tympan, régulée dynamiquement par l'ouverture de la trompe d'Eustache.",
+        "Par l'action du tenseur du tympan (nerf V) qui, en relâchant la membrane tympanique, augmente la longueur de l'onde sonore avant son entrée dans la cochlée."
+      ],
+      "correct": 0,
+      "explanation": "Passer de l'air à l'eau fait perdre énormément d'énergie. Pour compenser, l'oreille moyenne utilise l'effet de levier des osselets, mais surtout l'effet « punaise » : la grande force du large tympan est concentrée sur la minuscule fenêtre ovale, multipliant la pression d'impact par près de 200[cite: 1, 3]."
+    },
+    {
+      "question": "Lors d'une paralysie faciale (atteinte périphérique du nerf crânien VII - Paralysie de Bell), quel symptôme auditif un patient pourrait-il paradoxalement développer et pourquoi ?",
+      "options": [
+        "Une surdité de perception sévère, car le nerf VII innerve directement les cellules ciliées externes de l'organe de Corti.",
+        "Une hyperacousie (les sons normaux deviennent anormalement forts ou douloureux) du côté atteint, car le muscle de l'étrier, innervé par le nerf VII, est paralysé et ne peut plus jouer son rôle de protection/amortissement des sons forts.",
+        "Des acouphènes pulsatiles dus à la perte de tonus du muscle tenseur du tympan (innervé par le VII), qui laisse l'artère carotide battre contre l'enclume.",
+        "Une impossibilité de localiser les sons dans le plan horizontal, car le nerf VII relaie l'information croisée vers l'olive supérieure médiane."
+      ],
+      "correct": 1,
+      "explanation": "Le nerf facial (VII) innerve le petit muscle de l'étrier (stapédien). Ce muscle se contracte par réflexe lors de bruits forts pour bloquer (amortir) la chaîne des osselets et protéger la cochlée. S'il est paralysé, les sons percutent la cochlée avec une force non filtrée, causant une hyperacousie douloureuse[cite: 1, 3]."
+    },
+    {
+      "question": "La cochlée est divisée en trois rampes (compartiments). Quel compartiment contient l'organe de Corti et l'endolymphe (liquide spécial vital pour la transduction) ?",
+      "options": [
+        "La rampe vestibulaire (scala vestibuli).",
+        "La rampe tympanique (scala tympani).",
+        "Le canal cochléaire (scala media).",
+        "Le ganglion spiralé."
+      ],
+      "correct": 2,
+      "explanation": "L'organe de Corti (avec les cellules ciliées) repose sur la membrane basilaire à l'intérieur du compartiment central : le canal cochléaire (ou scala media), qui est rempli d'endolymphe riche en potassium[cite: 1, 3]."
+    },
+    {
+      "question": "La membrane basilaire parcourt la cochlée de sa base (près de la fenêtre ovale) à son apex. Quelle est la particularité mécanique fondamentale de cette membrane qui permet l'analyse tonotopique (séparation des fréquences) ?",
+      "options": [
+        "Elle est rigide et étroite à l'apex pour vibrer aux hautes fréquences (aigus), et souple et large à la base pour vibrer aux basses fréquences (graves).",
+        "Elle est étroite et rigide à sa base (détectant les hautes fréquences, ex: 15 000 Hz), et s'élargit pour devenir large et souple à l'apex (détectant préférentiellement les basses fréquences, ex: 400 Hz).",
+        "Elle est de largeur et de rigidité uniformes sur toute sa longueur, la séparation tonotopique étant assurée exclusivement par la taille des cellules ciliées internes, qui croissent vers l'apex.",
+        "Elle est attachée de façon lâche à la strie vasculaire, ce qui lui permet de décomposer uniquement les harmoniques des sons complexes via l'amortissement du liquide périlymphatique."
+      ],
+      "correct": 1,
+      "explanation": "La membrane basilaire est accordée comme un instrument. À la base (près de l'étrier), elle est étroite/tendue (résonne aux sons aigus). À la fin du tube (apex), elle est large/flasque (résonne aux sons graves). L'onde d'un son spécifique voyagera jusqu'à ce qu'elle frappe la section exacte de la membrane accordée à sa fréquence[cite: 1, 3]."
+    },
+    {
+      "question": "Dans le mécanisme moléculaire de la cellule ciliée (interne), que se passe-t-il lorsque l'élévation de la membrane basilaire incline les stéréocils vers le cil le plus grand ?",
+      "options": [
+        "Les liens apicaux (tip links) s'étirent, ce qui OUVRE des canaux mécanosensibles (hc-MET), permettant l'entrée massive de Potassium (K+) provenant de l'endolymphe pour dépolariser la cellule.",
+        "La membrane tectoriale arrache les stéréocils, ce qui libère du calcium dans le canal cochléaire et hyperpolarise la cellule ciliée externe.",
+        "Les liens apicaux se détendent, ce qui FERME les canaux chlore, permettant une entrée compensatoire de sodium (Na+) depuis la périlymphe basale.",
+        "L'inclinaison ferme les canaux potassium, provoquant une hyperpolarisation de -40 mV qui bloque l'exocytose des vésicules de glutamate."
+      ],
+      "correct": 0,
+      "explanation": "C'est la transduction mécano-électrique. L'onde lève la membrane, pliant les cils. Les ressorts (tip links) tirent sur les canaux, les ouvrent. Le K+ (très abondant dans l'endolymphe) entre dans la cellule et la dépolarise[cite: 1, 3]."
+    },
+    {
+      "question": "Une fois la cellule ciliée interne dépolarisée par l'entrée de potassium apical, quelle est l'étape immédiatement suivante à la BASE de la cellule pour transmettre le signal au nerf auditif ?",
+      "options": [
+        "L'activation d'une pompe Na/K ATPase géante qui recrache le K+ dans la périlymphe pour déclencher un potentiel d'action inversé sur la cellule de soutien.",
+        "L'ouverture de canaux calciques voltage-dépendants (CCVD), permettant l'entrée de Calcium (Ca2+) qui déclenche l'exocytose de vésicules de neurotransmetteurs (glutamate/aspartate) vers la dendrite du nerf afférent.",
+        "La libération massive d'acétylcholine dans la fente synaptique, qui se lie à des récepteurs muscariniques pour provoquer l'inhibition du ganglion spiralé.",
+        "La fermeture des canaux chlore basaux, ce qui force le K+ à voyager via des jonctions communicantes (gap junctions) directement dans le neurone bipolaire."
+      ],
+      "correct": 1,
+      "explanation": "La dépolarisation (due au K+) change le voltage de la cellule. À sa base, ce nouveau voltage ouvre des canaux Calcium. Le calcium entre et agit comme le signal de libération pour que les vésicules crachent leur neurotransmetteur sur le nerf auditif (ganglion spiralé)[cite: 1, 3]."
+    },
+    {
+      "question": "Dans le canal cochléaire (scala media), quel est le rôle fondamental de la strie vasculaire (stria vascularis) ?",
+      "options": [
+        "Elle synthétise la membrane tectoriale et régule l'excrétion de l'excès de neurotransmetteurs.",
+        "Elle pompe activement le Potassium (K+) dans l'endolymphe, maintenant une concentration extrêmement élevée et créant un potentiel endocochléaire vital de +125 mV, agissant comme la « batterie » du système.",
+        "Elle amortit les vibrations excessives de la membrane de Reissner lors des détonations acoustiques pour prévenir le dommage aux cellules ciliées externes.",
+        "Elle génère le liquide cérébrospinal (périlymphe) qui baigne la rampe vestibulaire et tympanique."
+      ],
+      "correct": 1,
+      "explanation": "La strie vasculaire est l'usine électrique de l'oreille. Elle sature l'endolymphe de K+, créant un potentiel très positif (+125 mV). Sans cette force électromotrice massive, la simple ouverture des canaux sur les cils ne suffirait pas à faire entrer le K+ assez vite pour dépolariser la cellule ciliée. Une panne de la strie vasculaire cause une surdité neurosensorielle immédiate[cite: 1, 3]."
+    },
+    {
+      "question": "Quelle est la principale fonction des cellules ciliées EXTÉRIEURES, sachant qu'elles ne sont pas les principales cellules responsables de l'envoi du message auditif au cerveau ?",
+      "options": [
+        "Elles agissent comme un amplificateur cochléaire : stimulées par des efférences, elles se contractent ou s'allongent (électromotilité) pour moduler et amplifier activement les vibrations de la membrane basilaire.",
+        "Elles analysent exclusivement le déphasage des fréquences graves pour la stéréoacousie.",
+        "Elles génèrent l'endolymphe et maintiennent la strie vasculaire attachée à la paroi latérale de la cochlée.",
+        "Elles sécrètent le GABA pour inhiber le ganglion spiralé durant le sommeil."
+      ],
+      "correct": 0,
+      "explanation": "Les cellules ciliées internes entendent (elles envoient 95% du signal au nerf). Les cellules ciliées externes sont des « moteurs ». Elles modifient leur longueur pour amplifier localement le mouvement de la membrane basilaire, donnant à l'ouïe humaine son exceptionnelle finesse (amplificateur cochléaire)[cite: 1, 3]."
+    },
+    {
+      "question": "Un patient subit une exposition à un son traumatique (ex: explosion). Le phénomène de distorsion acoustique peut générer la perception de fréquences qui ne sont pas physiquement présentes dans l'environnement. Quelle est l'origine neurophysiologique de cette distorsion ?",
+      "options": [
+        "Le nerf crânien VII hyperpolarise le tympan, créant un écho virtuel.",
+        "La strie vasculaire se met à pulser à la fréquence du flux sanguin carotidien.",
+        "L'oreille décompose mal les ondes ; la sommation de deux harmoniques dans la cochlée (ex: $f_{1}$ et $f_{2}$) active un troisième site sur la membrane basilaire (équation $f_{c}=xf_{1}\\pm yf_{2}$), générant la perception d'un son inexistant.",
+        "L'aire de Wernicke invente des mots (hallucination) pour compenser la destruction des cellules ciliées."
+      ],
+      "correct": 2,
+      "explanation": "La mécanique de la membrane basilaire n'est pas parfaitement linéaire. Si deux sons très intenses la frappent, l'interaction de leurs ondes crée des turbulences (harmoniques de distorsion). Ces turbulences finissent par exciter une troisième zone de la cochlée, et le patient « entend » une fréquence fantôme (non présente dans l'air)[cite: 1, 3]."
+    },
+    {
+      "question": "Le noyau cochléaire (dans le bulbe rostral) est le premier relais central des afférences auditives. Quelle est la particularité anatomique des axones du ganglion spiralé en entrant dans ce noyau ?",
+      "options": [
+        "Ils décussent tous immédiatement (100%) vers le thalamus controlatéral, rendant l'audition strictement croisée.",
+        "Chaque fibre afférente perd sa myéline et se ramifie en milliers de collatérales aléatoires, détruisant la tonotopie au profit de la localisation spatiale.",
+        "Chaque fibre efférente du ganglion spiralé se divise en deux branches principales : une branche ascendante vers le Noyau Ventral Antérieur (NVa) et une descendante vers le Noyau Ventral Postérieur (NVp) et le Noyau Dorsal (ND), tout en préservant strictement l'organisation tonotopique.",
+        "Ils font synapse exclusivement sur des interneurones inhibiteurs GABAergiques pour amortir le signal avant son ascension dans le lemnisque latéral."
+      ],
+      "correct": 2,
+      "explanation": "En entrant dans le tronc, la fibre auditive se sépare en « Y » pour distribuer la même information (la fréquence exacte, tonotopie conservée) aux trois sous-noyaux cochléaires (NVa, NVp, ND). Ces noyaux se chargeront d'analyser différentes caractéristiques du son (début, fin, intensité, etc.)[cite: 1, 3]."
+    },
+    {
+      "question": "En considérant les voies auditives centrales, pourquoi une lésion unilatérale du SNC située au-dessus (en aval) du noyau cochléaire (ex: un AVC dans le thalamus droit) NE PROVOQUE-T-ELLE PAS une surdité complète d'une seule oreille ?",
+      "options": [
+        "Parce que le cerveau compense la perte de l'audition par la lecture sur les lèvres et l'hyper-développement du cortex visuel.",
+        "Parce qu'après le noyau cochléaire, les voies auditives (vers l'olive supérieure et au-delà) sont globalement bilatérales. L'information de chaque oreille monte dans les deux hémisphères du cerveau simultanément.",
+        "Parce que le liquide périlymphatique se propage à travers l'aqueduc de Sylvius pour stimuler la cochlée controlatérale saine.",
+        "Parce que le colliculus inférieur droit repousse de nouveaux axones pour innerver le corps genouillé médian gauche en moins de 24 heures."
+      ],
+      "correct": 1,
+      "explanation": "C'est une notion clinique majeure : la surdité unilatérale (d'une seule oreille) est *toujours* due à un problème périphérique (oreille externe/moyenne, cochlée, ou nerf VIII avant son noyau). Dès le premier relais dans le tronc, les voies auditives croisent et se mélangent massivement. Si tu détruis le thalamus droit, le cortex gauche reçoit quand même le son des deux oreilles[cite: 1, 3]."
+    },
+    {
+      "question": "Lors d'un examen d'audiologie, l'épreuve de Weber (diapason sur le crâne) montre que le son est entendu plus fort du côté GAUCHE. L'épreuve de Rinne à GAUCHE montre que la conduction Osseuse est meilleure que la conduction Aérienne (Os > Air). Quel est le diagnostic pour l'oreille gauche ?",
+      "options": [
+        "Surdité neuro-sensorielle, par lésion de l'organe de Corti ou du ganglion spiralé gauche.",
+        "Surdité de conduction (transmission) gauche, par exemple causée par un bouchon de cérumen, une otite ou un blocage de l'étrier.",
+        "Surdité corticale par lésion de l'aire de Wernicke.",
+        "C'est un examen strictement normal, le crâne humain résonnant toujours mieux l'os que l'air."
+      ],
+      "correct": 1,
+      "explanation": "Rinne Os > Air à gauche indique que le mécanisme de l'oreille moyenne/externe gauche est bloqué (surdité de conduction). Le test de Weber le confirme : le son voyage par l'os et résonne plus fort dans cette oreille malade car elle est isolée des bruits ambiants par le bouchon/blocage, et la cochlée gauche est intacte[cite: 1, 3]."
+    },
+    {
+      "question": "Comment l'Olive Supérieure Médiane (OSM) localise-t-elle la provenance d'un son de BASSE fréquence (ex: 500 Hz) dans le plan horizontal ?",
+      "options": [
+        "Elle évalue l'ombre acoustique : le crâne bloque le son, créant une différence d'intensité massive entre les deux oreilles.",
+        "Elle se fie à l'empreinte spectrale verticale générée par le pavillon cartilagineux, sans utiliser l'oreille controlatérale.",
+        "Elle fonctionne comme un détecteur de coïncidence avec des lignes à retard : elle compare le délai d'arrivée (déphasage temporel) de l'onde entre l'oreille droite et gauche, et le neurone de l'OSM qui reçoit les deux potentiels d'action exactement en même temps détermine l'angle.",
+        "Elle mesure la vitesse de rotation de la tête via le canal semi-circulaire horizontal pour déduire le mouvement de la source sonore."
+      ],
+      "correct": 2,
+      "explanation": "Pour les sons graves (dont les ondes traversent le crâne sans ombre), le cerveau utilise le temps (délai interaural). Le son arrive plus tôt à l'oreille proche. L'OSM possède des câbles de longueurs différentes (lignes à retard). Le son voyage dans le câble, et le point de rencontre simultané indique précisément le délai, donc l'angle de la source[cite: 1, 3]."
+    },
+    {
+      "question": "Contrairement à l'OSM, l'Olive Supérieure Latérale (OSL) localise les sons de HAUTE fréquence (>2000-3000 Hz). Quel phénomène physique lui permet d'accomplir cette tâche de stéréoacousie horizontale ?",
+      "options": [
+        "La conduction osseuse exclusive des harmoniques crâniennes.",
+        "L'ombre acoustique (différence d'intensité) : les ondes courtes (hautes fréquences) sont bloquées par la tête, rendant le son physiquement plus fort dans l'oreille située du côté de la source.",
+        "La diffraction de la strie vasculaire qui ralentit la propagation de la périlymphe dans l'apex cochléaire.",
+        "Le verrouillage de phase (phase-locking) qui, paradoxalement, devient de plus en plus précis au-delà de 3000 Hz."
+      ],
+      "correct": 1,
+      "explanation": "Pour les sons aigus (petites ondes), la tête agit comme un mur (ombre acoustique). Le son est donc plus fort du côté de la source. L'OSL compare cette intensité (excitation ipsilatérale vs inhibition controlatérale) pour localiser le son[cite: 1, 3]. (Note: le verrouillage de phase disparaît au-delà de 3000 Hz, rendant l'OSM inutile pour les aigus[cite: 1, 3])."
+    },
+    {
+      "question": "Quel relais des voies auditives (au niveau de la jonction ponto-mésencéphalique) est particulièrement spécialisé dans la détermination de la durée (début et fin exacts) des sons, une donnée cruciale pour décoder le langage (ex: distinguer 'bar' de 'barre') ?",
+      "options": [
+        "L'olive supérieure médiane (OSM).",
+        "Les noyaux du lemnisque latéral.",
+        "Le colliculus supérieur.",
+        "L'aire motrice supplémentaire (AMS)."
+      ],
+      "correct": 1,
+      "explanation": "Les noyaux du lemnisque latéral (recevant des fibres unilatérales croisées des noyaux cochléaires) se spécialisent dans l'analyse de la durée, isolant le début et la fin d'un stimulus sonore[cite: 1, 3]."
+    },
+    {
+      "question": "Quelle est la principale fonction du colliculus inférieur (tectum du mésencéphale caudal) dans le système auditif ?",
+      "options": [
+        "Il héberge l'aire de Wernicke pour la compréhension sémantique de la musique.",
+        "Il sécrète l'endolymphe et contrôle la pression de l'oreille interne via l'aqueduc de Sylvius.",
+        "Il agit comme centre de convergence majeur (données binaurales, fréquence, localisation) et initie les réponses réflexes motrices pour diriger involontairement la tête et les yeux vers un son soudain.",
+        "Il assure le réflexe vestibulo-cervical d'extension en cas de chute vers l'avant."
+      ],
+      "correct": 2,
+      "explanation": "Le colliculus inférieur (équivalent du colliculus supérieur pour la vision) intègre la localisation et l'alerte sonore pour commander l'orientation réflexe (via la voie tectospinale) de la tête vers le bruit[cite: 1, 3]."
+    },
+    {
+      "question": "Le corps genouillé médian (CGM) du thalamus est le dernier relais avant le cortex. Quelle particularité neurophysiologique (s'apparentant à l'écholocation chez la chauve-souris) suggère son rôle potentiel dans l'analyse avancée du langage humain ?",
+      "options": [
+        "Ses cellules perdent totalement la tonotopie cochléaire pour encoder uniquement l'intensité du cri.",
+        "Il abrite des cellules qui évaluent des combinaisons complexes de fréquences et de délais temporels (répondant spécifiquement à la combinaison d'un son 1 et de son écho décalé en millisecondes).",
+        "Il connecte directement le nerf auditif à la plaque motrice de la langue sans passer par le cortex.",
+        "Il détruit les ondes de distorsion via une rétroaction inhibitrice sur la cupule vestibulaire."
+      ],
+      "correct": 1,
+      "explanation": "Le CGM (thalamus auditif) n'est pas qu'un simple relais. Il possède des cellules complexes qui détectent des combinaisons très précises de fréquence ET de temps (comme analyser le décalage d'un écho). Cette sensibilité au séquençage temporel rapide est indispensable pour décoder les syllabes du langage humain[cite: 1, 3]."
+    },
+    {
+      "question": "Au niveau du cortex cérébral (lobe temporal), l'information sonore aboutit au cortex auditif primaire (gyrus de Heschl, aires 41/42). Quelle affirmation décrit correctement l'organisation de ce cortex ?",
+      "options": [
+        "Il est disposé de manière aléatoire (sans carte tonotopique), l'analyse s'effectuant uniquement par sommation d'amplitude.",
+        "Il est enfoui dans la scissure de Sylvius et maintient une stricte organisation tonotopique (fréquences graves d'un côté, aiguës de l'autre) pour percevoir consciemment les caractéristiques primaires du son (hauteur, intensité).",
+        "Il est localisé dans le lobe occipital et fusionne l'audition avec la vision pour prévenir les illusions de déphasage.",
+        "Il interprète instantanément la grammaire et la sémantique de tout langage parlé, rendant l'aire de Wernicke obsolète chez l'adulte."
+      ],
+      "correct": 1,
+      "explanation": "Le cortex primaire auditif (A1, gyrus de Heschl) conserve la belle carte des fréquences (tonotopie) amorcée dans la cochlée. Il perçoit consciemment le son pur, mais ne le « comprend » pas encore. C'est le rôle des cortex associatifs (Wernicke)[cite: 1, 3]."
+    },
+    {
+      "question": "L'aire de Wernicke (cortex auditif associatif secondaire, aire 22) est fondamentale pour le langage verbal. Comment son organisation cellulaire lui permet-elle d'interpréter le timbre complexe d'une voix ou d'un son ?",
+      "options": [
+        "Elle s'appuie sur une tonotopie hyper-rigide où chaque neurone ne répond qu'à une seule fréquence pure au dixième de Hertz près.",
+        "Elle possède des cellules complexes capables de s'activer uniquement si elles entendent une fréquence fondamentale (ex: 100 Hz) ET simultanément ses harmoniques spécifiques (200, 300, 400 Hz), permettant d'identifier la « signature » d'un son.",
+        "Elle bloque le relais de l'olive supérieure pour empêcher la localisation spatiale de distraire la compréhension des mots.",
+        "Elle remplace la fonction de la membrane basilaire chez les personnes souffrant de surdité de conduction."
+      ],
+      "correct": 1,
+      "explanation": "Le cortex associatif (Wernicke) possède une tonotopie imprécise mais une forte capacité d'intégration. Certaines de ses cellules ne déchargent que si elles entendent un accord complet (la fréquence de base + ses harmoniques précises), ce qui permet au cerveau de reconnaître le timbre d'une voix ou la nature d'un bruit complexe au-delà du son pur[cite: 1, 3]."
+    },
+    {
+      "question": "La plasticité et l'attention auditive sélective (l'effet « cocktail party ») permettent à un individu de se concentrer sur une seule voix dans une pièce bruyante. Quel mécanisme cérébral sous-tend cette capacité selon vos notes ?",
+      "options": [
+        "Une paralysie temporaire du tympan induite par le nerf vestibulaire.",
+        "L'inhibition relative, par le cortex auditif, des afférences ou des voix qui entrent en concurrence avec la voix d'intérêt.",
+        "La destruction programmée des cellules ciliées externes accordées aux fréquences des bruits de fond.",
+        "Le blocage total du nerf crânien VIII par les noyaux du raphé."
+      ],
+      "correct": 1,
+      "explanation": "L'attention auditive sélective implique le cortex auditif qui exerce une modulation descendante : il amplifie les signaux de la fréquence/localisation de la voix voulue, et inhibe activement le traitement des sons environnants (bruit de fond)[cite: 1, 3]."
+    },
+    {
+      "question": "En neurophysiologie, pourquoi est-il impossible de devenir sourd d'une seule oreille suite à une lésion touchant uniquement le cortex auditif primaire droit ?",
+      "options": [
+        "Parce que le cortex auditif droit régénère ses neurones en puisant dans la neurogenèse de l'hippocampe.",
+        "Parce que le nerf cochléaire ne croise JAMAIS la ligne médiane, donc l'oreille droite envoie ses signaux au cortex droit, mais l'oreille gauche maintient l'audition du côté gauche intact.",
+        "Parce qu'après les noyaux cochléaires (dans le bulbe), les voies auditives deviennent bilatérales. L'information de chaque oreille parvient aux cortex auditifs des DEUX hémisphères.",
+        "Parce que la strie vasculaire peut court-circuiter le thalamus et innerver directement le cervelet en cas de lésion corticale."
+      ],
+      "correct": 2,
+      "explanation": "C'est la règle d'or de l'audition centrale. Dès le tronc cérébral, les signaux des deux oreilles croisent et montent des deux côtés. Une destruction unilatérale du cerveau (cortex ou thalamus) ne rendra jamais une oreille sourde, car l'autre hémisphère reçoit toujours les informations des deux oreilles[cite: 1, 3]."
+    },
+    {
+      "question": "Dans le mécanisme du générateur central de rythme (CPG) responsable de la locomotion, quel rôle précis jouent les interneurones inhibiteurs spinaux (Int i) libérant du GABA ou de la glycine ?",
+      "options": [
+        "Ils déclenchent la dépolarisation périodique rythmique remplaçant le glutamate.",
+        "Ils inhibent les motoneurones alpha de la musculature antagoniste (par ex., inhibition des extenseurs pendant la phase de flexion/transfert) pour permettre l'alternance fluide du mouvement.",
+        "Ils inhibent le réflexe myotatique ipsilatéral pour provoquer une réponse de décortication prolongée.",
+        "Ils bloquent les voies spino-thalamiques pour supprimer la douleur des articulations pendant la marche."
+      ],
+      "correct": 1,
+      "explanation": "Dans un CPG, pendant qu'un groupe de neurones excite les muscles fléchisseurs (pour lever la patte), des interneurones inhibiteurs (GABA/Glycine) DOIVENT hyperpolariser (éteindre) les muscles extenseurs de la même patte pour qu'ils ne résistent pas. Sans cette inhibition réciproque rythmique, la jambe se tétaniserait[cite: 3]."
+    },
+    {
+      "question": "Parmi les syndromes suivants, lequel illustre une atteinte de l'intégration vestibulo-cérébelleuse entraînant une incapacité à calibrer les réflexes moteurs (dysmétrie) sans paralysie ?",
+      "options": [
+        "Le syndrome sous-lésionnel avec hyperréflexie et clonus inépuisable.",
+        "Le syndrome de Foville avec perte bilatérale du regard horizontal.",
+        "Le syndrome cérébelleux avec ataxie de la marche, tremblement d'intention et épreuve doigt-nez imprécise.",
+        "Le syndrome bulbaire (MNI) avec amyotrophie et fasciculations sévères de la langue."
+      ],
+      "correct": 2,
+      "explanation": "Une atteinte cérébelleuse (qui perturbe la rétroaction du vermis/flocculus sur les noyaux vestibulaires et moteurs) cause une perte de coordination et de précision (ataxie, dysmétrie, tremblement), mais aucune paralysie (la force reste intacte car le cortex et la moelle fonctionnent)[cite: 1, 3]."
+    },
+    {
+      "question": "La voie corticospinale ventrale représente environ 10 % de la voie pyramidale. Quelle est son utilité clinique principale en cas d'AVC sylvien unilatéral de l'hémisphère droit ?",
+      "options": [
+        "Elle décuse massivement au niveau du bulbe pour compenser la perte de la dextérité fine des doigts de la main gauche.",
+        "Elle descend ipsilatéralement et innerve BILATÉRALEMENT les motoneurones axiaux de la moelle ; l'hémisphère gauche sain peut donc continuer d'innerver les muscles posturaux des deux côtés du corps (bonne récupération proximale).",
+        "Elle inhibe directement les neurones de Purkinje du cervelet, empêchant l'ataxie compensatoire.",
+        "Elle prend le relais du colliculus inférieur pour maintenir l'orientation réflexe visuelle."
+      ],
+      "correct": 1,
+      "explanation": "La voie ventrale (non-croisée dans le bulbe) fait synapse des deux côtés (bilatéralement) rendus dans la moelle, sur les muscles du tronc et des épaules. Si un AVC détruit l'hémisphère droit, l'hémisphère gauche sain peut toujours soutenir la posture des deux côtés via sa propre voie ventrale. La motricité fine de la main gauche (gérée par la voie latérale droite détruite) sera par contre perdue[cite: 3]."
+    },
+    {
+      "question": "Quel est le comportement électrophysiologique naturel de la cellule ciliée auditive (comme vestibulaire) qui lui permet de coder des stimulations ultra-rapides sans attendre la synthèse de nouveaux neurotransmetteurs ?",
+      "options": [
+        "Elle maintient une hyperpolarisation extrême de -100 mV au repos, bloquant toute fuite vésiculaire.",
+        "Ses canaux apicaux sont entrouverts au repos, générant un tonus de base continu (ex: 90 spikes/sec) modulable instantanément à la hausse (dépolarisation) ou à la baisse (hyperpolarisation) sans latence de démarrage.",
+        "Elle utilise exclusivement des synapses électriques (connexons) avec le ganglion spiralé, court-circuitant le besoin d'exocytose de glutamate.",
+        "Elle sécrète de l'endolymphe en continu pour laver l'espace synaptique des excès de potassium."
+      ],
+      "correct": 1,
+      "explanation": "Les cellules ciliées ont une tension constante (tonus de repos avec canaux K+ entrouverts). Cela permet au système de réagir instantanément en augmentant ou diminuant le taux de décharge sur le nerf, ce qui est beaucoup plus rapide et nuancé que de devoir allumer un neurone partant de zéro[cite: 1, 3]."
+    },
+    {
+      "question": "Dans le diagnostic du syndrome de mutisme akinétique (patient éveillé, non paralysé, mais qui n'initie aucun mouvement volontaire ni parole), quelle lésion corticale est typiquement responsable de l'abolition des gestes « auto-déclenchés » ?",
+      "options": [
+        "Une lésion de l'Aire de Broca gauche (aires 44 et 45).",
+        "Une destruction de l'Olive Supérieure Médiane (OSM).",
+        "Une lésion bilatérale de l'Aire Motrice Supplémentaire (AMS) sur la face médiane du cortex.",
+        "Une transection de la voie vestibulo-spinale dans la moelle cervicale."
+      ],
+      "correct": 2,
+      "explanation": "L'AMS est la région de l'intention et de l'initiation des actions internes (auto-déclenchées). Sa destruction (habituellement par un double AVC des artères cérébrales antérieures) abolit la volonté de bouger ou parler, bien que la « mécanique » périphérique (nerfs, muscles) soit fonctionnelle[cite: 3]."
+    },
+    {
+      "question": "Quel énoncé explique l'utilité du mécanisme du « champ musculaire du neurone moteur cortical » démontré par micro-stimulation du cortex ?",
+      "options": [
+        "Un motoneurone supérieur (MNS) n'allume qu'une seule fibre musculaire précise pour la dextérité absolue.",
+        "Un seul MNS diverge dans la moelle pour activer plusieurs motoneurones inférieurs (MNI) distincts, provoquant la contraction synergique d'un groupe de muscles pour créer un mouvement fonctionnel et utile (ex: porter la main à la bouche).",
+        "Il empêche les cellules de Renshaw de provoquer une rigidité de décérébration lors des réflexes croisés.",
+        "Il synchronise la déglutition avec la respiration via une commande thalamique unilatérale."
+      ],
+      "correct": 1,
+      "explanation": "L'homonculus de Penfield est une simplification. Dans la réalité, un neurone cortical ne commande pas une fibre isolée, mais commande la synergie de plusieurs muscles. En allumant un neurone, le cerveau déclenche un « programme » (un champ musculaire) aboutissant à un geste fonctionnel de survie ou de confort[cite: 3]."
+    },
+    {
+      "question": "En neuro-otologie, qu'est-ce qui différencie la détection vestibulaire des macules (utricule/saccule) de celle des ampoules (canaux semi-circulaires) lors de mouvements transitoires de la tête ?",
+      "options": [
+        "Les ampoules détectent les accélérations linéaires (avant/arrière), alors que les macules analysent exclusivement les rotations de la tête.",
+        "Les macules (grâce aux otolithes lourds) détectent les déplacements linéaires et la gravité, tandis que les ampoules (canaux) sont spécialisées dans la détection des accélérations rotatoires par inertie de l'endolymphe.",
+        "Il n'y a aucune différence : les deux organes utilisent la striola pour inhiber la voie vestibulo-spinale en cas de décélération brusque.",
+        "Les ampoules baignent dans la périlymphe alors que les macules baignent dans l'endolymphe, inversant le sens de la transduction potassique."
+      ],
+      "correct": 1,
+      "explanation": "C'est la spécialisation fonctionnelle de base du vestibule. Les canaux semi-circulaires (trois anneaux dans trois plans) ressentent les rotations de la tête. Les organes otolithiques (utricule/saccule, plats avec leurs pierres lourdes) ressentent les lignes droites (accélération, ascenseur) et le poids constant de la gravité[cite: 1, 3]."
+    },
+    {
+      "question": "Quel composant histologique des organes otolithiques les rend particulièrement sensibles à la force d'accélération linéaire de la Terre (gravité) qui ne subit pas d'adaptation ?",
+      "options": [
+        "Les cellules ciliées de type II, qui prolifèrent de manière continue.",
+        "La strie vasculaire, qui augmente la viscosité de la périlymphe.",
+        "Les otolithes (cristaux de carbonate de calcium) enchâssés dans la membrane gélatineuse, dont la masse et le poids tirent constamment sur les cils vers le bas.",
+        "Le réseau dense de capillaires sanguins dans la cupule, qui pulse au rythme cardiaque."
+      ],
+      "correct": 2,
+      "explanation": "Les otolithes (« pierres d'oreille ») donnent du poids et de la masse à la membrane otolithique. En raison de ce poids, la gravité terrestre exerce une traction permanente vers le bas, déformant continuellement les cils et informant le cerveau en permanence de ce qui est en « haut » et en « bas », sans aucune adaptation[cite: 1, 3]."
+    },
+    {
+      "question": "L'inhibition réciproque spinale est illustrée par quel mécanisme lors d'un réflexe myotatique (ostéotendineux) classique de la rotule ?",
+      "options": [
+        "L'afférence Ia inhibe monosynaptiquement le motoneurone gamma de l'agoniste.",
+        "L'organe tendineux de Golgi (OTG) stimule les cellules de Renshaw de l'antagoniste.",
+        "La fibre afférente Ia (qui active l'agoniste) fait une collatérale sur un interneurone inhibiteur spinal, qui sécrète un transmetteur inhibiteur (PPSI) pour relâcher le muscle antagoniste (fléchisseur) et éviter la co-contraction gênante.",
+        "La voie rubro-spinale court-circuite la moelle et bloque la contraction des muscles du bras."
+      ],
+      "correct": 2,
+      "explanation": "L'inhibition réciproque est le mécanisme d'élégance de la moelle : on ne veut pas que les muscles opposés se battent. Quand on active l'extenseur (réflexe rotulien), une branche du même signal passe par un interneurone pour éteindre activement le fléchisseur antagoniste, permettant au mouvement de se faire sans résistance[cite: 3]."
+    },
+    {
+      "question": "Dans la motricité réflexe, quel est le principal stimulus activant l'Organe Tendineux de Golgi (OTG) et sa fibre sensitive Ib ?",
+      "options": [
+        "La douleur cutanée vive (réflexe de retrait).",
+        "Le changement rapide de la longueur (étirement) d'un muscle relâché.",
+        "La tension mécanique (force de traction) accumulée dans le tendon, particulièrement lors d'une forte contraction active du muscle agoniste.",
+        "La rotation prolongée de la tête détectée par la voie vestibulospinale."
+      ],
+      "correct": 2,
+      "explanation": "Contrairement au fuseau qui mesure la *longueur*, l'OTG mesure la *force* (tension). Il est monté en série dans le tendon et s'active massivement quand le muscle tire fort sur ses propres attaches (contraction active). Si la tension est trop élevée, l'OTG déclenche l'inhibition du muscle pour éviter la rupture tendineuse[cite: 3]."
+    },
+    {
+      "question": "Le système moteur autonomique se distingue du système moteur somatique par sa chaîne périphérique. Lequel des éléments suivants est propre à la voie efférente autonome (SNA) ?",
+      "options": [
+        "L'absence totale d'interneurones spinaux dans le traitement du réflexe.",
+        "L'utilisation obligatoire de l'organe tendineux de Golgi pour réguler le rythme cardiaque.",
+        "La présence d'une voie efférente à DEUX neurones périphériques (préganglionnaire puis postganglionnaire) faisant synapse dans un ganglion à l'extérieur du SNC avant d'atteindre l'organe cible.",
+        "Le recrutement exclusif d'unités motrices FF pour la digestion et la sécrétion sudoripare."
+      ],
+      "correct": 2,
+      "explanation": "C'est la différence anatomique majeure. Le nerf somatique (muscle) part de la moelle et va d'un trait jusqu'au muscle. Le nerf autonome (viscère) part de la moelle (préganglionnaire), s'arrête dans un ganglion pour passer le relais à un second neurone (postganglionnaire), qui ira toucher l'organe[cite: 3]."
+    },
+    {
+      "question": "Concernant le syndrome sous-lésionnel (paralysie spastique suite à une transection de la moelle spinale), pourquoi les réflexes myotatiques deviennent-ils anormalement vifs (hyperréflexie) sous la lésion ?",
+      "options": [
+        "Parce que les motoneurones inférieurs (MNI) se régénèrent de manière anarchique, innervant directement les fibres Ib de Golgi.",
+        "Parce que l'interruption des voies descendantes (Motoneurone Supérieur - MNS) libère les arcs réflexes spinaux locaux de leur inhibition/modulation naturelle corticale.",
+        "Parce que le choc spinal provoque une ischémie permanente de la corne antérieure, transformant les MNI en cellules hyperpolarisées.",
+        "Parce que la voie réticulospinale s'hypertrophie pour compenser la perte du cortex."
+      ],
+      "correct": 1,
+      "explanation": "Les réflexes de la moelle épinière sont forts, mais le cerveau (MNS) envoie constamment des signaux inhibiteurs pour les tempérer et les contrôler. Si on coupe la connexion (lésion de la moelle), les arcs réflexes sont « libérés » de ce frein : le moindre coup de marteau déclenche un réflexe hyper-vigoureux, c'est la spasticité[cite: 3]."
+    },
+    {
+      "question": "Quel mécanisme neurophysiologique permet à l'Oculomoteur (III) droit et à l'Abducens (VI) gauche de se contracter simultanément avec une précision absolue lors d'un regard conjugué vers la gauche ?",
+      "options": [
+        "Une commande bilatérale indépendante issue des Champs Oculomoteurs Frontaux (FEF) contournant le tronc cérébral pour atteindre la plaque motrice.",
+        "L'inhibition de la voie vestibulospinale médiane, qui par défaut empêche tout mouvement horizontal.",
+        "Le Faisceau Longitudinal Médian (FLM) : des interneurones situés dans le noyau du VI gauche décussent et montent par ce faisceau pour exciter spécifiquement les motoneurones du Droit Interne dans le noyau du III droit.",
+        "La libération synchrone de GABA par le cervelet flocculo-nodulaire sur la cupule des canaux horizontaux."
+      ],
+      "correct": 2,
+      "explanation": "Le centre de commandement est le noyau du VI (Abducens). Quand il décide de tourner l'œil gauche vers l'extérieur (gauche), il s'assure que l'œil droit va suivre. Pour ça, il envoie un axone par le FLM jusqu'au nerf III de l'œil opposé, lui ordonnant de tirer vers le nez. Le résultat est un mouvement parfaitement conjugué[cite: 1, 3]."
+    },
+    {
+      "question": "Un patient comateux est évalué aux urgences. Le médecin tourne rapidement la tête du patient vers la droite. Les yeux du patient dévient de façon conjuguée et fluide vers la GAUCHE, restant fixés au plafond. Que signifie ce signe des 'yeux de poupée' (Réflexe oculo-céphalique) ?",
+      "options": [
+        "C'est un signe péjoratif indiquant une destruction complète du tronc cérébral (mort cérébrale).",
+        "C'est un signe démontrant que la lésion causant le coma se situe au-dessus du tronc cérébral (lésion corticale/supranucléaire), car l'arc réflexe vestibulo-oculaire (RVO) du tronc cérébral (VIII-PPRF-VI-III) est totalement intact et fonctionnel.",
+        "C'est une lésion périphérique du labyrinthe gauche par toxicité médicamenteuse.",
+        "C'est la preuve d'une paralysie bilatérale du Faisceau Longitudinal Médian (OIN)."
+      ],
+      "correct": 1,
+      "explanation": "Chez un patient éveillé, on fixe volontairement les yeux (le cortex bloque le réflexe). Chez un comateux, le cortex ne marche plus. Si le tronc cérébral est sain, le mouvement passif de la tête déclenchera le puissant arc réflexe RVO (localisé dans le tronc), et les yeux vont rouler en sens inverse de la tête comme une poupée. Si le tronc était mort, les yeux resteraient figés au milieu des orbites (suivraient la tête)[cite: 1, 3]."
+    },
+    {
+      "question": "Une lésion destructrice du noyau de l'hypoglosse (nerf XII) DROIT dans le bulbe rachidien provoque quel type de syndrome moteur sur la langue, et quelle apparence aura cette dernière ?",
+      "options": [
+        "Un syndrome du motoneurone supérieur (MNS) : la langue sera spastique, lente, sans amyotrophie, et déviera vers la gauche.",
+        "Un syndrome du motoneurone inférieur (MNI) unilatéral : la moitié droite de la langue sera paralysée, fondra rapidement (amyotrophie sévère), présentera des fasciculations, et lors de la protrusion, la langue déviera vers la droite (côté paralysé).",
+        "Une hypertonie extrapyramidale (rigidité) secondaire à la déconnexion de l'aire de Broca.",
+        "Une dissociation automatico-volontaire empêchant la déglutition réflexe mais permettant l'articulation parfaite."
+      ],
+      "correct": 1,
+      "explanation": "Le noyau du XII est la résidence du motoneurone inférieur de la langue. Sa destruction (MNI) coupe le câble : la moitié droite de la langue s'atrophie et fait des fasciculations. En tirant la langue, le muscle sain (gauche) la pousse vers l'avant, mais comme le muscle droit est mort, la langue tourne et dévie vers le côté malade (droite)[cite: 3]."
+    },
+    {
+      "question": "En neurobiologie de la jonction neuromusculaire, la libération de neurotransmetteurs par le motoneurone inférieur alpha est déclenchée par quel événement transitoire présynaptique spécifique ?",
+      "options": [
+        "L'hyperpolarisation de la membrane jusqu'à -90 mV induite par l'afflux de chlore.",
+        "L'activation mécanique des liens apicaux (tip links) du cône d'implantation axonal.",
+        "L'arrivée du potentiel d'action qui ouvre les Canaux Calciques Voltage-Dépendants (CCVD), permettant l'entrée de Calcium (Ca2+) qui déclenche l'exocytose des vésicules d'acétylcholine.",
+        "La rétroaction inhibitrice des cellules de Renshaw qui libèrent du glutamate dans la fente synaptique."
+      ],
+      "correct": 2,
+      "explanation": "C'est la règle fondamentale de la synapse chimique motrice (et auditive) : l'électricité (potentiel d'action) change le voltage à la terminaison, ce qui ouvre les portes à Calcium (CCVD). Le Calcium entre et agit comme le signal déclencheur pour que les vésicules crachent leur neurotransmetteur (ici l'ACh) vers le muscle[cite: 1, 3]."
+    },
+    {
+      "question": "Laquelle des fonctions suivantes relève principalement de la voie rubro-spinale (issue du noyau rouge mésencéphalique) chez l'être humain adulte, et quelle manifestation clinique révèle sa présence lors d'un trauma crânien sévère ?",
+      "options": [
+        "Elle contrôle exclusivement l'audition binaurale. Son atteinte provoque une surdité de perception aux bruits aigus.",
+        "Elle a une importance très réduite pour la motricité fine par rapport au primate non-humain. Cependant, lors d'une lésion au-dessus du mésencéphale (décortication), sa désinhibition relative provoque une posture anormale en flexion des bras et des poignets.",
+        "Elle relaie l'innervation autonomique parasympathique au cœur, causant une tachycardie fatale si lésée.",
+        "Elle est la seule voie descendante du cordon postérieur ; sa lésion abolit la proprioception vibratoire."
+      ],
+      "correct": 1,
+      "explanation": "La voie rubro-spinale projette sur les muscles fléchisseurs distaux (bras). Remplacée chez l'humain par la corticospinale, elle reste en latence. Si une lésion détruit le cerveau mais épargne le noyau rouge (décortication), cette voie sans frein va hyper-fléchir les bras du patient sur son thorax[cite: 3]."
+    },
+    {
+      "question": "Quelle pathologie clinique est la conséquence d'une altération de la production ou du drainage de l'endolymphe (le liquide cochléaire et vestibulaire) menant à un hydrops (gonflement) du labyrinthe ?",
+      "options": [
+        "La maladie de Parkinson (dégénérescence de la substance noire).",
+        "L'otospongiose (fixation des osselets).",
+        "La maladie de Ménière, caractérisée par des crises de vertiges rotatoires intenses, des acouphènes, et une perte d'audition fluctuante (souvent sur les basses fréquences).",
+        "Le syndrome pseudo-bulbaire (AVC lacunaires bilatéraux)."
+      ],
+      "correct": 2,
+      "explanation": "La maladie de Ménière est la maladie classique de la pression endolymphatique. L'endolymphe s'accumule (hydrops), gonflant l'oreille interne. Cela perturbe la cochlée (acouphènes, surdité de basse fréquence car la membrane flasque de l'apex est très affectée) et le vestibule (crises de grand vertige)[cite: 1, 3]."
+    },
+    {
+      "question": "Comment le réflexe d'extension croisée interagit-il de manière adaptative avec les générateurs centraux de rythme (CPG) spinaux lors de la locomotion humaine binaire (bipède) perturbée par un événement nociceptif mineur (ex: marcher sur un caillou) ?",
+      "options": [
+        "Il désactive définitivement les CPG du membre stimulé, forçant l'humain à utiliser la voie vestibulo-spinale latérale pour sautiller sur une seule jambe, tandis que la jambe douloureuse devient rigide (décérébration).",
+        "Le réflexe d'extension croisée est une boucle de protection dont les interneurones supplantent ou modulent brièvement l'activité rythmique cyclique générée par les CPG, permettant le retrait d'urgence (flexion) sans effondrement de la posture (extension opposée), avant que le rythme locomoteur ne reprenne.",
+        "Il accélère la décharge des interneurones inhibiteurs GABAergiques de l'intumescence cervicale, provoquant un balancement réflexe paradoxal des bras sans effet sur les CPG lombaires.",
+        "Il recrute massivement l'organe tendineux de Golgi des muscles extenseurs croisés, inversant le rythme des CPG pour induire une locomotion à reculons (marche inversée)."
+      ],
+      "correct": 1,
+      "explanation": "Les réflexes spinaux de survie priment momentanément sur les cycles de marche autonomes. La moelle épinière interrompt brièvement le cycle normal (CPG) pour fléchir la jambe blessée et durcir l'autre pour ne pas tomber (extension croisée). Une fois l'urgence gérée, les CPG reprennent leur cycle alterné pour la suite de la marche[cite: 3]."
+    },
+    {
+      "question": "En neurobiologie de l'oreille interne, quel est le neurotransmetteur excitateur principal libéré par la base de la cellule ciliée (auditive ou vestibulaire) vers la synapse du neurone bipolaire afférent du nerf VIII ?",
+      "options": [
+        "L'acide gamma-aminobutyrique (GABA) qui hyperpolarise le ganglion spiralé.",
+        "L'acétylcholine (ACh) agissant sur des récepteurs nicotiniques.",
+        "L'aspartate ou le glutamate, induisant un potentiel postsynaptique excitateur (PPSE) sur la dendrite du nerf crânien.",
+        "La sérotonine, modulant la strie vasculaire de manière rétrograde."
+      ],
+      "correct": 2,
+      "explanation": "Le glutamate et l'aspartate sont les neurotransmetteurs universels de l'excitation sensorielle périphérique vers le système nerveux central. Dans la cochlée et le vestibule, l'entrée de calcium libère ces neurotransmetteurs excitateurs vers le nerf auditif/vestibulaire pour créer le signal électrique envoyable au cerveau[cite: 1, 3]."
+    },
+    {
+      "question": "Quel est le comportement électrophysiologique naturel de la cellule ciliée auditive (comme vestibulaire) qui lui permet de coder des stimulations ultra-rapides sans attendre la synthèse de nouveaux neurotransmetteurs ?",
+      "options": [
+        "Elle maintient une hyperpolarisation extrême de -100 mV au repos, bloquant toute fuite vésiculaire.",
+        "Ses canaux apicaux sont entrouverts au repos, générant un tonus de base continu (ex: 90 spikes/sec) modulable instantanément à la hausse (dépolarisation) ou à la baisse (hyperpolarisation) sans latence de démarrage.",
+        "Elle utilise exclusivement des synapses électriques (connexons) avec le ganglion spiralé, court-circuitant le besoin d'exocytose de glutamate.",
+        "Elle sécrète de l'endolymphe en continu pour laver l'espace synaptique des excès de potassium."
+      ],
+      "correct": 1,
+      "explanation": "Le tonus de base (canaux entrouverts) évite le problème du seuil d'activation de 0 à 1. La cellule décharge déjà à un bon rythme au repos. Si le son/mouvement va dans le « bon » sens, elle décharge tout de suite plus vite (dépolarise). Dans le « mauvais » sens, elle ralentit instantanément (hyperpolarise). Ce système de va-et-vient permanent (push-pull) est ultrarapide[cite: 1, 3]."
+    },
+    {
+      "question": "Dans le diagnostic du syndrome de mutisme akinétique (patient éveillé, non paralysé, mais qui n'initie aucun mouvement volontaire ni parole), quelle lésion corticale est typiquement responsable de l'abolition des gestes « auto-déclenchés » ?",
+      "options": [
+        "Une lésion de l'Aire de Broca gauche (aires 44 et 45).",
+        "Une destruction de l'Olive Supérieure Médiane (OSM).",
+        "Une lésion bilatérale de l'Aire Motrice Supplémentaire (AMS) sur la face médiane du cortex.",
+        "Une transection de la voie vestibulo-spinale dans la moelle cervicale."
+      ],
+      "correct": 2,
+      "explanation": "L'Aire Motrice Supplémentaire est le siège du désir de bouger et de l'initiation des actions internes (sans stimulus visuel externe). Sans elle, la personne n'a aucune intention motrice. C'est l'akinésie pure, et le mutisme (car la parole est un acte moteur auto-déclenché)[cite: 3]."
+    },
+    {
+      "question": "En analysant le phénomène d'adaptation dans le système sensorimoteur, pourquoi l'organe de Golgi (OTG) est-il physiologiquement incapable de fournir à la moelle des informations précises sur la position angulaire statique d'une articulation immobile (contrairement aux fibres II du fuseau neuromusculaire) ?",
+      "options": [
+        "Parce que les fibres sensitives Ib de l'OTG subissent une fatigue synaptique complète en moins de 15 secondes d'étirement, annulant le potentiel d'action.",
+        "Parce que l'OTG est encapsulé en parallèle avec les fibres musculaires contractiles; il est donc détendu et incapable de détecter la moindre tension lors d'une contraction isométrique prolongée.",
+        "Parce que l'OTG est une structure viscoélastique montée en série qui est très sensible à la tension active (la force de traction générée par le muscle), mais peu sensible à la longueur absolue ou à un étirement passif faible d'un muscle relâché, le rendant inutile pour la proprioception statique fine.",
+        "Parce que l'OTG est spécifiquement innervé par des motoneurones gamma qui relâchent activement le collagène ondulé à la minute où le muscle agoniste devient inactif, effaçant ainsi toute tension résiduelle de posture."
+      ],
+      "correct": 2,
+      "explanation": "L'OTG (dans le tendon, en série avec le muscle) ne s'active vraiment que lorsque le muscle tire fort (tension active). Si vous êtes simplement au repos ou que le médecin plie doucement votre coude (étirement passif faible), le tendon rigide ne s'étire pas assez pour activer l'OTG. C'est le fuseau (fibres II, en parallèle) qui mesure parfaitement cette longueur au repos pour savoir l'angle de l'articulation[cite: 3]."
+    },
+    {
+      "question": "L'aire motrice de Broca et le champ oculomoteur frontal (FEF) partagent une caractéristique organisationnelle fondamentale qui les différencie du cortex moteur primaire classique. Laquelle ?",
+      "options": [
+        "Ils sont situés sur la face médiane du cerveau et se spécialisent exclusivement dans les mouvements auto-déclenchés (internes) sans tenir compte de l'environnement extérieur.",
+        "Ils génèrent des mouvements articulaires simples et individuels (flexion isolée d'un doigt, ou d'une lèvre) via des monosynapses sur les MNI respectifs de la moelle épinière ou du tronc cérébral.",
+        "Ils représentent des subdivisions hyper-spécialisées du cortex prémoteur latéral, dédiées non pas à la simple exécution de base, mais à la planification sophistiquée de séquences motrices hautement spécifiques (la parole articulée et les saccades visuelles exploratoires).",
+        "Ils reçoivent leurs afférences motrices exclusivement du spino-cervelet (vermis) pour orchestrer la coordination inconsciente des réflexes posturaux du cou et des bras."
+      ],
+      "correct": 2,
+      "explanation": "L'aire de Broca et le FEF sont des zones de haute ingénierie motrice de la face latérale frontale. Ils ne branchent pas de câbles directement sur la moelle. Ils calculent l'algorithme hyper-complexe des mots (Broca) ou de l'analyse visuelle de l'environnement (FEF) et passent ce plan fini aux aires exécutrices pour faire bouger la bouche ou les yeux[cite: 3]."
+    },
+    {
+      "question": "Dans le diagnostic des pathologies supraspinales, quel ensemble clinique suggère une lésion au niveau des noyaux gris centraux (NGC) plutôt qu'une atteinte du cervelet ou du cortex moteur primaire ?",
+      "options": [
+        "Un mutisme akinétique complet accompagné d'une paralysie bilatérale du nerf facial (partie inférieure) et d'un clonus inépuisable des tendons d'Achille (spasticité bilatérale massive).",
+        "Un déficit majeur d'initiation motrice (akinésie) et une rigidité (résistance continue au mouvement passif) ou des mouvements involontaires excessifs (chorée), mais sans perte de force motrice volontaire (pas de paralysie flasque).",
+        "Une ataxie de la marche avec écartement du polygone de sustentation, accompagnée de dysmétrie (doigt-nez imprécis) et d'un tremblement d'intention sévère à l'approche de la cible.",
+        "Une libération des réflexes vestibulospinaux conduisant à une posture en décérébration (extension des 4 membres) en réponse systématique et stéréotypée aux stimuli nociceptifs cutanés."
+      ],
+      "correct": 1,
+      "explanation": "Les Noyaux Gris Centraux contrôlent la mise en marche et le freinage du mouvement. S'ils sont malades (Parkinson), le patient a toute sa force et ses nerfs sont sains, mais il est rigide, tremble au repos, et ne peut pas initier le mouvement (akinésie). Le cervelet donne de l'incoordination d'action, et le cortex moteur primaire donne une paralysie vraie[cite: 3]."
+    },
+    {
+      "question": "Lequel des énoncés suivants explique correctement le concept de 'co-activation alpha-gamma' (co-contraction de l'agoniste et de l'antagoniste exclus) lors de l'exécution volontaire d'un mouvement, comme le levé lent du bras (flexion du coude) commandé par le cortex moteur ?",
+      "options": [
+        "Le cortex stimule le motoneurone inférieur (MNI) alpha pour contracter le muscle (raccourcissement). Simultanément, le cortex stimule le MNI gamma pour contracter les extrémités des fibres intrafusales, ce qui garde le fuseau tendu et sensible aux imprévus malgré le muscle raccourci.",
+        "Le motoneurone supérieur active de façon alternée le MNI alpha de l'agoniste et le MNI gamma de l'antagoniste, provoquant une oscillation de 8 Hz responsable de la fluidité et du maintien du tonus basal.",
+        "L'activation du motoneurone alpha du biceps déclenche, via une afférence Ia inhibitrice récurrente, la suppression instantanée du motoneurone gamma de ce même muscle pour empêcher un clonus hyperréflexique lors de la flexion.",
+        "Le ganglion de Scarpa envoie un signal bilatéral via la voie vestibulo-spinale, ordonnant au motoneurone gamma de relâcher les fibres musculaires rouges tout en contractant de force les fibres intrafusales pâles pour anticiper la chute."
+      ],
+      "correct": 0,
+      "explanation": "Lorsque le cerveau commande une action, il allume conjointement l'alpha (qui contracte le muscle de force) et le gamma (qui tend les ressorts du fuseau à la même vitesse). Ainsi, le capteur de longueur reste parfaitement calibré (ni trop lâche, ni trop tendu) tout au long du mouvement, permettant de corriger instantanément si le bras frappe un obstacle inattendu[cite: 3]."
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+{
+  "title": "Contrôle moteur - Partie 3",
+  "description": "Exploration approfondie du contrôle moteur : Cortex, CPG, et intégration (Q101-150)",
+  "questions": [
+    {
+      "question": "Q101. Concernant le recrutement des unités motrices selon le principe de taille de Henneman, quelle implication fonctionnelle est directe et observable lors de la réalisation d'un mouvement progressif, tel que lever une charge qui devient graduellement plus lourde ?",
+      "options": [
+        "Le système nerveux commence par recruter les unités FF, dont les axones myélinisés de grand diamètre assurent une conduction immédiate, avant d'engager les unités S pour maintenir la force une fois le mouvement stabilisé.",
+        "Le recrutement ordonné des plus petits motoneurones (unités S) vers les plus grands (unités FR puis FF) permet une augmentation extrêmement fine, douce et lissée de la force de contraction, plutôt qu'une secousse abrupte tout-ou-rien.",
+        "Les unités motrices S, FR et FF sont recrutées de manière parfaitement simultanée, mais la force finale est modulée uniquement par l'inhibition rétrograde exercée par l'organe tendineux de Golgi sur les unités FF.",
+        "L'augmentation de la charge provoque une transition irréversible des unités FR en unités S, médiée par les cellules de Renshaw, garantissant l'endurance au détriment de la vitesse de pointe."
+      ],
+      "correct": 1,
+      "explanation": "Le recrutement des unités motrices se fait de façon ordonnée, des plus petites (S) vers les plus grandes (FR, puis FF). Cela permet une modulation très fine de la force musculaire (lissée) au lieu de générer des contractions saccadées et brusques[cite: 2]."
+    },
+    {
+      "question": "Q102. Laquelle des caractéristiques histologiques suivantes justifie physiologiquement la spécialisation des fibres musculaires rouges dans l'activité tonique soutenue (comme l'orthostation) ?",
+      "options": [
+        "Elles possèdent un diamètre axonal géant qui facilite l'hyperpolarisation prolongée de la plaque motrice sans consommation d'ATP.",
+        "Leur faible teneur en myoglobine est compensée par une capacité unique à réaliser la glycolyse anaérobie, leur conférant une résistance absolue à l'acide lactique.",
+        "Elles bénéficient d'un riche réseau capillaire, d'une grande quantité de mitochondries et de myoglobine, leur permettant de produire de l'énergie de façon continue par métabolisme aérobie.",
+        "Elles sont dépourvues de récepteurs nicotiniques, réagissant plutôt à la noradrénaline sympathique pour maintenir la posture sans intervention de la volonté corticale."
+      ],
+      "correct": 2,
+      "explanation": "Les fibres musculaires rouges (appartenant aux unités S) sont spécialisées dans l'endurance. Elles ont besoin d'oxygène pour l'effort soutenu, c'est pourquoi elles sont riches en myoglobine (qui stocke l'O2), en mitochondries (pour faire l'ATP) et sont très vascularisées[cite: 2]."
+    },
+    {
+      "question": "Q103. Lors de l'étude par microstimulation des motoneurones supérieurs (MNS) dans la couche V du cortex moteur primaire chez un modèle animal, quelle découverte fondamentale remet en question la notion stricte de l'homonculus moteur point par point ?",
+      "options": [
+        "La stimulation d'un MNS donné active exclusivement une seule fibre musculaire striée (contrôle un-pour-un), prouvant l'inexistence de réseaux interneuronaux locaux.",
+        "La stimulation soutenue d'un groupe circonscrit de MNS ne provoque pas le tressautement d'un seul muscle, mais génère plutôt un mouvement synergique et finalisé (ex: porter la main à la bouche), impliquant la notion de « champ musculaire du neurone moteur cortical ».",
+        "La stimulation du cortex moteur primaire déclenche invariablement des réponses de décérébration bilatérales, soulignant que seul le cortex prémoteur gère le mouvement volontaire fin.",
+        "La stimulation des MNS corticaux active en priorité l'organe tendineux de Golgi via des voies sympathiques pour préparer le tonus avant la contraction réelle."
+      ],
+      "correct": 1,
+      "explanation": "Les expériences montrent qu'un neurone cortical MNS contrôle un « champ musculaire », soit un ensemble de MNI spinaux. Sa stimulation ne contracte pas une fibre isolée, mais déclenche un mouvement complexe et significatif (comme prendre un objet), nécessitant l'action coordonnée de plusieurs muscles[cite: 2]."
+    },
+    {
+      "question": "Q104. Quel élément clinique permet, sans aucun doute, de différencier un syndrome d'atteinte du motoneurone supérieur (MNS) d'un syndrome d'atteinte du motoneurone inférieur (MNI) lors d'un examen neurologique au chevet du patient ?",
+      "options": [
+        "La perte de force : seule l'atteinte du MNS provoque une paralysie véritable, l'atteinte du MNI se limitant à une légère dysmétrie cérébelleuse.",
+        "La présence de signes de dénervation : l'amyotrophie sévère (rapide) et la présence de fasciculations visibles (secousses spontanées sous la peau) sont exclusives à la destruction du motoneurone inférieur (MNI).",
+        "L'altération des réflexes : l'atteinte du MNS abolit tous les réflexes myotatiques (aréflexie), tandis que l'atteinte du MNI provoque une hyperréflexie spastique par perte d'inhibition rétrograde.",
+        "L'implication du système autonome : l'atteinte du MNS entraîne toujours des troubles du rythme cardiaque par désinhibition de l'olive supérieure médiane, ce qui est absent dans l'atteinte du MNI."
+      ],
+      "correct": 1,
+      "explanation": "La présence d'une fonte musculaire grave et rapide (amyotrophie) ainsi que de fasciculations (les muscles tressautent de façon isolée car le nerf qui les nourrit est mort) est pathognomonique de l'atteinte périphérique (MNI). Le MNS (central) cause une paralysie spastique avec des réflexes vifs, sans fonte musculaire rapide[cite: 2]."
+    },
+    {
+      "question": "Q105. Dans la théorie de l'encodage moteur, comment le cortex moteur primaire utilise-t-il la « somme des traits » (vecteurs) pour diriger un mouvement précis ?",
+      "options": [
+        "Le mouvement final est la simple addition arithmétique de la force déployée par les cellules de Renshaw, modulée par la gravité terrestre mesurée dans le saccule.",
+        "Chaque motoneurone supérieur activé décharge pour sa direction préférentielle ; l'intensité de sa décharge représente la longueur du vecteur. Le mouvement exécuté correspond au vecteur résultant de cette immense population neuronale en action.",
+        "La sommation des vecteurs s'effectue exclusivement dans les ganglions de la base, le cortex moteur se limitant à initier un signal on/off binaire vers le colliculus supérieur.",
+        "L'inhibition réciproque spinale annule les vecteurs divergents, laissant un seul neurone « directeur » au niveau cortical piloter la trajectoire de l'ensemble du membre."
+      ],
+      "correct": 1,
+      "explanation": "Le mouvement n'est pas codé par un neurone unique. Selon l'hypothèse des vecteurs de population, chaque neurone MNS a une préférence de direction. Lors d'un geste, tout un groupe décharge. Le mouvement final (le vecteur rouge) est la somme de toutes ces contributions individuelles[cite: 2]."
+    },
+    {
+      "question": "Q106. Laquelle de ces structures est impliquée dans la voie réflexe extrapyramidale responsable de la modulation du tonus musculaire (prévention de la chute) en *anticipation* d'un mouvement volontaire déstabilisant ?",
+      "options": [
+        "Le noyau vestibulaire latéral, via la voie vestibulospinale latérale, qui réagit après coup à la détection des otolithes.",
+        "Le colliculus supérieur, via la voie tectospinale croisée, qui fige la musculature axiale au moindre bruit aigu.",
+        "La formation réticulaire, via la voie réticulospinale, qui reçoit des projections du cortex pour contracter préventivement les muscles stabilisateurs du tronc et des membres (contrôle feed-forward).",
+        "L'olive supérieure médiane, qui ajuste la tension du tendon d'Achille en fonction du délai interaural des ondes de basse fréquence."
+      ],
+      "correct": 2,
+      "explanation": "Le réflexe réticulo-spinal se distingue par son rôle d'anticipation. Avant qu'on ne lève une patte (ce qui nous ferait tomber), le cortex avise la formation réticulaire qui, elle, contracte les muscles du tronc et des autres membres pour nous ancrer solidement. C'est préventif (feed-forward)[cite: 2]."
+    },
+    {
+      "question": "Q107. Quelle est l'importance neuroanatomique du fait que la majorité des interneurones de la partie MÉDIANE de la corne intermédiaire de la moelle projettent de façon bilatérale et sur de longues distances (plusieurs segments) ?",
+      "options": [
+        "Cela garantit que l'inhibition des générateurs centraux de rythme soit strictement cantonnée au myotome L3, empêchant un épuisement du réflexe rotulien.",
+        "Cela leur permet de cibler de manière très isolée les MNI innervant un seul doigt, offrant la dextérité nécessaire pour la préhension fine (pince pouce-index).",
+        "Cela leur donne la capacité de coordonner de grands groupes de MNI de la région axiale (au centre de la moelle) sur plusieurs étages et des deux côtés, ce qui est indispensable pour les vastes mouvements de posture et de locomotion.",
+        "Cela favorise la décussation instantanée des afférences nociceptives C, transformant la sensation de brûlure en un réflexe de décérébration unilatéral."
+      ],
+      "correct": 2,
+      "explanation": "Les interneurones de la région médiane de la moelle épinière s'occupent de la posture, de la marche et de l'équilibre. Pour cela, ils doivent coordonner de gros muscles (les muscles axiaux du tronc) des deux côtés du corps et sur une grande longueur de la colonne vertébrale, d'où leurs axones longs et bilatéraux[cite: 2]."
+    },
+    {
+      "question": "Q108. Dans l'organisation de l'homonculus moteur, quel territoire du corps humain occupe un volume de cortex primaire proportionnellement beaucoup plus petit que sa taille physique réelle, démontrant ainsi le principe de la représentation liée à la fonction plutôt qu'à la masse musculaire ?",
+      "options": [
+        "Les doigts de la main, car les unités motrices FF n'y sont pas nécessaires.",
+        "Les lèvres et la langue, car la mastication est un réflexe archaïque autonome ne nécessitant pas de cortex.",
+        "La région du tronc (thorax et abdomen), dont les larges muscles axiaux n'exigent pas une commande volontaire aussi fine, isolée et hyper-fractionnée que celle des mains ou de la parole.",
+        "Les muscles oculomoteurs, qui sont sous le contrôle exclusif des colliculi inférieurs et totalement absents de la convexité corticale."
+      ],
+      "correct": 2,
+      "explanation": "Bien que le tronc soit énorme physiquement, il sert surtout de pilier. Les muscles s'y contractent en gros blocs pour la posture. Le cerveau n'a pas besoin de millions de neurones pour gérer un bloc, donc le tronc est tout petit sur l'homonculus moteur, contrairement à la main qui demande une précision infinie[cite: 2]."
+    },
+    {
+      "question": "Q109. Quelle est l'interaction de base d'un générateur central de rythme (CPG) spinal lors d'une phase normale de la locomotion ?",
+      "options": [
+        "Il dépend entièrement d'une stimulation constante issue du noyau de l'hypoglosse pour rythmer la foulée sur la respiration.",
+        "Il induit une contraction tétanique simultanée des extenseurs et des fléchisseurs d'un même membre, favorisant une rigidité en décérébration propice au saut.",
+        "Des interneurones excitateurs spinaux déchargent périodiquement, activant les MNI d'un groupe musculaire (ex. fléchisseurs) tout en sollicitant des interneurones inhibiteurs pour relâcher le groupe antagoniste (ex. extenseurs), créant l'alternance d'appui/transfert.",
+        "Il remplace la fonction des cellules ciliées vestibulaires, mesurant la gravité par la tension du liquide cérébro-spinal lombaire."
+      ],
+      "correct": 2,
+      "explanation": "Le secret d'un CPG (Generateur Central de Rythme) pour la marche, c'est l'alternance. Il possède des circuits d'interneurones excitateurs qui battent la mesure. Quand il allume les fléchisseurs pour lever la jambe, il DOIT utiliser des interneurones inhibiteurs (Int i) pour s'assurer que les extenseurs se relâchent (inhibition réciproque)[cite: 2]."
+    },
+    {
+      "question": "Q110. Lors de la contraction active d'un muscle (raccourcissement), quel ajustement physiologique empêche le fuseau neuromusculaire de s'affaisser et de devenir temporairement « aveugle » à un nouvel étirement soudain ?",
+      "options": [
+        "L'inhibition puissante des afférences Ib de l'organe tendineux de Golgi, qui fige mécaniquement les fibres intrafusales dans leur gaine conjonctive.",
+        "L'intervention de la boucle de Renshaw, qui force l'étirement des fibres extrafusales adjacentes pour compenser la perte de tension.",
+        "La coactivation alpha-gamma : le système nerveux envoie un signal au motoneurone gamma pour qu'il contracte les extrémités (pôles) des fibres intrafusales à mesure que le muscle se raccourcit, gardant ainsi la zone centrale tendue et sensible.",
+        "Le réflexe d'extension croisée qui active immédiatement les muscles extenseurs pour forcer un étirement passif maximal du fuseau."
+      ],
+      "correct": 2,
+      "explanation": "Le motoneurone alpha (MNI α) raccourcit le muscle. Sans le motoneurone gamma (MNI γ), le fuseau à l'intérieur deviendrait lâche (comme une corde détendue) et ne pourrait plus sentir si on l'étire. La contraction gamma des bouts du fuseau garde sa zone centrale bien tendue pendant l'action[cite: 2]."
+    },
+    {
+      "question": "Q111. Quel syndrome décrit l'impossibilité pathologique pour un patient d'initier un mouvement, ou une action voulue (comme parler), causée typiquement par une atteinte bilatérale de la face médiane du cortex frontal ?",
+      "options": [
+        "Le syndrome vestibulaire périphérique avec vertiges paroxystiques isolés.",
+        "Le syndrome pseudobulbaire, caractérisé par des crises de larmes (rire-pleurer spasmodique) et des fasciculations de la langue.",
+        "L'aphasie de Broca (lésion des aires 44/45 gauches) provoquant un discours fluant mais dénué de sens grammatical.",
+        "Le mutisme akinétique, résultant d'une destruction bilatérale de l'Aire Motrice Supplémentaire (AMS), ce qui abolit l'impulsion motrice endogène (les mouvements auto-déclenchés)."
+      ],
+      "correct": 3,
+      "explanation": "L'Aire Motrice Supplémentaire (AMS) est le siège de la volonté interne d'agir. Sans elle, le patient n'a plus l'intention de bouger ou de parler de lui-même, bien que son corps et ses cordes vocales soient physiquement capables de le faire. C'est l'akinésie (pas de mouvement) et le mutisme[cite: 2]."
+    },
+    {
+      "question": "Q112. Lors d'un réflexe de retrait suite à un contact nociceptif sur la plante du pied droit (marcher sur un clou), quelle séquence décrit le mieux la réponse spinale complexe engendrée (réflexe de flexion/extension croisée) ?",
+      "options": [
+        "Une inhibition immédiate et bilatérale des MNI alpha pour effondrer le corps et limiter la blessure par une mise au sol de sécurité.",
+        "Une activation monosynaptique isolée des fléchisseurs droits, avec une absence de modification du tonus sur la jambe gauche pour éviter de perturber le CPG lombaire.",
+        "Une activation multisynaptique des fléchisseurs droits (pour éloigner le pied) couplée à une inhibition des extenseurs droits, tandis que la jambe gauche voit ses extenseurs activés (et ses fléchisseurs inhibés) pour fournir un pilier de support au poids du corps.",
+        "Un transfert du signal douloureux via la strie vasculaire vers le vestibule, déclenchant un réflexe vestibulo-cervical d'hyperextension de la nuque."
+      ],
+      "correct": 2,
+      "explanation": "Le réflexe de retrait n'est pas qu'un simple tressautement. Pour ne pas tomber en relevant la patte blessée (flexion), la moelle spinale active des interneurones qui traversent d'urgence la ligne médiane pour dire à la jambe saine (gauche) de se raidir de toutes ses forces (extension croisée) afin d'assurer l'équilibre[cite: 2]."
+    },
+    {
+      "question": "Q113. En neuro-ophtalmologie, quelle fonction de la motricité oculaire est perdue si la région corticale abritant les Champs Oculomoteurs Frontaux (FEF) droits subit un infarctus ischémique ?",
+      "options": [
+        "La capacité d'effectuer un réflexe vestibulo-oculaire (RVO) conjugué lorsque le médecin tourne passivement la tête du patient vers la gauche (disparition des yeux de poupée).",
+        "La possibilité de déclencher volontairement et rapidement le regard (saccades) vers le champ visuel opposé (la GAUCHE), les yeux ayant tendance à dévier vers le côté de la lésion (droite).",
+        "La capacité de l'œil droit à abducter (sortir) de la ligne médiane en réponse à un son aigu, signant une paralysie supranucléaire du VI.",
+        "La réponse de fermeture réflexe de la paupière (ptosis) lors de la sur-stimulation lumineuse de l'olive supérieure médiane."
+      ],
+      "correct": 1,
+      "explanation": "Le FEF (Frontal Eye Field) de chaque hémisphère pousse les yeux vers le côté opposé (le droit pousse à gauche). S'il est détruit, le patient ne peut plus regarder volontairement de l'autre côté. Par contre, les réflexes du tronc (comme le RVO) seront épargnés[cite: 2]."
+    },
+    {
+      "question": "Q114. Une atteinte sélective des noyaux gris centraux (NGC), comme observée dans la maladie de Parkinson, se distingue par l'apparition de troubles moteurs d'origine supraspinale. Quelle anomalie motrice est une signature typique d'un tel dysfonctionnement ?",
+      "options": [
+        "La paralysie flasque d'un hémicorps, avec atrophie musculaire fulgurante.",
+        "Une asynergie sévère, un tremblement d'action s'aggravant à l'approche de la cible, et un dépassement systématique du but (dysmétrie).",
+        "Une libération des réflexes myotatiques inversés provoquant des fasciculations incontrôlables des lèvres.",
+        "Un déficit majeur dans l'initiation du mouvement (akinésie/bradykinésie) ou l'incapacité à freiner correctement l'action (conduisant à une rigidité), sans perte structurale de la force de contraction (pas de paralysie vraie)."
+      ],
+      "correct": 3,
+      "explanation": "Les noyaux gris centraux n'exécutent pas (ils ne causent pas de paralysie flasque), ils décident si le mouvement préparé par le cortex a le droit de passer ou non. S'ils sont malades, soit le mouvement ne démarre pas (akinésie du Parkinson), soit ils ne bloquent pas les mouvements inutiles (chorée)[cite: 2]."
+    },
+    {
+      "question": "Q115. À propos du Faisceau Longitudinal Médian (FLM) dans la coordination du regard horizontal, quelle est la trajectoire précise de l'information neuronale le traversant lors d'un regard porté vers la DROITE ?",
+      "options": [
+        "L'ordre naît dans le PPRF droit, active le noyau de l'abducens (VI) droit, puis des axones décussent et MONTENT dans le FLM gauche pour atteindre le noyau de l'oculomoteur (III) gauche, provoquant la contraction du droit interne gauche.",
+        "L'ordre vestibulaire naît dans l'utricule gauche, descend bilatéralement dans les deux FLM pour inhiber les générateurs de rythme cervicaux.",
+        "L'ordre naît dans le FEF gauche, contourne le PPRF, et active directement et simultanément les noyaux du VI droit et du III gauche via un FLM médian unique amélinisé.",
+        "L'ordre provient du colliculus inférieur, descend dans le FLM croisé, et inhibe le MNI du muscle droit externe pour limiter la déviation strabique de repos."
+      ],
+      "correct": 0,
+      "explanation": "Le PPRF droit déclenche le regard vers la droite. Il allume le chef d'orchestre : le nerf VI droit (qui tire l'œil droit). Mais le VI droit doit aussi avertir l'œil gauche ! Il envoie donc des axones (interneurones) qui croisent la ligne médiane, embarquent sur l'autoroute du FLM gauche en montant, et livrent l'ordre au noyau du nerf III gauche (pour tirer l'œil gauche en dedans)[cite: 2]."
+    },
+    {
+      "question": "Q116. Pourquoi l'organisation de la voie cortico-nucléaire (ou cortico-bulbaire) pour la motricité de la face inférieure est-elle si importante pour distinguer un AVC cortical d'une paralysie faciale périphérique (paralysie de Bell) ?",
+      "options": [
+        "Parce que la voie cortico-nucléaire est la seule à traverser le corps trapézoïde ; un AVC causera donc une surdité homolatérale obligée en plus de la paralysie de la mâchoire.",
+        "Parce que le sous-noyau du nerf VII innervant le bas de la face (sourire) ne reçoit d'afférences QUE de l'hémisphère cérébral controlatéral (unilatéral). Un AVC gauche paralysera donc la moitié inférieure droite de la face, tout en épargnant la fermeture des yeux (qui reçoit une innervation des deux hémisphères).",
+        "Parce que la motricité de la face inférieure est gérée par les neurones miroirs, qui ne sont altérés qu'en présence de stress émotionnel majeur (dissociation automatico-volontaire bilatérale).",
+        "Parce que les muscles du sourire sont en fait innervés par la branche motrice du nerf trijumeau (V), qui échappe totalement au contrôle cortico-nucléaire."
+      ],
+      "correct": 1,
+      "explanation": "Le noyau du nerf facial (VII) a deux étages. L'étage du haut (fermer les yeux, froncer le front) est câblé sur les DEUX côtés du cerveau. L'étage du bas (sourire) est câblé sur un seul côté. Donc un AVC cortical (central) paralyse la bouche, mais le patient peut toujours fermer son œil, car l'autre hémisphère intact s'en occupe. Une paralysie périphérique (nerf coupé, paralysie de Bell) paralyse tout le visage[cite: 2]."
+    },
+    {
+      "question": "Q117. Quel type de récepteur sensoriel est formé de collagène ondulé, se trouve enchâssé en série avec les fibres musculaires, et est particulièrement sensible à la tension active (traction générée lors de la contraction) ?",
+      "options": [
+        "Les corpuscules de Pacini du derme profond.",
+        "Les fibres intrafusales de l'organe de Corti.",
+        "L'organe tendineux de Golgi (OTG), innervé par la fibre sensitive Ib.",
+        "Le ganglion de Scarpa, contenant les cellules bipolaires otolithiques."
+      ],
+      "correct": 2,
+      "explanation": "L'organe tendineux de Golgi est une structure spécialisée logée dans le tendon (en série avec le muscle) faite de fibres de collagène. Lorsque le muscle tire (tension), le collagène se resserre et pince la fibre nerveuse Ib à l'intérieur, déclenchant le signal de protection[cite: 2]."
+    },
+    {
+      "question": "Q118. Comment expliquer physiologiquement qu'une lésion localisée dans la corne antérieure (substance grise) de l'intumescence (renflement) lombaire puisse causer une amyotrophie fasciculante des jambes, sans altérer la motricité ni le tonus des bras, et sans hyperréflexie des jambes ?",
+      "options": [
+        "La corne antérieure lombaire contient la voie spinothalamique ; sa lésion provoque une démyélinisation rétrograde vers les MNI des bras.",
+        "Cette lésion détruit exclusivement les noyaux de l'olive supérieure, provoquant un déséquilibre perçu comme une paralysie des membres inférieurs.",
+        "La lésion est confinée aux corps cellulaires des motoneurones inférieurs (MNI) destinés aux membres inférieurs. Les bras sont gérés par la moelle cervicale (intacte), et l'absence d'hyperréflexie indique que la voie corticospinale descendante (blanche) n'est pas coupée.",
+        "L'intumescence lombaire est le seul lieu où le réflexe vestibulo-oculaire (RVO) interagit avec le CPG, la lésion causant donc une asynergie isolée des muscles du mollet."
+      ],
+      "correct": 2,
+      "explanation": "La corne grise contient les MNI. Si l'on détruit la grise en lombaire, on tue les nerfs (MNI) des jambes (donc paralysie flasque, fonte, fasciculations aux jambes). Les voies blanches (qui descendent du cerveau) ne sont pas touchées (pas de spasticité), et les bras (plus haut en cervical) vont très bien[cite: 2]."
+    },
+    {
+      "question": "Q119. La décharge électrique (potentiel d'action) d'une seule cellule ciliée auditive ou vestibulaire possède une amplitude fixée, dictée par la biophysique de ses canaux. Dans ces conditions, comment le système nerveux périphérique encode-t-il l'intensité du stimulus (ex: accélération de la tête très forte versus très faible) à partir d'un seul récepteur ?",
+      "options": [
+        "En modifiant la taille physique du potentiel d'action : une forte accélération génère un potentiel d'action de 200 mV, tandis qu'une faible accélération génère 50 mV.",
+        "En recourant à un neurotransmetteur alternatif (l'acétylcholine pour les faibles stimuli, le glutamate pour les forts), modifiant ainsi la réactivité de l'interneurone inhibiteur.",
+        "Par la fréquence de décharge des potentiels d'action sur le nerf afférent : un stimulus fort augmente considérablement le nombre de spikes par seconde (ex: jusqu'à 160 spikes/s) par rapport au niveau de base.",
+        "En inactivant les canaux potassiques apicaux de manière prolongée, induisant une apoptose transitoire des cellules de soutien entourant l'ampoule."
+      ],
+      "correct": 2,
+      "explanation": "C'est le code de la fréquence (frequency coding). L'intensité d'un stimulus n'augmente jamais la taille d'un potentiel d'action (c'est du tout ou rien). Mais un stimulus fort fera décharger le nerf beaucoup plus vite (plus de PA par seconde) qu'un stimulus faible. C'est l'essence de l'encodage de l'intensité[cite: 2, 3]."
+    },
+    {
+      "question": "Q120. En ce qui concerne l'interaction entre les cellules de Purkinje du cervelet et le noyau vestibulaire, quel effet direct exerce l'efférence cérébelleuse (via son neurotransmetteur principal, le GABA) sur l'activité des réflexes vestibulaires ?",
+      "options": [
+        "Un effet purement excitateur, garantissant la dépolarisation tétanique du noyau vestibulaire médian lors du réflexe myotatique.",
+        "Un effet inhibiteur de rétroaction qui module, lisse et freine l'intensité des réflexes (ex: RVO ou vestibulo-spinal) afin qu'ils soient précisément calibrés au besoin réel, prévenant la dysmétrie.",
+        "Un effet neutre, car les cellules de Purkinje transmettent l'information uniquement par gap-junctions électriques (connexons) vers le colliculus inférieur.",
+        "Un effet d'amplification (gain de +100), compensant la perte de l'amplificateur cochléaire dans les hautes fréquences."
+      ],
+      "correct": 1,
+      "explanation": "Les immenses cellules de Purkinje (cervelet) relâchent du GABA (inhibiteur) sur les noyaux profonds. Le cervelet est un chef d'orchestre qui travaille en inhibant (en freinant et lissant) l'action des noyaux moteurs (dont le noyau vestibulaire) pour que le mouvement soit doux et parfait, sans jamais déraper ni dépasser le but[cite: 2, 3]."
+    },
+    {
+      "question": "Q121. Laquelle de ces configurations d'afférences est nécessaire pour déclencher un réflexe d'extension croisée complet lors de la marche ?",
+      "options": [
+        "Un étirement prolongé (plus de 15 secondes) du fuseau neuromusculaire des muscles extenseurs du cou (proprioception tonique).",
+        "Un stimulus nociceptif cutané (ex. une piqûre ou une brûlure) reçu par la plante du pied lors de la phase d'appui.",
+        "Une commande motrice volontaire expresse (descente de la voie corticospinale ventrale) ordonnant consciemment le retrait du pied sans implication des arcs locaux.",
+        "Une modification subite de la température de l'endolymphe (réflexe calorique), mimant un changement de gravité statique."
+      ],
+      "correct": 1,
+      "explanation": "Le réflexe d'extension croisée (retrait) est un réflexe de survie déclenché spécifiquement par une douleur soudaine sur la peau (nociception), souvent aux extrémités (le pied). Le reste se fait de façon poly-synaptique dans la moelle épinière pour protéger le membre[cite: 2]."
+    },
+    {
+      "question": "Q122. Lequel de ces neurones moteurs a son corps cellulaire (soma) situé HORS (en dehors) du système nerveux central ?",
+      "options": [
+        "Le motoneurone supérieur (MNS) de la voie corticospinale latérale (couche V de l'aire 4).",
+        "Le motoneurone inférieur alpha (MNI α) de la corne ventrale innervant le biceps brachial.",
+        "Le neurone postganglionnaire du système nerveux autonome sympathique (dont le soma réside dans un ganglion de la chaîne sympathique paravertébrale).",
+        "Le motoneurone inférieur gamma (MNI γ) qui contracte les fibres intrafusales polaires de l'organe de Corti."
+      ],
+      "correct": 2,
+      "explanation": "Le système moteur somatique (muscle) n'a qu'un neurone périphérique (le MNI, qui loge dans la moelle). Le système autonome a deux neurones : le préganglionnaire (dans la moelle) et le postganglionnaire. Ce dernier a son corps cellulaire dans un ganglion situé complètement à l'extérieur du SNC, dans le corps[cite: 2]."
+    },
+    {
+      "question": "Q123. Quelle maladie dégénérative s'attaque, d'un point de vue anatomo-pathologique, à la fois aux motoneurones supérieurs (cortex) et aux motoneurones inférieurs (corne antérieure de la moelle), combinant ainsi atrophie, fasciculations, et paradoxalement, hyperréflexie ou Babinski ?",
+      "options": [
+        "La maladie de Parkinson (dégénérescence de la substance noire).",
+        "L'infarctus de la capsule interne (AVC capsulaire pur).",
+        "La sclérose latérale amyotrophique (SLA ou maladie de Lou Gehrig).",
+        "Le syndrome de l'ophtalmoplégie internucléaire démyélinisante bilatérale."
+      ],
+      "correct": 2,
+      "explanation": "La SLA est la maladie classique du motoneurone. Elle détruit le MNS (donnant des signes pyramidaux comme des réflexes vifs) ET le MNI (donnant une amyotrophie rapide et des fasciculations). C'est le seul diagnostic qui mélange classiquement ces deux groupes de signes apparemment opposés[cite: 2]."
+    },
+    {
+      "question": "Q124. Pourquoi la moelle épinière est-elle qualifiée de système organisé de manière 'hiérarchiquement subordonnée' mais 'localement autonome' en ce qui concerne la locomotion ?",
+      "options": [
+        "Parce qu'elle gère seule la production d'acétylcholine via la strie vasculaire, mais dépend du cervelet pour l'absorption du calcium.",
+        "Parce que les générateurs centraux de rythme (CPG) spinaux ont besoin des influx nociceptifs du noyau rouge pour battre à un rythme supérieur à 8 Hz.",
+        "Parce que les circuits interneuronaux de la moelle (CPG) peuvent générer le rythme et l'alternance de la marche de façon autonome (sans cerveau, cf. myélotomie animale), mais la volonté, le déclenchement et l'équilibre binaire dépendent de commandes supérieures descendantes.",
+        "Parce que la corne latérale peut prendre le relais de la décussation pyramidale uniquement si le tractus corticospinal ventral échoue lors d'un accident ischémique transitoire."
+      ],
+      "correct": 2,
+      "explanation": "La moelle est autonome car elle possède les « plans » mécaniques de base de la marche (le rythme, alterner les pattes via les CPG). Un animal avec la moelle coupée peut générer une marche réflexe sur un tapis roulant. Mais elle est subordonnée car, pour que ce soit utile, la moelle a besoin du cerveau pour dire « quand marcher », « vers où » et pour maintenir l'équilibre chez le bipède[cite: 2]."
+    },
+    {
+      "question": "Q125. Lors de la phase de transfert (quand la patte quitte le sol) dans le cycle locomoteur d'un quadrupède, quel est l'état d'activation des interneurones inhibiteurs spinaux par rapport au muscle extenseur de cette même patte ?",
+      "options": [
+        "Ils sont totalement silencieux, l'inhibition du muscle extenseur s'effectuant par épuisement passif de la noradrénaline dans la jonction neuromusculaire.",
+        "Ils sont fortement actifs, sécrétant du GABA ou de la glycine pour bloquer activement le motoneurone alpha de l'extenseur, permettant ainsi au fléchisseur de plier la jambe sans entrave mécanique.",
+        "Ils sont inhibés par le colliculus inférieur, forçant l'extenseur à co-contracter pour rigidifier l'articulation lors du vol plané.",
+        "Ils inversent leur polarité et sécrètent du glutamate sur l'organe tendineux de Golgi pour masquer la douleur liée à l'impact à venir."
+      ],
+      "correct": 1,
+      "explanation": "Dans un CPG, pendant la phase de transfert (flexion), les interneurones excitateurs allument les fléchisseurs, et SIMULTANÉMENT les interneurones inhibiteurs doivent hyperpolariser l'extenseur. S'ils ne le faisaient pas, la patte deviendrait rigide au lieu de se plier[cite: 2]."
+    },
+    {
+      "question": "Q126. Quelle information proprioceptive cruciale la partie « en chaîne » (chain fibers) et en « sac nucléaire » statique (bag 2) du fuseau neuromusculaire transmet-elle via les afférences de type II ?",
+      "options": [
+        "La vitesse de contraction explosive des unités FF lors d'un mouvement balistique soudain.",
+        "La variation de pression endolymphatique générée par la membrane tectoriale au repos.",
+        "La longueur absolue du muscle strié en temps réel (l'angle statique de l'articulation), fournissant l'information tonique de posture sans adaptation.",
+        "La tension nociceptive (force de traction) accumulée par les ligaments croisés croisés lors de la station debout prolongée."
+      ],
+      "correct": 2,
+      "explanation": "Le fuseau a deux rôles : les fibres Ia (dynamiques) signalent le changement de longueur (vitesse, étirement soudain). Les fibres II, provenant des parties plus statiques du fuseau, envoient un signal continu (tonique) qui indique la longueur du muscle à chaque seconde, donnant l'angle de nos articulations sans devoir les bouger[cite: 2]."
+    },
+    {
+      "question": "Q127. À propos de la boucle gamma, si le système nerveux volontaire ne déclenchait QUE le motoneurone alpha pour raccourcir le muscle (sans coactivation gamma), que se passerait-il anatomiquement au niveau du fuseau neuromusculaire lors du mouvement ?",
+      "options": [
+        "Il serait surétiré jusqu'à la déchirure de ses liens apicaux (tip links), causant une décharge phasique incontrôlable.",
+        "Les fibres intrafusales deviendraient molles (lâches) car le muscle extrafusal qui les entoure raccourcirait. Le fuseau cesserait alors de décharger des potentiels d'action, devenant aveugle à toute variation supplémentaire de longueur.",
+        "L'organe tendineux de Golgi s'y substituerait immédiatement, induisant une contraction di-synaptique des fléchisseurs axiaux.",
+        "Il prolifèrerait par mitose pour remplir l'espace libéré par le raccourcissement des fibres FF, créant une crampe bénigne."
+      ],
+      "correct": 1,
+      "explanation": "Le fuseau est un élastique attaché à l'intérieur du muscle. Si le muscle raccourcit et qu'on ne tire pas sur les bouts du fuseau (rôle du gamma), l'élastique devient mou. Un élastique mou ne détecte rien. Sans le gamma, on perdrait la sensibilité proprioceptive pendant le mouvement actif[cite: 2]."
+    },
+    {
+      "question": "Q128. Comment la « loi d'innervation réciproque » s'applique-t-elle spécifiquement lors du test clinique du réflexe rotulien (étirement du tendon quadricipital par percussion) ?",
+      "options": [
+        "L'étirement du quadriceps induit son relâchement par activation Ib, tandis que les ischiojambiers (antagonistes) sont massivement excités via la commissure antérieure.",
+        "Le coup de marteau dépolarise les corpuscules de Pacini du derme, créant une co-contraction protectrice des antagonistes (ischiojambiers) stabilisant ainsi le genou.",
+        "L'activation des afférences Ia du quadriceps provoque la contraction directe (monosynaptique) de ce dernier, tout en activant un interneurone inhibiteur spinal qui stoppe simultanément l'activité du MNI des ischiojambiers (fléchisseurs antagonistes).",
+        "L'influx afférent remonte jusqu'au noyau rouge mésencéphalique, qui redescend l'ordre par la voie rubrospinale de bloquer les afférences du colliculus inférieur."
+      ],
+      "correct": 2,
+      "explanation": "Le réflexe myotatique est beau par sa double action locale : il excite l'agoniste (la jambe lève) et, par une collatérale via un interneurone inhibiteur, il fait taire l'antagoniste (qui aurait pu résister au mouvement)[cite: 2]."
+    },
+    {
+      "question": "Q129. Sur le plan de la chronobiologie du mouvement préparatoire, quel phénomène électrique (démontré par EEG ou électrodes profondes) illustre le rôle de préparation de l'Aire Motrice Supplémentaire (AMS) avant l'exécution consciente d'un geste volontaire (ex: décider de lever le doigt) ?",
+      "options": [
+        "L'inhibition tonique complète (tracé plat) de la région pariéto-insulaire 3 secondes avant l'action, bloquant tout vertige rotatoire potentiel.",
+        "Le potentiel de préparation motrice (readiness potential ou Bereitschaftspotential) : une décharge neuronale qui commence dans l'AMS jusqu'à une seconde *avant* l'exécution motrice, et même avant la décision pleinement consciente d'agir.",
+        "L'apparition d'un nystagmus nystagmique calorique bilatéral constant généré par le FEF dans le but de scanner l'horizon.",
+        "La libération massive d'endolymphe provoquant un potentiel endocochléaire de +125 mV qui synchronise les muscles distaux de la main."
+      ],
+      "correct": 1,
+      "explanation": "L'Aire Motrice Supplémentaire initie le mouvement endogène. Fait fascinant, elle s'allume électriquement pour préparer le plan moteur des fractions de secondes, voire une seconde pleine avant que l'acte ne se produise (potentiel de préparation), et parfois même avant que l'individu ne réalise consciemment qu'il a pris la décision de bouger[cite: 2]."
+    },
+    {
+      "question": "Q130. Dans la physiologie des motoneurones crâniens (nerfs crâniens), pourquoi une lésion de la voie cortico-bulbaire unilatérale D a-t-elle souvent des conséquences minimes sur la déglutition et la mastication, comparée à l'impact majeur d'une lésion équivalente de la voie cortico-spinale sur la main G ?",
+      "options": [
+        "Parce que la déglutition est gérée par les cellules ciliées externes de l'amplificateur cochléaire, totalement indépendantes du cortex frontal.",
+        "Parce que les noyaux moteurs crâniens assurant des fonctions vitales bilatérales (comme le V, IX, X, XII) reçoivent des projections corticales des DEUX hémisphères (innervation bilatérale) ; l'hémisphère gauche sain suffit à maintenir la commande fonctionnelle.",
+        "Parce que le colliculus inférieur droit repousse spontanément des axones vers le noyau ambigu dès qu'une ischémie sylvienne est détectée.",
+        "Parce que la voie rubrospinale croise dans la commissure blanche antérieure lombaire, inversant la perte de force des masséters."
+      ],
+      "correct": 1,
+      "explanation": "Pour sécuriser les fonctions cruciales pour la survie (respirer, mâcher, avaler, fermer les yeux), le cerveau s'est organisé avec un double câblage. Les noyaux du tronc cérébral reçoivent des ordres de l'hémisphère droit ET du gauche. L'hémisphère gauche peut donc gérer seul la déglutition si l'hémisphère droit meurt d'un AVC[cite: 2]."
+    },
+    {
+      "question": "Q131. Une lésion ischémique de la formation réticulaire paramédiane pontique (PPRF) GAUCHE détruit le centre du regard horizontal gauche. Quel test permet de prouver que la lésion est bien localisée dans le PPRF (tronc cérébral) et non dans les champs oculomoteurs frontaux (FEF) du cortex droit ?",
+      "options": [
+        "La manœuvre de Jendrassik : si le RVO s'emballe, la lésion est dans le PPRF.",
+        "Le test du regard volontaire : si le patient peut regarder à droite, la lésion est obligatoirement corticale.",
+        "Le réflexe vestibulo-oculaire (test oculo-céphalique/yeux de poupée) : si ce réflexe de survie parvient quand même à faire tourner les yeux vers la gauche, la lésion est corticale (FEF). S'il échoue, la lésion (l'exécuteur PPRF) est touchée.",
+        "Le test de Rinne : si l'os transmet mieux le son, le nerf abducens est bloqué par la tumeur de l'angle pontocérébelleux."
+      ],
+      "correct": 2,
+      "explanation": "C'est la base de la localisation en neurologie oculomotrice. Le PPRF est l'exécuteur du regard. Si le FEF (le chef) est mort, le regard sur commande est aboli, mais le RVO (réflexe local du tronc, activé par le médecin) fonctionne. Si le PPRF est mort, le circuit terminal est brisé : aucun mouvement vers la gauche n'est possible, ni volontaire, ni réflexe[cite: 4]."
+    },
+    {
+      "question": "Q132. Si la décussation pyramidale (dans le bulbe) était expérimentalement sectionnée à 100 %, quelle composante majeure du contrôle moteur subsisterait potentiellement (bien qu'affaiblie) grâce aux 10 % de fibres de la voie corticospinale ventrale (qui ne croisent pas dans le bulbe) ?",
+      "options": [
+        "La capacité d'effectuer une pince fine pouce-index (motricité distale extrêmement spécialisée).",
+        "Le contrôle volontaire bilatéral des muscles axiaux et posturaux (tronc et racines des membres), car ces fibres descendent ipsilatéralement et innervent la moelle des deux côtés.",
+        "Le réflexe myotatique inversé de l'organe de Golgi de la face.",
+        "La capacité de décoder le langage via l'aire de Wernicke sans impliquer le noyau cochléaire dorsal."
+      ],
+      "correct": 1,
+      "explanation": "La voie ventrale (10%) ne croise pas dans le bulbe. Elle descend, puis fait synapse sur les motoneurones axiaux des DEUX CÔTÉS de la moelle. Elle est dédiée aux muscles de la posture, qui survivraient (faiblement) si on coupait le croisement de la grande voie latérale dédiée aux doigts[cite: 2]."
+    },
+    {
+      "question": "Q133. Quelle caractéristique anatomique de l'organe tendineux de Golgi (OTG) explique sa sensibilité particulière à la contraction musculaire ACTIVE plutôt qu'à l'étirement PASSIF d'un muscle relâché ?",
+      "options": [
+        "Il possède des otolithes (cristaux) qui ne s'activent qu'en présence de myoglobine hyper-oxygénée.",
+        "Il est monté « en parallèle » avec le muscle, ce qui le rend lâche lors de la contraction.",
+        "Il est monté « en série » dans le tendon inélastique ; la contraction active du muscle génère une forte traction (tension) qui écrase les terminaisons de la fibre Ib dans le collagène, alors qu'un étirement passif est surtout absorbé par le ventre mou du muscle.",
+        "L'OTG dépend du recrutement exclusif des unités S (lentes) par le motoneurone gamma de la moelle cervicale."
+      ],
+      "correct": 2,
+      "explanation": "Puisqu'il est en série (comme le maillon d'une chaîne), l'OTG mesure la force de la traction. Quand on tire un muscle relax (étirement passif), c'est le muscle mou (le fuseau) qui s'étire, pas le tendon dur. Mais quand le muscle se contracte et tire sur son os, le tendon encaisse toute la tension, écrasant la fibre Ib de l'OTG[cite: 2]."
+    },
+    {
+      "question": "Q134. Lequel des signes suivants N'EST PAS caractéristique d'une atteinte grave du cervelet (lésion hémisphérique ou vermienne) et permet d'écarter un diagnostic de sclérose latérale amyotrophique (SLA) ou de syndrome pyramidal ?",
+      "options": [
+        "La dysmétrie (mouvement imprécis qui dépasse ou n'atteint pas la cible lors de l'épreuve doigt-nez).",
+        "Le tremblement d'action (ou d'intention) qui s'aggrave à l'approche de la cible.",
+        "L'ataxie de la marche (démarche instable et écartée).",
+        "La paralysie (diminution sévère de la force motrice maximale, évaluée à 2/5) accompagnée d'hyperréflexie ostéotendineuse."
+      ],
+      "correct": 3,
+      "explanation": "Le cervelet ne donne pas de force, il donne de la précision. Une lésion cérébelleuse ne causera JAMAIS de perte de force (paralysie), de fonte musculaire, de spasticité ou d'hyperréflexie. S'il y a paralysie ou spasticité, l'atteinte est pyramidale (voie motrice, MNS)[cite: 2]."
+    },
+    {
+      "question": "Q135. Quel mécanisme explique l'amplification du réflexe myotatique lors de la manœuvre de Jendrassik (serrer fortement les poings en accrochant les doigts) lorsque l'examinateur teste le réflexe rotulien ?",
+      "options": [
+        "La manœuvre étire le Faisceau Longitudinal Médian (FLM) par extension cervicale, inhibant le noyau de l'abducens.",
+        "La manœuvre provoque un effort musculaire lointain et une distraction cognitive qui augmentent globalement l'excitabilité descendante (le « gain ») des motoneurones gamma spinaux ; ces derniers tendent le fuseau et augmentent sa sensibilité au marteau.",
+        "Le serrage des poings déclenche le réflexe d'extension croisée qui active de manière monosynaptique les extenseurs de la cuisse.",
+        "La compression des organes tendineux de Golgi des mains libère massivement du GABA dans le LCR lombaire, bloquant la douleur de la percussion."
+      ],
+      "correct": 1,
+      "explanation": "Le gain des réflexes peut être monté ou descendu par le cerveau. En forçant sur un autre groupe musculaire et en se concentrant ailleurs (manœuvre de Jendrassik), on envoie une excitation générale qui active les MNI gamma de la moelle. Les fuseaux sont tendus à bloc, et le moindre coup de marteau donne une réponse explosive[cite: 2]."
+    },
+    {
+      "question": "Q136. Qu'est-ce qui différencie le système des noyaux gris centraux (NGC) par rapport au système cérébelleux dans la régulation de la boucle motrice corticale ?",
+      "options": [
+        "Le cervelet déclenche et initie la volonté d'agir, alors que les NGC calibrent le tremblement d'intention pendant le vol.",
+        "Les NGC (via des boucles striatales et dopaminergiques) autorisent l'initiation du mouvement et bloquent les mouvements parasites (leur atteinte cause l'akinésie ou la chorée), tandis que le cervelet agit en temps réel comme un gyroscope pour corriger la précision et l'équilibre de l'action en cours (dysmétrie, ataxie).",
+        "Les NGC projettent directement par les voies cortico-bulbaires sur les muscles lisses du système autonome, alors que le cervelet ne contrôle que les muscles striés de la cuisse.",
+        "Il n'y a aucune différence fonctionnelle ; les deux sont d'ailleurs atrophiés de manière indiscernable dans la surdité de conduction."
+      ],
+      "correct": 1,
+      "explanation": "Rôle des NGC = Autoriser le départ, fluidifier l'initiation (Parkinson = ça ne part pas. Chorée = ça part tout seul sans arrêt). Rôle du Cervelet = Calibrer, vérifier l'erreur pendant que le mouvement se fait, arrêter le bras exactement sur la cible (syndrome cérébelleux = ça part bien, mais ça rate la cible et ça titube)[cite: 2]."
+    },
+    {
+      "question": "Q137. En neurophysiologie, pourquoi l'apparition d'un « réflexe de Babinski » (extension lente de l'hallux lors du grattage de la plante du pied) chez l'adulte est-elle un signe clinique majeur et alarmant ?",
+      "options": [
+        "C'est le symptôme pathognomonique d'une mort du motoneurone inférieur (MNI) lombaire, prédisant une amyotrophie sévère.",
+        "C'est un signe de déconnexion cérébelleuse flocculo-nodulaire (ataxie isolée des orteils).",
+        "C'est un réflexe archaïque normalisé chez l'enfant, mais dont la réapparition chez l'adulte (syndrome sous-lésionnel) indique une lésion ou une perte d'inhibition de la voie motrice descendante (Motoneurone Supérieur - voie corticospinale).",
+        "C'est la preuve d'un réflexe de flexion et d'extension croisée paroxystique bloqué par la sérotonine des noyaux du raphé bulbaire."
+      ],
+      "correct": 2,
+      "explanation": "Le signe de Babinski indique que le « câble de contrôle » venu du cerveau (MNS, voie pyramidale) est coupé. Sans l'inhibition corticale, la stimulation du pied déclenche un réflexe spinal archaïque et non inhibé d'extension (comme chez le bébé dont les voies ne sont pas encore formées). C'est le signe classique du syndrome pyramidal (MNS)[cite: 2]."
+    },
+    {
+      "question": "Q138. Parmi les rôles du cortex prémoteur latéral, on retrouve l'importance de son activité dite « conditionnelle ». Qu'est-ce que cela signifie concrètement lors d'une tâche motrice (par exemple, attendre que le feu piéton devienne vert pour avancer le pied) ?",
+      "options": [
+        "L'activité des MNS du cortex moteur primaire (aire 4) inhibe le cortex prémoteur jusqu'à ce que la rétine soit saturée par la couleur verte.",
+        "Le cortex prémoteur latéral se fige en hyperpolarisation de -90 mV jusqu'à l'exécution du geste, sans planifier.",
+        "Ses neurones s'activent longtemps à l'avance en réponse à des stimuli extra-personnels (visuels, auditifs) pour anticiper et préparer le programme moteur, déchargeant avec une intensité croissante à mesure que l'indice de l'action approche, avant même que le mouvement n'ait lieu.",
+        "L'activité n'est 'conditionnelle' que si l'olive supérieure médiane détecte un déphasage sonore préalable, sans lequel la marche est bloquée."
+      ],
+      "correct": 2,
+      "explanation": "Le cortex prémoteur latéral est la zone de la préparation et de l'anticipation face à l'environnement. Ses neurones s'allument (activité conditionnelle) avant l'action, préparant le plan moteur dès qu'un indice signale que l'action s'en vient (la lumière jaune avant la lumière rouge, par exemple)[cite: 2]."
+    },
+    {
+      "question": "Q139. Le syndrome d'ophtalmoplégie internucléaire (OIN) est caractérisé par une lésion du FLM. Dans ce syndrome unilatéral (ex: FLM gauche lésé), quel est le SEUL mouvement oculaire qui sera physiologiquement IMPOSSIBLE lors de l'examen clinique ?",
+      "options": [
+        "Le regard volontaire (abduction) de l'œil droit vers la droite.",
+        "L'adduction (regard vers le nez) de l'œil gauche lors d'une commande volontaire de regard conjugué vers la DROITE.",
+        "La convergence bilatérale des deux yeux sur un objet rapproché au centre du visage.",
+        "L'abduction de l'œil gauche lors d'une saccade vers la GAUCHE."
+      ],
+      "correct": 1,
+      "explanation": "Dans une OIN gauche, le FLM gauche (l'autoroute montante) est coupé. Lors d'un regard à droite (demandé par le VI droit), l'ordre monte dans le FLM gauche pour atteindre le III gauche (muscle Droit Interne gauche). Mais le pont est coupé : l'œil gauche ne tourne pas vers le nez (déficit d'adduction). L'œil droit, lui, ira bien à droite. La convergence est normale car elle descend du haut sans utiliser l'ascenseur du FLM[cite: 4]."
+    },
+    {
+      "question": "Q140. Quelle affirmation explique l'utilité du mécanisme du « champ musculaire du neurone moteur cortical » démontré par les micro-stimulations du cortex moteur primaire ?",
+      "options": [
+        "Un motoneurone supérieur (MNS) n'allume qu'une seule fibre musculaire précise pour garantir une dextérité absolue un-pour-un.",
+        "Un seul MNS diverge (se ramifie) dans la moelle épinière pour activer plusieurs motoneurones inférieurs (MNI) distincts, provoquant la contraction synergique de tout un groupe de muscles (ex. épaule, bras, main) pour créer un mouvement complexe fonctionnel (ex. porter la main à la bouche).",
+        "Il empêche les cellules de Renshaw de provoquer une rigidité de décérébration lors des réflexes myotatiques inversés.",
+        "Il synchronise la déglutition avec la respiration via une commande thalamique unilatérale sur le nerf vague."
+      ],
+      "correct": 1,
+      "explanation": "L'homonculus de Penfield est une simplification anatomique. Dans la réalité fonctionnelle, un neurone cortical ne commande pas une fibre isolée, mais commande la synergie de plusieurs muscles. En allumant un neurone cortical, le cerveau déclenche un « programme » (un champ musculaire spinal) aboutissant à un geste fluide, coordonné et utile[cite: 2]."
+    },
+    {
+      "question": "Q141. En décrivant le patron locomoteur humain binaire (bipède), quelle phase de la marche correspond au moment où la jambe quitte le sol pour se propulser vers l'avant, et quel type de contraction prédomine alors dans cette jambe sous le contrôle de la moelle épinière ?",
+      "options": [
+        "La phase d'appui, dominée par l'inhibition di-synaptique des motoneurones extenseurs par les unités S.",
+        "La phase d'extension croisée, dominée par la co-contraction massive des muscles agonistes axiaux lombaires.",
+        "La phase de transfert (ou balancement), dominée par l'activation rythmique des muscles fléchisseurs (qui plient la jambe pour quitter le sol) et l'inhibition stricte des muscles extenseurs de cette même jambe.",
+        "La phase de décérébration, dominée par le réflexe myotatique rotulien qui allonge la foulée de façon statique et continue."
+      ],
+      "correct": 2,
+      "explanation": "Le cycle de la marche (dicté par les CPG) a deux phases. L'appui (le pied touche le sol, les extenseurs soutiennent le corps) et le transfert (le pied lève pour avancer). Pendant le transfert, il est indispensable d'activer les fléchisseurs pour plier la jambe et d'inhiber activement les extenseurs pour qu'ils ne bloquent pas le mouvement[cite: 2]."
+    },
+    {
+      "question": "Q142. Lors d'un traumatisme médullaire avec myélotomie (section complète) de la moelle épinière au niveau cervical bas (C8-T1), pourquoi le patient présente-t-il une paralysie spastique avec hyperréflexie et signe de Babinski des membres INFERIEURS, mais des signes plus incertains (flasques, amyotrophiques) au niveau des muscles intrinsèques de la MAIN ?",
+      "options": [
+        "Parce que les mains sont innervées par les noyaux vestibulaires qui ont été détruits, tandis que les jambes sont innervées par le colliculus inférieur.",
+        "La lésion transversale coupe la voie corticospinale descendante, causant un syndrome MNS (spastique, hyperréflexie) sous la lésion (les jambes). Or, la lésion elle-même DETRUIT la substance grise de ce niveau (intumescence cervicale basse), tuant ainsi les MNI de la main (syndrome MNI, flasque, amyotrophique pour la main).",
+        "Parce que la voie rubrospinale descend dans les cordons postérieurs pour inhiber le réflexe de flexion croisée, un phénomène exclusif à la décortication.",
+        "C'est une illusion d'optique pariétale ; la main est en fait spastique mais les unités motrices FF étant détruites, seule la spasticité des jambes S est cliniquement visible."
+      ],
+      "correct": 1,
+      "explanation": "C'est un grand classique de la neuro-anatomie. Si une lésion détruit un segment de la moelle (ex: C8-T1), elle détruit la zone de passage (les câbles descendants MNS) = spasticité sous la lésion (jambes). MAIS elle détruit aussi le « local » à ce niveau, soit les MNI (corne grise) innervant les muscles du même niveau (la main). La main aura donc un syndrome périphérique (flasque, amyotrophique)[cite: 2]."
+    },
+    {
+      "question": "Q143. Un patient est diagnostiqué avec une amyotrophie spinale, une maladie neurodégénérative détruisant exclusivement les corps cellulaires des motoneurones de la corne antérieure. Parmi les constatations suivantes, laquelle est physiologiquement INCOMPATIBLE avec cette pathologie ?",
+      "options": [
+        "Une perte de force musculaire (paralysie ou parésie) importante et bilatérale dans les membres atteints.",
+        "La présence de fasciculations diffuses sous la peau des mollets et de la langue.",
+        "Une perte totale de la perception de la douleur et de la température (anesthésie thermo-algésique) dans les membres atteints.",
+        "Une abolition complète des réflexes myotatiques ostéotendineux (aréflexie rotulienne et bicipitale)."
+      ],
+      "correct": 2,
+      "explanation": "Si la maladie détruit uniquement la corne antérieure de la moelle, elle détruit uniquement les MNI (le moteur). Le patient sera paralysé, avec amyotrophie, aréflexie et fasciculations (Syndrome MNI pur). Puisque la corne dorsale et les voies sensitives ne sont pas touchées, la sensation de douleur, température et toucher sera parfaitement normale[cite: 2]."
+    },
+    {
+      "question": "Q144. Quelle est la particularité anatomique des axones de la voie cortico-nucléaire (cortico-bulbaire) qui la rend cruciale pour les réflexes vitaux (comme la déglutition ou le clignement des yeux), comparé à la voie corticospinale classique destinée au biceps ?",
+      "options": [
+        "Ses axones ne transportent que des potentiels d'action à très basse fréquence (8 Hz) typiques des unités S, afin de ne jamais fatiguer les muscles pharyngés.",
+        "Ses axones projettent de façon majoritairement BILATÉRALE sur les noyaux moteurs des nerfs crâniens (ex. noyau ambigu), offrant une compensation par l'hémisphère sain en cas d'AVC unilatéral, contrairement à l'innervation strictement unilatérale controlatérale des membres.",
+        "Ses axones font synapse exclusivement sur des interneurones inhibiteurs GABAergiques pour empêcher la décérébration faciale spontanée.",
+        "Elle contourne totalement le cortex moteur primaire pour s'originer directement dans l'olive supérieure médiane, l'associant irréversiblement au déphasage sonore."
+      ],
+      "correct": 1,
+      "explanation": "Les noyaux crâniens assurant la survie (V pour mâcher, VII haut pour fermer l'œil, IX/X/XII pour avaler) reçoivent la commande descendante des DEUX hémisphères (commande bilatérale). Si un AVC détruit l'hémisphère droit, l'hémisphère gauche sain s'occupera d'avaler et de fermer les deux yeux[cite: 2]."
+    },
+    {
+      "question": "Q145. Quel est le rôle principal de la région locomotrice mésencéphalique située dans les noyaux paramédians du mésencéphale ?",
+      "options": [
+        "La suppression de la conscience lors du sommeil profond par inhibition tonique de la formation réticulaire ascendante.",
+        "La projection descendante directe sur les circuits locaux de la moelle (CPG) pour moduler et initier l'activité locomotrice coordonnée de base, intégrée avec les autres réflexes posturaux du tronc cérébral.",
+        "L'inhibition du système vestibulo-cérébelleux lors du réflexe vestibulo-cervical (RVC) de survie.",
+        "Le remplacement métabolique des cellules ciliées externes endommagées par distorsion acoustique."
+      ],
+      "correct": 1,
+      "explanation": "La région locomotrice mésencéphalique, qui regroupe divers noyaux du tronc cérébral, envoie des projections descendantes qui « allument » ou orchestrent les générateurs centraux de rythme (CPG) de la moelle épinière pour déclencher et contrôler la cadence de la marche[cite: 2]."
+    },
+    {
+      "question": "Q146. Dans le contexte des dysfonctions motrices extrapyramidales, pourquoi une lésion grave de la voie rubrospinale au niveau du noyau rouge mésencéphalique chez l'HUMAIN ADULTE n'entraîne-t-elle pas une paralysie complète de la main (contrairement à une lésion de l'aire 4 corticospinale) ?",
+      "options": [
+        "Parce que la voie rubrospinale n'a absolument aucune connexion anatomique avec les intumescences médullaires cervicales ni avec les muscles distaux.",
+        "Parce qu'au cours de l'évolution humaine, la commande de la motricité fine distale a été presque entièrement transférée (et optimisée) à la voie corticospinale latérale, réduisant la voie rubrospinale à un rôle très secondaire (ou postural résiduel) chez l'homme sain.",
+        "Parce que le colliculus supérieur relaye immédiatement la fonction via le faisceau longitudinal médian vers les yeux, abolissant le besoin de se servir de ses mains.",
+        "Parce qu'elle utilise exclusivement l'acétylcholine pour inhiber l'organe de Golgi, ce qui permet à l'unité motrice S de se régénérer sans contraction visible."
+      ],
+      "correct": 1,
+      "explanation": "Chez les animaux (chat, singe), le noyau rouge est vital pour la dextérité des pattes. Chez l'humain, l'évolution a donné ce travail de dextérité fine à l'immense voie corticospinale latérale. Le noyau rouge et sa voie rubrospinale ont perdu presque toute leur importance fonctionnelle au quotidien (ils s'expriment surtout de façon pathologique par la rigidité de décortication en flexion en cas de coma)[cite: 2]."
+    },
+    {
+      "question": "Q147. Quel mécanisme physique fondamental du liquide endolymphatique rend les canaux semi-circulaires spécialisés UNIQUEMENT dans la détection des accélérations rotatoires (angulaires) et non des déplacements linéaires constants ?",
+      "options": [
+        "La densité de la cupule est inférieure à celle de l'endolymphe, forçant les cils à s'incurver lors des translations verticales, mais annulant l'inertie.",
+        "Lors d'un mouvement linéaire, les forces appliquées (la pression inertielle) sont parfaitement égales (symétriques) des deux côtés de la cupule de l'ampoule. Ne subissant aucune poussée différentielle, la cupule ne plie pas. Lors d'une rotation, l'inertie du liquide circulant dans l'anneau pousse d'un seul côté, pliant la cupule.",
+        "Le potassium (K+) endolymphatique se cristallise sous l'effet de l'accélération linéaire, transformant les canaux semi-circulaires en saccule de substitution pour 15 secondes.",
+        "La strie vasculaire bloque chimiquement l'ouverture des canaux calciques (CCVD) lors de tout mouvement non circulaire pour éviter le vertige orthostatique."
+      ],
+      "correct": 1,
+      "explanation": "Dans un tube rond (canal semi-circulaire), un mouvement linéaire ou droit applique la même pression sur les deux côtés de la gélatine (la cupule). Elle ne bouge pas. Si on tourne (rotation), l'inertie fait que l'eau « résiste » au mouvement et pousse massivement d'un côté de la cupule, pliant les cils. D'où la spécificité des canaux pour la rotation angulaire[cite: 3]."
+    },
+    {
+      "question": "Q148. À propos du principe de l'inhibition réciproque spinale, quelle affirmation décrit la réponse des fibres Ia du fuseau neuromusculaire lors du réflexe myotatique (ex. percussion du tendon rotulien) ?",
+      "options": [
+        "L'afférence Ia se sépare : elle active directement le MNI de l'agoniste (extension du genou), et fait synapse sur un interneurone inhibiteur qui désactive simultanément les motoneurones des fléchisseurs antagonistes (ischio-jambiers), permettant le mouvement sans résistance.",
+        "L'afférence Ia active directement et monosynaptiquement l'agoniste et l'antagoniste pour créer une co-contraction immédiate figeant l'articulation de façon protectrice.",
+        "L'afférence Ia remonte dans les cordons postérieurs jusqu'au noyau de l'hypoglosse pour déclencher le réflexe de Jendrassik sans implication des interneurones spinaux.",
+        "L'afférence Ia inhibe son propre MNI via les cellules de Renshaw, puis active le noyau rouge pour la décortication tonique de la jambe."
+      ],
+      "correct": 0,
+      "explanation": "C'est l'essence du réflexe myotatique harmonieux : activer le muscle qui a été étiré (l'agoniste) pour qu'il corrige sa position, et éteindre activement (inhibition réciproque via un interneurone) le muscle opposé (l'antagoniste) pour qu'il ne s'oppose pas au redressement[cite: 2, 3]."
+    },
+    {
+      "question": "Q149. Dans l'organisation du cortex vestibulaire, le Cortex Vestibulaire Pariéto-Insulaire (CVPI - aires de Brodmann 2 et 3) est essentiel. Quel est son rôle cognitif principal par rapport aux relais du tronc cérébral ?",
+      "options": [
+        "Le CVPI déclenche l'arc réflexe vestibulo-oculaire calorique sans aucune intervention du tronc cérébral.",
+        "Le CVPI est responsable de la perception CONSCIENTE des afférences vestibulaires, nous donnant le sens de notre position et de nos mouvements dans l'espace (le vertige conscient, l'orientation), après intégration au thalamus.",
+        "Le CVPI inhibe directement la production d'endolymphe cochléaire durant la nuit pour protéger l'audition tonotopique.",
+        "Le CVPI gère la contraction asynchrone des unités S du muscle soléaire pour l'orthostation, court-circuitant le cervelet."
+      ],
+      "correct": 1,
+      "explanation": "Les réflexes de l'équilibre et de l'œil (tronc cérébral, RVO, RVS) sont totalement inconscients (ils marchent même dans le coma). Mais pour qu'une personne SENTE qu'elle tourne ou tombe (la conscience de l'équilibre), l'information doit monter au cortex vestibulaire pariéto-insulaire via le thalamus[cite: 3]."
+    },
+    {
+      "question": "Q150. Quelle dysfonction oculomotrice majeure permet, au chevet du patient, de différencier une lésion du PPRF (centre du regard horizontal, situé dans le tronc cérébral) d'une lésion supranucléaire corticale des champs oculomoteurs frontaux (FEF) lors d'un regard à droite déficitaire ?",
+      "options": [
+        "Dans la lésion du FEF (cortex), le regard volontaire à droite est aboli, mais le réflexe vestibulo-oculaire (RVO - yeux de poupée tournant vers la droite lors de la rotation de la tête à gauche) est préservé. Si le PPRF (tronc cérébral) est mort, ni le regard volontaire, ni le réflexe RVO ne parviendront à déplacer les deux yeux vers la droite.",
+        "Dans la lésion du PPRF, le patient conserve son regard volontaire (saccade) vers la droite, mais perd son réflexe de convergence bilatérale, typique d'une OIN.",
+        "La lésion du FEF cause un nystagmus spontané multidirectionnel, alors que la lésion du PPRF cause un ptosis massif par destruction du nerf III adjacent.",
+        "La lésion du PPRF (pontique) s'accompagne systématiquement d'une surdité de conduction (Rinne négatif) causée par l'inflammation du complexe olivaire supérieur."
+      ],
+      "correct": 0,
+      "explanation": "C'est la quintessence de la neuro-ophtalmologie. Le cortex (FEF) donne la commande volontaire. Le tronc (PPRF) est l'exécuteur final. Si le chef (FEF) est malade, le patient ne peut pas tourner les yeux volontairement, mais le tronc cérébral sain exécutera le réflexe vestibulaire (RVO/yeux de poupée) si le médecin tourne la tête. Si l'exécuteur final (PPRF) est mort, plus rien ne bouge vers ce côté : ni volonté, ni réflexe[cite: 3, 4]."
+    }
+  ]
+}

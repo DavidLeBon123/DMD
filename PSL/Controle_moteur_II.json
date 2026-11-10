@@ -1,0 +1,567 @@
+{
+  "title": "Contrôle moteur - Partie 2",
+  "description": "Organisation corticale, tronc cérébral, voies motrices et système vestibulaire (Niveau Expert).",
+  "questions": [
+    {
+      "question": "En analysant l'organisation somatotopique du cortex moteur primaire (aire 4), quelle affirmation justifie physiologiquement la disproportion de l'homonculus moteur, particulièrement au niveau du territoire de l'artère cérébrale moyenne ?",
+      "options": [
+        "La représentation corticale est strictement corrélée au volume absolu des muscles ciblés : les muscles axiaux, bien que volumineux, sont inhibés par les noyaux gris centraux, libérant ainsi de l'espace pour la face.",
+        "La densité des fuseaux neuromusculaires dans les muscles de la jambe exige une représentation bilatérale sur la face médiane, refoulant la représentation de la main vers la scissure de Sylvius.",
+        "La surface corticale allouée reflète le degré de complexité fonctionnelle et le besoin de précision motrice : la motricité fine des doigts (manipulation) et de l'oropharynx (parole) requiert une densité infiniment plus élevée de motoneurones supérieurs (MNS).",
+        "Cette disproportion est une relique embryologique liée au développement asymétrique du tube neural, sans véritable corrélation avec la finesse du contrôle moteur chez l'adulte sain."
+      ],
+      "correct": 2,
+      "explanation": "L'homonculus moteur est déformé en fonction du besoin de précision. Les mains et la bouche occupent une énorme portion du cortex (irriguée par l'artère cérébrale moyenne) car l'humain nécessite une quantité massive de motoneurones pour orchestrer les mouvements hyper-complexes de la parole et de la manipulation fine d'outils[cite: 1, 2]."
+    },
+    {
+      "question": "L'hypothèse des « vecteurs de population de neurones » modélise la manière dont le cortex moteur primaire (M1) encode la direction d'un mouvement. Selon ce modèle, comment la commande finale d'une trajectoire est-elle générée lors de l'atteinte volontaire d'une cible ?",
+      "options": [
+        "Un unique neurone « grand-mère », spécifique à une direction exacte au degré près, décharge de façon tétanique tandis que tous les neurones voisins sont inhibés par des interneurones GABAergiques récurrents.",
+        "La direction du mouvement est déterminée exclusivement par la séquence temporelle de recrutement des unités motrices spinales, le cortex ne fournissant qu'un signal permissif on/off global.",
+        "Chaque motoneurone supérieur possède une direction préférentielle et décharge lors de l'activation motrice ; le mouvement final exécuté correspond à la somme vectorielle pondérée des décharges de l'ensemble de cette vaste population neuronale.",
+        "Le vecteur est pré-calculé par le spino-cervelet, qui court-circuite le cortex moteur primaire pour s'adresser directement à la voie rubrospinale, imposant mécaniquement la direction voulue."
+      ],
+      "correct": 2,
+      "explanation": "Selon cette hypothèse, aucun neurone individuel n'a le monopole d'une direction. Lors d'un geste (ex: bouger le bras à 45°), toute une population de neurones s'allume. Chacun « vote » pour sa direction préférée selon son intensité de décharge. L'addition mathématique (le vecteur résultant) de tous ces votes donne le mouvement final précis[cite: 1, 2]."
+    },
+    {
+      "question": "Concernant la division fonctionnelle du cortex prémoteur latéral, quelle particularité électrophysiologique définit le comportement des « neurones miroirs » et sous-tend leur rôle cognitif présumé dans l'empathie motrice ?",
+      "options": [
+        "Ils sont situés dans le cortex moteur primaire et projettent unilatéralement sur les motoneurones de la face pour reproduire de manière réflexe les expressions faciales de l'interlocuteur.",
+        "Ils s'activent intensément lorsqu'un individu exécute une action spécifique (comme saisir un objet) ET s'activent de façon pratiquement identique lorsqu'il observe un autre individu réaliser la même action.",
+        "Ils déchargent en miroir (en opposition de phase) avec les générateurs centraux de rythme de la moelle, freinant ainsi la locomotion pour empêcher le mimétisme dangereux.",
+        "Ils convertissent les images inversées provenant de la rétine en un vecteur moteur droit, compensant l'effet de miroir optique avant que l'information n'atteigne le colliculus supérieur."
+      ],
+      "correct": 1,
+      "explanation": "Les neurones miroirs résonnent à l'action. Ils déchargent quand le sujet fait un geste, mais aussi quand il regarde quelqu'un d'autre faire ce même geste. C'est la base neurophysiologique de l'apprentissage par l'observation et de la compréhension de l'intention d'autrui[cite: 1]."
+    },
+    {
+      "question": "Une patiente ayant subi un traumatisme crânien sévère avec hématome bilatéral sur la face médiane des lobes frontaux (lésion de l'Aire Motrice Supplémentaire - AMS bilatérale) présente un mutisme akinétique. Quelle est la physiopathologie comportementale de ce syndrome ?",
+      "options": [
+        "Une destruction totale des faisceaux cortico-bulbaires empêchant la déglutition et la phonation, bien que l'intention de communiquer demeure intacte (locked-in syndrome).",
+        "Une paralysie flasque diffuse avec amyotrophie des 4 membres, accompagnée d'une aphasie de Broca (perte de la grammaire et de l'articulation).",
+        "Une incapacité profonde à initier ou planifier des mouvements volontaires auto-déclenchés (internes), incluant la parole, bien que l'appareil moteur périphérique et les réflexes soient intacts.",
+        "Une hyper-réflexie incontrôlable de la musculature axiale provoquant une posture d'extension continue (décérébration) qui bloque mécaniquement l'appareil respiratoire phonatoire."
+      ],
+      "correct": 2,
+      "explanation": "L'Aire Motrice Supplémentaire (AMS) planifie et déclenche les actions voulues par la pensée interne (auto-déclenchées). Sa destruction bilatérale abolit la « volonté » motrice : le patient est éveillé, non paralysé, mais ne bouge pas et ne parle pas (akinésie et mutisme) car le déclencheur interne est brisé[cite: 1]."
+    },
+    {
+      "question": "En neurologie, l'évaluation clinique du nerf facial (VII) est cruciale pour distinguer une lésion centrale (motoneurone supérieur) d'une lésion périphérique (motoneurone inférieur). Pourquoi un AVC ischémique massif de l'hémisphère droit ne paralyse-t-il QUE la partie inférieure gauche du visage (la bouche) tout en épargnant la fermeture de l'œil gauche ?",
+      "options": [
+        "Parce que le sous-noyau du nerf facial innervant la partie supérieure du visage (front, yeux) reçoit des projections cortico-bulbaires bilatérales (des deux hémisphères), tandis que le sous-noyau innervant le bas du visage ne reçoit qu'une commande controlatérale unilatérale.",
+        "Parce que la musculature de l'œil est sous le contrôle exclusif du noyau moteur du nerf trijumeau (V), qui n'est jamais atteint lors d'un AVC de l'artère cérébrale moyenne.",
+        "Parce que la voie corticospinale ventrale, qui ne croise pas, compense la perte de la voie corticospinale latérale au niveau de la protubérance haute.",
+        "Parce que le phénomène de dissociation automatico-volontaire protège les mouvements du clignement des yeux (réflexes), qui sont gérés par le colliculus supérieur indépendamment du cortex moteur."
+      ],
+      "correct": 0,
+      "explanation": "Pour protéger les fonctions vitales (comme la fermeture des yeux), l'évolution a doté la partie supérieure du noyau facial d'un double câblage (innervation bilatérale). Si l'hémisphère droit est détruit, l'hémisphère gauche sain continue d'envoyer l'ordre de cligner aux deux yeux. La bouche, elle, n'est innervée que par le côté opposé, donc elle sera paralysée (affaissement de la lèvre gauche)[cite: 1, 2]."
+    },
+    {
+      "question": "La dissociation automatico-volontaire (par exemple, un patient qui est incapable de sourire sur commande médicale, mais qui sourit spontanément et symétriquement à une blague) démontre l'existence de voies motrices parallèles. Quelle structure corticale est principalement impliquée dans l'expression motrice involontaire des émotions, court-circuitant ainsi un cortex moteur primaire lésé ?",
+      "options": [
+        "Le cortex vestibulaire pariéto-insulaire (aires 2 et 3), qui traduit l'accélération endolymphatique en sensation viscérale d'euphorie.",
+        "Le cortex moteur cingulaire, situé sur la face médiane, qui projette via des voies extrapyramidales profondes sur les noyaux des nerfs crâniens de la face.",
+        "L'aire de Wernicke (planum temporal), qui associe le contenu phonologique de la blague à une décharge monosynaptique sur le nerf hypoglosse (XII).",
+        "Le faisceau longitudinal médian (FLM) qui connecte le PPRF au noyau d'Edinger-Westphal pour moduler l'ouverture de la bouche."
+      ],
+      "correct": 1,
+      "explanation": "Le mouvement volontaire pur (sur commande) passe par le cortex moteur primaire. Les expressions d'émotions spontanées (rire, pleurer) passent par des zones limbiques et le cortex moteur cingulaire. C'est pourquoi un AVC détruisant la surface du cerveau (moteur primaire) empêchera le sourire volontaire, mais laissera intact le sourire émotionnel géré par ces voies profondes séparées[cite: 1]."
+    },
+    {
+      "question": "Le syndrome pseudo-bulbaire, caractérisé par une dysarthrie sévère, une dysphagie, et un « rire et pleurer spasmodique », est la conséquence d'une lésion neuro-anatomique spécifique. Quelle est la localisation et la nature de cette lésion ?",
+      "options": [
+        "Une transection aiguë des cordons antérieurs de la moelle épinière cervicale, libérant la voie vestibulo-spinale médiane.",
+        "Une destruction bilatérale (ou de multiples petits infarctus bilatéraux) des voies motrices descendantes cortico-bulbaires (motoneurones supérieurs) innervant les noyaux moteurs crâniens du tronc cérébral.",
+        "Une dégénérescence toxique des motoneurones inférieurs (MNI) du noyau ambigu et de l'hypoglosse, entraînant une amyotrophie fasciculante massive de la langue.",
+        "Une atteinte sélective des noyaux gris centraux (surtout le locus coeruleus) provoquant un défaut d'initiation de la parole semblable au Parkinson."
+      ],
+      "correct": 1,
+      "explanation": "Puisque les noyaux vitaux de la gorge et de la bouche reçoivent une commande des deux hémisphères, un AVC d'un seul côté est bien toléré. Par contre, si de multiples AVC touchent les DEUX côtés (lésion des MNS bilatérale), la commande volontaire est totalement coupée. Cela cause une spasticité grave de l'oropharynx (dysphagie) et une perte de l'inhibition des réflexes émotionnels du tronc cérébral (les pleurs spasmodiques)[cite: 1, 2]."
+    },
+    {
+      "question": "La voie corticospinale latérale (pyramidale) est anatomiquement distincte de la voie corticospinale ventrale (antérieure). Quel pourcentage des axones pyramidaux suit la voie ventrale et quel est son comportement de décussation (croisement) et d'innervation ?",
+      "options": [
+        "Environ 90% des fibres ; elles descendent sans jamais croiser et innervent de façon strictement ipsilatérale les motoneurones latéraux de la motricité fine des doigts.",
+        "Environ 10% des fibres ; elles descendent ipsilatéralement dans le bulbe et la moelle, puis croisent segmentairement au niveau de leur cible pour innervent bilatéralement les motoneurones médians axiaux et proximaux.",
+        "Exactement 50% des fibres ; elles décussent toutes au niveau de la commissure grise postérieure pour stimuler les générateurs centraux de rythme lombaire.",
+        "Environ 10% des fibres ; elles croisent dans les pyramides bulbaires, mais remontent ensuite par le pédoncule cérébelleux inférieur pour moduler l'apprentissage vestibulaire."
+      ],
+      "correct": 1,
+      "explanation": "La vaste majorité (90%) des fibres croise dans le bulbe (voie latérale) pour la motricité fine controlatérale. Les 10% restantes (voie ventrale) ne croisent pas dans le bulbe, descendent du même côté, puis distribuent des synapses des DEUX côtés (bilatéralement) pour assurer la stabilité du tronc et des épaules[cite: 1, 2]."
+    },
+    {
+      "question": "Lors d'une évaluation neurologique, vous observez un patient présentant une ataxie de la marche avec élargissement du polygone de sustentation (marche ébrieuse), un nystagmus multidirectionnel et une dysmétrie sévère au test doigt-nez (le doigt dépasse largement la cible en tremblant). La force musculaire bilatérale est évaluée à 5/5, et les réflexes tendineux sont normaux. Quelle structure anatomique est le site primitif de la lésion ?",
+      "options": [
+        "Les faisceaux spino-thalamiques de la moelle épinière thoraco-lombaire, privant le cerveau de la nociception essentielle à l'équilibre.",
+        "Le système cérébelleux (le cervelet et ses pédoncules), responsable du calibrage, de la coordination et de la correction d'erreurs motrices en temps réel, sans altérer la force de base générée par le cortex.",
+        "Les noyaux gris centraux (striatum et substance noire), causant une akinésie hypertonique typique de la maladie de Parkinson.",
+        "Le cortex moteur primaire (aire 4) au niveau de la représentation médiale (le lobule paracentral), provoquant une asynergie isolée des jambes par perte des motoneurones supérieurs."
+      ],
+      "correct": 1,
+      "explanation": "C'est la présentation clinique classique du syndrome cérébelleux. Le patient n'est pas paralysé (force 5/5, MNS/MNI intacts), il n'est pas spastique, mais il a perdu le « gyroscope de précision ». L'absence de correction cérébelleuse cause la dysmétrie (imprécision), le tremblement d'action et la perte d'équilibre (ataxie)[cite: 1, 2]."
+    },
+    {
+      "question": "En physiologie de l'audition, l'oreille externe et moyenne assurent la transmission du son jusqu'à la fenêtre ovale. Quel mécanisme de l'oreille moyenne permet une amplification d'environ 200 fois (soit près de +23 dB) de la pression acoustique, rendant la cochlée fonctionnelle dans un milieu liquidien ?",
+      "options": [
+        "La contraction continue du muscle stapédien (nerf VII) qui rigidifie l'enclume et résonne à la fréquence fondamentale du son humain (3000 Hz).",
+        "L'effet de levier des osselets couplé au fait que la surface vibrante du tympan est considérablement plus grande que la petite surface de la fenêtre ovale sur laquelle repose l'étrier, concentrant ainsi la pression.",
+        "Le système de diffraction acoustique complexe de la trompe d'Eustache, qui additionne les ondes en phase avant de les frapper sur le canal cochléaire.",
+        "L'accumulation d'endolymphe hyperpolarisée à +125 mV dans la caisse du tympan, qui attire électromagnétiquement les cellules ciliées externes vers la base de la cochlée."
+      ],
+      "correct": 1,
+      "explanation": "L'oreille moyenne sert d'adaptateur d'impédance (passer de l'air au liquide). Pour ce faire, elle utilise l'effet de levier mécanique des 3 osselets, mais surtout le ratio de surface : la grande force captée par le large tympan est concentrée sur la minuscule surface de la fenêtre ovale (par l'étrier), multipliant la pression par près de 200[cite: 3]."
+    },
+    {
+      "question": "L'analyse de l'empreinte spectrale d'un son, modulée par la diffraction et l'amortissement variables des replis complexes du pavillon de l'oreille externe, est essentielle pour quelle fonction auditive spécifique (qui nécessite un réapprentissage si le patient reçoit une prothèse auditive modifiant l'acoustique externe) ?",
+      "options": [
+        "La discrimination absolue entre un son de 15 000 Hz et un son de 20 000 Hz par la membrane basilaire.",
+        "La localisation de l'origine d'un son dans le plan vertical (en haut ou en bas) par une seule oreille (stéréoacousie monaurale).",
+        "Le déclenchement du réflexe vestibulo-cervical pour éviter l'éblouissement acoustique lors d'une explosion.",
+        "Le calcul du déphasage temporel des ondes de basse fréquence (<3000 Hz) par l'olive supérieure médiane (OSM) pour repérer un bruit dans le plan horizontal."
+      ],
+      "correct": 1,
+      "explanation": "Puisqu'on n'a pas une oreille en haut et une en bas, le cerveau localise les sons sur l'axe vertical (élévation) en analysant comment le son a été déformé (empreinte spectrale) en rebondissant sur les cartilages complexes du pavillon avant d'entrer. Si l'on change ce pavillon (prothèse), l'empreinte change et le cerveau doit réapprendre à localiser en hauteur[cite: 3]."
+    },
+    {
+      "question": "La tonotopie de la membrane basilaire dans la cochlée s'appuie sur ses propriétés mécaniques changeantes. Quelle est la disposition de la sensibilité aux fréquences (du son le plus aigu au son le plus grave) tout au long de cette membrane spirale ?",
+      "options": [
+        "La base (près de la fenêtre ovale) est large et souple pour détecter les fréquences très basses (200 Hz), tandis que l'apex (au bout de la spirale) est étroit et rigide pour détecter les hautes fréquences (20 000 Hz).",
+        "La base de la membrane basilaire est étroite et rigide, résonnant de façon optimale aux ondes de hautes fréquences (ex: 15 000 - 20 000 Hz), tandis que l'apex est large et souple, résonnant préférentiellement aux basses fréquences (ex: 200 - 500 Hz).",
+        "La membrane possède une rigidité uniforme de bout en bout ; la détection des fréquences repose exclusivement sur la longueur des liens apicaux (tip links) des cellules ciliées internes, qui s'allongent vers l'apex.",
+        "Les ondes de haute fréquence et de basse fréquence activent la membrane simultanément sur toute sa longueur, la séparation tonotopique s'effectuant uniquement au niveau du colliculus inférieur par soustraction de phase."
+      ],
+      "correct": 1,
+      "explanation": "La mécanique de la cochlée est une merveille d'ingénierie : à l'entrée (la base), la membrane est fine et tendue (rigide), parfaite pour vibrer aux sons très aigus (hautes fréquences). À l'autre bout (l'apex), elle est large et flasque, parfaite pour onduler sous l'effet des sons graves (basses fréquences)[cite: 3]."
+    },
+    {
+      "question": "Dans le mécanisme moléculaire de la transduction auditive et vestibulaire, comment l'inclinaison des stéréocils des cellules ciliées vers le kinocilium induit-elle une dépolarisation cellulaire massive ?",
+      "options": [
+        "L'inclinaison provoque la fusion des membranes des stéréocils, ouvrant de vastes pores non-sélectifs laissant fuir l'aspartate directement dans l'endolymphe.",
+        "La tension mécanique sur les liens apicaux (tip links) force l'ouverture des canaux de transduction cationiques, permettant l'entrée massive de potassium (K+) provenant de l'endolymphe fortement concentrée (+125 mV), ce qui dépolarise la cellule et ouvre les canaux calciques voltage-dépendants à sa base.",
+        "L'inclinaison comprime la strie vasculaire, ce qui active la libération d'acétylcholine sur la membrane tectoriale, provoquant un courant sodique lent par les récepteurs muscariniques.",
+        "Les stéréocils se détachent du kinocilium lors de l'inclinaison, levant ainsi l'inhibition tonique du canal chlore, ce qui hyperpolarise brièvement la cellule avant de déclencher un rebond excitateur."
+      ],
+      "correct": 1,
+      "explanation": "Le mouvement mécanique des cils tire sur les petits ressorts (liens apicaux) qui arrachent littéralement le clapet des canaux potassiques. Le K+ (qui est en quantité phénoménale dans l'endolymphe) entre dans la cellule, changeant son voltage (dépolarisation). Ce changement ouvre les canaux calcium à la base, déclenchant l'exocytose du neurotransmetteur vers le nerf auditif/vestibulaire[cite: 3, 4]."
+    },
+    {
+      "question": "La strie vasculaire (stria vascularis) est la « batterie » de l'oreille interne. Quelle pathologie majeure résulterait directement d'une ischémie isolée de cette structure épithéliale tapissant le canal cochléaire ?",
+      "options": [
+        "Une perte de la conduction osseuse pure (surdité de conduction) par calcification secondaire de l'étrier sur la fenêtre ovale.",
+        "Une surdité neuro-sensorielle profonde par incapacité à maintenir la haute concentration en potassium et le potentiel endocochléaire de +125 mV de l'endolymphe, rendant la dépolarisation des cellules ciliées impossible même si la membrane basilaire vibre.",
+        "Une hyperacousie sévère, la strie vasculaire étant responsable de la contraction réflexe du tenseur du tympan pour amortir les bruits dangereux.",
+        "Une paralysie isolée des cellules ciliées externes empêchant l'amplification cochléaire, mais avec préservation parfaite des cellules ciliées internes et du verrouillage de phase basse fréquence."
+      ],
+      "correct": 1,
+      "explanation": "La strie vasculaire pompe inlassablement le K+ dans l'endolymphe pour y maintenir un potentiel extrême (+125 mV) indispensable à la transduction. Si elle meurt (ischémie), l'endolymphe perd son voltage, et les cellules ciliées n'ont plus la « force électromotrice » pour se dépolariser. Résultat : une surdité neurosensorielle (centrale/oreille interne)[cite: 3]."
+    },
+    {
+      "question": "En neurophysiologie auditive de la localisation spatiale, comment l'olive supérieure médiane (OSM) de la protubérance parvient-elle à localiser précisément un son de basse fréquence (ex: 500 Hz) dans le plan horizontal (stéréoacousie binaurale) ?",
+      "options": [
+        "Elle calcule la différence d'intensité interaurale : le crâne bloque les basses fréquences, créant une ombre acoustique qui stimule fortement l'OSM ipsilatérale et inhibe totalement l'OSM controlatérale.",
+        "Elle agit comme un détecteur de coïncidence grâce à des lignes à retard axiales : elle compare le délai d'arrivée (déphasage temporel) de l'onde sonore entre l'oreille droite et l'oreille gauche en repérant quel neurone bipolaire spécifique de l'OSM reçoit les deux potentiels d'action simultanément.",
+        "Elle décompose le son via l'aire de Wernicke pour analyser la durée des harmoniques, en utilisant l'inhibition réciproque du lemnisque latéral opposé.",
+        "Elle se fie uniquement aux afférences unilatérales (monaurales) du noyau cochléaire dorsal, car les basses fréquences ne peuvent pas décusser dans le corps trapézoïde."
+      ],
+      "correct": 1,
+      "explanation": "Pour les sons graves, la longueur d'onde est si grande que l'intensité du son est presque la même aux deux oreilles (le crâne ne fait pas d'ombre). Le cerveau utilise donc le temps (délai interaural). Le son arrive une fraction de milliseconde plus tôt à l'oreille la plus proche. Les axones forment un circuit de délai (lignes à retard) dans l'OSM, et le neurone qui reçoit les deux signaux (D et G) en même temps s'allume, indiquant mathématiquement l'angle d'origine du son[cite: 3]."
+    },
+    {
+      "question": "Quelle structure auditive pontique est spécifiquement responsable de la localisation des sons de haute fréquence (>3000 Hz) dans le plan horizontal, et quel mécanisme physique du crâne rend cette analyse possible ?",
+      "options": [
+        "Le colliculus inférieur ; il exploite la réfraction osseuse des ondes pour calculer le déphasage absolu de la membrane tectoriale.",
+        "L'olive supérieure latérale (OSL) ; elle analyse la différence d'intensité interaurale, car les sons aigus ont une petite longueur d'onde et sont bloqués par la tête (créant une ombre acoustique), rendant le son plus fort d'un côté que de l'autre.",
+        "Le noyau ventral postérieur du nerf cochléaire (NVp) ; il utilise le verrouillage de phase (qui est optimal au-delà de 5000 Hz) pour générer des lignes à retard croisées.",
+        "Le corps genouillé médian (CGM) du thalamus ; il compare la durée d'activation bilatérale des CCVD de l'utricule et du canal horizontal."
+      ],
+      "correct": 1,
+      "explanation": "Pour les sons aigus, l'onde est petite. La tête agit comme un mur : elle bloque l'onde, créant une ombre sonore. Le son est donc physiquement plus fort dans l'oreille face à la source. L'Olive Supérieure Latérale (OSL) compare simplement cette intensité (plus d'excitation d'un côté = plus d'inhibition de l'autre) pour deviner d'où vient le son aigu[cite: 3]."
+    },
+    {
+      "question": "Lors d'un test d'audiométrie clinique (épreuve de Rinne et Weber), un patient rapporte que le son du diapason vibrant appliqué sur le sommet de son crâne (Weber) est entendu BEAUCOUP PLUS FORT du côté de son oreille DROITE malade. De plus, lors du test de Rinne sur cette oreille droite, la conduction osseuse (diapason sur la mastoïde) est perçue plus longtemps et plus fort que la conduction aérienne. Quel est le diagnostic audiologique ?",
+      "options": [
+        "Une surdité neuro-sensorielle droite sévère due à la destruction complète de l'organe de Corti (toxicité).",
+        "Une lésion tumorale comprimant le nerf cochléaire gauche (schwannome vestibulaire) dans l'angle ponto-cérébelleux.",
+        "Une surdité de conduction (transmission) droite, causée par exemple par un bouchon de cérumen majeur, une otite ou la fixation de la chaîne ossiculaire (otospongiose).",
+        "Une destruction bilatérale des noyaux cochléaires dorsaux dans le bulbe rachidien (AVC du tronc cérébral)."
+      ],
+      "correct": 2,
+      "explanation": "C'est la signature de la surdité de conduction. Rinne négatif (Os > Air) = problème mécanique externe ou moyen empêchant l'air de transmettre le son. Lors du Weber (sur le crâne, transmission osseuse directe), le son est entendu paradoxalement plus fort dans l'oreille malade (droite) parce qu'elle est isolée des bruits ambiants par le bouchon/problème et la cochlée intacte capte toute la vibration de l'os[cite: 3]."
+    },
+    {
+      "question": "Parmi les structures du système nerveux central liées à l'audition, quel noyau agit comme la plaque tournante d'intégration sensorimotrice et sert de centre de réflexe d'orientation, équivalent auditif du colliculus supérieur pour la vision ?",
+      "options": [
+        "Le noyau du faisceau trigéminé, qui commande les contractions spasmodiques du muscle tenseur du tympan.",
+        "Le colliculus inférieur (tectum mésencéphalique), qui reçoit les données binaurales convergentes et initie les réponses réflexes de la tête vers le stimulus sonore soudain.",
+        "Le corps genouillé médian du thalamus, qui inhibe la formation réticulaire pour favoriser le sommeil malgré le bruit ambiant.",
+        "Le ganglion spiralé de Corti, dont les corps cellulaires sont les seuls capables de décusser de façon monaurale vers la protubérance."
+      ],
+      "correct": 1,
+      "explanation": "Le colliculus inférieur (pour l'audition) et son frère le colliculus supérieur (pour la vision) se situent dans le toit du mésencéphale (tectum). Ils intègrent les signaux d'alerte pour commander (via la voie tectospinale) l'orientation rapide et réflexe de la tête vers ce qui vient de faire du bruit ou de bouger[cite: 1, 3]."
+    },
+    {
+      "question": "Le cortex auditif (aires 41, 42 et 22) présente une organisation hiérarchique complexe dans le traitement des sons. Quelle affirmation différencie correctement le cortex auditif primaire de l'aire de Wernicke ?",
+      "options": [
+        "Le cortex primaire décode exclusivement les sons de la nature et de la musique, tandis que l'aire de Wernicke reçoit directement les fibres du noyau cochléaire pour encoder toutes les fréquences de 20 à 20 000 Hz.",
+        "Le cortex primaire, caché dans la scissure de Sylvius (gyrus de Heschl), conserve une cartographie tonotopique rigide pour analyser les caractéristiques de base de l'onde (hauteur, intensité), alors que l'aire de Wernicke (cortex associatif) décode l'aspect temporel, phonologique et sémantique pour donner un sens au langage.",
+        "Le cortex primaire ne s'occupe que de l'inhibition des bruits de notre propre motricité vocale (feed-back sonore), alors que Wernicke contrôle les mouvements articulatoires de la bouche via la voie corticobulbaire.",
+        "L'aire de Wernicke analyse uniquement la différence de phase (OSM) pour la localisation stéréoacousique, fonction que le cortex primaire, totalement amorphe, est incapable de réaliser."
+      ],
+      "correct": 1,
+      "explanation": "Le cortex primaire (A1, gyrus de Heschl) est la porte d'entrée : il analyse le son brut (fréquence pure selon sa tonotopie conservée depuis la cochlée). L'aire de Wernicke, plus en arrière, est un cortex associatif de haut niveau : elle assemble ces sons, analyse leur rythme (séquences temporelles) et les associe à une banque de mémoire pour comprendre que ce son = un mot = une signification (langage)[cite: 3]."
+    },
+    {
+      "question": "Le système vestibulaire est spécialisé dans la détection des accélérations de la tête par rapport à l'environnement. Quelle affirmation définit le principe biophysique fondamental régissant cette détection ?",
+      "options": [
+        "La détection repose sur la sécrétion active de liquide cérébro-spinal par les cellules de soutien lors d'une rotation, inversant la pression périlymphatique sur la fenêtre ovale.",
+        "Les récepteurs vestibulaires détectent exclusivement la vitesse absolue du mouvement. Si un individu voyage en avion à une vitesse constante de 800 km/h en ligne droite, le nerf vestibulaire déchargera à sa fréquence maximale de 160 potentiels/sec pour le signaler au thalamus.",
+        "Le système repose sur l'inertie des fluides et des masses gélatineuses : il détecte les changements de vitesse (accélération/décélération), mais subit un phénomène d'adaptation (silence électrique relatif) lors de mouvements rotatoires ou linéaires à vitesse constante prolongée.",
+        "La gravité terrestre, bien qu'étant une accélération de 9,8 m/s², est totalement ignorée par l'utricule et le saccule grâce au filtrage de la strie vasculaire de la cochlée, afin de ne pas saturer le noyau de Scarpa."
+      ],
+      "correct": 2,
+      "explanation": "C'est la règle d'or du système vestibulaire : il réagit à l'accélération (les changements). En raison de l'inertie, le liquide ou les otolithes « restent en arrière » au début du mouvement, ce qui plie les cils. Si la vitesse devient constante (ex: train de croisière), l'inertie disparaît, les fluides tournent à la même vitesse que la tête, les cils se redressent et la détection de mouvement cesse (adaptation). La gravité, elle, est une accélération constante qui ne s'arrête jamais, elle ne subit donc aucune adaptation et fournit le signal de la verticale en tout temps[cite: 3, 4]."
+    },
+    {
+      "question": "Dans l'ampoule d'un canal semi-circulaire, les cils de toutes les cellules ciliées sont orientés dans la même direction (polarisation uniforme de la cupule). Quelle est la conséquence physiologique de cette disposition lors d'une rotation de la tête ?",
+      "options": [
+        "Elle provoque l'excitation de la moitié des cellules de la cupule et l'inhibition de l'autre moitié, créant un signal sinusoïdal permettant d'analyser les micro-vibrations de haute fréquence.",
+        "Elle assure que la masse d'endolymphe repoussant la cupule par inertie excitera (dépolarisera) TOUTES les cellules de ce canal simultanément, tout en inhibant TOUTES les cellules de son canal homologue dans l'oreille opposée (mécanisme « push-pull »).",
+        "Elle empêche les canaux potassiques de s'ouvrir complètement, limitant le taux de décharge à 90 spikes/sec pour éviter l'épuisement du glutamate synaptique lors d'une valse.",
+        "Elle permet au canal de détecter simultanément les rotations et les translations linéaires, fusionnant les fonctions de l'utricule et de l'ampoule dans une seule afférence."
+      ],
+      "correct": 1,
+      "explanation": "Parce qu'ils sont tous orientés du même côté dans une ampoule donnée, une poussée de l'endolymphe dans le bon sens pliera TOUS les cils vers leur kinocil : l'ampoule entière décharge au maximum. À l'opposé, l'oreille controlatérale (dont les cils sont tournés dans l'autre sens anatomique) verra toute son ampoule inhibée simultanément. Ce jeu de balancier informe finement le cerveau sur la direction[cite: 3, 4]."
+    },
+    {
+      "question": "Les macules otolithiques (utricule et saccule) se différencient des crêtes ampullaires des canaux semi-circulaires par la présence d'une structure anatomique de référence : la striola. Quel est le rôle de la striola dans l'encodage sensoriel vestibulaire ?",
+      "options": [
+        "Elle sécrète le carbonate de calcium formant les otocanies (otolithes) de manière cyclique, remplaçant les cristaux perdus lors de traumatismes crâniens mineurs.",
+        "Elle agit comme une barrière imperméable séparant l'endolymphe riche en sodium de la périlymphe riche en potassium au sein du saccule.",
+        "Elle sépare la macule en deux régions où l'orientation morphologique des cils (polarisation) est opposée : un déplacement des otolithes excitera ainsi les cellules d'un côté de la striola tout en inhibant simultanément celles de l'autre côté.",
+        "Elle est composée de fibres intrafusales qui contractent la membrane gélatineuse pour ajuster le gain du réflexe vestibulo-spinal lors du maintien d'une posture penchée vers l'avant."
+      ],
+      "correct": 2,
+      "explanation": "La striola est une ligne imaginaire. Les cellules ciliées de l'utricule/saccule sont orientées de façon à faire face à cette ligne. Ainsi, lors d'un déplacement des lourds otolithes sur la membrane (ex: un coup de frein en voiture), les cils d'une moitié de la macule s'approchent du kinocil (excitation) pendant que l'autre moitié de la même macule s'en éloigne (inhibition). Cela permet à un seul organe de coder avec précision les directions opposées[cite: 4]."
+    },
+    {
+      "question": "Un astronaute en mission orbitale prolongée (apesanteur totale, microgravité) réalise une série de mouvements de tête. Lequel des stimuli vestibulaires suivants sera presque totalement ABOLI dans cet environnement sans gravité, perturbant gravement son sens de l'orientation statique ?",
+      "options": [
+        "La détection de l'accélération rotatoire lors d'un hochement de la tête (mouvement de 'oui') par les canaux semi-circulaires verticaux (antérieur et postérieur).",
+        "La décharge phasique de l'organe tendineux de Golgi (OTG) lors de la contraction réflexe croisée de ses mollets.",
+        "La décharge tonique continue du saccule signalant l'axe de la verticale absolue (le 'haut' et le 'bas') par le poids constant exercé sur la membrane otolithique.",
+        "L'inhibition réciproque médiée par le faisceau longitudinal médian (FLM) entre le noyau de l'abducens (VI) et de l'oculomoteur (III) lors d'une saccade horizontale volontaire."
+      ],
+      "correct": 2,
+      "explanation": "En orbite, il n'y a (presque) plus d'accélération gravitationnelle terrestre (pesanteur). Les organes otolithiques (utricule/saccule) sont conçus pour que le poids de leurs otolithes tire constamment sur les cils vers le « bas » pour informer le cerveau de la verticale. Sans ce poids, ce signal tonique vital disparaît, causant le mal de l'espace et la perte de repère statique. Les canaux semi-circulaires (rotation par inertie de l'endolymphe) continuent de fonctionner normalement[cite: 4]."
+    },
+    {
+      "question": "En neuro-anatomie vestibulaire centrale, les afférences du nerf vestibulaire (VIII) se projettent massivement sur les noyaux vestibulaires du tronc cérébral. Quelle structure majeure du SNC reçoit également des afférences primaires DIRECTES du nerf vestibulaire (sans faire de relais synaptique préalable dans le noyau vestibulaire de la protubérance) pour assurer un ajustement continu de l'équilibre ?",
+      "options": [
+        "Le corps genouillé médian (CGM) du thalamus controlatéral, pour garantir la perception consciente avant toute action réflexe.",
+        "Le cervelet, plus particulièrement le lobe flocculo-nodulaire (vestibulo-cervelet) et certaines portions du vermis.",
+        "La corne antérieure de l'intumescence lombaire, déclenchant le réflexe myotatique monosynaptique d'extension.",
+        "L'aire motrice supplémentaire (AMS) de l'hémisphère cérébral droit, indépendamment du côté stimulé."
+      ],
+      "correct": 1,
+      "explanation": "Bien que la majorité des axones sensitifs bipolaires (ganglion de Scarpa) du nerf VIII aboutissent aux noyaux vestibulaires (tronc cérébral), une branche importante contourne ce relais et projette ses axones DIRECTEMENT au cervelet (flocculus, nodulus, vermis) pour lui fournir l'état brut de l'équilibre en temps réel[cite: 3, 4]."
+    },
+    {
+      "question": "Le réflexe vestibulo-oculaire (RVO) horizontal permet de garder les yeux fixés sur une cible lors d'une rotation de la tête. Quelle est la séquence synaptique et anatomique précise de ce circuit lors d'une rotation brusque de la tête vers la DROITE ?",
+      "options": [
+        "Activation canal droit -> Noyau vestibulaire D -> Activation noyau VI Droit (Abducens) -> Contraction du droit externe Droit, et via FLM contraction du droit interne Gauche. Les yeux vont vers la Droite.",
+        "Inhibition canal droit -> Noyau vestibulaire D -> Activation noyau colliculaire supérieur -> Mouvement compensatoire vertical vers le bas des deux yeux.",
+        "Activation canal droit -> Noyau vestibulaire D -> Activation noyau VI Gauche -> Contraction muscle Droit Externe Gauche ET (via interneurones décussant dans le FLM) activation du noyau III Droit pour contraction du muscle Droit Interne Droit. Les deux yeux dévient conjuguément vers la GAUCHE.",
+        "Activation canal gauche (par inertie) -> Noyau vestibulaire G -> Inhibition PPRF gauche -> Absence de mouvement des globes oculaires par annulation cérébelleuse."
+      ],
+      "correct": 2,
+      "explanation": "La tête tourne à droite = le canal droit est excité. Le but du RVO est de corriger le tir en bougeant les yeux dans le SENS OPPOSE (vers la gauche) pour ne pas perdre la cible. Le noyau vestibulaire droit ordonne donc au nerf VI (Abducens) GAUCHE de tirer l'œil gauche vers l'extérieur (Droit Externe Gauche). Simultanément, le noyau VI gauche envoie un signal via le FLM au noyau III Droit, qui ordonne à l'œil droit de regarder vers le nez (Droit Interne Droit). Résultat : les 2 yeux glissent vers la gauche parfaitement synchronisés[cite: 3, 4]."
+    },
+    {
+      "question": "Cas clinique de neuro-ophtalmologie : Un patient présente un regard conjugué volontaire NORMAL (il peut regarder à droite et à gauche sur demande). Cependant, lors d'un Head Impulse Test (rotation brusque de la tête) ou lors d'un test calorique (eau froide ou chaude) de ses deux oreilles, ses globes oculaires restent strictement fixes et au milieu des orbites (aucun RVO déclenché). Où se situe l'atteinte bilatérale responsable de ce tableau ?",
+      "options": [
+        "Lésion bilatérale du Faisceau Longitudinal Médian (FLM) (Ophtalmoplégie Internucléaire bilatérale).",
+        "Lésion bilatérale de la Formation Réticulée Paramédiane Pontique (PPRF), centre du regard horizontal.",
+        "Lésion toxique ou destructrice des deux labyrinthes périphériques ou des deux nerfs vestibulaires (VIII) bloquant l'afférence de détection.",
+        "Lésion supranucléaire bilatérale des Champs Oculomoteurs Frontaux (FEF) corticaux."
+      ],
+      "correct": 2,
+      "explanation": "Si le patient peut bouger ses yeux volontairement (le circuit cortex -> PPRF -> VI/III est intact), le problème vient du déclencheur réflexe. L'absence totale de réponse aux rotations ou au test calorique indique que le système de détection périphérique de la tête est sourd (ex: destruction des cellules ciliées vestibulaires par des antibiotiques ototoxiques comme la gentamicine). Le signal de rotation n'arrive jamais au tronc cérébral[cite: 3, 4]."
+    },
+    {
+      "question": "Analyse du réflexe calorique chez un patient comateux avec tronc cérébral INTACT : Vous instillez de l'eau FROIDE dans le conduit auditif externe de son oreille DROITE. En considérant les propriétés thermiques de l'endolymphe, quelle est la réponse vestibulaire oculaire LENTE attendue et pourquoi ?",
+      "options": [
+        "L'eau froide crée un courant de convection descendant dans le canal externe, mimant une inhibition du canal droit. Le cerveau interprète (à tort) que la tête tourne vers la gauche (côté non inhibé) et corrige par une déviation conjuguée LENTE des deux yeux vers la DROITE.",
+        "L'eau froide excite massivement la macule de l'utricule, induisant un nystagmus purement rotatoire des deux yeux vers le bas (réflexe otolithique).",
+        "L'eau froide stimule le canal droit par réchauffement paradoxal de la paroi osseuse, déclenchant une déviation lente des yeux vers la GAUCHE.",
+        "L'eau froide abolit temporairement la conduction du nerf facial (VII) dans le conduit auditif interne, provoquant un spasme du muscle tenseur du tympan sans affecter les globes oculaires."
+      ],
+      "correct": 0,
+      "explanation": "C'est la base du test calorique : le froid dans l'oreille D mime un arrêt/inhibition du canal droit. Le cerveau, recevant un signal normal à gauche et rien à droite, déduit que la tête est en train de tourner vers la gauche. Le RVO fait alors son travail et corrige lentement le regard en le faisant dévier vers l'oreille stimulée (ici, la DROITE)[cite: 4]."
+    },
+    {
+      "question": "Ophtalmoplégie internucléaire (OIN) : Un patient atteint de sclérose en plaques présente une lésion démyélinisante isolée du Faisceau Longitudinal Médian (FLM) DROIT. Quel tableau clinique oculaire précis observerez-vous lorsqu'on lui demandera de regarder volontairement vers sa GAUCHE (et comment sera sa convergence) ?",
+      "options": [
+        "Le patient ne pourra faire aucun mouvement avec ses deux yeux vers la gauche (paralysie conjuguée), et la convergence sera complètement abolie.",
+        "L'œil gauche ira bien vers l'extérieur (gauche), mais l'œil droit restera bloqué sur la ligne médiane (incapable de regarder vers la gauche / adduction déficitaire). La convergence (qui n'utilise pas le FLM) demeurera préservée et l'œil droit pourra loucher vers le nez.",
+        "L'œil droit ira bien vers l'intérieur (gauche), mais l'œil gauche refusera de sortir en abduction à cause d'une paralysie du nerf VI, avec une convergence normale.",
+        "Les deux yeux regarderont normalement vers la gauche, mais dériveront lentement vers le haut (nystagmus « up-beat ») en raison d'une compensation du noyau interstitiel de Cajal."
+      ],
+      "correct": 1,
+      "explanation": "Le FLM droit sert d'autoroute pour transmettre l'ordre du nerf VI (gauche) vers le nerf III (droit) lors d'un regard à gauche. Si l'autoroute est coupée, l'œil gauche sort bien (VI gauche intact), mais le signal n'arrive jamais au III droit : l'œil droit ne suit pas et reste au milieu (créant une diplopie). La convergence reste normale car son signal tombe directement du haut sur les noyaux du III sans emprunter la route ascendante du FLM[cite: 4]."
+    },
+    {
+      "question": "Syndrome de Foville (atteinte du PPRF) : Un infarctus pontique paramédian détruit complètement le PPRF (Centre du regard horizontal) DROIT de votre patient, ainsi que le noyau du nerf VI droit adjacent. Quel est le déficit de la motricité oculaire conjuguée ?",
+      "options": [
+        "Incapacité totale et permanente pour les DEUX YEUX de regarder vers la DROITE (ni volontairement, ni de façon réflexe via un mouvement de tête vers la gauche). Le regard vers la gauche demeure normal.",
+        "Seul l'œil droit est incapable de regarder à droite (perte de l'abduction) ; l'œil gauche se déplace normalement à droite grâce au noyau du III intact, causant une diplopie sévère.",
+        "Le patient est incapable de converger et présente un ptosis (paupière tombante) majeur de l'œil droit associé à une pupille dilatée aréflexique.",
+        "Les yeux du patient sont déviés de force et en permanence de manière conjuguée vers la droite, car la lésion détruit le tonus inhibiteur du PPRF."
+      ],
+      "correct": 0,
+      "explanation": "Le PPRF est le chef d'orchestre du regard conjugué pour son côté. S'il est détruit à droite, il ne peut plus envoyer d'ordre au VI droit (ni au III gauche via le FLM). Le résultat est implacable : le patient ne peut générer AUCUN mouvement des deux yeux vers la droite, ni sur commande, ni par le RVO. Ses yeux sont typiquement déviés vers le côté sain (regardent la lésion hémisphérique, ou fuient la lésion du tronc)[cite: 4]."
+    },
+    {
+      "question": "Atteinte du nerf III (Oculomoteur) commun : Un anévrisme de l'artère communicante postérieure comprime sévèrement le nerf crânien III DROIT dans son trajet périphérique. Laquelle de ces constatations cliniques confirmera ce diagnostic spécifique par rapport à une lésion internucléaire (FLM) ?",
+      "options": [
+        "L'œil droit est incapable de regarder vers la gauche (adduction déficitaire) et le patient présente une diplopie au regard gauche, MAIS la convergence est parfaitement normale et la pupille droite est petite (myosis).",
+        "L'œil droit est totalement immobile et fixé en adduction (il louche vers le nez), la pupille est réactive et la paupière est grande ouverte (rétraction palpébrale).",
+        "L'œil droit ne peut ni regarder en haut, ni en bas, ni vers le nez (regard à gauche déficitaire). Le patient présente également une perte complète de la convergence, un ptosis complet (œil fermé) et une pupille dilatée non-réactive à droite.",
+        "Le patient ne peut pas regarder vers la droite avec ses deux yeux, et la stimulation calorique froide de l'oreille gauche n'induit aucun nystagmus correcteur."
+      ],
+      "correct": 2,
+      "explanation": "Le nerf III est un nerf massif qui fait « presque tout ». Il lève la paupière, contracte la pupille (parasympathique), fait converger et fait bouger l'œil en haut, en bas et en dedans. S'il est écrasé, on perd tout ça : ptosis (paupière tombe), mydriase (pupille grosse), œil qui regarde « down and out » (car seuls le IV et le VI fonctionnent encore), et incapacité à converger. (C'est différent du FLM où seule l'adduction horizontale est touchée, la convergence et la pupille restant normales)[cite: 4]."
+    },
+    {
+      "question": "Paralysie du nerf VI (Abducens) : Un patient diabétique se plaint de voir double (diplopie horizontale) lorsqu'il regarde au loin, particulièrement lorsqu'il tente de regarder les objets situés à sa GAUCHE. À l'examen, lorsque vous lui demandez de regarder à gauche, son œil droit rentre bien vers le nez, mais son œil gauche reste figé au milieu. Quel muscle et quel nerf sont atteints ?",
+      "options": [
+        "Muscle Droit Interne gauche innervé par le nerf crânien III gauche.",
+        "Muscle Droit Externe gauche (rectus latéral) innervé par le nerf crânien VI gauche.",
+        "Muscle Petit Oblique (oblique inférieur) gauche innervé par le nerf crânien IV gauche.",
+        "Muscle Droit Externe droit innervé par le nerf crânien VI droit, générant un effet miroir paradoxal à la vision."
+      ],
+      "correct": 1,
+      "explanation": "L'incapacité d'un seul œil (le gauche) à s'éloigner du nez (abduction vers l'extérieur) lors du regard du même côté (regard à gauche) signe une paralysie du muscle Droit Externe (latéral) de cet œil, innervé par son propre nerf VI (Abducens) gauche. C'est une neuropathie diabétique classique du VI[cite: 4]."
+    },
+    {
+      "question": "Lésion supranucléaire (FEF) : Un patient victime d'un AVC ischémique cortico-sous-cortical touchant massivement l'hémisphère DROIT, détruisant son Champ Oculomoteur Frontal (Frontal Eye Field - FEF) droit, est évalué aux urgences. Quelle sera l'altération oculomotrice constatée lors des mouvements oculaires volontaires (saccades) versus les mouvements réflexes (RVO oculo-céphalique) ?",
+      "options": [
+        "Le patient ne pourra pas regarder volontairement vers sa GAUCHE (déviation conjuguée des yeux vers la droite, « il regarde sa lésion »), MAIS si l'on tourne sa tête rapidement vers la droite, ses yeux dévieront réflexivement vers la gauche de façon normale (RVO préservé).",
+        "Le patient sera incapable d'exécuter un RVO calorique à l'eau froide à droite, mais ses saccades volontaires vers la droite et la gauche seront rapides, fluides et d'amplitude normale.",
+        "Les yeux seront figés fixement vers la gauche de façon permanente, avec une perte bilatérale totale du réflexe de convergence et d'accommodation pupillaire, signant l'engagement temporal.",
+        "Le patient présentera une diplopie verticale sévère au regard vers le bas et l'intérieur, typique de l'atteinte compensatoire de l'aire motrice supplémentaire face médiale."
+      ],
+      "correct": 0,
+      "explanation": "C'est la beauté du diagnostic neurologique topographique : le cortex commande (FEF), le tronc exécute (RVO). Un AVC cortical détruit la capacité du FEF droit à « pousser » les yeux vers la gauche (le patient regarde sa lésion à droite). Mais si le médecin tourne brusquement la tête du patient vers la droite, le tronc cérébral (VIII, VI, III, PPRF), resté intact en bas, déclenchera le réflexe vestibulo-oculaire (les yeux de poupée) et les yeux bougeront vers la gauche ! Cela prouve que le problème est en haut (supranucléaire) et non dans les nerfs crâniens[cite: 4]."
+    },
+    {
+      "question": "Quelle affirmation décrit avec précision l'exécution du réflexe vestibulo-cervical (RVC) et sa finalité physiologique lors d'une chute brutale vers l'avant (rotation rapide de la tête vers le bas) ?",
+      "options": [
+        "La chute active les récepteurs de l'organe tendineux de Golgi du cou, qui transmettent un PPSI massif inhibant les MNI de l'extension cervicale pour favoriser une roulade protectrice (flexion du cou).",
+        "La rotation vers le bas détectée par les canaux semi-circulaires (antérieurs) active le noyau vestibulaire médian. Le signal descend bilatéralement par la voie vestibulo-spinale médiane (FLM) pour provoquer l'extension brusque des muscles du cou (redressement de la tête) et des bras pour protéger la face de l'impact.",
+        "La gravité linéaire ressentie par la macule du saccule inhibe les voies réticulospinales ipsilatérales, déclenchant une paraparésie flasque transitoire pour amortir l'onde de choc sur le squelette axial.",
+        "La désorientation spatiale active le colliculus supérieur (tectum) qui, via la voie tecto-spinale croisée, ferme violemment les paupières et déclenche le réflexe stapédien (nerf VII) en prévision du bruit du choc."
+      ],
+      "correct": 1,
+      "explanation": "Le RVC s'occupe de la stabilité de la tête (la tour de contrôle de la vision). Si on trébuche vers l'avant, la tête pique. Les canaux semi-circulaires avertissent le noyau vestibulaire médian, qui envoie un signal urgent (via le FLM descendant) pour contracter tous les extenseurs du cou et jeter les bras en avant (sauver le visage et repositionner les yeux)[cite: 4]."
+    },
+    {
+      "question": "Le réflexe vestibulo-spinal (RVS) est impliqué de façon primordiale dans l'évitement de la chute en corrigeant une posture corporelle déstabilisée. Quel est le substrat anatomo-fonctionnel de ce réflexe lorsque vous perdez subitement l'équilibre vers la DROITE ?",
+      "options": [
+        "Les canaux semi-circulaires horizontaux sont inhibés, désactivant la voie rubro-spinale et relâchant les muscles distaux de la main pour s'agripper à un objet imaginaire.",
+        "L'information de déviation de la verticale est captée principalement par les organes otolithiques (utricule/saccule) ; elle active le noyau vestibulaire latéral qui, via la voie vestibulo-spinale latérale non croisée (cordon antérieur), déclenche la contraction monosynaptique puissante des muscles extenseurs (antigravitaires) de la jambe droite pour repousser le sol.",
+        "La rotation corporelle excite l'olive supérieure médiane (OSM) qui projette sur la formation réticulaire, déclenchant un réflexe poly-synaptique bilatéral d'extension croisée (la jambe gauche s'étend pour compenser la chute à droite).",
+        "L'anticipation visuelle de la chute par les lobes occipitaux transmet une commande de flexion des membres du côté de la chute au cervelet flocculo-nodulaire, annulant toute intervention médullaire spastique."
+      ],
+      "correct": 1,
+      "explanation": "Le RVS (latéral) est le sauveur de l'équilibre corporel. Le dérèglement de la gravité est détecté (surtout par les otolithes). L'ordre descend de ce même côté (ipsilatéral) pour étendre de toutes nos forces les muscles antigravitaires du côté où l'on tombe pour bloquer la chute (tout en inhibant les fléchisseurs). C'est purement mécanique et localisé (tronc/moelle)[cite: 4]."
+    },
+    {
+      "question": "Interaction vestibulo-cérébelleuse : Le spino-cervelet (Vermis) et le vestibulo-cervelet (Flocculus et Nodulus) agissent de concert pour calibrer notre équilibre. Quelle est l'utilité fonctionnelle MAJEURE de cette rétroaction (feed-back) cérébelleuse inconsciente sur les noyaux vestibulaires (VIII) profonds du tronc cérébral ?",
+      "options": [
+        "Elle inhibe de manière absolue les noyaux vestibulaires pendant le sommeil paradoxal (REM) pour éviter que les rêves de chute ne déclenchent des réflexes de décérébration violents et réveillent le dormeur.",
+        "Elle intègre les données vestibulaires, visuelles et proprioceptives pour corriger les erreurs de mouvement en direct, ajuster finement le « gain » des réflexes (RVO, RVS) face à de nouvelles situations (lunettes grossissantes, apprentissage de la marche, usure périphérique de la cochlée) et empêcher l'incoordination (dysmétrie).",
+        "Elle convertit la différence de phase (analysée par les noyaux cochléaires) en potentiels synaptiques lents (PPSI) transmis par l'acide gamma-aminobutyrique, provoquant l'ataxie temporaire typique de l'ivresse.",
+        "Elle synthétise la représentation consciente (thalamocorticale) du vertige rotatoire dans l'aire de Wernicke pour permettre la verbalisation du malaise et son enregistrement mémoriel à long terme."
+      ],
+      "correct": 1,
+      "explanation": "Le cervelet est le cerveau de l'adaptation et de l'apprentissage moteur. Les réflexes du tronc cérébral sont bruts. Le cervelet reçoit les copies de ce qui se passe (œil, oreille, muscles) et envoie des micro-corrections (le plus souvent inhibitrices via les cellules de Purkinje) aux noyaux vestibulaires pour que le mouvement soit doux, précis, et calibré à la réalité (ex: apprendre à marcher sur un pont suspendu sans tomber)[cite: 4]."
+    },
+    {
+      "question": "Le cortex associatif (incluant le CVPI - cortex vestibulaire pariéto-insulaire) permet la perception CONSCIENTE du mouvement et de la position dans l'espace. Quel phénomène illusoire classique de la vie quotidienne démontre parfaitement le rôle d'intégration multisensorielle (vision prépondérante sur le silence vestibulaire) de ce cortex supérieur ?",
+      "options": [
+        "Le phénomène de l'audition tonotopique, où une basse fréquence (200 Hz) stimule l'apex de la cochlée mais est perçue comme un aigu (15 000 Hz) si les yeux sont bandés et que le patient est couché.",
+        "Le vertige paroxystique positionnel (VPPB), où le simple fait de tourner la tête dans son lit déclenche une violente sensation de chute dans le vide en absence de lésion centrale, causée par la fuite d'endolymphe dans la caisse du tympan.",
+        "L'impression d'avancer (ou de reculer) à grande vitesse, ressentie physiquement par le corps, lorsqu'on est assis immobile dans un train à l'arrêt et que l'on regarde fixement le train voisin démarrer doucement par la fenêtre.",
+        "Le clonus inépuisable du tendon d'Achille provoqué par la vue d'une marche d'escalier inégale, résultat de la désinhibition de l'Aire Motrice Supplémentaire (AMS)."
+      ],
+      "correct": 2,
+      "explanation": "Le cortex intègre tout pour décider ce qu'il ressent. Si le système vestibulaire (dans la gare à l'arrêt) dit « on ne bouge pas (silence vestibulaire/pas d'accélération) », mais que le système visuel (qui prend 80% de l'attention du cerveau) voit le train voisin bouger et crie « on bouge ! », le cortex donne souvent raison à la vision et nous donne l'illusion forte et viscérale (vertige) que c'est nous qui avons reculé ou avancé[cite: 4]."
+    },
+    {
+      "question": "Lors d'un vertige induit par l'alcool (ou nystagmus de positionnement alcoolique), pourquoi un patient allongé ressent-il que « la chambre tourne » de façon incontrôlable ?",
+      "options": [
+        "L'alcool, toxine cérébelleuse par excellence, détruit temporairement les cellules de Purkinje du lobe flocculo-nodulaire, abolissant toute coordination des muscles extra-oculaires et de l'accomodation cristallinienne.",
+        "L'alcool diminue la densité de la cupule de l'ampoule (qui devient plus légère que l'endolymphe ambiante). Si la tête s'incline, la gravité (qui ne devrait pas affecter les canaux) fait dériver la cupule allégée vers le haut, créant un faux signal massif de rotation continue envoyé aux noyaux vestibulaires.",
+        "L'alcool induit une paralysie spastique bilatérale de la musculature cervicale (réflexe vestibulo-cervical inversé), ce qui secoue mécaniquement le crâne et les labyrinthes de manière imperceptible mais constante.",
+        "L'alcool se fixe chimiquement sur les récepteurs GABA de la synapse neuromusculaire des motoneurones alpha spinaux, induisant une décharge asynchrone des unités S (tremblements) interprétée comme un vertige par le cortex sensitif."
+      ],
+      "correct": 1,
+      "explanation": "C'est la fameuse « ivresse de la cupule ». En temps normal, la cupule a la même densité (poids) que l'endolymphe dans laquelle elle baigne, donc elle ne flotte ni ne coule (elle ignore la gravité, seul l'inertie l'affecte). L'alcool diffuse vite du sang à la cupule, l'allège. Elle se met à flotter comme un bouchon de liège si on penche la tête (en se couchant), pliant les cils. Le cerveau reçoit un signal de rotation à 160 km/h alors qu'on est immobile. La chambre tourne[cite: 4]."
+    },
+    {
+      "question": "Considérant l'anatomie et la neurophysiologie des nerfs spinaux selon la segmentation vertébrale, quelle est la raison anatomique pour laquelle une ponction lombaire (pour prélever du LCS) est effectuée en toute sécurité en dessous de la vertèbre L2 chez l'adulte ?",
+      "options": [
+        "La moelle épinière descend jusqu'au sacrum, mais les faisceaux spino-thalamiques de la douleur nociceptive s'arrêtent net en T12, rendant la procédure indolore.",
+        "Le renflement lombaire (intumescence), contenant des millions de motoneurones inférieurs fragiles de la voie corticospinale ventrale, occupe la totalité de l'espace dural jusqu'au coccyx, imposant de piquer délicatement entre les racines.",
+        "La moelle épinière solide (matière blanche et grise) se termine physiologiquement en un cône médullaire situé typiquement à la hauteur vertébrale L1-L2. En dessous, le sac dural ne contient que des racines nerveuses lâches flottant dans le LCS (la queue de cheval), qui fuient l'aiguille sans dommage central.",
+        "Le canal rachidien lombaire est fusionné par l'ossification du filum terminal interne, forçant l'anesthésiste à percer les disques intervertébraux de l'axe central pour drainer l'hypertension endocrânienne."
+      ],
+      "correct": 2,
+      "explanation": "Le squelette grandit plus vite que la moelle. À l'âge adulte, le bas de la moelle (le cône terminal contenant les derniers motoneurones) s'arrête entre la 1ère et 2ème vertèbre lombaire (L1-L2). En dessous, il n'y a plus de moelle compacte, juste un grand sac de liquide (LCS) avec des câbles nerveux qui y pendent (la queue de cheval, racines lombo-sacrées). Piquer en L3/L4 ou L4/L5 est sûr car l'aiguille ne peut pas empaler la moelle[cite: 2]."
+    },
+    {
+      "question": "Concernant le système moteur autonomique par rapport au système moteur somatique (squelettique), quelle distinction neuro-anatomique majeure caractérise la voie efférente périphérique du système nerveux autonome (SNA) innervant par exemple le cœur ou l'intestin ?",
+      "options": [
+        "Le SNA ne possède aucune voie descendante hypothalamique et est contrôlé exclusivement par des arcs réflexes locaux intraspéniques impliquant les cellules de Renshaw du faisceau spino-cérébelleux.",
+        "Contrairement au système moteur squelettique dont le MNI relie directement le SNC à la fibre musculaire de la plaque motrice (une seule synapse périphérique), la voie efférente du SNA est constituée d'une chaîne de DEUX neurones périphériques (préganglionnaire puis postganglionnaire) faisant un relais synaptique dans un ganglion autonome avant d'atteindre l'organe cible.",
+        "La motricité autonomique est l'unique subdivision du système nerveux capable d'inhiber le motoneurone supérieur (voie cortico-spinale latérale) lors d'un effort de digestion intense.",
+        "Le SNA recrute exclusivement des unités motrices FF de grand diamètre pour produire une libération massive de noradrénaline synchrone (25 Hz) sur tous les vaisseaux sanguins en moins de 10 ms."
+      ],
+      "correct": 1,
+      "explanation": "La motricité squelettique est directe : le motoneurone (câble) part de la moelle et va se brancher directement sur le muscle. Le système autonome (cœur, viscères, sueur) utilise un relais : un premier neurone sort de la moelle (préganglionnaire), s'arrête dans une gare (le ganglion autonome), et passe le relais (synapse) à un deuxième neurone (postganglionnaire) qui, lui, ira faire le travail sur l'organe[cite: 1, 2]."
+    },
+    {
+      "question": "L'homonculus sensitif du cortex pariétal et l'homonculus moteur du cortex frontal sont souvent comparés. Quelle affirmation met en évidence la complémentarité de leur organisation somatotopique pour l'exécution d'un mouvement précis (ex: saisir un verre d'eau) ?",
+      "options": [
+        "Ils sont situés sur la même circonvolution cérébrale (gyrus cingulaire), ce qui permet à l'organe tendineux de Golgi d'inhiber instantanément l'envie de boire en cas de brûlure thermique de la main.",
+        "L'homonculus moteur représente la densité des fuseaux neuromusculaires, alors que le sensitif représente exclusivement la représentation de l'audition tonotopique cochléaire, facilitant la coordination des claquements de dents.",
+        "La vaste représentation motrice de la main (pour la dextérité des doigts) dans l'aire 4 fait directement face à la vaste représentation sensitive de la main (pour l'analyse tactile fine de la pression du verre) dans l'aire 3, 1, 2, séparées par le sillon central, permettant une rétroaction sensitivo-motrice rapide et puissante.",
+        "L'homonculus sensitif est totalement dépourvu de la représentation des membres inférieurs (jambes), forçant le cortex moteur à se fier uniquement aux réflexes vestibulo-spinaux pour la marche, ignorant le feedback tactile plantaire."
+      ],
+      "correct": 2,
+      "explanation": "De part et d'autre de la vallée centrale (Rolando), la carte sensorielle (en arrière) et la carte motrice (en avant) se font face, avec une organisation topographique similaire (les pieds en haut, la bouche et les mains au milieu). La taille gigantesque accordée à la main pour le mouvement fin (côté moteur) correspond à la taille gigantesque de la main pour le toucher (côté sensitif). C'est indispensable : on ne peut manipuler finement un objet (Moteur) sans ressentir parfaitement sa friction (Sensitif)[cite: 2]."
+    },
+    {
+      "question": "Lors d'une crise d'épilepsie partielle simple touchant le cortex moteur primaire (Crise Bravais-Jacksonienne), le neurologue observe que les secousses cloniques involontaires débutent au niveau du pouce du patient, s'étendent rapidement au poignet, puis à l'avant-bras, à l'épaule et finalement au visage. Quelle conclusion neurophysiologique (issue des travaux de Jackson et Penfield) ce patron de progression permet-il de tirer ?",
+      "options": [
+        "La décharge électrique se propage aléatoirement dans le liquide cérébro-spinal, activant de manière diffuse les nerfs crâniens du tronc cérébral sans respecter d'ordre anatomique cortical.",
+        "La lésion épileptogène primitive se situe au niveau de l'aire motrice supplémentaire de la face médiane ; la crise voyage ensuite en empruntant le corps calleux pour causer une secousse controlatérale paradoxale (mutation unilatérale de l'homonculus).",
+        "La crise progresse physiquement le long de la circonvolution frontale ascendante (cortex moteur primaire) en recrutant progressivement les populations de motoneurones supérieurs selon l'organisation spatiale stricte de l'homonculus moteur de Penfield.",
+        "Le patient souffre d'un défaut de l'inhibition réciproque dans les intumescences médullaires cervicales (et non d'un problème cortical), ce qui permet au réflexe myotatique inversé de se propager verticalement le long du cordon antérieur."
+      ],
+      "correct": 2,
+      "explanation": "La marche Jacksonnienne est la preuve clinique vivante de la carte (l'homonculus) de Penfield. L'incendie électrique commence au point focal (ex: la zone du pouce sur le cortex). En brûlant le long de la bande du cortex moteur (vers le bas), le courant allume successivement les zones motrices adjacentes sur la carte du cerveau (poignet, bras, épaule, puis la face qui est située juste en dessous de la main sur la convexité du cortex). Le corps du patient tressaute dans l'ordre exact du dessin de l'homonculus[cite: 2]."
+    },
+    {
+      "question": "Considérant l'implication des noyaux gris centraux (NGC) dans la boucle motrice, quel est leur rôle par rapport au cortex préfrontal et au cortex moteur primaire dans l'élaboration de la motricité ?",
+      "options": [
+        "Les NGC (Striatum) génèrent l'idée abstraite du mouvement, qui est ensuite planifiée de force par le cervelet et envoyée passivement à la moelle sans passer par les étages thalamo-corticaux.",
+        "Le cortex préfrontal décide de l'intention ; le cortex prémoteur élabore le plan ; et les NGC (faisant une boucle obligée avec le thalamus et le cortex moteur primaire) assurent le déclenchement adéquat (l'initiation) de l'action souhaitée tout en empêchant les mouvements parasites indésirables.",
+        "Les NGC reçoivent toutes les afférences nociceptives périphériques et bloquent le cortex moteur primaire pour générer des réponses en décérébration involontaires dès l'apparition d'un stress viscéral mineur.",
+        "Les NGC sont l'équivalent cognitif des cellules de soutien vestibulaires : ils pompent le calcium extracellulaire pour stabiliser le potentiel de membrane du colliculus inférieur, sans aucun lien avec la genèse de l'action."
+      ],
+      "correct": 1,
+      "explanation": "Les NGC (ganglions de la base) agissent comme un barrage filtrant. Le cortex veut bouger (planification). Les NGC reçoivent l'ordre, débloquent la barrière (inhibition) pour l'action voulue et renforcent le barrage pour tous les autres mouvements indésirables, puis renvoient le 'GO' au cortex moteur primaire via le thalamus. Une maladie des NGC cause soit une difficulté à passer la barrière (Parkinson = akinésie) soit un barrage qui fuit (Chorée/Huntington = mouvements inutiles/parasites)[cite: 2]."
+    },
+    {
+      "question": "En considérant la vascularisation et la neuroanatomie, une hémorragie massive touchant de manière circonscrite la capsule interne DROITE (bras postérieur) provoquera une panoplie de signes pyramidaux. Laquelle de ces constatations cliniques sera incontestablement ABSENTE chez ce patient, prouvant la nature centrale (et non périphérique) de sa lésion ?",
+      "options": [
+        "Une perte de la motricité volontaire fine et distale de la main gauche.",
+        "Une asymétrie de la face, avec l'incapacité de sourire du côté gauche (affaissement de la commissure labiale).",
+        "La présence de fasciculations diffuses, une fibrillation à l'EMG et une fonte musculaire (amyotrophie) sévère et rapide du bras paralysé au bout d'une semaine.",
+        "Une hyperréflexie myotatique (spasticité) au membre inférieur gauche apparaissant après la résolution du choc initial (flaccidité)."
+      ],
+      "correct": 2,
+      "explanation": "Une lésion de la capsule interne détruit l'autoroute du motoneurone supérieur (MNS) vers le corps. C'est un syndrome classique du MNS : hémiplégie spastique controlatérale, hyperréflexie, visage inférieur tombant. Il n'y aura JAMAIS de fasciculations, de fibrillation ni d'amyotrophie sévère rapide (seulement une amyotrophie de non-usage légère à long terme). Les fasciculations et la fonte rapide sont la signature exclusive de la destruction du motoneurone INFERIEUR (le câble terminal vers le muscle, au niveau spinal/périphérique)[cite: 2]."
+    },
+    {
+      "question": "La plasticité neuronale après amputation d'un membre : Suite à l'amputation traumatique d'un bras droit chez l'adulte, on observe souvent le phénomène du 'membre fantôme'. Comment la carte motrice et sensitive corticale de l'hémisphère cérébral GAUCHE se réorganise-t-elle face à cette perte soudaine d'afférence et d'efférence périphérique ?",
+      "options": [
+        "L'absence d'influx par les afférences Ib de l'organe tendineux de Golgi induit une apoptose (mort cellulaire) de toute l'aire 4 et des aires 1, 2, 3 correspondantes au bras droit, laissant un trou cicatriciel (cavité porencéphalique) visible à l'IRM fonctionnelle.",
+        "Le cortex (homonculus) de l'hémisphère gauche subit une réorganisation topographique : les régions corticales voisines intactes (comme la représentation du visage et de l'épaule) s'étendent progressivement, « envahissant » le territoire cortical silencieux laissé vacant par le bras amputé, ce qui contribue à la sensation illusoire que le bras est stimulé lorsqu'on touche le visage.",
+        "La décussation de la voie corticospinale ventrale s'inverse pour ramener toutes les afférences de la jambe gauche saine vers le cortex de la main amputée, permettant au patient d'écrire avec ses orteils sans entraînement préalable.",
+        "La région cérébrale orpheline se transforme histologiquement en un réseau de neurones miroirs (cortex prémoteur latéral), dédiant sa pleine capacité à l'observation empathique des mouvements du bras chez autrui pour compenser la perte physique."
+      ],
+      "correct": 1,
+      "explanation": "L'homonculus de la surface du cerveau n'est pas coulé dans le béton. En l'absence de stimulations (amputation), l'espace cortical laissé vacant est littéralement envahi, colonisé par le câblage synaptique des territoires adjacents de la carte de Penfield (souvent la face, le moignon ou l'épaule). C'est pourquoi effleurer la joue d'un amputé peut déclencher la sensation (le « toucher ») de son bras fantôme ou de sa main disparue, par chevauchement des câblages sensoriels dans le cortex remodelé[cite: 2]."
+    },
+    {
+      "question": "Le noyau de l'hypoglosse (nerf XII), responsable de la motricité de la langue, est souvent affecté lors d'un syndrome bulbaire (MNI) ou pseudobulbaire (MNS bilatéral). Si un patient présente un syndrome pseudobulbaire (MNS) touchant la langue, quelle apparence clinique classique de cet organe vous attendez-vous à observer ?",
+      "options": [
+        "Une langue atrophiée (diminution de volume), asymétrique, déviant vers le côté sain lorsqu'on la tire, et remplie de petites secousses vermiculaires (fasciculations) constantes.",
+        "Une langue hypertrophiée (macroglossie), qui sort de la bouche en permanence (protrusion tonique) à cause de l'hyperactivité de la voie tectospinale collatérale.",
+        "Une langue de volume normal (pas de fonte musculaire) et sans fasciculations, mais qui est raide (spastique), lourde, lente, rendant la parole traînante et l'élocution laborieuse.",
+        "Une langue insensible (anesthésie douloureuse) où le patient se mord constamment par perte de rétroaction du faisceau spino-thalamique ipsilatéral."
+      ],
+      "correct": 2,
+      "explanation": "C'est l'essence du diagnostic neurologique (MNS vs MNI) appliqué au bulbe. Le syndrome pseudobulbaire (MNS, atteinte du cerveau/voies) cause la spasticité, la raideur et la lenteur. La langue garde sa masse, ne fait pas de fasciculations, mais le patient articule mal car sa langue est « engourdie/rigide/spastique ». Si l'atteinte était au noyau lui-même (bulbaire, MNI), la langue aurait fondu (amyotrophie) et grouillerait de fasciculations[cite: 2]."
+    },
+    {
+      "question": "La régulation du niveau de vigilance (cycle éveil/sommeil) et l'intégration autonome de fonctions végétatives vitales (respiration, fréquence cardiaque) échappent généralement à notre contrôle volontaire direct. Quelle structure étendue du tronc cérébral forme l'ossature neurologique de ce système d'activation et d'intégration viscérale ?",
+      "options": [
+        "Le cortex auditif primaire (Aires 41-42), qui maintient l'éveil en traitant le son des battements cardiaques internes 24 heures sur 24.",
+        "L'olive supérieure médiane (OSM), qui compare les bruits digestifs (borborygmes) pour moduler la sécrétion d'acide de l'estomac via la striola.",
+        "La formation réticulaire (ou système réticulé activateur ascendant), s'étendant du bulbe rachidien au mésencéphale, qui reçoit d'innombrables afférences de tout le corps et diffuse l'éveil au cortex et régule les centres viscéraux autonomes (dont le réflexe réticulospinal anticipatoire de posture).",
+        "La partie non-contractile des fibres intrafusales de l'organe de Golgi, qui pompe l'endolymphe hyperpolarisée (+125 mV) directement dans les noyaux de l'hypoglosse pour stopper la digestion pendant le sommeil profond."
+      ],
+      "correct": 2,
+      "explanation": "La formation réticulaire (du bulbe au mésencéphale) est la conscience et l'usine de base du cerveau. Son rôle ascendant (vers le thalamus/cortex) allume la conscience et garde l'éveil. Son rôle local et descendant gère les fonctions de maintien de la vie (centres cardiaques, respiratoires, tonus de base, vomissement, et l'anticipation posturale pour l'équilibre via la voie réticulo-spinale)[cite: 2]."
+    },
+    {
+      "question": "En récapitulant l'ensemble des faisceaux moteurs descendants extrapyramidaux du tronc cérébral (vestibulospinaux, réticulospinaux, tectospinaux), quelle est la caractéristique anatomique commune concernant leur trajectoire prépondérante dans la moelle épinière, reflétant leur fonction globale sur la musculature axiale ?",
+      "options": [
+        "Ils descendent tous exclusivement dans la corne postérieure (dorsale) pour inhiber les voies afférentes Ia et II avant que le mouvement ne soit amorcé.",
+        "Ils cheminent majoritairement de manière unilatérale stricte dans les cordons latéraux (funiculus latéral) pour affiner la motricité distale des doigts et des poignets.",
+        "Ils voyagent préférentiellement dans les cordons antérieurs (ventraux) de la substance blanche médullaire, pour atteindre les interneurones et MNI situés en région médiane, gérant ainsi bilatéralement le tronc (posture), le cou et la racine des membres.",
+        "Ils traversent l'épendyme (le canal central de la moelle) sous forme amyélinique (fibres C) pour moduler la transmission des températures, sans jamais faire synapse sur les motoneurones alpha."
+      ],
+      "correct": 2,
+      "explanation": "Les voies extrapyramidales de la posture et de l'équilibre (vestibulo-spinales, réticulo-spinale, et même l'infime voie corticospinale ventrale) sont logées à l'avant (cordons antérieurs de la moelle). De là, elles atteignent facilement la zone médiane de la corne grise (les interneurones qui voyagent des deux côtés) pour régir toute la musculature centrale du corps (les muscles axiaux pour se tenir droit, et non pas pour jouer du piano)[cite: 2]."
+    },
+    {
+      "question": "Lors d'une dissection du cervelet (syndrome cérébelleux), un étudiant en neurosciences s'interroge sur l'origine du nom du tractus 'spino-cérébelleux'. Quel rôle fondamental ce faisceau afférent joue-t-il spécifiquement pour le bon calibrage des mouvements (dysmétrie) ?",
+      "options": [
+        "Il véhicule les commandes motrices primaires depuis les hémisphères latéraux du cervelet, passant par la moelle épinière pour contracter la musculature striée des jambes, contournant ainsi le cortex malade.",
+        "Il informe continuellement le cortex prémoteur de l'état de fatigue des unités FF via la libération pulsatile d'aspartate dans les noyaux vestibulaires supérieurs, remplaçant la transmission adrénergique autonome.",
+        "Il transporte l'information proprioceptive subconsciente massive de tout le corps (position spatiale des muscles et articulations grâce aux fuseaux et OTG) depuis la moelle (spino-) vers le vermis et les hémisphères intermédiaires (-cérébelleux), offrant au cervelet le tableau réel ('feed-back') de l'exécution périphérique pour la comparer à l'intention motrice corticale.",
+        "Il amène l'influx des canaux semi-circulaires et otolithiques de la base du crâne directement aux pédoncules cérébraux pour bloquer le clonus de la cheville causé par la spasticité des noyaux gris centraux (akinésie)."
+      ],
+      "correct": 2,
+      "explanation": "Le cervelet est un système de vérification des erreurs. Pour ça, il doit comparer « Ce que le cerveau a demandé de faire » (via le cortex moteur) et « Ce que le corps a réellement fait en périphérie ». Le tractus spino-cérébelleux (de la moelle vers le cervelet) lui apporte toute la vérité proprioceptive inconsciente des membres en temps réel (l'angle des genoux, la tension des bras, etc) pour faire ses calculs[cite: 2]."
+    },
+    {
+      "question": "Lors de l'examen clinique de la fonction cérébelleuse chez un patient, on lui demande de pointer son nez, puis le doigt de l'examinateur (qui se déplace), de manière répétée et rapide. Le patient présente un 'tremblement d'intention' (son doigt oscille de plus en plus fort lorsqu'il approche du but) et dépasse la cible (hypermétrie). Ce déficit de coordination (asynergie) révèle l'échec de quelle fonction neurologique classique ?",
+      "options": [
+        "L'inhibition réciproque spinale par les cellules de Renshaw s'est emballée, créant un clonus rythmique (réflexe myotatique) à la moindre tension du coude de l'examinateur.",
+        "Les champs oculomoteurs frontaux (FEF) corticaux ne parviennent pas à diriger le regard sur le doigt, provoquant un phénomène d'illusion spatiale d'optique pariétale.",
+        "Le défaut de rétroaction prédictive et correctrice du cervelet : le système nerveux lance le mouvement mais ne parvient ni à freiner (hypermetrie) ni à ajuster finement la trajectoire terminale (tremblement d'intention ou d'action) en comparant le mouvement réel à la cible visuelle.",
+        "L'atteinte bilatérale de l'Aire Motrice Supplémentaire (AMS), qui bloque l'initiation du geste fluide et oblige le patient à contracter toutes ses unités motrices FF de l'épaule dans une rigidité extrapyramidale."
+      ],
+      "correct": 2,
+      "explanation": "L'épreuve doigt-nez évalue la fonction des hémisphères latéraux du cervelet (et non du spino-cervelet vermien axial). Sans les micro-corrections cérébelleuses lissantes (qui disent au muscle de ralentir/freiner précisément pour s'arrêter sur la cible), le membre dépasse le but (dysmétrie/hypermétrie) et tente de corriger grossièrement en zigzaguant à l'arrivée (tremblement cinétique/intentionnel, très différent du tremblement de repos de Parkinson)[cite: 2]."
+    },
+    {
+      "question": "Dans le spectre de la motricité réflexe, un myoclonus (secousse musculaire brusque, involontaire et brève, comme le sursaut à l'endormissement ou lors du hoquet) est une entité distincte des fasciculations et du clonus ostéotendineux (spasticité). Bien que d'origine très variable, qu'est-ce qui le différencie cliniquement d'une fasciculation pure ?",
+      "options": [
+        "Le myoclonus implique la décharge hypersynchrone d'un vaste groupe de muscles (un ou plusieurs myotomes entiers, générant un mouvement articulaire visible), tandis que la fasciculation se limite à la décharge spontanée et isolée d'une seule unité motrice qui tressaute sous la peau sans déplacer l'articulation.",
+        "Le myoclonus est invariablement le signe d'une dégénérescence fatale et irréversible de la voie corticospinale ventrale, alors que la fasciculation est toujours bénigne (surcharge de caféine) et se limite à l'organe de Golgi.",
+        "Le myoclonus est généré exclusivement par un dysfonctionnement du cervelet vestibulaire, alors que les fasciculations proviennent de l'aire de Broca hyperactive.",
+        "Le myoclonus (hoquet) est une décharge cholinergique parasympathique sur les glandes sudoripares axiales, tandis que les fasciculations sont l'expression motrice d'un vertige paroxystique positionnel bénin."
+      ],
+      "correct": 0,
+      "explanation": "Le myoclonus est une secousse d'un ou plusieurs muscles entiers produisant un mouvement vrai (sursaut). La fasciculation est la secousse individuelle d'une petite unité motrice isolée (le MNI décharge spontanément) qui fait « papilloter » la peau, mais n'a pas la force pour bouger l'articulation d'un segment[cite: 2]."
+    },
+    {
+      "question": "Si un étudiant de médecine dentaire doit retenir un principe neurophysiologique suprême dictant la hiérarchie du contrôle de la mâchoire (et de tout mouvement du corps humain), quel énoncé illustre le mieux l'organisation hiérarchique pyramidale du contrôle moteur telle que définie dans vos notes ?",
+      "options": [
+        "Le réflexe myotatique des masséters (réflexe spinal/tronculaire) supplante toujours la commande volontaire du cortex, afin d'empêcher coûte que coûte la morsure de la langue, peu importe l'intention de l'individu.",
+        "Les mouvements volontaires modulent et dominent les réflexes supraspinaux (tronc cérébral), qui à leur tour modulent et dominent les réflexes spinaux segmentaires (boucles locales) ; le cortex est le grand patron et peut bloquer ou déclencher l'action des échelons inférieurs (ex: décider de se retenir de sursauter).",
+        "La motricité autonomique (parasympathique/sécrétion salivaire) domine de manière hiérarchique absolue toute la motricité squelettique faciale, bloquant le RVO si la faim se fait sentir.",
+        "L'architecture motrice fonctionne sans hiérarchie, en anneau fermé : le thalamus est l'égal de l'unité motrice S (slow), les deux envoyant des commandes concurrentielles à intensité égale qui s'annulent dans le ganglion de Scarpa."
+      ],
+      "correct": 1,
+      "explanation": "La hiérarchie (de haut en bas) est la clé de la neurologie : la volonté (cerveau, motricité fine, conscience) gouverne et domine le tronc cérébral (posture/survie), qui lui-même supervise la moelle épinière (réflexes de base/segmentaires). En cas d'urgence, on peut laisser le réflexe s'exprimer (retrait de la main du feu), mais le cortex a toujours le dernier mot et peut inhiber le retrait s'il le décide fermement (comme tenir un objet brûlant pour sauver quelqu'un)[cite: 2]."
+    }
+  ]
+}
